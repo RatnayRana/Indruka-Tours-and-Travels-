@@ -1,204 +1,450 @@
-import { Building2, Bus, Camera, Car, Crown, Heart, HeartHandshake, Mountain, Plane, Ship, Star, Tent, UtensilsCrossed } from "lucide-react";
+import {
+  Bird,
+  Building2,
+  Bus,
+  Camera,
+  Car,
+  Crown,
+  Drama,
+  Flame,
+  FlameKindling,
+  Footprints,
+  Heart,
+  HeartHandshake,
+  Home,
+  Landmark,
+  MapPin,
+  Mountain,
+  Music2,
+  Plane,
+  ScrollText,
+  Ship,
+  Sparkles,
+  Star,
+  Tent,
+  Train,
+  TreePine,
+  UserCheck,
+  Users,
+  UtensilsCrossed,
+} from "lucide-react";
 import type { TourCardProps } from "../../Bhutan/landing/card";
 
-export const item: TourCardProps[] = [
+export const BhutanItem: TourCardProps[] = [
   {
-    title: "Incredible Bhutan",
-    place: "Thimphu",
-    itinerary: "2N Thimphu • 2N Paro",
-    country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
-    images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    ],
-    inclusions: [
-      { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: UtensilsCrossed, label: "Meals" },
-    ],
-  },
-  {
-    title: "Incredible Bhutan",
+    title: "11 Days Bhutan Tour with Haa Valley",
     place: "Paro",
-    itinerary: "2N Thimphu • 2N Paro",
+    itinerary:
+      "1N Paro • 2N Thimphu • 1N Punakha • 1N Phobjikha • 1N Tang Valley • 1N Bumthang • 1N Thimphu • 1N Haa • 2N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+    price: 'From $3,370', // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", // To be filled
+    type:["Cultural","Family"],
+    tags: [
+      "10N/11D",
+      "Cultural Tour",
+      "Valley Explorer",
+      "Haa Valley",
+      "Max 16 Guests",
+    ],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "/Haa_Valley.jpg", // To be filled
+      "", // To be filled
     ],
     inclusions: [
       { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
+      { icon: Building2, label: "Hotels & Homestay" },
       { icon: Camera, label: "Sightseeing" },
       { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Guided Hikes" },
+      { icon: Flame, label: "Hot Stone Bath" },
     ],
   },
   {
-    title: "Incredible Bhutan",
-    place: "Punakha",
-    itinerary: "2N Thimphu • 2N Paro",
+    title: "Jomolhari Trekking in Bhutan",
+    place: "Pharo",
+    itinerary:
+      "2N Paro • 1N Shingkharap • 1N Soi Thangkha • 2N Jangothang • 1N Lingzhi • 1N Shodu • 1N Thimphu • 1N Punakha • 1N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+    price: '$ 3,980', // To be filled
+    oldPrice: 0, // To be filled
+    discount:"", // To be filled
+    type:["Trekking"],
+    tags: ["11N/12D", "Trekking", "Himalayan Adventure", "Max 16 Guests"],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "/Jomolhari.jpg",
+      "", // To be filled
     ],
     inclusions: [
       { icon: Plane, label: "Flights", optional: true },
+      { icon: Tent, label: "Camp Stay" },
       { icon: Building2, label: "Hotels" },
       { icon: Camera, label: "Sightseeing" },
       { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Guided Treks" },
     ],
   },
+
+  // {
+  //   title: "Dagala Thousand Lakes Trek in Bhutan",
+  //   place: "Paro",
+  //   itinerary:
+  //     "2N Paro • 1N Gur • 1N Labatama • 1N Kheri Khewa • 1N Tshokam • 1N Thimphu • 1N Paro",
+  //   country: "Bhutan",
+  //   price:"$3,600", // To be filled
+  //   oldPrice: 0, // To be filled
+  //   discount: "", // To be filled
+  //       type:["Trekking"],
+
+  //   tags: ["8N/9D", "Trekking", "Thousand Lakes", "Max 16 Guests"],
+  //   images: [
+  //     "/dagala.jpg", // To be filled
+  //     "", // To be filled
+  //   ],
+  //   inclusions: [
+  //     { icon: Plane, label: "Flights", optional: true },
+  //     { icon: Tent, label: "Camp Stay" },
+  //     { icon: Building2, label: "Hotels" },
+  //     { icon: Camera, label: "Sightseeing" },
+  //     { icon: UtensilsCrossed, label: "Meals" },
+  //     { icon: Car, label: "Transfers" },
+  //     { icon: UserCheck, label: "Licensed Guide" },
+  //     { icon: Mountain, label: "Guided Treks" },
+  //   ],
+  // },
+  // {
+  //   title: "Glimpse of Bhutan",
+  //   place: "Paro",
+  //   itinerary: "2N Thimphu • 1N Punakha • 2N Paro",
+  //   country: "Bhutan",
+  //   price:"$ 1,690", // To be filled
+  //   oldPrice: 0, // To be filled
+  //   discount: "",
+  //       type:["Family","Cultural"],
+
+  //   tags: ["5N/6D", "Cultural Tour", "Tiger's Nest", "Max 16 Guests"],
+  //   images: [
+  //     "/glimpse.jpg", // To be filled
+  //     "", // To be filled
+  //   ],
+  //   inclusions: [
+  //     { icon: Plane, label: "Flights", optional: true },
+  //     { icon: Building2, label: "Hotels" },
+  //     { icon: Camera, label: "Sightseeing" },
+  //     { icon: UtensilsCrossed, label: "Meals" },
+  //     { icon: Car, label: "Transfers" },
+  //     { icon: UserCheck, label: "Licensed Guide" },
+  //     { icon: Mountain, label: "Tiger's Nest Hike" },
+  //   ],
+  // },
   {
-    title: "Incredible Bhutan",
-    place: "Bumthang",
-    itinerary: "2N Thimphu • 2N Paro",
+    title: "Bhutan Short Trip",
+    place: "Paro",
+    itinerary: "1N Thimphu • 2N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+    price: "$ 1,065", // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", 
+     type:["Family","Cultural"],
+    tags: ["3N/4D", "Cultural Tour", "Tiger's Nest", "Max 16 Guests"],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "/short_trip.jpg", // To be filled
+      "", // To be filled
     ],
     inclusions: [
       { icon: Plane, label: "Flights", optional: true },
       { icon: Building2, label: "Hotels" },
       { icon: Camera, label: "Sightseeing" },
       { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Tiger's Nest Hike" },
     ],
   },
   {
-    title: "Incredible Bhutan",
-    place: "Wangdue Phodrang",
-    itinerary: "2N Thimphu • 2N Paro",
+    title: "Paro Festival Tour",
+    place: "Paro",
+    itinerary: "2N Thimphu • 2N Punakha • 3N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
-    images: ["/punakha.jpg", "/punakha.jpg"],
-    inclusions: [
-      { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: UtensilsCrossed, label: "Meals" },
-    ],
-  },
-  {
-    title: "Incredible Bhutan",
-    place: "Haa Valley",
-    itinerary: "2N Thimphu • 2N Paro",
-    country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+    price:"$ 2,300", // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", // To be filled
+     type:["Family","Festivals"],
+    tags: ["7N/8D", "Festival Tour", "Paro Tsechu", "Max 16 Guests"],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "", // To be filled
+      "", // To be filled
     ],
     inclusions: [
       { icon: Plane, label: "Flights", optional: true },
       { icon: Building2, label: "Hotels" },
       { icon: Camera, label: "Sightseeing" },
       { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Tiger's Nest Hike" },
+      { icon: Landmark, label: "Festival Entry" },
     ],
   },
   {
-    title: "Incredible Bhutan",
-    place: "Trongsa",
-    itinerary: "2N Thimphu • 2N Paro",
+    title: "Best of Bhutan Tour",
+    place: "Paro",
+    itinerary: "2N Thimphu • 2N Phobjikha • 1N Punakha • 2N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+    price:"$ 2,550", // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", // To be filled
+            type:["Family","Cultural"],
+
+    tags: [
+      "8N/9D",
+      "Cultural Tour",
+      "Tiger's Nest",
+      "Black-Necked Cranes",
+      "Max 16 Guests",
+    ],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "", // To be filled
+      "", // To be filled
     ],
     inclusions: [
       { icon: Plane, label: "Flights", optional: true },
       { icon: Building2, label: "Hotels" },
       { icon: Camera, label: "Sightseeing" },
       { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Tiger's Nest Hike" },
+      { icon: Bird, label: "Crane Sanctuary Visit" },
     ],
   },
-  {
-    title: "Incredible Bhutan",
+  //   {
+  //   title: "Thimphu Festival Tour",
+  //   place: "Paro",
+  //   itinerary: "2N Thimphu • 1N Phobjikha • 2N Punakha • 2N Paro",
+  //   country: "Bhutan",
+  //   price: "$ 2,300",
+  //   oldPrice: 0, // To be filled
+  //   discount: "",
+  //        type:["Family","Festivals"],
+
+  //   tags: [
+  //     "7N/8D",
+  //     "Cultural Tour",
+  //     "Thimphu Tshechu",
+  //     "Tiger's Nest",
+  //     "Max 16 Guests",
+  //   ],
+  //   images: [
+  //     "", // To be filled
+  //     "", // To be filled
+  //   ],
+  //   inclusions: [
+  //     { icon: Plane, label: "Flights", optional: true },
+  //     { icon: Building2, label: "Hotels" },
+  //     { icon: Camera, label: "Sightseeing" },
+  //     { icon: UtensilsCrossed, label: "Meals" },
+  //     { icon: Car, label: "Transfers" },
+  //     { icon: UserCheck, label: "Licensed Guide" },
+  //     { icon: Mountain, label: "Tiger's Nest Hike" },
+  //     { icon: Bird, label: "Crane Sanctuary Visit" },
+  //   ],
+  // },
+  // {
+  //   title: "Punakha Festival Tour",
+  //   place: "Paro",
+  //   itinerary: "2N Thimphu • 3N Punakha • 2N Paro",
+  //   country: "Bhutan",
+  //   price: "$2,400", // To be filled
+  //   oldPrice: 0, // To be filled
+  //   discount: "", // To be filled
+  //       type:["Family","Festivals"],
+  //   tags: [
+  //     "7N/8D",
+  //     "Festival Tour",
+  //     "Punakha Drubchen",
+  //     "Tiger's Nest",
+  //     "Max 16 Guests",
+  //   ],
+  //   images: [
+  //     "", // To be filled
+  //     "", // To be filled
+  //   ],
+  //   inclusions: [
+  //     { icon: Plane, label: "Flights", optional: true },
+  //     { icon: Building2, label: "Hotels" },
+  //     { icon: Camera, label: "Sightseeing" },
+  //     { icon: UtensilsCrossed, label: "Meals" },
+  //     { icon: Car, label: "Transfers" },
+  //     { icon: UserCheck, label: "Licensed Guide" },
+  //     { icon: Mountain, label: "Tiger's Nest Hike" },
+  //     { icon: Landmark, label: "Festival Entry" },
+  //   ],
+  // },
+//   {
+//   title: "Druk Path Trek",
+//   place: "Paro",
+//   itinerary: "1N Paro • 5N Trek (Jele Dzong → Tshokham → Jimi Langtso → Simkota → Phajoding) • 2N Thimphu • 1N Paro",
+//   country: "Bhutan",
+//   price: 0, // To be filled
+//   oldPrice: 0, // To be filled
+//   discount: "", // To be filled
+//       type:["Trekking"],
+//   tags: ["9N/10D", "Trekking", "Druk Path", "Max 16 Guests"],
+//   images: [
+//     "", // To be filled
+//     "", // To be filled
+//   ],
+//   inclusions: [
+//     { icon: Plane, label: "Flights", optional: true },
+//     { icon: Tent, label: "Camping & Hotels" },
+//     { icon: Camera, label: "Sightseeing" },
+//     { icon: UtensilsCrossed, label: "Meals" },
+//     { icon: Car, label: "Transfers" },
+//     { icon: UserCheck, label: "Licensed Guide" },
+//     { icon: Mountain, label: "Tiger's Nest Hike" },
+//     { icon: Footprints, label: "Druk Path Trek" },
+//   ],
+// },
+{
+    title: "Bhutan Cultural Journey",
+    place: "Paro",
+    itinerary: "2N Thimphu • 1N Phobjikha • 1N Tang Valley • 1N Jakar • 2N Punakha • 2N Paro",
+    country: "Bhutan",
+    price: 0, // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", // To be filled
+    tags: [
+      "9N/10D",
+      "Cultural Tour",
+      "Tiger's Nest",
+      "Central Bhutan",
+      "Max 16 Guests",
+    ],
+    images: [
+      "", // To be filled
+      "", // To be filled
+    ],
+    inclusions: [
+      { icon: Plane, label: "Flights", optional: true },
+      { icon: Building2, label: "Hotels" },
+      { icon: Camera, label: "Sightseeing" },
+      { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Car, label: "Transfers" },
+      { icon: UserCheck, label: "Licensed Guide" },
+      { icon: Mountain, label: "Tiger's Nest Hike" },
+      { icon: Bird, label: "Crane Sanctuary Visit" },
+      { icon: Landmark, label: "Trongsa & Bumthang Dzongs" },
+      { icon: TreePine, label: "Dochula Pass Panorama" },
+    ],
+},
+ {
+    title: "Bhutan Luxury Tour",
+    place: "Paro",
+    itinerary: "2N Thimphu • 2N Punakha • 2N Gangtey • 2N Bumthang • 2N Paro",
+    country: "Bhutan",
+    price: 0, // To be filled
+    oldPrice: 0, // To be filled
+    discount: "", // To be filled
+        type:["Family","Luxury"],
+    tags: [
+      "10N/11D",
+      "Luxury",
+      "Tiger's Nest",
+      "Zhiwaling Heritage",
+      "Indruka Tours and Travels",
+    ],
+    images: [
+      "", // To be filled
+      "", // To be filled
+    ],
+    inclusions: [
+      { icon: Plane, label: "Flights", optional: true },
+      { icon: Plane, label: "Domestic Flight (Bumthang–Paro)" },
+      { icon: Building2, label: "Luxury Hotels" },
+      { icon: UtensilsCrossed, label: "Fine Dining" },
+      { icon: Car, label: "Luxury Transfers" },
+      { icon: UserCheck, label: "Expert Private Guide" },
+      { icon: Mountain, label: "Tiger's Nest Hike" },
+      { icon: Bird, label: "Crane Sanctuary Visit" },
+      { icon: Sparkles, label: "GNH Talk & Meditation" },
+      { icon: HeartHandshake, label: "Community Immersion" },
+      { icon: FlameKindling, label: "Traditional Hot Stone Bath" },
+      { icon: Drama, label: "Private Farewell Dinner" },
+    ],
+  },
+  //   {
+  //   title: "Happiness Trek",
+  //   place: "Paro",
+  //   itinerary: "2N Bumthang • 4N Camping • 2N Phobjikha • 1N Punakha • 1N Thimphu • 2N Paro",
+  //   country: "Bhutan",
+  //   price: 0, // To be filled
+  //   oldPrice: 0, // To be filled
+  //   discount: "", // To be filled
+  //       type:["Trekking"],
+  //   tags: [
+  //     "13N/14D",
+  //     "Trek & Walk",
+  //     "Moderate",
+  //     "Central Bhutan",
+  //     "Village Immersion",
+  //   ],
+  //   images: [
+  //     "", // To be filled
+  //     "", // To be filled
+  //   ],
+  //   inclusions: [
+  //     { icon: Plane, label: "Domestic Flight (Bumthang)", optional: true },
+  //     { icon: Building2, label: "Hotels & Guesthouses" },
+  //     { icon: Home, label: "Village Homestays" },
+  //     { icon: Tent, label: "Indruka Camping" },
+  //     { icon: UtensilsCrossed, label: "All Meals" },
+  //     { icon: Car, label: "Transfers" },
+  //     { icon: UserCheck, label: "Expert Trek Guide" },
+  //     { icon: Footprints, label: "Trekking Crew & Pack Animals" },
+  //     { icon: Mountain, label: "Tiger's Nest Hike" },
+  //     { icon: Bird, label: "Crane Sanctuary Visit" },
+  //     { icon: Flame, label: "Campfire & Ara Tasting" },
+  //     { icon: Music2, label: "Village Folk Dance Evening" },
+  //   ],
+  // },
+    {
+    title: "From Historical to Modern Day Bhutan",
     place: "Phuentsholing",
-    itinerary: "2N Thimphu • 2N Paro",
+    itinerary: "2N Phuentsholing • 1N Thimphu • 2N Paro",
     country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
+    price: 21000,
+    oldPrice: 23334,
     discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
+        type:["Family","Cultural"],
+    // currency: "INR",
+    tags: [
+      "5N/6D",
+      "Cultural Tour",
+      "Budget Friendly",
+      "From Phuentsholing",
+      "Indruka Tours and Travel",
+    ],
     images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "", // To be filled
+      "", // To be filled
     ],
     inclusions: [
-      { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
+      { icon: Building2, label: "Base Category Hotels" },
+      { icon: UtensilsCrossed, label: "Meals (MAP — Breakfast & Dinner)" },
+      { icon: Car, label: "Non-AC Cab Transfers" },
+      { icon: UserCheck, label: "Local Guide & Driver" },
       { icon: Camera, label: "Sightseeing" },
-      { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Landmark, label: "Dzongs & Temples" },
+      { icon: ScrollText, label: "Innerline Permit Included" },
     ],
   },
-  {
-    title: "Incredible Bhutan",
-    place: "Gangtey",
-    itinerary: "2N Thimphu • 2N Paro",
-    country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
-    images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    ],
-    inclusions: [
-      { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: UtensilsCrossed, label: "Meals" },
-    ],
-  },
-  {
-    title: "Incredible Bhutan",
-    place: "Chele La Pass",
-    itinerary: "2N Thimphu • 2N Paro",
-    country: "Bhutan",
-    price: 36200,
-    oldPrice: 40277,
-    discount: "10% OFF",
-    tags: ["4N/5D", "Customized Tour", "Standard"],
-    images: [
-      "https://images.unsplash.com/photo-1580979847726-8c4e4e2b0c6b?w=600&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    ],
-    inclusions: [
-      { icon: Plane, label: "Flights", optional: true },
-      { icon: Building2, label: "Hotels" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: UtensilsCrossed, label: "Meals" },
-    ],
-  },
+
 ];
 
 export const Indiaitem: TourCardProps[] = [
@@ -242,67 +488,28 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Plane, label: "Transfers" },
     ],
   },
-  // {
-  //   title: "Shimla Packages",
-  //   place: "Shimla",
-  //   itinerary: "Delhi • Shimla • Kullu • Manali • Rohtang Pass",
-  //   country: "India",
-  //   price: 12000,
-  //   oldPrice: 14000,
-  //   discount: "14% OFF",
-  //   tags: ["Multi-Day", "Hill Station", "Customized"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/shimla-tour.webp",
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/shimla-manali-tour.webp",
-  //   ],
-  //   inclusions: [
-  //     { icon: Building2, label: "Hotels" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: Plane, label: "Transfers" },
-  //   ],
-  // },
-  // {
-  //   title: "Manali Packages",
-  //   place: "Manali",
-  //   itinerary: "Delhi • Manali • Solang Valley • Rohtang Pass • Kullu",
-  //   country: "India",
-  //   price: 12000,
-  //   oldPrice: 15000,
-  //   discount: "20% OFF",
-  //   tags: ["Multi-Day", "Adventure", "Customized"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/manali-weekend-tour.webp",
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/manali-honeymoon-tour.webp",
-  //   ],
-  //   inclusions: [
-  //     { icon: Building2, label: "Hotels" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: Plane, label: "Transfers" },
-  //   ],
-  // },
+  
   {
-  title: "Nainital Packages",
-  place: "Nainital",
-  itinerary: "Delhi • Nainital • Corbett • Ranikhet • Almora",
-  country: "India",
-  price: 10900,
-  oldPrice: 13300,
-  discount: "18% OFF",
-  tags: ["Multi-Day", "Hill Station", "Customized"],
-  images: [
-    "https://www.namasteindiatrip.com/wp-content/uploads/2025/09/nainital-weekend-tour.webp",
-    "https://www.namasteindiatrip.com/wp-content/uploads/2025/09/corbett-nainital-weekend.webp",
-  ],
-  inclusions: [
-    { icon: Building2, label: "Hotels" },
-    { icon: UtensilsCrossed, label: "Meals" },
-    { icon: Camera, label: "Sightseeing" },
-    { icon: Plane, label: "Transfers" },
-  ],
-},
-{
+    title: "Nainital Packages",
+    place: "Nainital",
+    itinerary: "Delhi • Nainital • Corbett • Ranikhet • Almora",
+    country: "India",
+    price: 10900,
+    oldPrice: 13300,
+    discount: "18% OFF",
+    tags: ["Multi-Day", "Hill Station", "Customized"],
+    images: [
+      "https://www.namasteindiatrip.com/wp-content/uploads/2025/09/nainital-weekend-tour.webp",
+      "https://www.namasteindiatrip.com/wp-content/uploads/2025/09/corbett-nainital-weekend.webp",
+    ],
+    inclusions: [
+      { icon: Building2, label: "Hotels" },
+      { icon: UtensilsCrossed, label: "Meals" },
+      { icon: Camera, label: "Sightseeing" },
+      { icon: Plane, label: "Transfers" },
+    ],
+  },
+  {
     title: "Darjeeling Packages",
     place: "Darjeeling",
     itinerary: "Bagdogra • Gangtok • Nathula Pass • Darjeeling",
@@ -322,130 +529,8 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Car, label: "Transfers" },
     ],
   },
- 
-  // ── 2. MUNNAR ──────────────────────────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/munnar-alleppey-tour-package.html
-  // 4 Days / 3 Nights · Cochin → Munnar → Alleppey → Cochin
-  {
-    title: "Munnar Packages",
-    place: "Munnar",
-    itinerary: "Cochin • Munnar • Top Station • Alleppey • Cochin",
-    country: "India",
-    price: 14999,
-    oldPrice: 18499,
-    discount: "19% OFF",
-    tags: ["Multi-Day", "Hill Station", "Backwaters"],
-    images: [
-      "https://www.namasteindiatrip.com/wp-content/uploads/2019/10/Darjeeling-Gangtok-Tour-Package.jpg",
-      "https://www.namasteindiatrip.com/wp-content/uploads/2019/10/Eastern-Himalayas-Tour-Package.jpg",
-    ],
-    inclusions: [
-      { icon: Building2, label: "Hotels" },
-      { icon: UtensilsCrossed, label: "Meals" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: Car, label: "Transfers" },
-    ],
-  },
- 
-  // ── 3. OOTY ────────────────────────────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/ooty-coonoor-tour.html
-  // 4 Days / 3 Nights · Coimbatore → Ooty → Coonoor → Coimbatore
-  {
-    title: "Ooty Packages",
-    place: "Ooty",
-    itinerary: "Coimbatore • Ooty • Botanical Garden • Coonoor • Coimbatore",
-    country: "India",
-    price: 9999,
-    oldPrice: 12499,
-    discount: "20% OFF",
-    tags: ["Multi-Day", "Hill Station", "Family"],
-    images: [
-      "https://www.namasteindiatrip.com/wp-content/uploads/2019/10/Darjeeling-Heritage-Tour-Package.jpg",
-      "https://www.namasteindiatrip.com/wp-content/uploads/2019/09/Darjeeling-Gangtok-Honeymoon-Tour-Package.jpg",
-    ],
-    inclusions: [
-      { icon: Building2, label: "Hotels" },
-      { icon: UtensilsCrossed, label: "Meals" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: Car, label: "Transfers" },
-    ],
-  },
- 
-  // ── 4. ANDAMAN AND NICOBAR ISLANDS ─────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/andaman-beach-tour.html
-  // 4 Days / 3 Nights · Port Blair → Havelock → Neil Island → Port Blair
-  {
-    title: "Andaman and Nicobar Packages",
-    place: "Andaman and Nicobar Islands",
-    itinerary: "Port Blair • Havelock Island • Neil Island • Port Blair",
-    country: "India",
-    price: 38500,
-    oldPrice: 47000,
-    discount: "18% OFF",
-    tags: ["Multi-Day", "Beach", "Island"],
-    images: [
-      "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/andaman-beach-tour.webp",
-      "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Andaman-Tour-Packages.webp",
-    ],
-    inclusions: [
-      { icon: Building2, label: "Hotels" },
-      { icon: UtensilsCrossed, label: "Meals" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: Plane, label: "Transfers" },
-    ],
-  },
- 
-  // ── 5. PONDICHERRY ─────────────────────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/pondicherry-tour-packages
-  // Best-seller: Chennai Pondicherry Tour · 4 Days / 3 Nights
-  {
-    title: "Pondicherry Packages",
-    place: "Pondicherry",
-    itinerary: "Chennai • Mahabalipuram • Pondicherry • Auroville",
-    country: "India",
-    price: 10999,
-    oldPrice: 13499,
-    discount: "19% OFF",
-    tags: ["Multi-Day", "Beach", "Heritage"],
-    images: [
-      "https://www.namasteindiatrip.com/wp-content/uploads/2019/09/Chennai-Pondicherry-Tour-Package.jpg",
-      "https://www.namasteindiatrip.com/include/top-selling-nit-tour-10.jpg",
-    ],
-    inclusions: [
-      { icon: Building2, label: "Hotels" },
-      { icon: UtensilsCrossed, label: "Meals" },
-      { icon: Camera, label: "Sightseeing" },
-      { icon: Car, label: "Transfers" },
-    ],
-  },
- 
-  // ── 6. GOKARNA ─────────────────────────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/karnataka-holiday-packages
-  // Karnataka Coastal · 5 Days / 4 Nights · Bangalore → Gokarna → Murudeshwar
-  // {
-  //   title: "Gokarna Packages",
-  //   place: "Gokarna",
-  //   itinerary: "Bangalore • Gokarna • Om Beach • Kudle Beach • Murudeshwar",
-  //   country: "India",
-  //   price: 15500,
-  //   oldPrice: 18999,
-  //   discount: "18% OFF",
-  //   tags: ["Multi-Day", "Beach", "Spiritual"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2019/10/Darjeeling-Kalimpong-Gangtok-Tour-Package.jpg",
-  //     "https://www.namasteindiatrip.com/include/footer/karnataka-holiday-packages.jpg",
-  //   ],
-  //   inclusions: [
-  //     { icon: Building2, label: "Hotels" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: Car, label: "Transfers" },
-  //   ],
-  // },
- 
-  // ── 7. KOVALAM ─────────────────────────────────────────────────────────────
-  // Source: https://www.namasteindiatrip.com/best-of-kerala-tour
-  // 7 Days / 6 Nights · Cochin → Munnar → Alleppey → Kovalam → Trivandrum
+
+
   {
     title: "Kovalam Packages",
     place: "Kovalam",
@@ -466,7 +551,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Car, label: "Transfers" },
     ],
   },
-    {
+  {
     title: "Varanasi Ayodhya Bodhgaya Chitrakoot Pilgrimage",
     place: "Varanasi",
     itinerary: "Varanasi • Bodhgaya • Ayodhya • Chitrakoot",
@@ -487,7 +572,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 2. KEDARNATH TEMPLE ─────────────────────────────────
   {
     title: "Badrinath Kedarnath Do Dham Yatra",
@@ -510,12 +595,13 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 3. BADRINATH TEMPLE ─────────────────────────────────
   {
     title: "Char Dham Yatra Package from Delhi",
     place: "Badrinath",
-    itinerary: "Delhi • Rishikesh • Yamunotri • Gangotri • Kedarnath • Badrinath",
+    itinerary:
+      "Delhi • Rishikesh • Yamunotri • Gangotri • Kedarnath • Badrinath",
     country: "India",
     price: 43900,
     oldPrice: 46900,
@@ -533,7 +619,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 4. KEDARNATH + BADRINATH — HELICOPTER (Premium) ─────
   {
     title: "Char Dham Yatra By Helicopter — Premium",
@@ -556,7 +642,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 5. VAISHNO DEVI ─────────────────────────────────────
   {
     title: "Mata Vaishno Devi Pilgrimage Yatra",
@@ -579,7 +665,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 6. GOLDEN TEMPLE, AMRITSAR ──────────────────────────
   {
     title: "Golden Temple Amritsar Spiritual Tour",
@@ -602,7 +688,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 7. JAGANNATH TEMPLE, PURI ───────────────────────────
   {
     title: "Bhubaneswar Puri Konark Jagannath Temple Tour",
@@ -625,7 +711,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 8. RISHIKESH — YOGA + SPIRITUAL ─────────────────────
   {
     title: "Yoga & Meditation Spiritual Tour — Rishikesh",
@@ -671,7 +757,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 2. UDAIPUR — Honeymoon / Romantic Special ───────────
   {
     title: "Rajasthan Honeymoon Tour — Jaipur Pushkar Udaipur",
@@ -694,7 +780,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 3. JAIPUR — Pink City · Foreign Tourists Favourite ──
   {
     title: "Golden Triangle Tour — Delhi Agra Jaipur",
@@ -717,12 +803,13 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 4. JAIPUR — Royal Rajasthan Full Circuit ─────────────
   {
     title: "Royal Rajasthan Grand Tour — Full Circuit",
     place: "Jaipur",
-    itinerary: "Jaipur • Bikaner • Jaisalmer • Jodhpur • Udaipur • Mount Abu • Ajmer • Pushkar",
+    itinerary:
+      "Jaipur • Bikaner • Jaisalmer • Jodhpur • Udaipur • Mount Abu • Ajmer • Pushkar",
     country: "India",
     price: 78000,
     oldPrice: 85000,
@@ -740,7 +827,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 5. JAISALMER — Desert Camps & Safari ────────────────
   {
     title: "Jaisalmer Desert Safari & Luxury Camp Experience",
@@ -764,12 +851,13 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Star, label: "Cultural Show" },
     ],
   },
- 
+
   // ─── 6. JAISALMER — Indian Splendour Train Tour ──────────
   {
     title: "Indian Splendour Luxury Train Tour — Rajasthan",
     place: "Jaisalmer",
-    itinerary: "Delhi • Agra • Ranthambore • Jaipur • Bikaner • Jaisalmer • Jodhpur • Udaipur",
+    itinerary:
+      "Delhi • Agra • Ranthambore • Jaipur • Bikaner • Jaisalmer • Jodhpur • Udaipur",
     country: "India",
     price: 220000,
     oldPrice: 240000,
@@ -787,12 +875,13 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 7. KERALA BACKWATERS — Premium Houseboat Tourism ────
   {
     title: "Kerala Beaches & Backwaters Premium Houseboat Tour",
     place: "Alleppey",
-    itinerary: "Cochin • Munnar • Thekkady • Alleppey • Varkala • Kovalam • Trivandrum",
+    itinerary:
+      "Cochin • Munnar • Thekkady • Alleppey • Varkala • Kovalam • Trivandrum",
     country: "India",
     price: 24999,
     oldPrice: 28500,
@@ -810,7 +899,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─── 8. KERALA BACKWATERS — Honeymoon Luxury ─────────────
   {
     title: "Kerala Honeymoon Luxury Backwaters & Hill Stations",
@@ -834,10 +923,11 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Camera, label: "Sightseeing" },
     ],
   },
-   {
+  {
     title: "Leh Ladakh Adventure Tour Package",
     place: "Leh",
-    itinerary: "Srinagar • Gulmarg • Sonamarg • Leh • Pangong Tso • Nubra Valley • Manali",
+    itinerary:
+      "Srinagar • Gulmarg • Sonamarg • Leh • Pangong Tso • Nubra Valley • Manali",
     country: "India",
     price: 70000,
     oldPrice: 75000,
@@ -855,103 +945,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
-  // {
-  //   title: "Leh Ladakh Bike Tour — Manali to Leh Highway",
-  //   place: "Leh",
-  //   itinerary: "Manali • Rohtang Pass • Keylong • Sarchu • Leh • Khardung La • Pangong Tso",
-  //   country: "India",
-  //   price: 42000,
-  //   oldPrice: 48000,
-  //   discount: "13% OFF",
-  //   tags: ["12N/11D", "Bike Adventure", "Thrill Seekers"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
-  //     "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&q=80",
-  //   ],
-  //   inclusions: [
-  //     { icon: Mountain, label: "Bike Rental" },
-  //     { icon: Tent, label: "Camp Stay" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Bus, label: "Support Vehicle" },
-  //   ],
-  // },
- 
-  // {
-  //   title: "Ladakh Honeymoon Tour — Pangong Lake & Nubra Valley",
-  //   place: "Leh",
-  //   itinerary: "Leh • Nubra Valley • Pangong Tso • Magnetic Hill • Khardung La",
-  //   country: "India",
-  //   price: 55000,
-  //   oldPrice: 62000,
-  //   discount: "11% OFF",
-  //   tags: ["8N/7D", "Honeymoon", "Romantic"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
-  //     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
-  //   ],
-  //   inclusions: [
-  //     { icon: Plane, label: "Flights", optional: true },
-  //     { icon: Crown, label: "Luxury Hotels" },
-  //     { icon: Heart, label: "Romantic Dining" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: Bus, label: "Transfers" },
-  //   ],
-  // },
- 
-  // ─────────────────────────────────────────────────────────
-  // 🏝️  ANDAMAN — Honeymoon Packages
-  // ─────────────────────────────────────────────────────────
- 
-  // {
-  //   title: "Andaman Honeymoon Package — Islands & Beaches",
-  //   place: "Port Blair",
-  //   itinerary: "Port Blair • Havelock Island • Elephant Beach • Neil Island • Radhanagar Beach",
-  //   country: "India",
-  //   price: 39000,
-  //   oldPrice: 42000,
-  //   discount: "7% OFF",
-  //   tags: ["6N/5D", "Honeymoon", "Beach Escape"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Andaman-Tour-Packages.webp",
-  //     "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=80",
-  //   ],
-  //   inclusions: [
-  //     { icon: Plane, label: "Flights", optional: true },
-  //     { icon: Building2, label: "Beach Resort" },
-  //     { icon: Ship, label: "Ferry Transfers" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Island Sightseeing" },
-  //   ],
-  // },
- 
-  // {
-  //   title: "Andaman Premium Beach & Water Sports Tour",
-  //   place: "Havelock Island",
-  //   itinerary: "Port Blair • Baratang Island • Havelock Island • Neil Island • Ross Island",
-  //   country: "India",
-  //   price: 45000,
-  //   oldPrice: 50000,
-  //   discount: "10% OFF",
-  //   tags: ["7N/6D", "Beach & Adventure", "Popular"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Andaman-Tour-Packages.webp",
-  //     "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80",
-  //   ],
-  //   inclusions: [
-  //     { icon: Plane, label: "Flights", optional: true },
-  //     { icon: Building2, label: "Beach Resort" },
-  //     { icon: Ship, label: "Ferry Transfers" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Water Sports" },
-  //   ],
-  // },
- 
-  // ─────────────────────────────────────────────────────────
-  // 👑  JAIPUR — UDAIPUR — JAISALMER
-  // ─────────────────────────────────────────────────────────
- 
+
   {
     title: "Rajasthan Royal Triangle — Jaipur Udaipur Jaisalmer",
     place: "Jaipur",
@@ -974,7 +968,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Camera, label: "Sightseeing" },
     ],
   },
- 
+
   {
     title: "Jaipur Udaipur Jaisalmer Honeymoon Tour",
     place: "Udaipur",
@@ -997,7 +991,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Heart, label: "Romantic Extras" },
     ],
   },
- 
+
   {
     title: "Jaisalmer Desert Camp & Jaipur Heritage Circuit",
     place: "Jaisalmer",
@@ -1019,11 +1013,11 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
+
   // ─────────────────────────────────────────────────────────
   // 🌸  KASHMIR
   // ─────────────────────────────────────────────────────────
- 
+
   {
     title: "Kashmir Tour — Srinagar Gulmarg Pahalgam Sonamarg",
     place: "Srinagar",
@@ -1046,32 +1040,7 @@ export const Indiaitem: TourCardProps[] = [
       { icon: Bus, label: "Transfers" },
     ],
   },
- 
 
- 
-  // {
-  //   title: "Kashmir to Ladakh Grand Tour",
-  //   place: "Leh",
-  //   itinerary: "Srinagar • Gulmarg • Sonamarg • Kargil • Leh • Nubra Valley • Pangong Tso • Manali",
-  //   country: "India",
-  //   price: 75000,
-  //   oldPrice: 85000,
-  //   discount: "12% OFF",
-  //   tags: ["14N/13D", "Scenic & Adventure", "Premium"],
-  //   images: [
-  //     "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
-  //     "https://www.namasteindiatrip.com/include/footer/kashmir-tour-packages.jpg",
-  //   ],
-  //   inclusions: [
-  //     { icon: Plane, label: "Flights", optional: true },
-  //     { icon: Crown, label: "Premium Hotels" },
-  //     { icon: Tent, label: "Camp Stay" },
-  //     { icon: UtensilsCrossed, label: "Meals" },
-  //     { icon: Camera, label: "Sightseeing" },
-  //     { icon: Bus, label: "Transfers" },
-  //   ],
-  // },
-  // ─── INDIA ───────────────────────────────────────────────
 
   {
     title: "Chardham Yatra Packages",
@@ -1394,6 +1363,268 @@ export const Indiaitem: TourCardProps[] = [
   //     { icon: UtensilsCrossed, label: "Meals" },
   //   ],
   // },
-  
-  
 ];
+
+//  {
+//     id: 511,
+//     country: "India",
+//     place: "Leh",
+//     title: "Kashmir to Ladakh Grand Tour",
+//     type: "Adventure ",
+//     duration: "14 Days / 13 Nights",
+//     durationTag: "14 Days",
+//     startEnd: "Srinagar → Kargil → Leh → Manali",
+//     destinations: [
+//       "Srinagar",
+//       "Gulmarg",
+//       "Sonamarg",
+//       "Kargil",
+//       "Leh",
+//       "Nubra Valley",
+//       "Pangong Tso",
+//       "Manali",
+//     ],
+//     amenities: ["Hotel & Camp", "Meals", "Transfers", "Sightseeing"],
+//     price: 75000,
+//     rating: 4.9,
+//     reviews: 189,
+//     badge: "Premium",
+//     badgeColor: "bg-purple-700",
+//     mode: "Road",
+//     img: "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
+//     popular: true,
+
+//     tourFeatures: [
+//       { icon: Tent, label: "Camp Stay", color: "#6C72E8", bg: "#EEF0FD" },
+//       {
+//         icon: UtensilsCrossed,
+//         label: "Meals",
+//         color: "#F4884A",
+//         bg: "#FEF0E8",
+//       },
+//       { icon: Bike, label: "Adventure", color: "#1AADA0", bg: "#E8F7F3" },
+//       { icon: Mountain, label: "Sightseeing", color: "#E8508A", bg: "#FFF0F4" },
+//     ],
+
+//     tourHighlights: [
+//       {
+//         title:
+//           "Dal Lake Shikara Ride — Floating Gardens & Houseboat Stay in Srinagar",
+//       },
+//       {
+//         title:
+//           "Gulmarg Gondola — World's 2nd Highest Cable Car over the Kashmir Valley",
+//       },
+//       {
+//         title:
+//           "Zoji La & Kargil — Drass War Memorial & the Coldest Town in India",
+//       },
+//       {
+//         title:
+//           "Khardung La Pass — Drive over One of the World's Highest Motorable Roads",
+//       },
+//       {
+//         title:
+//           "Nubra Valley Camel Safari — Bactrian Camels on Himalayan Sand Dunes",
+//       },
+//       {
+//         title:
+//           "Pangong Tso Sunrise — World's Highest Saltwater Lake on the Indo-China Border",
+//       },
+//     ],
+
+//     tourManagerCompany: "Indruka Trips and Trip",
+
+//     heroImage: {
+//       src: "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
+//       alt: "Kashmir to Ladakh Grand Tour — Srinagar to Manali via Kargil and Pangong",
+//     },
+
+//     testimonials: [
+//       {
+//         id: 1,
+//         text: "14 days, two worlds — lush Kashmir and barren Ladakh. From Dal Lake's floating gardens to Pangong's blue silence, this grand tour is the ultimate Indian road journey. NIT handled every pass and valley flawlessly.",
+//         author: "Vikram & Ananya Sharma",
+//         date: "Travelled July 2025",
+//         manager: "Indruka Trips and ",
+//         managerRole: "Tour Manager",
+//       },
+//       {
+//         id: 2,
+//         text: "Kargil and Lamayuru were unexpected highlights nobody talks about. The Leh–Manali highway finale through Rohtang was surreal. One trip, every landscape India has to offer. Thank you NIT.",
+//         author: "Rajesh & Pooja Mehta",
+//         date: "Travelled August 2024",
+//         manager: "Indruka Trips and ",
+//         managerRole: "Tour Manager",
+//       },
+//     ],
+
+//     thumbnails: [
+//       {
+//         id: 1,
+//         src: "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Ladakh-Adventure-Tour-Packages.webp",
+//         alt: "Pangong Tso Ladakh Grand Tour",
+//       },
+//       {
+//         id: 2,
+//         src: "https://www.namasteindiatrip.com/include/footer/kashmir-tour-packages.jpg",
+//         alt: "Dal Lake Srinagar Kashmir",
+//       },
+//       {
+//         id: 3,
+//         src: "https://www.namasteindiatrip.com/wp-content/uploads/2025/07/Sikkim-Darjeeling-Holiday-Packages.webp",
+//         alt: "Nubra Valley Khardung La Ladakh",
+//       },
+//     ],
+
+//     breadcrumbs: [
+//       { label: "Home", href: "/" },
+//       { label: "India", href: "/india" },
+//       { label: "Ladakh", href: "/india/ladakh" },
+//       { label: "Kashmir to Ladakh Grand Tour" },
+//     ],
+
+//     badges: [
+//       { label: "PREMIUM", variant: "solid" as const, color: "purple" },
+//       { label: "14 DAYS", variant: "outlined" as const, color: "cyan" },
+//     ],
+
+//     durationDays: 14,
+//     countryCount: 1,
+//     cityCount: 8,
+//     region: "Kashmir & Ladakh, India",
+
+//     itineraryStops: [
+//       { city: "Srinagar", nights: 3 },
+//       { city: "Kargil", nights: 1 },
+//       { city: "Leh", nights: 3 },
+//       { city: "Nubra Valley", nights: 1 },
+//       { city: "Pangong Tso", nights: 2 },
+//       { city: "Leh (Return)", nights: 1 },
+//       { city: "Manali", nights: 2 },
+//     ],
+
+//     days: [
+//       {
+//         day: 1,
+//         date: "Day 1",
+//         title: "Arrive Srinagar — Shikara Ride on Dal Lake",
+//         details:
+//           "Arrive Srinagar airport. Transfer to houseboat on Dal Lake. 2-hour Shikara ride past Char Chinar Island, Floating Gardens, and the lake bazaar. Welcome dinner on the houseboat. Overnight Srinagar.",
+//       },
+//       {
+//         day: 2,
+//         date: "Day 2",
+//         title: "Srinagar — Mughal Gardens & Pahalgam Excursion",
+//         details:
+//           "Morning visit to Nishat Bagh, Shalimar Bagh, and Chashma Shahi Mughal Gardens. Full-day excursion to Pahalgam (88 km) — Betaab Valley, Aru Valley, and Chandanwari. Return for dinner on houseboat. Overnight Srinagar.",
+//       },
+//       {
+//         day: 3,
+//         date: "Day 3",
+//         title: "Srinagar — Gulmarg Gondola Ride",
+//         details:
+//           "Full-day excursion to Gulmarg (50 km). Ride the world's 2nd highest cable car — Gulmarg Gondola — for sweeping Himalayan views. Optional skiing and snow activities. Return to houseboat for dinner. Overnight Srinagar.",
+//       },
+//       {
+//         day: 4,
+//         date: "Day 4",
+//         title: "Srinagar → Sonamarg → Kargil",
+//         details:
+//           "Checkout and drive to Kargil (200 km) via Sonamarg — the 'Meadow of Gold'. Cross Zoji La Pass. Stop at Drass — India's coldest town and site of the 1999 Kargil War. Visit Kargil War Memorial. Overnight Kargil.",
+//       },
+//       {
+//         day: 5,
+//         date: "Day 5",
+//         title: "Kargil → Lamayuru → Leh",
+//         details:
+//           "Drive to Leh (200 km) via Lamayuru — Ladakh's oldest monastery perched above the surreal Moonland landscape. Visit Alchi Monastery and Magnetic Hill en route. Arrive Leh, check-in and rest. Overnight Leh.",
+//       },
+//       {
+//         day: 6,
+//         date: "Day 6",
+//         title: "Leh — Acclimatization & Local Sightseeing",
+//         details:
+//           "Rest morning for high-altitude acclimatization (3,500 m). Afternoon visit to Shanti Stupa at sunset, 17th-century Leh Palace, and Namgyal Tsemo Monastery. Evening walk through Leh Market. Overnight Leh.",
+//       },
+//       {
+//         day: 7,
+//         date: "Day 7",
+//         title: "Leh — Monastery Circuit & Sangam",
+//         details:
+//           "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — confluence of the Indus and Zanskar rivers. Magnetic Hill stop. Overnight Leh.",
+//       },
+//       {
+//         day: 8,
+//         date: "Day 8",
+//         title: "Leh → Khardung La → Nubra Valley",
+//         details:
+//           "Drive over Khardung La Pass (5,359 m) — photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Bactrian camel safari at Hunder Sand Dunes. Campfire dinner under Himalayan skies. Overnight Nubra Valley.",
+//       },
+//       {
+//         day: 9,
+//         date: "Day 9",
+//         title: "Nubra Valley → Shyok River → Pangong Tso",
+//         details:
+//           "Drive to Pangong Tso (140 km) via the scenic Shyok River Valley. First view of the legendary blue-green lake at 4,350 m. Check-in to lakeside camp. Candlelight dinner by the water. Overnight Pangong Tso.",
+//       },
+//       {
+//         day: 10,
+//         date: "Day 10",
+//         title: "Pangong Tso — Sunrise & Full Day at the Lake",
+//         details:
+//           "Wake before dawn for the Pangong Tso sunrise — the lake shifts from deep cobalt to blazing gold. Morning walk along the shore. Afternoon at leisure — photography, optional kayaking, or quiet time by the Indo-China border lake. Overnight Pangong Tso.",
+//       },
+//       {
+//         day: 11,
+//         date: "Day 11",
+//         title: "Pangong Tso → Leh via Chang La Pass",
+//         details:
+//           "Drive back to Leh (220 km) over Chang La Pass (5,360 m). Afternoon free for Leh Market shopping — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh.",
+//       },
+//       {
+//         day: 12,
+//         date: "Day 12",
+//         title: "Leh → Sarchu — Leh–Manali Highway Begins",
+//         details:
+//           "Begin the legendary Leh–Manali Highway. Drive through Upshi and cross Tanglang La Pass (5,328 m). Descend into the high plains of Morey. Arrive Sarchu (4,290 m) camp by evening. Overnight Sarchu camp.",
+//       },
+//       {
+//         day: 13,
+//         date: "Day 13",
+//         title: "Sarchu → Rohtang Pass → Manali",
+//         details:
+//           "Cross Baralacha La (4,890 m) and Rohtang Pass (3,978 m) — dramatic shift from barren desert to pine-forested Kullu Valley. Arrive Manali by evening. Celebration dinner. Overnight Manali.",
+//       },
+//       {
+//         day: 14,
+//         date: "Day 14",
+//         title: "Manali — Solang Valley & Departure",
+//         details:
+//           "Morning excursion to Solang Valley and Hadimba Devi Temple (16th-century pagoda in cedar forest). Last browse at Manali Mall Road. Transfer to Bhuntar Airport or bus stand. Kashmir to Ladakh Grand Tour concludes.",
+//       },
+//     ],
+
+//     tourDetails: [
+//       { label: "Duration", value: "14 Days / 13 Nights" },
+//       {
+//         label: "Destinations",
+//         value:
+//           "Srinagar · Pahalgam · Gulmarg · Sonamarg · Kargil · Lamayuru · Leh · Nubra Valley · Pangong Tso · Manali",
+//       },
+//       {
+//         label: "Departure & Return",
+//         value: "Srinagar (SXR) → Manali / Bhuntar (KUU)",
+//       },
+//       { label: "Tour Code", value: "KAL-GRAND-SXR-14" },
+//       {
+//         label: "Meals",
+//         value:
+//           "Breakfast & Dinner daily; Campfire dinner at Nubra & Pangong included",
+//       },
+//       { label: "Best Time", value: "June–September" },
+//       { label: "Group Size", value: "Private & Small Group Tours available" },
+//     ],
+
+//     onViewItinerary: () => console.log("view itinerary clicked"),
+//   },

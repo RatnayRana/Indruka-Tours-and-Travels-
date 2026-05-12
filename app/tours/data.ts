@@ -16,158 +16,9 @@ import {
   Train,
   Crown,
   Sailboat,
+  Landmark,
+  Home,
 } from "lucide-react";
-
-export const tourData = {
-  North: [
-    {
-      id: 1,
-      name: "Himachal Pradesh Tour Data",
-      tours: 33,
-      image:
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80",
-    },
-    {
-      id: 2,
-      name: "Jammu And Kashmir Tour Data",
-      tours: 24,
-      image:
-        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80",
-    },
-    {
-      id: 3,
-      name: "Leh Ladakh Tour Data",
-      tours: 23,
-      image:
-        "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=600&q=80",
-    },
-    {
-      id: 4,
-      name: "Nainital Mussoorie Corbett Tour Data",
-      tours: 17,
-      image:
-        "https://images.unsplash.com/photo-1575408264798-b50b252663e6?w=600&q=80",
-    },
-    {
-      id: 5,
-      name: "Amritsar Tour Data",
-      tours: 13,
-      image:
-        "https://images.unsplash.com/photo-1588416498473-da72fb5e3e9c?w=600&q=80",
-    },
-    {
-      id: 6,
-      name: "Agra Tour Data",
-      tours: 15,
-      image:
-        "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80",
-    },
-    {
-      id: 7,
-      name: "Delhi Tour Data",
-      tours: 30,
-      image:
-        "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80",
-    },
-    {
-      id: 8,
-      name: "Uttarakhand Tour Data",
-      tours: 21,
-      image:
-        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600&q=80",
-    },
-  ],
-  South: [
-    {
-      id: 1,
-      name: "Kerala Tour Data",
-      tours: 40,
-      image:
-        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80",
-    },
-    {
-      id: 2,
-      name: "Tamil Nadu Tour Data",
-      tours: 28,
-      image:
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80",
-    },
-    {
-      id: 3,
-      name: "Karnataka Tour Data",
-      tours: 22,
-      image:
-        "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80",
-    },
-    {
-      id: 4,
-      name: "Andhra Pradesh Tour Data",
-      tours: 18,
-      image:
-        "https://images.unsplash.com/photo-1563135893-bcd95c13e74f?w=600&q=80",
-    },
-  ],
-  "West & Central": [
-    {
-      id: 1,
-      name: "Rajasthan Tour Data",
-      tours: 45,
-      image:
-        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80",
-    },
-    {
-      id: 2,
-      name: "Goa Tour Data",
-      tours: 32,
-      image:
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80",
-    },
-    {
-      id: 3,
-      name: "Maharashtra Tour Data",
-      tours: 26,
-      image:
-        "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80",
-    },
-    {
-      id: 4,
-      name: "Gujarat Tour Data",
-      tours: 19,
-      image:
-        "https://images.unsplash.com/photo-1563135893-bcd95c13e74f?w=600&q=80",
-    },
-  ],
-  "East & North East": [
-    {
-      id: 1,
-      name: "West Bengal Tour Data",
-      tours: 20,
-      image:
-        "https://images.unsplash.com/photo-1558431382-27e303142255?w=600&q=80",
-    },
-    {
-      id: 2,
-      name: "Sikkim Tour Data",
-      tours: 16,
-      image:
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80",
-    },
-    {
-      id: 3,
-      name: "Assam Tour Data",
-      tours: 14,
-      image:
-        "https://images.unsplash.com/photo-1575408264798-b50b252663e6?w=600&q=80",
-    },
-    {
-      id: 4,
-      name: "Meghalaya Tour Data",
-      tours: 12,
-      image:
-        "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=600&q=80",
-    },
-  ],
-};
 
 export const tours = [
   // ─── INDIA ────────────────────────────────────────────────
@@ -229,7 +80,7 @@ export const tours = [
         text: "Planning our Chardham Yatra was stressing me out until we chose Indruka Trips and Trip. It was a very perfect family bonding and the best experience.",
         author: "Rakesh Sharma",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -237,7 +88,7 @@ export const tours = [
         text: "Me along with my family hired Indruka Trips and Trip for our Badrinath Tour. After completing the tour, we saw they kept all their commitments. Definitely I will suggest everyone to hire them.",
         author: "Manoj Patel",
         date: "Travelled Jun 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -290,43 +141,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Dehradun",
-        details:
-          "Arrive at Dehradun. Transfer to hotel. Welcome briefing, overnight stay.",
+        details: [
+          "Arrive at Dehradun. Transfer to hotel. Welcome briefing, overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Dehradun → Kharsali → Yamunotri",
-        details:
-          "Fly to Kharsali helipad. Visit Yamunotri Temple, Surya Kund hot springs, and Divya Shila. Return to overnight stay.",
+        details: [
+          "Fly to Kharsali helipad. Visit Yamunotri Temple, Surya Kund hot springs, and Divya Shila. Return to overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Kharsali → Harsil → Gangotri",
-        details:
-          "Fly to Harsil. Visit Gangotri Temple dedicated to Goddess Ganga. View Bhagirath Shila. Overnight at Harsil.",
+        details: [
+          "Fly to Harsil. Visit Gangotri Temple dedicated to Goddess Ganga. View Bhagirath Shila. Overnight at Harsil."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Harsil → Guptkashi → Kedarnath",
-        details:
-          "Fly to Sersi/Guptkashi helipad. Visit Kedarnath Temple and Adi Shankaracharya Samadhi. VIP Darshan arranged. Overnight at Guptkashi.",
+        details: [
+          "Fly to Sersi/Guptkashi helipad. Visit Kedarnath Temple and Adi Shankaracharya Samadhi. VIP Darshan arranged. Overnight at Guptkashi."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Guptkashi → Badrinath",
-        details:
-          "Fly to Badrinath. Visit Badrinath Temple, Tapt Kund, Mana Village (last village before Tibet). Overnight at Badrinath.",
+        details: [
+          "Fly to Badrinath. Visit Badrinath Temple, Tapt Kund, Mana Village (last village before Tibet). Overnight at Badrinath."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Badrinath → Dehradun — Departure",
-        details:
-          "Morning Aarti at Badrinath Temple. Fly back to Sahastradhara Helipad, Dehradun. Tour concludes.",
+        details: [
+          "Morning Aarti at Badrinath Temple. Fly back to Sahastradhara Helipad, Dehradun. Tour concludes."
+          ],
       },
     ],
 
@@ -406,7 +263,7 @@ export const tours = [
         text: "Planning our Chardham Yatra was stressing me out until we chose Indruka Trips and Trip. It was a very perfect family bonding and the best experience.",
         author: "Rakesh Sharma",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -414,7 +271,7 @@ export const tours = [
         text: "Me along with my family hired Indruka Trips and Trip for our Badrinath Tour. After completing the tour, we saw they kept all their commitments. Definitely I will suggest everyone to hire them.",
         author: "Manoj Patel",
         date: "Travelled Jun 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -472,43 +329,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Dehradun",
-        details:
-          "Arrive at Dehradun. Transfer to hotel. Welcome briefing, overnight stay.",
+        details: [
+          "Arrive at Dehradun. Transfer to hotel. Welcome briefing, overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Dehradun → Kharsali → Yamunotri",
-        details:
-          "Fly to Kharsali helipad. Visit Yamunotri Temple, Surya Kund hot springs, and Divya Shila. Return to overnight stay.",
+        details: [
+          "Fly to Kharsali helipad. Visit Yamunotri Temple, Surya Kund hot springs, and Divya Shila. Return to overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Kharsali → Harsil → Gangotri",
-        details:
-          "Fly to Harsil. Visit Gangotri Temple dedicated to Goddess Ganga. View Bhagirath Shila. Overnight at Harsil.",
+        details: [
+          "Fly to Harsil. Visit Gangotri Temple dedicated to Goddess Ganga. View Bhagirath Shila. Overnight at Harsil."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Harsil → Guptkashi → Kedarnath",
-        details:
-          "Fly to Sersi/Guptkashi helipad. Visit Kedarnath Temple and Adi Shankaracharya Samadhi. VIP Darshan arranged. Overnight at Guptkashi.",
+        details: [
+          "Fly to Sersi/Guptkashi helipad. Visit Kedarnath Temple and Adi Shankaracharya Samadhi. VIP Darshan arranged. Overnight at Guptkashi."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Guptkashi → Badrinath",
-        details:
-          "Fly to Badrinath. Visit Badrinath Temple, Tapt Kund, Mana Village (last village before Tibet). Overnight at Badrinath.",
+        details: [
+          "Fly to Badrinath. Visit Badrinath Temple, Tapt Kund, Mana Village (last village before Tibet). Overnight at Badrinath."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Badrinath → Dehradun — Departure",
-        details:
-          "Morning Aarti at Badrinath Temple. Fly back to Sahastradhara Helipad, Dehradun. Tour concludes.",
+        details: [
+          "Morning Aarti at Badrinath Temple. Fly back to Sahastradhara Helipad, Dehradun. Tour concludes."
+          ],
       },
     ],
 
@@ -579,7 +442,7 @@ export const tours = [
         text: "The Amarnath Yatra arranged by Indruka Trips and Trip was a truly divine experience. Every detail — from permits to camps — was handled perfectly. Baba Barfani's darshan was life-changing.",
         author: "Suresh Tiwari",
         date: "Travelled Aug 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -587,7 +450,7 @@ export const tours = [
         text: "We were a group of 8 pilgrims and the trek coordination was flawless. The guides were experienced and the accommodation at Pahalgam was very comfortable. Highly recommended!",
         author: "Anjali Mehta",
         date: "Travelled Jul 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -640,50 +503,57 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Srinagar",
-        details:
-          "Arrive at Srinagar Airport and transfer to hotel. Welcome briefing by the tour manager covering the yatra schedule, permits, and trekking guidelines. Evening leisurely stroll along the banks of Dal Lake. Overnight Srinagar.",
+        details: [
+          "Arrive at Srinagar Airport and transfer to hotel. Welcome briefing by the tour manager covering the yatra schedule, permits, and trekking guidelines. Evening leisurely stroll along the banks of Dal Lake. Overnight Srinagar."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar Sightseeing",
-        details:
-          "Morning Shikara ride on the iconic Dal Lake passing floating gardens and houseboats. Visit Shankaracharya Temple perched on the hilltop, Mughal Gardens (Shalimar Bagh and Nishat Bagh), and the revered Hazratbal Shrine. Overnight Srinagar.",
+        details: [
+          "Morning Shikara ride on the iconic Dal Lake passing floating gardens and houseboats. Visit Shankaracharya Temple perched on the hilltop, Mughal Gardens (Shalimar Bagh and Nishat Bagh), and the revered Hazratbal Shrine. Overnight Srinagar."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar → Pahalgam",
-        details:
-          "Scenic drive to Pahalgam (95 km / approx. 3 hrs) through the lush Lidder Valley and Awantipora ruins. Afternoon excursion to Betaab Valley and Aru Valley. Rest and acclimatisation before the trek. Overnight Pahalgam.",
+        details: [
+          "Scenic drive to Pahalgam (95 km / approx. 3 hrs) through the lush Lidder Valley and Awantipora ruins. Afternoon excursion to Betaab Valley and Aru Valley. Rest and acclimatisation before the trek. Overnight Pahalgam."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Pahalgam → Chandanwari → Sheshnag",
-        details:
-          "Trek begins from Chandanwari base (16 km). Ascend through pine forests, cross Pissu Top ridge, and descend to the magnificent Sheshnag Lake at 3,590 m — surrounded by snow-clad peaks. Overnight at tented camps, Sheshnag.",
+        details: [
+          "Trek begins from Chandanwari base (16 km). Ascend through pine forests, cross Pissu Top ridge, and descend to the magnificent Sheshnag Lake at 3,590 m — surrounded by snow-clad peaks. Overnight at tented camps, Sheshnag."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Sheshnag → Mahagunas Pass → Panjtarni",
-        details:
-          "Trek over the mighty Mahagunas Pass at 4,890 m — the highest point of the entire yatra route. Gradual descent through alpine meadows to Panjtarni (14 km). Rest and prepare with prayers ahead of the holy cave darshan. Overnight camps, Panjtarni.",
+        details: [
+          "Trek over the mighty Mahagunas Pass at 4,890 m — the highest point of the entire yatra route. Gradual descent through alpine meadows to Panjtarni (14 km). Rest and prepare with prayers ahead of the holy cave darshan. Overnight camps, Panjtarni."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Panjtarni → Amarnath Cave Darshan → Baltal",
-        details:
-          "Early morning trek to the sacred Amarnath Holy Cave at 3,888 m (6 km). Darshan of the naturally formed Shiva Lingam of ice — a deeply spiritual and unforgettable experience. Return to Panjtarni and drive to Baltal. Overnight Baltal.",
+        details: [
+          "Early morning trek to the sacred Amarnath Holy Cave at 3,888 m (6 km). Darshan of the naturally formed Shiva Lingam of ice — a deeply spiritual and unforgettable experience. Return to Panjtarni and drive to Baltal. Overnight Baltal."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Baltal → Srinagar — Departure",
-        details:
-          "Morning drive from Baltal to Srinagar (93 km / approx. 3 hrs) through scenic Sindh Valley. Freshen up and collect souvenirs at the local market before transfer to Srinagar Airport. Tour concludes with the divine blessings of Baba Amarnath.",
+        details: [
+          "Morning drive from Baltal to Srinagar (93 km / approx. 3 hrs) through scenic Sindh Valley. Freshen up and collect souvenirs at the local market before transfer to Srinagar Airport. Tour concludes with the divine blessings of Baba Amarnath."
+          ],
       },
     ],
 
@@ -755,7 +625,7 @@ export const tours = [
         text: "Indruka Trips and Trip made our Adi Kailash Yatra smooth and spiritually enriching. The guides were incredibly knowledgeable and the logistics for this remote trek were perfectly managed.",
         author: "Vikram Nair",
         date: "Travelled Jun 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -763,7 +633,7 @@ export const tours = [
         text: "Seeing the natural OM symbol on Om Parvat was a moment I will carry for a lifetime. Every camp, every meal, every guide — all first class. Truly a premium spiritual journey.",
         author: "Priya Joshi",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -817,71 +687,81 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival at Haldwani / Kathgodam",
-        details:
-          "Arrive at Haldwani or Kathgodam railway station. Transfer by road to Pithoragarh (200 km / approx. 7 hrs) through scenic Kumaon hills. Check-in at hotel and welcome briefing. Overnight Pithoragarh.",
+        details: [
+          "Arrive at Haldwani or Kathgodam railway station. Transfer by road to Pithoragarh (200 km / approx. 7 hrs) through scenic Kumaon hills. Check-in at hotel and welcome briefing. Overnight Pithoragarh."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Pithoragarh → Dharchula — ILP Formalities",
-        details:
-          "Scenic drive to Dharchula (92 km / approx. 4 hrs) along the Kali River, which forms the natural border between India and Nepal. Inner Line Permit (ILP) registration completed here — mandatory for the yatra. Overnight Dharchula.",
+        details: [
+          "Scenic drive to Dharchula (92 km / approx. 4 hrs) along the Kali River, which forms the natural border between India and Nepal. Inner Line Permit (ILP) registration completed here — mandatory for the yatra. Overnight Dharchula."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Dharchula → Tawaghat → Budhi",
-        details:
-          "Drive to Tawaghat where the road ends, then begin the trek through dense Himalayan forests and traditional Bhotiya villages. Pass through Sirkha and Dar. Overnight guesthouse at Budhi.",
+        details: [
+          "Drive to Tawaghat where the road ends, then begin the trek through dense Himalayan forests and traditional Bhotiya villages. Pass through Sirkha and Dar. Overnight guesthouse at Budhi."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Budhi → Gala → Gunji",
-        details:
-          "Trek continues through Gala village with sweeping views of Panchachuli peaks. Arrive at Gunji — the key base camp and supply hub for the yatra region. Rest and acclimatisation. Overnight Gunji.",
+        details: [
+          "Trek continues through Gala village with sweeping views of Panchachuli peaks. Arrive at Gunji — the key base camp and supply hub for the yatra region. Rest and acclimatisation. Overnight Gunji."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Gunji → Kalapani → Navidhang (Om Parvat Darshan)",
-        details:
-          "Trek to Kalapani — the sacred origin point of the Kali River venerated in mythology. Ascend to Navidhang (4,750 m) for a breathtaking view of Om Parvat, where a natural formation of snow creates the divine OM symbol on the peak. Overnight camps, Navidhang.",
+        details: [
+          "Trek to Kalapani — the sacred origin point of the Kali River venerated in mythology. Ascend to Navidhang (4,750 m) for a breathtaking view of Om Parvat, where a natural formation of snow creates the divine OM symbol on the peak. Overnight camps, Navidhang."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Navidhang → Gunji → Kuti Village",
-        details:
-          "Descend from Navidhang back to Gunji. Proceed onward to the remote and serene Kuti Village (3,740 m) — a traditional Bhotiya settlement with spectacular Himalayan vistas. Overnight guesthouse, Kuti.",
+        details: [
+          "Descend from Navidhang back to Gunji. Proceed onward to the remote and serene Kuti Village (3,740 m) — a traditional Bhotiya settlement with spectacular Himalayan vistas. Overnight guesthouse, Kuti."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Kuti → Jollingkong (Adi Kailash Base Camp)",
-        details:
-          "Trek from Kuti to Jollingkong (15 km) through high-altitude meadows and glacial terrain. First dramatic views of Adi Kailash peak (6,310 m) — revered as the Himalayan abode of Lord Shiva. Overnight tented camps, Jollingkong.",
+        details: [
+          "Trek from Kuti to Jollingkong (15 km) through high-altitude meadows and glacial terrain. First dramatic views of Adi Kailash peak (6,310 m) — revered as the Himalayan abode of Lord Shiva. Overnight tented camps, Jollingkong."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Adi Kailash Parikrama & Parvati Sarovar",
-        details:
-          "Full day dedicated to the sacred Adi Kailash Parikrama (circumambulation of the holy peak). Visit the pristine Parvati Sarovar glacial lake and offer prayers at the Shiva Mandir. A deeply meditative and spiritually profound experience. Overnight Jollingkong.",
+        details: [
+          "Full day dedicated to the sacred Adi Kailash Parikrama (circumambulation of the holy peak). Visit the pristine Parvati Sarovar glacial lake and offer prayers at the Shiva Mandir. A deeply meditative and spiritually profound experience. Overnight Jollingkong."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Jollingkong → Kuti → Gunji → Dharchula",
-        details:
-          "Begin the return trek to Kuti, then continue driving back through Gunji to Dharchula. Debrief with the tour manager. A celebratory dinner to mark the completion of this rare Himalayan pilgrimage. Overnight Dharchula.",
+        details: [
+          "Begin the return trek to Kuti, then continue driving back through Gunji to Dharchula. Debrief with the tour manager. A celebratory dinner to mark the completion of this rare Himalayan pilgrimage. Overnight Dharchula."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Dharchula → Haldwani — Departure",
-        details:
-          "Early morning drive from Dharchula to Haldwani / Kathgodam (280 km / approx. 8 hrs) through the Kumaon valleys. Drop at Kathgodam Railway Station or Haldwani Bus Stand. Tour concludes with the divine blessings of Adi Kailash.",
+        details: [
+          "Early morning drive from Dharchula to Haldwani / Kathgodam (280 km / approx. 8 hrs) through the Kumaon valleys. Drop at Kathgodam Railway Station or Haldwani Bus Stand. Tour concludes with the divine blessings of Adi Kailash."
+          ],
       },
     ],
 
@@ -953,7 +833,7 @@ export const tours = [
         text: "An absolutely perfect introduction to India! The Golden Triangle plus Amritsar extension was flawlessly organised. From the Taj Mahal at dawn to the Golden Temple — every moment was memorable.",
         author: "Ramesh Kapoor",
         date: "Travelled Nov 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -961,7 +841,7 @@ export const tours = [
         text: "We visited with our family of six and everything was taken care of — hotels, guides, meals. The Wagah Border ceremony was the absolute highlight of our trip. Will definitely book again!",
         author: "Sunita Agarwal",
         date: "Travelled Dec 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -1014,57 +894,65 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Delhi",
-        details:
-          "Arrive at Indira Gandhi International Airport and transfer to hotel. Welcome briefing with the tour manager. Evening visit to India Gate, Rajpath, and the vibrant Connaught Place market. Welcome dinner. Overnight Delhi.",
+        details: [
+          "Arrive at Indira Gandhi International Airport and transfer to hotel. Welcome briefing with the tour manager. Evening visit to India Gate, Rajpath, and the vibrant Connaught Place market. Welcome dinner. Overnight Delhi."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Delhi City Tour",
-        details:
-          "Old Delhi exploration — rickshaw ride through Chandni Chowk, Jama Masjid, and Red Fort. New Delhi highlights — Qutub Minar, Humayun's Tomb, Lotus Temple, and Raj Ghat (Gandhi Memorial). Overnight Delhi.",
+        details: [
+          "Old Delhi exploration — rickshaw ride through Chandni Chowk, Jama Masjid, and Red Fort. New Delhi highlights — Qutub Minar, Humayun's Tomb, Lotus Temple, and Raj Ghat (Gandhi Memorial). Overnight Delhi."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Delhi → Agra — Taj Mahal",
-        details:
-          "Drive to Agra (200 km / approx. 4 hrs). Visit the Taj Mahal — one of the Seven Wonders of the World — followed by the imposing Agra Fort and serene Mehtab Bagh. En route stop at the UNESCO-listed Fatehpur Sikri. Overnight Agra.",
+        details: [
+          "Drive to Agra (200 km / approx. 4 hrs). Visit the Taj Mahal — one of the Seven Wonders of the World — followed by the imposing Agra Fort and serene Mehtab Bagh. En route stop at the UNESCO-listed Fatehpur Sikri. Overnight Agra."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Agra → Mathura → Vrindavan",
-        details:
-          "Morning drive to Mathura — the sacred birthplace of Lord Krishna. Visit Krishna Janmabhoomi Temple, Dwarkadhish Temple, and Vishram Ghat on the Yamuna River. Explore the holy town of Vrindavan and ISKCON temple. Overnight Mathura.",
+        details: [
+          "Morning drive to Mathura — the sacred birthplace of Lord Krishna. Visit Krishna Janmabhoomi Temple, Dwarkadhish Temple, and Vishram Ghat on the Yamuna River. Explore the holy town of Vrindavan and ISKCON temple. Overnight Mathura."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Mathura → Jaipur",
-        details:
-          "Drive to the 'Pink City' of Jaipur (180 km / approx. 4 hrs). Check-in at hotel. Evening experience at Chokhi Dhani cultural village — traditional Rajasthani folk performances, cuisine, and crafts. Overnight Jaipur.",
+        details: [
+          "Drive to the 'Pink City' of Jaipur (180 km / approx. 4 hrs). Check-in at hotel. Evening experience at Chokhi Dhani cultural village — traditional Rajasthani folk performances, cuisine, and crafts. Overnight Jaipur."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Jaipur Sightseeing",
-        details:
-          "Visit the majestic Amber Fort with an optional elephant ride up the ramp. Explore City Palace, Jantar Mantar (UNESCO), the iconic Hawa Mahal facade, and Nahargarh Fort with panoramic city views. Evening shopping at Johri Bazaar for gems, textiles, and handicrafts. Overnight Jaipur.",
+        details: [
+          "Visit the majestic Amber Fort with an optional elephant ride up the ramp. Explore City Palace, Jantar Mantar (UNESCO), the iconic Hawa Mahal facade, and Nahargarh Fort with panoramic city views. Evening shopping at Johri Bazaar for gems, textiles, and handicrafts. Overnight Jaipur."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Jaipur → Amritsar — Golden Temple",
-        details:
-          "Fly or drive to Amritsar. Check-in and freshen up. Visit the Golden Temple (Harmandir Sahib) — the holiest shrine of Sikhism, glittering in gold over the sacred Amrit Sarovar pool. Tour Jallianwala Bagh memorial. Attend the electric Wagah Border flag-lowering ceremony at sunset. Overnight Amritsar.",
+        details: [
+          "Fly or drive to Amritsar. Check-in and freshen up. Visit the Golden Temple (Harmandir Sahib) — the holiest shrine of Sikhism, glittering in gold over the sacred Amrit Sarovar pool. Tour Jallianwala Bagh memorial. Attend the electric Wagah Border flag-lowering ceremony at sunset. Overnight Amritsar."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Amritsar — Departure",
-        details:
-          "Begin the morning with a peaceful visit to Durgiana Temple, the silver-domed Sikh shrine modelled after the Golden Temple. Explore the historic Gobindgarh Fort, an 18th-century military fortress at the heart of Amritsar. After breakfast, transfer to Sri Guru Ram Dass Jee International Airport for your onward journey. Tour concludes with the blessings of the Golden City.",
+        details: [
+          "Begin the morning with a peaceful visit to Durgiana Temple, the silver-domed Sikh shrine modelled after the Golden Temple. Explore the historic Gobindgarh Fort, an 18th-century military fortress at the heart of Amritsar. After breakfast, transfer to Sri Guru Ram Dass Jee International Airport for your onward journey. Tour concludes with the blessings of the Golden City."
+          ],
       },
     ],
 
@@ -1136,7 +1024,7 @@ export const tours = [
         text: "The Odisha triangle tour was a beautiful blend of history, spirituality, and nature. Konark at golden hour was absolutely stunning and the Jagannath Temple darshan was deeply moving.",
         author: "Deepak Mishra",
         date: "Travelled Jan 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -1144,7 +1032,7 @@ export const tours = [
         text: "A wonderfully compact yet richly packed tour. The Chilika Lake boat ride was a surprise highlight — thousands of migratory birds and the Irrawaddy dolphins! Highly organised trip.",
         author: "Kavita Rao",
         date: "Travelled Feb 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -1194,29 +1082,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Bhubaneswar",
-        details:
-          "Arrive at Bhubaneswar Airport / Railway Station and check-in at hotel. Visit the magnificent Lingaraj Temple (11th-century Shiva shrine), Mukteshwar Temple, and the ornately carved Rajarani Temple. Explore the ancient Udayagiri and Khandagiri Caves. Overnight Bhubaneswar.",
+        details: [
+          "Arrive at Bhubaneswar Airport / Railway Station and check-in at hotel. Visit the magnificent Lingaraj Temple (11th-century Shiva shrine), Mukteshwar Temple, and the ornately carved Rajarani Temple. Explore the ancient Udayagiri and Khandagiri Caves. Overnight Bhubaneswar."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Bhubaneswar → Konark → Puri",
-        details:
-          "Drive to Konark (65 km) and visit the awe-inspiring Sun Temple — a UNESCO World Heritage Site shaped like the chariot of the Sun God, adorned with intricate erotic sculptures. Continue to Puri for darshan at the sacred Jagannath Temple, one of the four Char Dhams of India. Stroll along the golden Puri Beach at sunset. Overnight Puri.",
+        details: [
+          "Drive to Konark (65 km) and visit the awe-inspiring Sun Temple — a UNESCO World Heritage Site shaped like the chariot of the Sun God, adorned with intricate erotic sculptures. Continue to Puri for darshan at the sacred Jagannath Temple, one of the four Char Dhams of India. Stroll along the golden Puri Beach at sunset. Overnight Puri."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Puri — Chilika Lake Excursion",
-        details:
-          "Full-day excursion to Chilika Lake — Asia's largest brackish water lagoon and a Ramsar Wetland. Scenic boat ride through the lake to Nalbana Bird Sanctuary and the serene Kalijai Island Temple. Return to Puri for evening prayers on the beach. Overnight Puri.",
+        details: [
+          "Full-day excursion to Chilika Lake — Asia's largest brackish water lagoon and a Ramsar Wetland. Scenic boat ride through the lake to Nalbana Bird Sanctuary and the serene Kalijai Island Temple. Return to Puri for evening prayers on the beach. Overnight Puri."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Puri → Bhubaneswar — Departure",
-        details:
-          "Morning visit to Sudarshana Crafts Village to witness Pattachitra painting artists and Odisha's traditional handloom weavers at work. Drive to Bhubaneswar Airport / Station for onward journey. Tour concludes with the blessings of Lord Jagannath.",
+        details: [
+          "Morning visit to Sudarshana Crafts Village to witness Pattachitra painting artists and Odisha's traditional handloom weavers at work. Drive to Bhubaneswar Airport / Station for onward journey. Tour concludes with the blessings of Lord Jagannath."
+          ],
       },
     ],
 
@@ -1291,7 +1183,7 @@ export const tours = [
         text: "A beautifully arranged short pilgrimage. The Kamakhya Temple darshan was a profound spiritual experience. The Brahmaputra cruise in the evening was the perfect way to end the day.",
         author: "Ananya Das",
         date: "Travelled Mar 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -1299,7 +1191,7 @@ export const tours = [
         text: "Indruka Trips and Trip managed everything impeccably — hotel, transfers, and priority darshan at Kamakhya Devi. This 3-day tour is perfect for a short but deeply spiritual getaway to Assam.",
         author: "Gopal Sharma",
         date: "Travelled Feb 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -1346,22 +1238,25 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Guwahati",
-        details:
-          "Arrive at Guwahati Airport / Railway Station and transfer to hotel. Evening boat ride on the mighty Brahmaputra River — one of the great rivers of Asia — with views of Nilachal Hill. Visit the Umananda Temple situated on Peacock Island midstream in the Brahmaputra. Overnight Guwahati.",
+        details: [
+          "Arrive at Guwahati Airport / Railway Station and transfer to hotel. Evening boat ride on the mighty Brahmaputra River — one of the great rivers of Asia — with views of Nilachal Hill. Visit the Umananda Temple situated on Peacock Island midstream in the Brahmaputra. Overnight Guwahati."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Kamakhya Devi Temple Darshan",
-        details:
-          "Early morning darshan at the Kamakhya Devi Temple — one of the 51 Shakti Peethas of India, perched atop Nilachal Hill with panoramic city views. Visit the sacred Navagraha Temple dedicated to the nine planetary deities. Afternoon at Assam State Zoo and Botanical Garden. Overnight Guwahati.",
+        details: [
+          "Early morning darshan at the Kamakhya Devi Temple — one of the 51 Shakti Peethas of India, perched atop Nilachal Hill with panoramic city views. Visit the sacred Navagraha Temple dedicated to the nine planetary deities. Afternoon at Assam State Zoo and Botanical Garden. Overnight Guwahati."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Guwahati — Cultural Visit & Departure",
-        details:
-          "Morning visit to Srimanta Sankardev Kalakshetra — a vast cultural institution showcasing Assamese history, art, manuscripts, and traditional performing arts. Browse local market for Assam silk and tea. Transfer to Guwahati Airport / Station for onward journey. Tour concludes with the blessings of Maa Kamakhya.",
+        details: [
+          "Morning visit to Srimanta Sankardev Kalakshetra — a vast cultural institution showcasing Assamese history, art, manuscripts, and traditional performing arts. Browse local market for Assam silk and tea. Transfer to Guwahati Airport / Station for onward journey. Tour concludes with the blessings of Maa Kamakhya."
+          ],
       },
     ],
 
@@ -1437,7 +1332,7 @@ export const tours = [
         text: "This tour touched the soul. From the Ganga Aarti in Varanasi to the Ram Mandir in Ayodhya — every destination was sacred and the arrangements by Indruka Trips and Trip were impeccable throughout.",
         author: "Rajendra Pandey",
         date: "Travelled Apr 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -1445,7 +1340,7 @@ export const tours = [
         text: "Covering four of India's most spiritually powerful cities in one tour was a dream come true. The Mahabodhi Temple at Bodhgaya and Kamadgiri Parikrama at Chitrakoot were deeply moving.",
         author: "Meena Verma",
         date: "Travelled Jan 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -1497,50 +1392,57 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Varanasi",
-        details:
-          "Arrive at Varanasi Airport / Cantt Railway Station and transfer to hotel. Evening visit to Dashashwamedh Ghat for the spectacular Ganga Aarti — a mesmerising fire ritual performed by priests to the chanting of Vedic hymns. Overnight Varanasi.",
+        details: [
+          "Arrive at Varanasi Airport / Cantt Railway Station and transfer to hotel. Evening visit to Dashashwamedh Ghat for the spectacular Ganga Aarti — a mesmerising fire ritual performed by priests to the chanting of Vedic hymns. Overnight Varanasi."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Varanasi — Kashi Vishwanath & Sarnath",
-        details:
-          "Pre-dawn boat ride on the Ganges past the ancient ghats as the city awakens. Darshan at Kashi Vishwanath Jyotirlinga (one of the 12 sacred Jyotirlingas) and Sankat Mochan Hanuman Temple. Afternoon excursion to Sarnath — where the Buddha delivered his first sermon — and visit the Dhamek Stupa. Overnight Varanasi.",
+        details: [
+          "Pre-dawn boat ride on the Ganges past the ancient ghats as the city awakens. Darshan at Kashi Vishwanath Jyotirlinga (one of the 12 sacred Jyotirlingas) and Sankat Mochan Hanuman Temple. Afternoon excursion to Sarnath — where the Buddha delivered his first sermon — and visit the Dhamek Stupa. Overnight Varanasi."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Varanasi → Bodhgaya",
-        details:
-          "Drive to Bodhgaya (250 km / approx. 5 hrs) — the most sacred site in Buddhism. Visit the Mahabodhi Temple Complex (UNESCO World Heritage Site) and the Bodhi Tree under which Gautama Buddha attained enlightenment. Attend evening meditation prayers at the temple. Overnight Bodhgaya.",
+        details: [
+          "Drive to Bodhgaya (250 km / approx. 5 hrs) — the most sacred site in Buddhism. Visit the Mahabodhi Temple Complex (UNESCO World Heritage Site) and the Bodhi Tree under which Gautama Buddha attained enlightenment. Attend evening meditation prayers at the temple. Overnight Bodhgaya."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Bodhgaya → Ayodhya",
-        details:
-          "Morning visit to Dungeshwari Cave Temples (Mahakala Caves) and the monasteries of Japan, China, and Thailand. Drive to Ayodhya (350 km / approx. 7 hrs) — the birthplace of Lord Ram. Check-in and evening aarti at Saryu River Ghat. Overnight Ayodhya.",
+        details: [
+          "Morning visit to Dungeshwari Cave Temples (Mahakala Caves) and the monasteries of Japan, China, and Thailand. Drive to Ayodhya (350 km / approx. 7 hrs) — the birthplace of Lord Ram. Check-in and evening aarti at Saryu River Ghat. Overnight Ayodhya."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Ayodhya — Ram Mandir Darshan",
-        details:
-          "Darshan at the newly built Ram Mandir (Ram Janmabhoomi) — a landmark of Hindu faith and heritage. Visit Hanuman Garhi, Kanak Bhavan Temple, and Nageshwarnath Temple. Evening boat ride on the Saryu River and Aarti ceremony on the ghats. Overnight Ayodhya.",
+        details: [
+          "Darshan at the newly built Ram Mandir (Ram Janmabhoomi) — a landmark of Hindu faith and heritage. Visit Hanuman Garhi, Kanak Bhavan Temple, and Nageshwarnath Temple. Evening boat ride on the Saryu River and Aarti ceremony on the ghats. Overnight Ayodhya."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Ayodhya → Chitrakoot",
-        details:
-          "Drive to Chitrakoot (180 km / approx. 4 hrs) — the sacred forest where Lord Ram, Sita, and Lakshmana spent 11 of their 14 years of exile. Visit Kamadgiri Parikrama (holy hill circumambulation), Sphatik Shila, and the serene Ramghat on the Mandakini River. Overnight Chitrakoot.",
+        details: [
+          "Drive to Chitrakoot (180 km / approx. 4 hrs) — the sacred forest where Lord Ram, Sita, and Lakshmana spent 11 of their 14 years of exile. Visit Kamadgiri Parikrama (holy hill circumambulation), Sphatik Shila, and the serene Ramghat on the Mandakini River. Overnight Chitrakoot."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Chitrakoot Sightseeing — Departure",
-        details:
-          "Morning visit to Gupt Godavari Caves, Janaki Kund, and Bharat Milap Temple — marking the sacred reunion of Ram and Bharat. Transfer to Allahabad / Prayagraj Airport or Chitrakoot Railway Station for onward journey. Tour concludes with divine blessings of Shri Ram.",
+        details: [
+          "Morning visit to Gupt Godavari Caves, Janaki Kund, and Bharat Milap Temple — marking the sacred reunion of Ram and Bharat. Transfer to Allahabad / Prayagraj Airport or Chitrakoot Railway Station for onward journey. Tour concludes with divine blessings of Shri Ram."
+          ],
       },
     ],
 
@@ -1615,7 +1517,7 @@ export const tours = [
         text: "An extraordinary pilgrimage across Gujarat covering Dwarka, Somnath, and Palitana. Indruka Trips and Trip handled every detail superbly — comfortable hotels, timely transfers, and knowledgeable guides.",
         author: "Haresh Shah",
         date: "Travelled Dec 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -1623,7 +1525,7 @@ export const tours = [
         text: "The Somnath Temple at the edge of the Arabian Sea at sunset was breathtaking. Climbing Shatrunjaya Hill to the Palitana Jain temples was challenging but spiritually rewarding. Wonderful tour!",
         author: "Sonal Desai",
         date: "Travelled Nov 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -1677,71 +1579,81 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Ahmedabad",
-        details:
-          "Arrive at Ahmedabad Airport / Railway Station and transfer to hotel. Visit the grand Swaminarayan Temple at Kalupur and the spectacular Akshardham Temple complex. Welcome dinner. Overnight Ahmedabad.",
+        details: [
+          "Arrive at Ahmedabad Airport / Railway Station and transfer to hotel. Visit the grand Swaminarayan Temple at Kalupur and the spectacular Akshardham Temple complex. Welcome dinner. Overnight Ahmedabad."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Ahmedabad → Dwarka",
-        details:
-          "Drive to Dwarka (450 km / approx. 7 hrs) through the Saurashtra heartland. Evening darshan at the sacred Dwarkadhish Temple — one of the four Char Dhams — dedicated to Lord Krishna, rising magnificently beside the Gomti River. Attend the sunset aarti. Overnight Dwarka.",
+        details: [
+          "Drive to Dwarka (450 km / approx. 7 hrs) through the Saurashtra heartland. Evening darshan at the sacred Dwarkadhish Temple — one of the four Char Dhams — dedicated to Lord Krishna, rising magnificently beside the Gomti River. Attend the sunset aarti. Overnight Dwarka."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Dwarka — Beyt Dwarka & Nageshwar Jyotirlinga",
-        details:
-          "Morning darshan at Dwarkadhish Temple and Rukmini Devi Temple (2 km from Dwarka). Boat ride to Beyt Dwarka Island, believed to be Lord Krishna's actual residence. Visit Nageshwar Jyotirlinga — one of the 12 sacred Jyotirlingas. Overnight Dwarka.",
+        details: [
+          "Morning darshan at Dwarkadhish Temple and Rukmini Devi Temple (2 km from Dwarka). Boat ride to Beyt Dwarka Island, believed to be Lord Krishna's actual residence. Visit Nageshwar Jyotirlinga — one of the 12 sacred Jyotirlingas. Overnight Dwarka."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Dwarka → Porbandar",
-        details:
-          "Drive to Porbandar (100 km / approx. 2 hrs) — birthplace of Mahatma Gandhi on the Saurashtra coast. Visit Sudama Mandir (honouring Krishna's dearest devotee), Kirti Mandir (Gandhi's ancestral home), and the tranquil Porbandar Beach. Overnight Porbandar.",
+        details: [
+          "Drive to Porbandar (100 km / approx. 2 hrs) — birthplace of Mahatma Gandhi on the Saurashtra coast. Visit Sudama Mandir (honouring Krishna's dearest devotee), Kirti Mandir (Gandhi's ancestral home), and the tranquil Porbandar Beach. Overnight Porbandar."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Porbandar → Somnath",
-        details:
-          "Drive to Somnath (170 km / approx. 3 hrs). Darshan at the Somnath Jyotirlinga Temple — the first and most revered of the 12 Jyotirlingas, standing at the Triveni Sangam of three rivers on the Arabian Sea coast. Visit Bhalka Tirth — where Lord Krishna left the mortal world. Overnight Somnath.",
+        details: [
+          "Drive to Somnath (170 km / approx. 3 hrs). Darshan at the Somnath Jyotirlinga Temple — the first and most revered of the 12 Jyotirlingas, standing at the Triveni Sangam of three rivers on the Arabian Sea coast. Visit Bhalka Tirth — where Lord Krishna left the mortal world. Overnight Somnath."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Somnath → Junagadh",
-        details:
-          "Drive to Junagadh. Take the rope-way up Girnar Hill to visit ancient Jain temples at the summit. Explore the medieval Uparkot Fort with its ancient Buddhist caves and stepwells. Optional jeep safari to Gir National Park — the last wild habitat of Asiatic lions. Overnight Junagadh.",
+        details: [
+          "Drive to Junagadh. Take the rope-way up Girnar Hill to visit ancient Jain temples at the summit. Explore the medieval Uparkot Fort with its ancient Buddhist caves and stepwells. Optional jeep safari to Gir National Park — the last wild habitat of Asiatic lions. Overnight Junagadh."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Junagadh → Palitana",
-        details:
-          "Drive to Palitana (180 km / approx. 4 hrs). Ascend the 3,500+ steps of Shatrunjaya Hill to the spectacular cluster of 863 Jain temples — one of the holiest Jain pilgrimage sites in the world, with panoramic views of the Gulf of Khambhat. Overnight Palitana.",
+        details: [
+          "Drive to Palitana (180 km / approx. 4 hrs). Ascend the 3,500+ steps of Shatrunjaya Hill to the spectacular cluster of 863 Jain temples — one of the holiest Jain pilgrimage sites in the world, with panoramic views of the Gulf of Khambhat. Overnight Palitana."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Palitana → Vadodara → Champaner",
-        details:
-          "Drive toward Vadodara. En route visit the UNESCO-listed Champaner-Pavagadh Archaeological Park — a remarkable blend of Hindu and Islamic heritage. Ascend Pavagadh Hill (rope-way available) for darshan at Kalika Mata Temple. Overnight Vadodara.",
+        details: [
+          "Drive toward Vadodara. En route visit the UNESCO-listed Champaner-Pavagadh Archaeological Park — a remarkable blend of Hindu and Islamic heritage. Ascend Pavagadh Hill (rope-way available) for darshan at Kalika Mata Temple. Overnight Vadodara."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Vadodara → Ahmedabad — City Sightseeing",
-        details:
-          "Drive to Ahmedabad (110 km / approx. 2 hrs). Visit Sabarmati Ashram — Mahatma Gandhi's historic residence and nerve centre of India's independence movement — the exquisitely carved Adalaj Vav Stepwell, and the latticed Sidi Saiyyed Mosque. Overnight Ahmedabad.",
+        details: [
+          "Drive to Ahmedabad (110 km / approx. 2 hrs). Visit Sabarmati Ashram — Mahatma Gandhi's historic residence and nerve centre of India's independence movement — the exquisitely carved Adalaj Vav Stepwell, and the latticed Sidi Saiyyed Mosque. Overnight Ahmedabad."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Ahmedabad — Departure",
-        details:
-          "Morning visit to the Hutheesing Jain Temple — a masterpiece of white marble craftsmanship. Browse the local handicraft market for Patola silk, Bandhani fabric, and Gujarati embroidery as mementos of this sacred journey. Transfer to Ahmedabad Airport for onward travel. Tour concludes with blessings of Lord Dwarkadhish.",
+        details: [
+          "Morning visit to the Hutheesing Jain Temple — a masterpiece of white marble craftsmanship. Browse the local handicraft market for Patola silk, Bandhani fabric, and Gujarati embroidery as mementos of this sacred journey. Transfer to Ahmedabad Airport for onward travel. Tour concludes with blessings of Lord Dwarkadhish."
+          ],
       },
     ],
 
@@ -1813,7 +1725,7 @@ export const tours = [
   //       text: "The Dalhousie trip was beautifully organised. Khajjiar truly felt like Switzerland — lush green and peaceful. Indruka Trips and Trip made every moment special.",
   //       author: "Priya Mehta",
   //       date: "Travelled October 2025",
-  //       manager: "Indruka Trips and Trip Team",
+  //       manager: "Indruka Trips and ",
   //       managerRole: "Tour Manager",
   //     },
   //     {
@@ -1821,7 +1733,7 @@ export const tours = [
   //       text: "A perfect short getaway for our family. The transfers were smooth, hotels were comfortable, and Khajjiar was breathtaking. Highly recommended!",
   //       author: "Sandeep Verma",
   //       date: "Travelled November 2025",
-  //       manager: "Indruka Trips and Trip Team",
+  //       manager: "Indruka Trips and ",
   //       managerRole: "Tour Manager",
   //     },
   //   ],
@@ -1949,7 +1861,7 @@ export const tours = [
         text: "A wonderful weekend escape to Dharamshala. McLeodGanj has such a peaceful vibe and the Bhagsu Waterfall trek was amazing. Indruka Trips and Trip handled everything perfectly.",
         author: "Neha Kapoor",
         date: "Travelled September 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -1957,7 +1869,7 @@ export const tours = [
         text: "Loved the Tibetan culture, the monastery, and the stunning mountain views from Naddi Village. Great value for a 4-day package!",
         author: "Amit Joshi",
         date: "Travelled October 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2001,29 +1913,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Dharamshala",
-        details:
-          "Depart Delhi by overnight bus/cab. Arrive Dharamshala by morning, check in to hotel and freshen up. Evening free to explore the local market. Overnight stay in Dharamshala.",
+        details: [
+          "Depart Delhi by overnight bus/cab. Arrive Dharamshala by morning, check in to hotel and freshen up. Evening free to explore the local market. Overnight stay in Dharamshala."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "McLeodGanj Sightseeing",
-        details:
-          "After breakfast, explore McLeodGanj — visit the Dalai Lama Temple (Tsuglagkhang Complex), Namgyal Monastery, Tibetan Museum, and souvenir shops. Trek to Bhagsu Nag Temple and Bhagsu Waterfall. Evening stroll through McLeodGanj market. Overnight stay.",
+        details: [
+          "After breakfast, explore McLeodGanj — visit the Dalai Lama Temple (Tsuglagkhang Complex), Namgyal Monastery, Tibetan Museum, and souvenir shops. Trek to Bhagsu Nag Temple and Bhagsu Waterfall. Evening stroll through McLeodGanj market. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Dharamshala Local Sightseeing",
-        details:
-          "After breakfast, visit Dal Lake (holy lake in the deodar forest), St. John's Church in the Wilderness (colonial heritage), Naddi Village viewpoint for panoramic Dhauladhar mountain views, and the War Memorial. Evening at leisure. Overnight stay.",
+        details: [
+          "After breakfast, visit Dal Lake (holy lake in the deodar forest), St. John's Church in the Wilderness (colonial heritage), Naddi Village viewpoint for panoramic Dhauladhar mountain views, and the War Memorial. Evening at leisure. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Dharamshala → Delhi — Departure",
-        details:
-          "After breakfast, check out from hotel. Drive back to Delhi. Arrive Delhi by evening/night. Tour concludes.",
+        details: [
+          "After breakfast, check out from hotel. Drive back to Delhi. Arrive Delhi by evening/night. Tour concludes."
+          ],
       },
     ],
 
@@ -2082,7 +1998,7 @@ export const tours = [
       { title: "Rohtang Pass snow excursion" },
     ],
 
-    tourManagerCompany: "Indruka Trips and Trip",
+    tourManagerCompany: "Indruka Trips and ",
 
     heroImage: {
       src: "https://www.namasteindiatrip.com/wp-content/uploads/2025/10/exotic-himachal-pardesh.webp",
@@ -2095,7 +2011,7 @@ export const tours = [
         text: "From Shimla's colonial charm to Rohtang's snow, this 5-day tour packed in everything. Indruka Trips and Trip's planning was flawless.",
         author: "Rohit Agarwal",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2103,7 +2019,7 @@ export const tours = [
         text: "Rohtang Pass was the highlight! Seeing snow for the first time was magical. Our driver was professional and the hotels were very comfortable.",
         author: "Sunita Sharma",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2145,36 +2061,41 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi early morning and drive to Shimla. Arrive and check in to hotel. Evening stroll on Mall Road, visit Christ Church and the Ridge. Overnight stay in Shimla.",
+        details: [
+          "Depart Delhi early morning and drive to Shimla. Arrive and check in to hotel. Evening stroll on Mall Road, visit Christ Church and the Ridge. Overnight stay in Shimla."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing → Manali",
-        details:
-          "After breakfast, visit Kufri (snow activities, Himalayan Zoo), Jakhu Temple, and Viceregal Lodge. Post lunch drive to Manali via Kullu — stop at Pandoh Dam and Hanogi Mata Temple. Arrive Manali, check in, overnight stay.",
+        details: [
+          "After breakfast, visit Kufri (snow activities, Himalayan Zoo), Jakhu Temple, and Viceregal Lodge. Post lunch drive to Manali via Kullu — stop at Pandoh Dam and Hanogi Mata Temple. Arrive Manali, check in, overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Manali Local Sightseeing",
-        details:
-          "After breakfast, explore Manali — visit Hadimba Devi Temple (built 1553), Vashisht Temple & sulphur hot springs, Tibetan Monastery, Club House, and Van Vihar. Evening free to shop at Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, explore Manali — visit Hadimba Devi Temple (built 1553), Vashisht Temple & sulphur hot springs, Tibetan Monastery, Club House, and Van Vihar. Evening free to shop at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — gateway to Lahaul & Spiti. En route stop at Nehru Kund, Kothi Gorge, Gulaba, Rahalla Falls, and Marhi. Enjoy snow activities at Rohtang. Return to Manali by evening. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — gateway to Lahaul & Spiti. En route stop at Nehru Kund, Kothi Gorge, Gulaba, Rahalla Falls, and Marhi. Enjoy snow activities at Rohtang. Return to Manali by evening. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Manali → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive Delhi late evening. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive Delhi late evening. Tour concludes."
+          ],
       },
     ],
 
@@ -2249,7 +2170,7 @@ export const tours = [
         text: "Best trip of our life! Shimla's colonial beauty and Manali's adventure were the perfect combo. Everything was well organised by Indruka Trips and Trip.",
         author: "Deepak Gupta",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2257,7 +2178,7 @@ export const tours = [
         text: "The Rohtang Pass experience was unforgettable. Our family had a wonderful time and we will definitely book again with Indruka Trips and Trip.",
         author: "Kavita Singh",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2299,43 +2220,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi early morning, drive to Shimla. Arrive, check in to hotel. Evening at Mall Road — stroll past Christ Church and the Ridge. Overnight stay in Shimla.",
+        details: [
+          "Depart Delhi early morning, drive to Shimla. Arrive, check in to hotel. Evening at Mall Road — stroll past Christ Church and the Ridge. Overnight stay in Shimla."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing",
-        details:
-          "After breakfast, full-day sightseeing — Kufri (Himalayan Zoo, horse riding, snow activities), Jakhu Temple, Viceregal Lodge, Scandal Point, Sankat Mochan Temple, and Christ Church. Evening free on Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, full-day sightseeing — Kufri (Himalayan Zoo, horse riding, snow activities), Jakhu Temple, Viceregal Lodge, Scandal Point, Sankat Mochan Temple, and Christ Church. Evening free on Mall Road. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla → Manali via Kullu",
-        details:
-          "After breakfast, check out and drive to Manali via Kullu. En route visit Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and enjoy river rafting on Beas River at Kullu (optional). Arrive Manali, check in. Overnight stay.",
+        details: [
+          "After breakfast, check out and drive to Manali via Kullu. En route visit Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and enjoy river rafting on Beas River at Kullu (optional). Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "After breakfast, visit Hadimba Devi Temple, Club House, Vashisht Temple & sulphur hot springs, Tibetan Monastery, and Van Vihar. Evening free at Manali Mall Road for shopping. Overnight stay.",
+        details: [
+          "After breakfast, visit Hadimba Devi Temple, Club House, Vashisht Temple & sulphur hot springs, Tibetan Monastery, and Van Vihar. Evening free at Manali Mall Road for shopping. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — stopping at Nehru Kund, Kothi Gorge, Gulaba, Rahalla Falls, Marhi, and Rani Nala. Enjoy snow scooter rides and skiing at Rohtang (up to snow line if closed). Return to Manali. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — stopping at Nehru Kund, Kothi Gorge, Gulaba, Rahalla Falls, Marhi, and Rani Nala. Enjoy snow scooter rides and skiing at Rohtang (up to snow line if closed). Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Manali → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive Delhi late evening/night. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive Delhi late evening/night. Tour concludes."
+          ],
       },
     ],
 
@@ -2410,7 +2337,7 @@ export const tours = [
         text: "Seven days of pure magic! Shimla and Manali exceeded all our expectations. The Solang Valley adventure was an absolute highlight.",
         author: "Vikas Malhotra",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2418,7 +2345,7 @@ export const tours = [
         text: "Indruka Trips and Trip took care of every detail. Comfortable hotels, amazing sightseeing, and a very professional driver. Would book again!",
         author: "Anjali Rawat",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2460,50 +2387,57 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi, drive to Shimla. Check in to hotel. Evening stroll on Mall Road and visit Christ Church. Overnight stay in Shimla.",
+        details: [
+          "Depart Delhi, drive to Shimla. Check in to hotel. Evening stroll on Mall Road and visit Christ Church. Overnight stay in Shimla."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing",
-        details:
-          "After breakfast, full-day sightseeing — Kufri, Naldehra Golf Course, Indira Tourist Bungalow, Jakhu Temple, Viceregal Lodge, Scandal Point, and Christ Church. Evening at Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, full-day sightseeing — Kufri, Naldehra Golf Course, Indira Tourist Bungalow, Jakhu Temple, Viceregal Lodge, Scandal Point, and Christ Church. Evening at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla → Manali via Kullu",
-        details:
-          "After breakfast, check out and drive to Manali via Kullu — en route Pandoh Dam, Sundernagar Lake, and Hanogi Mata Temple. Arrive Manali, check in. Overnight stay.",
+        details: [
+          "After breakfast, check out and drive to Manali via Kullu — en route Pandoh Dam, Sundernagar Lake, and Hanogi Mata Temple. Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "After breakfast, explore Manali — Hadimba Temple, Vashisht Temple & hot springs, Tibetan Monastery, Club House, Van Vihar, and Mall Road shopping. Overnight stay.",
+        details: [
+          "After breakfast, explore Manali — Hadimba Temple, Vashisht Temple & hot springs, Tibetan Monastery, Club House, Van Vihar, and Mall Road shopping. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Solang Valley Adventure",
-        details:
-          "After breakfast, full day at Solang Valley — enjoy paragliding, zorbing, ropeway, and horse riding amidst snow-capped peaks. Return to Manali by evening. Overnight stay.",
+        details: [
+          "After breakfast, full day at Solang Valley — enjoy paragliding, zorbing, ropeway, and horse riding amidst snow-capped peaks. Return to Manali by evening. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Enjoy snow scooter rides and glacier views. Return to Manali. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Enjoy snow scooter rides and glacier views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Manali → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive late evening. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive late evening. Tour concludes."
+          ],
       },
     ],
 
@@ -2578,7 +2512,7 @@ export const tours = [
         text: "A deeply spiritual journey. The Vaishno Devi darshan was a life-changing experience and Dharamshala's peaceful monasteries added another dimension to our trip.",
         author: "Sanjay Tiwari",
         date: "Travelled October 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2586,7 +2520,7 @@ export const tours = [
         text: "The Golden Temple at Amritsar was divine, and the Wagah Border ceremony was thrilling. Indruka Trips and Trip organised everything seamlessly.",
         author: "Meena Chauhan",
         date: "Travelled September 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2628,57 +2562,65 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Amritsar",
-        details:
-          "Arrive Amritsar, check in to hotel. Evening visit the magnificent Golden Temple — attend Palki Sahib Ceremony. Overnight stay in Amritsar.",
+        details: [
+          "Arrive Amritsar, check in to hotel. Evening visit the magnificent Golden Temple — attend Palki Sahib Ceremony. Overnight stay in Amritsar."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Amritsar Sightseeing",
-        details:
-          "After breakfast, visit Jallianwala Bagh, Durgiana Temple, and Gobindgarh Fort. Evening at the Wagah Border for the Beating Retreat ceremony. Overnight stay in Amritsar.",
+        details: [
+          "After breakfast, visit Jallianwala Bagh, Durgiana Temple, and Gobindgarh Fort. Evening at the Wagah Border for the Beating Retreat ceremony. Overnight stay in Amritsar."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Amritsar → Dharamshala",
-        details:
-          "After breakfast, drive to Dharamshala (approx. 5 hrs). Check in to hotel, freshen up. Evening explore local market. Overnight stay in Dharamshala.",
+        details: [
+          "After breakfast, drive to Dharamshala (approx. 5 hrs). Check in to hotel, freshen up. Evening explore local market. Overnight stay in Dharamshala."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Dharamshala / McLeodGanj Sightseeing",
-        details:
-          "After breakfast, explore McLeodGanj — Dalai Lama Temple (Tsuglagkhang), Namgyal Monastery, Tibet Museum, Bhagsu Nag Temple, Bhagsu Waterfall, and Dal Lake. Overnight stay.",
+        details: [
+          "After breakfast, explore McLeodGanj — Dalai Lama Temple (Tsuglagkhang), Namgyal Monastery, Tibet Museum, Bhagsu Nag Temple, Bhagsu Waterfall, and Dal Lake. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Dharamshala → Katra",
-        details:
-          "After breakfast, drive to Katra (base camp for Vaishno Devi, approx. 5–6 hrs). Check in to hotel. Obtain yatra slip for Vaishno Devi darshan. Overnight stay in Katra.",
+        details: [
+          "After breakfast, drive to Katra (base camp for Vaishno Devi, approx. 5–6 hrs). Check in to hotel. Obtain yatra slip for Vaishno Devi darshan. Overnight stay in Katra."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Vaishno Devi Darshan",
-        details:
-          "Early morning, commence the holy trek to Vaishno Devi Shrine (approx. 14 km one way via Banganga, Charan Paduka, Adhkwari). Seek blessings at the Trikuta cave shrine. Return to Katra by evening. Overnight stay.",
+        details: [
+          "Early morning, commence the holy trek to Vaishno Devi Shrine (approx. 14 km one way via Banganga, Charan Paduka, Adhkwari). Seek blessings at the Trikuta cave shrine. Return to Katra by evening. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Katra Local Sightseeing",
-        details:
-          "After breakfast and rest, visit Shiv Khori Temple and Bhairavnath Temple. Evening leisure time in Katra market. Overnight stay.",
+        details: [
+          "After breakfast and rest, visit Shiv Khori Temple and Bhairavnath Temple. Evening leisure time in Katra market. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Katra → Jammu — Departure",
-        details:
-          "After breakfast, drive to Jammu (approx. 1.5 hrs). Enroute visit Raghunath Temple. Drop at Jammu Airport / Railway Station for onward journey. Tour concludes.",
+        details: [
+          "After breakfast, drive to Jammu (approx. 1.5 hrs). Enroute visit Raghunath Temple. Drop at Jammu Airport / Railway Station for onward journey. Tour concludes."
+          ],
       },
     ],
 
@@ -2753,7 +2695,7 @@ export const tours = [
         text: "The Delhi Darshan combined with Himachal was a brilliant itinerary. Saw iconic Delhi monuments and then the majestic Himalayas — perfect for our family tour.",
         author: "Rajesh Bhatia",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2761,7 +2703,7 @@ export const tours = [
         text: "Excellent arrangements throughout. Rohtang Pass was simply breathtaking. Indruka Trips and Trip's team was always responsive and helpful.",
         author: "Pooja Nair",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2803,64 +2745,73 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Delhi",
-        details:
-          "Arrive Delhi, check in to hotel. Welcome briefing. Evening at leisure. Overnight stay in Delhi.",
+        details: [
+          "Arrive Delhi, check in to hotel. Welcome briefing. Evening at leisure. Overnight stay in Delhi."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Delhi Darshan",
-        details:
-          "After breakfast, full day Delhi sightseeing — India Gate, Humayun's Tomb, Qutub Minar, Red Fort, Jama Masjid, Lotus Temple, Akshardham, and Connaught Place. Overnight stay in Delhi.",
+        details: [
+          "After breakfast, full day Delhi sightseeing — India Gate, Humayun's Tomb, Qutub Minar, Red Fort, Jama Masjid, Lotus Temple, Akshardham, and Connaught Place. Overnight stay in Delhi."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Delhi → Manali",
-        details:
-          "After breakfast, drive to Manali via Kullu (approx. 12–14 hrs). En route stop at Pandoh Dam, Sundernagar Lake, and Hanogi Mata Temple. Arrive Manali, check in. Overnight stay.",
+        details: [
+          "After breakfast, drive to Manali via Kullu (approx. 12–14 hrs). En route stop at Pandoh Dam, Sundernagar Lake, and Hanogi Mata Temple. Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "After breakfast, visit Hadimba Devi Temple, Club House, Vashisht Temple & sulphur hot springs, Tibetan Monastery, and Van Vihar. Evening shopping at Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, visit Hadimba Devi Temple, Club House, Vashisht Temple & sulphur hot springs, Tibetan Monastery, and Van Vihar. Evening shopping at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Solang Valley Adventure",
-        details:
-          "After breakfast, full day at Solang Valley — paragliding, zorbing, ropeway, and skiing amidst stunning mountain scenery. Return to Manali. Overnight stay.",
+        details: [
+          "After breakfast, full day at Solang Valley — paragliding, zorbing, ropeway, and skiing amidst stunning mountain scenery. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Enjoy snow sports and panoramic glacier views. Return to Manali. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Enjoy snow sports and panoramic glacier views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Manali → Shimla",
-        details:
-          "After breakfast, drive to Shimla via Kullu (approx. 7–8 hrs). Arrive Shimla, check in. Evening stroll on Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, drive to Shimla via Kullu (approx. 7–8 hrs). Arrive Shimla, check in. Evening stroll on Mall Road. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Shimla Sightseeing",
-        details:
-          "After breakfast, visit Kufri, Jakhu Temple, Viceregal Lodge, Scandal Point, and Christ Church. Afternoon free to explore the famous Shimla Mall Road market. Overnight stay.",
+        details: [
+          "After breakfast, visit Kufri, Jakhu Temple, Viceregal Lodge, Scandal Point, and Christ Church. Afternoon free to explore the famous Shimla Mall Road market. Overnight stay."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Shimla → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening. Tour concludes."
+          ],
       },
     ],
 
@@ -2935,7 +2886,7 @@ export const tours = [
         text: "Three iconic destinations — Shimla, Manali, and Dharamshala — all in one perfect trip. Indruka Trips and Trip gave us memories we'll cherish forever.",
         author: "Gaurav Khanna",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -2943,7 +2894,7 @@ export const tours = [
         text: "The diversity of this tour was incredible — snow at Rohtang, spirituality at McLeodGanj, and colonial charm at Shimla. Perfectly organised.",
         author: "Ritu Sharma",
         date: "Travelled October 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -2986,64 +2937,73 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi, drive to Shimla. Check in to hotel. Evening at Mall Road, Christ Church, and the Ridge. Overnight stay.",
+        details: [
+          "Depart Delhi, drive to Shimla. Check in to hotel. Evening at Mall Road, Christ Church, and the Ridge. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing",
-        details:
-          "After breakfast, visit Kufri, Jakhu Temple, Naldehra Golf Course, Viceregal Lodge, Scandal Point, Sankat Mochan Temple, and Christ Church. Evening free at Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, visit Kufri, Jakhu Temple, Naldehra Golf Course, Viceregal Lodge, Scandal Point, Sankat Mochan Temple, and Christ Church. Evening free at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla → Manali via Kullu",
-        details:
-          "After breakfast, drive to Manali via Kullu — en route Pandoh Dam, Hanogi Mata Temple, river rafting on Beas (optional). Arrive Manali, check in. Overnight stay.",
+        details: [
+          "After breakfast, drive to Manali via Kullu — en route Pandoh Dam, Hanogi Mata Temple, river rafting on Beas (optional). Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "After breakfast, visit Hadimba Temple, Vashisht Hot Springs, Club House, Tibetan Monastery, Van Vihar, and Mall Road. Overnight stay.",
+        details: [
+          "After breakfast, visit Hadimba Temple, Vashisht Hot Springs, Club House, Tibetan Monastery, Van Vihar, and Mall Road. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Solang Valley Adventure",
-        details:
-          "After breakfast, full day at Solang Valley — paragliding, zorbing, ropeway, and horse riding. Breathtaking views of snow-capped peaks. Return to Manali. Overnight stay.",
+        details: [
+          "After breakfast, full day at Solang Valley — paragliding, zorbing, ropeway, and horse riding. Breathtaking views of snow-capped peaks. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Snow activities and glacier views. Return to Manali. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Snow activities and glacier views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Manali → Dharamshala",
-        details:
-          "After breakfast, drive to Dharamshala via Palampur (approx. 7–8 hrs). Check in to hotel. Evening at leisure. Overnight stay.",
+        details: [
+          "After breakfast, drive to Dharamshala via Palampur (approx. 7–8 hrs). Check in to hotel. Evening at leisure. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Dharamshala / McLeodGanj Sightseeing",
-        details:
-          "After breakfast, explore McLeodGanj — Dalai Lama Temple, Namgyal Monastery, Tibet Museum, Bhagsu Nag Temple, Bhagsu Waterfall, Dal Lake, and Naddi Village viewpoint. Overnight stay.",
+        details: [
+          "After breakfast, explore McLeodGanj — Dalai Lama Temple, Namgyal Monastery, Tibet Museum, Bhagsu Nag Temple, Bhagsu Waterfall, Dal Lake, and Naddi Village viewpoint. Overnight stay."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Dharamshala → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening/night. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening/night. Tour concludes."
+          ],
       },
     ],
 
@@ -3115,7 +3075,7 @@ export const tours = [
         text: "10 days covering the best of Himachal — Shimla, Manali, Dalhousie, and Khajjiar. This is the most comprehensive and well-priced package we found.",
         author: "Arjun Mehta",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3123,7 +3083,7 @@ export const tours = [
         text: "Khajjiar was the surprise of the trip — such a magical meadow. Combined with Rohtang's snow, it was an unforgettable 10 days with Indruka Trips and Trip.",
         author: "Vandana Sood",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -3167,71 +3127,81 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi, drive to Shimla. Check in, stroll Mall Road and Christ Church. Overnight stay.",
+        details: [
+          "Depart Delhi, drive to Shimla. Check in, stroll Mall Road and Christ Church. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing",
-        details:
-          "Kufri (Himalayan Zoo, snow activities), Jakhu Temple, Viceregal Lodge, Scandal Point, and Mall Road. Overnight stay.",
+        details: [
+          "Kufri (Himalayan Zoo, snow activities), Jakhu Temple, Viceregal Lodge, Scandal Point, and Mall Road. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla → Manali via Kullu",
-        details:
-          "Drive to Manali via Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and Kullu (river rafting optional). Arrive Manali, check in. Overnight stay.",
+        details: [
+          "Drive to Manali via Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and Kullu (river rafting optional). Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "Hadimba Temple, Vashisht Hot Springs, Club House, Tibetan Monastery, Van Vihar, and Mall Road shopping. Overnight stay.",
+        details: [
+          "Hadimba Temple, Vashisht Hot Springs, Club House, Tibetan Monastery, Van Vihar, and Mall Road shopping. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Solang Valley Adventure",
-        details:
-          "Full day at Solang Valley — paragliding, zorbing, ropeway, horse riding amidst snow-capped peaks. Overnight stay in Manali.",
+        details: [
+          "Full day at Solang Valley — paragliding, zorbing, ropeway, horse riding amidst snow-capped peaks. Overnight stay in Manali."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Rohtang Pass Excursion",
-        details:
-          "Kothi Gorge, Gulaba, Rahalla Falls, Marhi, Rani Nala, and Rohtang Pass — snow activities and glacier views. Return to Manali. Overnight stay.",
+        details: [
+          "Kothi Gorge, Gulaba, Rahalla Falls, Marhi, Rani Nala, and Rohtang Pass — snow activities and glacier views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Manali → Dalhousie",
-        details:
-          "After breakfast, drive to Dalhousie via Pathankot (approx. 8–9 hrs). Check in, explore colonial town at leisure. Overnight stay.",
+        details: [
+          "After breakfast, drive to Dalhousie via Pathankot (approx. 8–9 hrs). Check in, explore colonial town at leisure. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Dalhousie Sightseeing",
-        details:
-          "Panchpula waterfalls, Subhash Baoli, Bhulwani Mata Mandir, Kalatop Wildlife Sanctuary nature walk, and Satdhara Falls. Overnight stay.",
+        details: [
+          "Panchpula waterfalls, Subhash Baoli, Bhulwani Mata Mandir, Kalatop Wildlife Sanctuary nature walk, and Satdhara Falls. Overnight stay."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Khajjiar Excursion",
-        details:
-          "After breakfast, excursion to Khajjiar — lush green meadow, Khajjiar Lake, horse riding and zorbing. Return to Dalhousie. Overnight stay.",
+        details: [
+          "After breakfast, excursion to Khajjiar — lush green meadow, Khajjiar Lake, horse riding and zorbing. Return to Dalhousie. Overnight stay."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Dalhousie → Delhi — Departure",
-        details:
-          "After breakfast, drive back to Delhi. Arrive Delhi late evening. Tour concludes.",
+        details: [
+          "After breakfast, drive back to Delhi. Arrive Delhi late evening. Tour concludes."
+          ],
       },
     ],
 
@@ -3306,7 +3276,7 @@ export const tours = [
         text: "Our honeymoon was absolutely dreamy! Shimla's sunsets, Manali's snow, and Dharamshala's peace — Indruka Trips and Trip made every moment magical for us.",
         author: "Rahul & Priya Verma",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3314,7 +3284,7 @@ export const tours = [
         text: "The honeymoon suite upgrades and special room decorations were a lovely surprise. Indruka Trips and Trip clearly goes the extra mile for couples.",
         author: "Karan & Simran Sethi",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -3357,71 +3327,81 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi, drive to Shimla. Check in, romantic evening walk on Mall Road and Christ Church. Overnight stay.",
+        details: [
+          "Depart Delhi, drive to Shimla. Check in, romantic evening walk on Mall Road and Christ Church. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing",
-        details:
-          "Kufri (snow activities & horse riding), Jakhu Temple, Viceregal Lodge, Scandal Point at sunset. Evening at Mall Road. Overnight stay.",
+        details: [
+          "Kufri (snow activities & horse riding), Jakhu Temple, Viceregal Lodge, Scandal Point at sunset. Evening at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla → Manali via Kullu",
-        details:
-          "Drive through scenic Kullu valley — Pandoh Dam, Hanogi Mata Temple. Optional river rafting at Beas, Kullu. Arrive Manali, check in. Overnight stay.",
+        details: [
+          "Drive through scenic Kullu valley — Pandoh Dam, Hanogi Mata Temple. Optional river rafting at Beas, Kullu. Arrive Manali, check in. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "Hadimba Temple (romantic forest setting), Vashisht Hot Springs, Tibetan Monastery, Van Vihar, and leisurely evening at Mall Road. Overnight stay.",
+        details: [
+          "Hadimba Temple (romantic forest setting), Vashisht Hot Springs, Tibetan Monastery, Van Vihar, and leisurely evening at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Solang Valley — Couple's Adventure",
-        details:
-          "Full day at Solang Valley — enjoy paragliding, zorbing, ropeway rides together. Snow-capped peak backdrop perfect for couple photos. Overnight stay.",
+        details: [
+          "Full day at Solang Valley — enjoy paragliding, zorbing, ropeway rides together. Snow-capped peak backdrop perfect for couple photos. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Rohtang Pass Excursion",
-        details:
-          "Scenic snow excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls. Snow walk and panoramic Himalayan views. Return to Manali. Overnight stay.",
+        details: [
+          "Scenic snow excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls. Snow walk and panoramic Himalayan views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Manali Leisure Day",
-        details:
-          "Leisurely day at leisure — optional spa, café hopping in Old Manali, or nature walk along Beas River. Candlelit dinner at a riverside restaurant. Overnight stay.",
+        details: [
+          "Leisurely day at leisure — optional spa, café hopping in Old Manali, or nature walk along Beas River. Candlelit dinner at a riverside restaurant. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Manali → Dharamshala",
-        details:
-          "Drive to Dharamshala via Palampur (approx. 7–8 hrs). Check in to hotel. Evening stroll in McLeodGanj. Overnight stay.",
+        details: [
+          "Drive to Dharamshala via Palampur (approx. 7–8 hrs). Check in to hotel. Evening stroll in McLeodGanj. Overnight stay."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Dharamshala / McLeodGanj Sightseeing",
-        details:
-          "Dalai Lama Temple, Bhagsu Nag Temple & Bhagsu Waterfall trek, Dal Lake, and Naddi Village viewpoint. Romantic sunset view of Dhauladhar range. Overnight stay.",
+        details: [
+          "Dalai Lama Temple, Bhagsu Nag Temple & Bhagsu Waterfall trek, Dal Lake, and Naddi Village viewpoint. Romantic sunset view of Dhauladhar range. Overnight stay."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Dharamshala → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening/night. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi. Arrive Delhi by evening/night. Tour concludes."
+          ],
       },
     ],
 
@@ -3493,7 +3473,7 @@ export const tours = [
         text: "11 days that felt like a lifetime of memories. From Shimla's colonial lanes to Dalhousie's misty evenings — every destination was stunning. Brilliant package!",
         author: "Nitin Goel",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3501,7 +3481,7 @@ export const tours = [
         text: "The most comprehensive Himachal tour we could find. Indruka Trips and Trip's team was always a call away. The hotels were great and drivers were punctual.",
         author: "Swati Bhatt",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -3544,78 +3524,89 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi early morning, drive to Shimla. Check in to hotel. Evening stroll on Mall Road. Overnight stay.",
+        details: [
+          "Depart Delhi early morning, drive to Shimla. Check in to hotel. Evening stroll on Mall Road. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Local Sightseeing",
-        details:
-          "Kufri (Himalayan Zoo, snow activities, horse riding), Jakhu Temple, and Viceregal Lodge. Evening at Scandal Point. Overnight stay.",
+        details: [
+          "Kufri (Himalayan Zoo, snow activities, horse riding), Jakhu Temple, and Viceregal Lodge. Evening at Scandal Point. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Shimla Extended Sightseeing",
-        details:
-          "Naldehra Golf Course, Indira Tourist Bungalow, Chail (optional drive), Christ Church, and afternoon free at Mall Road market. Overnight stay.",
+        details: [
+          "Naldehra Golf Course, Indira Tourist Bungalow, Chail (optional drive), Christ Church, and afternoon free at Mall Road market. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Shimla → Manali via Kullu",
-        details:
-          "After breakfast, drive to Manali via Kullu — Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and Kullu river rafting (optional). Check in Manali. Overnight stay.",
+        details: [
+          "After breakfast, drive to Manali via Kullu — Pandoh Dam, Sundernagar Lake, Hanogi Mata Temple, and Kullu river rafting (optional). Check in Manali. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Manali Local Sightseeing",
-        details:
-          "Hadimba Devi Temple, Vashisht Temple & hot springs, Tibetan Monastery, Club House, and Van Vihar. Evening at Mall Road. Overnight stay.",
+        details: [
+          "Hadimba Devi Temple, Vashisht Temple & hot springs, Tibetan Monastery, Club House, and Van Vihar. Evening at Mall Road. Overnight stay."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Solang Valley Adventure",
-        details:
-          "Full day at Solang Valley — paragliding, zorbing, ropeway, and horse riding. Return to Manali by evening. Overnight stay.",
+        details: [
+          "Full day at Solang Valley — paragliding, zorbing, ropeway, and horse riding. Return to Manali by evening. Overnight stay."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Rohtang Pass Excursion",
-        details:
-          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Snow sports and glacier views. Return to Manali. Overnight stay.",
+        details: [
+          "Full day excursion to Rohtang Pass — Kothi Gorge, Gulaba, Rahalla Falls, Marhi. Snow sports and glacier views. Return to Manali. Overnight stay."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Manali Leisure / Departure to Dalhousie",
-        details:
-          "After leisure morning in Manali (optional Old Manali walk), drive towards Dalhousie via Pathankot. Arrive Dalhousie by evening, check in. Overnight stay.",
+        details: [
+          "After leisure morning in Manali (optional Old Manali walk), drive towards Dalhousie via Pathankot. Arrive Dalhousie by evening, check in. Overnight stay."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Dalhousie Sightseeing",
-        details:
-          "Panchpula waterfalls & Sardar Ajit Singh monument, Subhash Baoli, Bhulwani Mata Mandir, Kalatop Wildlife Sanctuary, and Satdhara Falls. Overnight stay.",
+        details: [
+          "Panchpula waterfalls & Sardar Ajit Singh monument, Subhash Baoli, Bhulwani Mata Mandir, Kalatop Wildlife Sanctuary, and Satdhara Falls. Overnight stay."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Khajjiar Excursion",
-        details:
-          "After breakfast, excursion to Khajjiar — the 'Mini Switzerland of India'. Lush meadows, Khajjiar Lake, and horse riding. Return to Dalhousie. Overnight stay.",
+        details: [
+          "After breakfast, excursion to Khajjiar — the 'Mini Switzerland of India'. Lush meadows, Khajjiar Lake, and horse riding. Return to Dalhousie. Overnight stay."
+          ],
       },
       {
         day: 11,
         date: "Day 11",
         title: "Dalhousie → Delhi — Departure",
-        details:
-          "After breakfast, check out and drive back to Delhi via Pathankot. Arrive Delhi late evening. Tour concludes.",
+        details: [
+          "After breakfast, check out and drive back to Delhi via Pathankot. Arrive Delhi late evening. Tour concludes."
+          ],
       },
     ],
 
@@ -3689,7 +3680,7 @@ export const tours = [
         text: "The perfect weekend escape! Indruka Trips and Trip covered all the best beaches and sights in Goa. The hotel was beachside and the food was amazing.",
         author: "Neeraj Kapoor",
         date: "Travelled December 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3697,7 +3688,7 @@ export const tours = [
         text: "We had a blast exploring North and South Goa. Very well-organised package with comfortable transfers and a great guide. Highly recommend!",
         author: "Sneha Joshi",
         date: "Travelled November 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -3742,29 +3733,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Goa",
-        details:
-          "Arrive at Goa airport/railway station. Our representative will transfer you to your hotel. Check in, freshen up, and enjoy breakfast. Evening drive to the nearest beach to enjoy the sunset and Goa's famous nightlife scene. Dinner at a beach shack. Overnight stay in Goa.",
+        details: [
+          "Arrive at Goa airport/railway station. Our representative will transfer you to your hotel. Check in, freshen up, and enjoy breakfast. Evening drive to the nearest beach to enjoy the sunset and Goa's famous nightlife scene. Dinner at a beach shack. Overnight stay in Goa."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Sightseeing",
-        details:
-          "After breakfast, full-day North Goa tour — visit Mapusa city (vibrant market, St. Jerome Church, Hanuman Temple), Vagator Beach, Anjuna Beach, Calangute Beach, and Fort Aguada (17th-century Portuguese fort overlooking the Arabian Sea). Evening at leisure at the beach. Overnight stay.",
+        details: [
+          "After breakfast, full-day North Goa tour — visit Mapusa city (vibrant market, St. Jerome Church, Hanuman Temple), Vagator Beach, Anjuna Beach, Calangute Beach, and Fort Aguada (17th-century Portuguese fort overlooking the Arabian Sea). Evening at leisure at the beach. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "South Goa Sightseeing",
-        details:
-          "After breakfast, explore South Goa — tranquil beaches of Dona Paula, Miramar, and Colva. Visit the UNESCO World Heritage Site Basilica of Bom Jesus (housing the body of St. Francis Xavier), Se Cathedral, and Shri Mangeshi Temple. Mandovi River Cruise in the evening. Overnight stay.",
+        details: [
+          "After breakfast, explore South Goa — tranquil beaches of Dona Paula, Miramar, and Colva. Visit the UNESCO World Heritage Site Basilica of Bom Jesus (housing the body of St. Francis Xavier), Se Cathedral, and Shri Mangeshi Temple. Mandovi River Cruise in the evening. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Goa → Delhi — Departure",
-        details:
-          "After breakfast, enjoy leisure time at the beach or explore the local market for souvenirs (cashews, feni, spices). Transfer to Goa airport/railway station for your onward journey. Tour concludes.",
+        details: [
+          "After breakfast, enjoy leisure time at the beach or explore the local market for souvenirs (cashews, feni, spices). Transfer to Goa airport/railway station for your onward journey. Tour concludes."
+          ],
       },
     ],
 
@@ -3836,7 +3831,7 @@ export const tours = [
         text: "Our honeymoon in Goa was absolutely magical! The beachside hotel, the candlelit dinner, and the Mandovi cruise — Indruka Trips and Trip made everything special for us.",
         author: "Rahul & Divya Sharma",
         date: "Travelled January 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3844,7 +3839,7 @@ export const tours = [
         text: "The room was beautifully decorated for our honeymoon arrival. Goa's beaches are just stunning and the South Goa churches add a lovely heritage touch. Perfect trip!",
         author: "Aryan & Simran Malhotra",
         date: "Travelled December 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -3886,29 +3881,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Goa — Honeymoon Check-In",
-        details:
-          "Arrive at Goa airport/railway station. Transfer to your beachside hotel. Check in to your specially decorated honeymoon room. Freshen up and head to the nearest beach for a romantic sunset walk. Candlelit dinner at a beach shack. Overnight stay.",
+        details: [
+          "Arrive at Goa airport/railway station. Transfer to your beachside hotel. Check in to your specially decorated honeymoon room. Freshen up and head to the nearest beach for a romantic sunset walk. Candlelit dinner at a beach shack. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Sightseeing",
-        details:
-          "After breakfast, explore North Goa — Mapusa market (St. Jerome Church, Bodgeshwar Mandir, Maruti Mandir), then relax at Anjuna, Vagator, and Calangute beaches. Visit Fort Aguada for panoramic sea views. Evening at leisure on the beach with cocktails at a sunset shack. Overnight stay.",
+        details: [
+          "After breakfast, explore North Goa — Mapusa market (St. Jerome Church, Bodgeshwar Mandir, Maruti Mandir), then relax at Anjuna, Vagator, and Calangute beaches. Visit Fort Aguada for panoramic sea views. Evening at leisure on the beach with cocktails at a sunset shack. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "South Goa & Mandovi River Cruise",
-        details:
-          "After breakfast, tour South Goa — Miramar Beach, Dona Paula viewpoint, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Evening scenic Mandovi River Cruise with live Goan music, dance, and dinner. Overnight stay.",
+        details: [
+          "After breakfast, tour South Goa — Miramar Beach, Dona Paula viewpoint, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Evening scenic Mandovi River Cruise with live Goan music, dance, and dinner. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Goa → Delhi — Departure",
-        details:
-          "After breakfast, leisure time for a last beach walk or shopping for souvenirs (spices, cashews, feni). Transfer to Goa airport/railway station. Tour concludes.",
+        details: [
+          "After breakfast, leisure time for a last beach walk or shopping for souvenirs (spices, cashews, feni). Transfer to Goa airport/railway station. Tour concludes."
+          ],
       },
     ],
 
@@ -3980,7 +3979,7 @@ export const tours = [
         text: "The water sports day at Baga was incredible — parasailing, banana boat, and jet ski all in one morning! Indruka Trips and Trip planned the adventure perfectly.",
         author: "Karan Mehta",
         date: "Travelled October 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -3988,7 +3987,7 @@ export const tours = [
         text: "The Dudhsagar waterfall jeep safari was a highlight — stunning! The scuba diving experience at Grand Island was also world-class. Great adventure package!",
         author: "Prateek Singh",
         date: "Travelled November 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4030,29 +4029,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Goa",
-        details:
-          "Arrive at Goa airport/railway station, transfer to hotel. Check in, freshen up. Evening explore the beach and enjoy Goa's famous shack culture — seafood dinner and nightlife. Overnight stay.",
+        details: [
+          "Arrive at Goa airport/railway station, transfer to hotel. Check in, freshen up. Evening explore the beach and enjoy Goa's famous shack culture — seafood dinner and nightlife. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Water Sports Day",
-        details:
-          "After breakfast, head to Baga/Calangute Beach for a full water sports session — Jet Ski, Parasailing, Banana Boat Ride, Water Skiing, and Speed Boat. Afternoon: Bungee Jumping and ATV rides (at own cost). Visit Fort Aguada. Evening flea market at Anjuna or Arpora. Overnight stay.",
+        details: [
+          "After breakfast, head to Baga/Calangute Beach for a full water sports session — Jet Ski, Parasailing, Banana Boat Ride, Water Skiing, and Speed Boat. Afternoon: Bungee Jumping and ATV rides (at own cost). Visit Fort Aguada. Evening flea market at Anjuna or Arpora. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Grand Island Scuba Diving & Dudhsagar Excursion",
-        details:
-          "Morning: Grand Island boat trip for Scuba Diving and Snorkelling — explore vibrant coral reefs and marine life. Afternoon: Optional Dudhsagar Waterfall jeep safari through the jungle (seasonal, at own cost). Evening at leisure. Overnight stay.",
+        details: [
+          "Morning: Grand Island boat trip for Scuba Diving and Snorkelling — explore vibrant coral reefs and marine life. Afternoon: Optional Dudhsagar Waterfall jeep safari through the jungle (seasonal, at own cost). Evening at leisure. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Goa → Delhi — Departure",
-        details:
-          "After breakfast, last-minute shopping at the local market (cashews, handicrafts). Transfer to Goa airport/railway station. Tour concludes.",
+        details: [
+          "After breakfast, last-minute shopping at the local market (cashews, handicrafts). Transfer to Goa airport/railway station. Tour concludes."
+          ],
       },
     ],
 
@@ -4124,7 +4127,7 @@ export const tours = [
         text: "Premium experience at a great price. The resort was stunning, the food was delicious, and the Mandovi River cruise was the cherry on top. Truly the 'most wanted' Goa experience!",
         author: "Vivek Reddy",
         date: "Travelled January 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -4132,7 +4135,7 @@ export const tours = [
         text: "Worth every rupee! Indruka Trips and Trip made sure we had the best of Goa — beaches, heritage, nightlife, and great food. Absolutely loved it.",
         author: "Ritika Bose",
         date: "Travelled December 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4174,29 +4177,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Goa — Premium Check-In",
-        details:
-          "Arrive at Goa airport/railway station. Transfer to your premium beachside resort. Check in, welcome drink, and leisure time to explore the resort and beach. Enjoy a lavish dinner at the resort restaurant. Overnight stay.",
+        details: [
+          "Arrive at Goa airport/railway station. Transfer to your premium beachside resort. Check in, welcome drink, and leisure time to explore the resort and beach. Enjoy a lavish dinner at the resort restaurant. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Premium Sightseeing",
-        details:
-          "After breakfast, explore the best of North Goa — Mapusa market, St. Jerome Church, Vagator Beach, Anjuna Beach, Calangute Beach (water sports optional), and iconic Fort Aguada. Exclusive evening cocktails at a beachfront bar with live music. Overnight stay.",
+        details: [
+          "After breakfast, explore the best of North Goa — Mapusa market, St. Jerome Church, Vagator Beach, Anjuna Beach, Calangute Beach (water sports optional), and iconic Fort Aguada. Exclusive evening cocktails at a beachfront bar with live music. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "South Goa & Panaji Heritage + Cruise",
-        details:
-          "After breakfast, tour South Goa — Miramar Beach, Dona Paula, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Explore Panaji's colourful Fontainhas Latin Quarter. Evening Mandovi River Cruise with Goan folk music, dance, and dinner. Overnight stay.",
+        details: [
+          "After breakfast, tour South Goa — Miramar Beach, Dona Paula, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Explore Panaji's colourful Fontainhas Latin Quarter. Evening Mandovi River Cruise with Goan folk music, dance, and dinner. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Goa → Delhi — Departure",
-        details:
-          "After a leisurely breakfast, enjoy a final walk on the beach. Shop for Goan specialities — cashews, spices, feni, and handicrafts. Transfer to Goa airport/railway station. Tour concludes.",
+        details: [
+          "After a leisurely breakfast, enjoy a final walk on the beach. Shop for Goan specialities — cashews, spices, feni, and handicrafts. Transfer to Goa airport/railway station. Tour concludes."
+          ],
       },
     ],
 
@@ -4269,7 +4276,7 @@ export const tours = [
         text: "The all-inclusive flight package was such great value. No stress about booking flights separately. Indruka Trips and Trip handled everything from Delhi to Goa and back perfectly.",
         author: "Suresh Pillai",
         date: "Travelled February 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -4277,7 +4284,7 @@ export const tours = [
         text: "Seamless experience — flight, hotel, transfers, and sightseeing all in one package. Goa's beaches were stunning and the guide was very knowledgeable.",
         author: "Ananya Desai",
         date: "Travelled January 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4319,29 +4326,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Fly to Goa — Arrival",
-        details:
-          "Depart Delhi by morning flight to Goa (Dabolim/Mopa Airport). On arrival, our representative meets you and transfers you to your hotel. Check in, freshen up, and enjoy breakfast. Evening at the nearest beach for sunset and Goan seafood dinner. Overnight stay.",
+        details: [
+          "Depart Delhi by morning flight to Goa (Dabolim/Mopa Airport). On arrival, our representative meets you and transfers you to your hotel. Check in, freshen up, and enjoy breakfast. Evening at the nearest beach for sunset and Goan seafood dinner. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Sightseeing",
-        details:
-          "After breakfast, full-day North Goa tour — Mapusa market, St. Jerome Church, Vagator Beach, Anjuna Beach, Calangute & Baga Beach (water sports available at own cost), and Fort Aguada. Evening at leisure — flea market or beach shack. Overnight stay.",
+        details: [
+          "After breakfast, full-day North Goa tour — Mapusa market, St. Jerome Church, Vagator Beach, Anjuna Beach, Calangute & Baga Beach (water sports available at own cost), and Fort Aguada. Evening at leisure — flea market or beach shack. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "South Goa, Panaji & Mandovi Cruise",
-        details:
-          "After breakfast, South Goa tour — Miramar Beach, Dona Paula, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Afternoon: Goan spice plantation visit (optional). Evening Mandovi River Cruise with live folk dance and dinner. Overnight stay.",
+        details: [
+          "After breakfast, South Goa tour — Miramar Beach, Dona Paula, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Afternoon: Goan spice plantation visit (optional). Evening Mandovi River Cruise with live folk dance and dinner. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Goa → Fly back to Delhi — Departure",
-        details:
-          "After breakfast, leisure time for shopping (cashews, spices, feni). Transfer to Goa airport for your return flight to Delhi. Arrive Delhi by evening. Tour concludes.",
+        details: [
+          "After breakfast, leisure time for shopping (cashews, spices, feni). Transfer to Goa airport for your return flight to Delhi. Arrive Delhi by evening. Tour concludes."
+          ],
       },
     ],
 
@@ -4413,7 +4424,7 @@ export const tours = [
         text: "5 days packed with beaches, adventure, heritage, and nightlife — the Goa Fiesta package truly has it all! Indruka Trips and Trip organised everything flawlessly.",
         author: "Rohan Tiwari",
         date: "Travelled December 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -4421,7 +4432,7 @@ export const tours = [
         text: "The spice plantation visit was a wonderful surprise — so much to learn and taste! Combined with the beach days and the Mandovi cruise, this was a perfect 5-day Goa holiday.",
         author: "Priya Iyer",
         date: "Travelled November 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4463,36 +4474,41 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrival in Goa",
-        details:
-          "Arrive at Goa airport/railway station. Transfer to hotel, check in and freshen up. Afternoon leisure at the beach. Evening explore Panaji — Fontainhas Latin Quarter and local seafood restaurants. Overnight stay.",
+        details: [
+          "Arrive at Goa airport/railway station. Transfer to hotel, check in and freshen up. Afternoon leisure at the beach. Evening explore Panaji — Fontainhas Latin Quarter and local seafood restaurants. Overnight stay."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "North Goa Beaches & Sightseeing",
-        details:
-          "After breakfast, explore North Goa — Mapusa market, St. Jerome Church, Vagator, Anjuna, and Calangute beaches. Visit Fort Aguada for panoramic sea views. Evening at Anjuna or Arpora flea market for shopping and street food. Overnight stay.",
+        details: [
+          "After breakfast, explore North Goa — Mapusa market, St. Jerome Church, Vagator, Anjuna, and Calangute beaches. Visit Fort Aguada for panoramic sea views. Evening at Anjuna or Arpora flea market for shopping and street food. Overnight stay."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "North Goa Water Sports Day",
-        details:
-          "After breakfast, full water sports session at Baga/Calangute — Jet Ski, Parasailing, Banana Boat Ride, Speed Boat, and Water Skiing. Afternoon: optional Bungee Jumping or ATV rides. Evening at leisure — beach shack, cocktails, and live music. Overnight stay.",
+        details: [
+          "After breakfast, full water sports session at Baga/Calangute — Jet Ski, Parasailing, Banana Boat Ride, Speed Boat, and Water Skiing. Afternoon: optional Bungee Jumping or ATV rides. Evening at leisure — beach shack, cocktails, and live music. Overnight stay."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "South Goa & Mandovi River Cruise",
-        details:
-          "After breakfast, South Goa tour — Miramar Beach, Dona Paula, Colva Beach, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Afternoon: Goan spice plantation visit. Evening Mandovi River Cruise with live Goan music and dinner. Overnight stay.",
+        details: [
+          "After breakfast, South Goa tour — Miramar Beach, Dona Paula, Colva Beach, Basilica of Bom Jesus (UNESCO Heritage), Se Cathedral, and Shri Mangeshi Temple. Afternoon: Goan spice plantation visit. Evening Mandovi River Cruise with live Goan music and dinner. Overnight stay."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Goa → Delhi — Departure",
-        details:
-          "After a relaxed breakfast, last stroll on the beach and shopping for Goan specialities — cashews, kokum, feni, spices, and handicrafts. Transfer to Goa airport/railway station. Tour concludes.",
+        details: [
+          "After a relaxed breakfast, last stroll on the beach and shopping for Goan specialities — cashews, kokum, feni, spices, and handicrafts. Transfer to Goa airport/railway station. Tour concludes."
+          ],
       },
     ],
 
@@ -4561,7 +4577,7 @@ export const tours = [
         text: "The Rohtang Pass experience was breathtaking! Indruka Trips and Trip handled all permits and arrangements flawlessly. Highly recommended for first-time Himachal visitors.",
         author: "Sunita Joshi",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -4569,7 +4585,7 @@ export const tours = [
         text: "A wonderful 5-day trip covering the best of Himachal. The Solang Valley paragliding was a highlight. Very professional team and comfortable hotels.",
         author: "Rajan Kapoor",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4622,36 +4638,41 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Shimla",
-        details:
-          "Depart Delhi by coach (approx. 9 hrs). Arrive Shimla; check-in to hotel. Evening stroll on the iconic Mall Road. Overnight in Shimla.",
+        details: [
+          "Depart Delhi by coach (approx. 9 hrs). Arrive Shimla; check-in to hotel. Evening stroll on the iconic Mall Road. Overnight in Shimla."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Shimla Sightseeing → Drive to Manali",
-        details:
-          "Morning sightseeing: Jakhu Temple (dedicated to Lord Hanuman), Christ Church, and Kalbadevi Mandir. Post-lunch, begin scenic drive to Manali via Kullu valley. Overnight in Manali.",
+        details: [
+          "Morning sightseeing: Jakhu Temple (dedicated to Lord Hanuman), Christ Church, and Kalbadevi Mandir. Post-lunch, begin scenic drive to Manali via Kullu valley. Overnight in Manali."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Rohtang Pass & Solang Valley",
-        details:
-          "Early morning excursion to Rohtang Pass (13,050 ft) — subject to permit availability and weather. Enjoy snow activities, photography, and stunning Himalayan vistas. Return via Solang Valley for skiing, paragliding, and zorbing. Overnight in Manali.",
+        details: [
+          "Early morning excursion to Rohtang Pass (13,050 ft) — subject to permit availability and weather. Enjoy snow activities, photography, and stunning Himalayan vistas. Return via Solang Valley for skiing, paragliding, and zorbing. Overnight in Manali."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Manali Local Sightseeing",
-        details:
-          "Visit Hadimba Devi Temple (a 16th-century wood temple), Vashisht Hot Water Springs, Old Manali village, and a Tibetan Monastery. Evening leisure. Depart for Delhi by overnight coach.",
+        details: [
+          "Visit Hadimba Devi Temple (a 16th-century wood temple), Vashisht Hot Water Springs, Old Manali village, and a Tibetan Monastery. Evening leisure. Depart for Delhi by overnight coach."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Arrive Delhi — Tour Concludes",
-        details:
-          "Arrive Delhi in the morning. Transfer to your home/hotel. Tour concludes.",
+        details: [
+          "Arrive Delhi in the morning. Transfer to your home/hotel. Tour concludes."
+          ],
       },
     ],
 
@@ -4726,7 +4747,7 @@ export const tours = [
         text: "Best value Shimla-Manali package we could find! The Kufri horse riding and apple orchard visit was a unique experience. Everything was well organized.",
         author: "Deepak Sharma",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -4734,7 +4755,7 @@ export const tours = [
         text: "Indruka Trips and Trip made our Himachal dream come true. Hotels were comfortable, food was great, and the driver was very experienced on mountain roads.",
         author: "Kavita Singh",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -4786,43 +4807,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Manali Arrival",
-        details:
-          "Depart Delhi by overnight coach. Arrive Manali; check-in. Visit Hadimba Devi Temple, Vashisht Hot Water Bath, and Tibetan Monastery. Overnight in Manali.",
+        details: [
+          "Depart Delhi by overnight coach. Arrive Manali; check-in. Visit Hadimba Devi Temple, Vashisht Hot Water Bath, and Tibetan Monastery. Overnight in Manali."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Rohtang Pass & Solang Valley Excursion",
-        details:
-          "Full-day excursion to Rohtang Pass (permit required) for snow activities and panoramic Himalayan views. En-route enjoy Solang Valley — skiing, paragliding, zorbing. Return to Manali. Overnight.",
+        details: [
+          "Full-day excursion to Rohtang Pass (permit required) for snow activities and panoramic Himalayan views. En-route enjoy Solang Valley — skiing, paragliding, zorbing. Return to Manali. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Manali → Shimla Drive",
-        details:
-          "After breakfast, drive to Shimla (approx. 7–8 hrs) via the scenic Kullu Valley. En-route stop at Pandoh Dam and Sundernagar. Check-in to hotel. Evening walk on Mall Road.",
+        details: [
+          "After breakfast, drive to Shimla (approx. 7–8 hrs) via the scenic Kullu Valley. En-route stop at Pandoh Dam and Sundernagar. Check-in to hotel. Evening walk on Mall Road."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Shimla Sightseeing",
-        details:
-          "Visit Jakhu Hill (Hanuman Temple), Tara Devi Temple, Institute of Advanced Study (Viceregal Lodge), Christ Church, and the famous Mall Road. Overnight in Shimla.",
+        details: [
+          "Visit Jakhu Hill (Hanuman Temple), Tara Devi Temple, Institute of Advanced Study (Viceregal Lodge), Christ Church, and the famous Mall Road. Overnight in Shimla."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Kufri Excursion & Departure",
-        details:
-          "Morning excursion to Kufri — horse riding through scenic apple orchards and snow-capped hills. Return to Shimla. Board overnight coach to Delhi.",
+        details: [
+          "Morning excursion to Kufri — horse riding through scenic apple orchards and snow-capped hills. Return to Shimla. Board overnight coach to Delhi."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Arrive Delhi — Tour Concludes",
-        details:
-          "Arrive Delhi in the morning. Tour concludes with wonderful memories of the Queen of Hills and the Valley of Gods.",
+        details: [
+          "Arrive Delhi in the morning. Tour concludes with wonderful memories of the Queen of Hills and the Valley of Gods."
+          ],
       },
     ],
 
@@ -8593,7 +8620,7 @@ export const tours = [
         text: "A perfect 3-day getaway from Delhi! Nainital's lake and misty mountains were breathtaking. Indruka Trips and Trip's arrangements were seamless — hotel was great, transfers on time.",
         author: "Ananya Kapoor",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -8601,7 +8628,7 @@ export const tours = [
         text: "The cable car ride to Snow View Point was the highlight! Everything was well organized by Indruka Trips and Trip. Ideal short trip for families.",
         author: "Rajat Sinha",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -8652,22 +8679,25 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi early morning by coach (approx. 6–7 hrs). Arrive Nainital; check-in to hotel. Evening stroll on Mall Road and Naini Lake. Enjoy a peaceful lakeside dinner. Overnight.",
+        details: [
+          "Depart Delhi early morning by coach (approx. 6–7 hrs). Arrive Nainital; check-in to hotel. Evening stroll on Mall Road and Naini Lake. Enjoy a peaceful lakeside dinner. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Full-Day Nainital Sightseeing",
-        details:
-          "Morning visit Naina Devi Temple on the northern shore of Naini Lake. Take a cable car to Snow View Point for panoramic Himalayan vistas. Explore Eco Cave Gardens and visit Tiffin Top (Dorothy's Seat) for sunset views. Evening boating on Naini Lake. Overnight.",
+        details: [
+          "Morning visit Naina Devi Temple on the northern shore of Naini Lake. Take a cable car to Snow View Point for panoramic Himalayan vistas. Explore Eco Cave Gardens and visit Tiffin Top (Dorothy's Seat) for sunset views. Evening boating on Naini Lake. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Nainital → Delhi",
-        details:
-          "Morning at leisure — visit Bara Bazaar for local woolens and handicrafts. Post-breakfast, drive back to Delhi. Tour concludes.",
+        details: [
+          "Morning at leisure — visit Bara Bazaar for local woolens and handicrafts. Post-breakfast, drive back to Delhi. Tour concludes."
+          ],
       },
     ],
 
@@ -8739,7 +8769,7 @@ export const tours = [
         text: "Best budget weekend trip from Delhi! The hotel had a lovely lake view and Indruka Trips and Trip handled everything perfectly. Will definitely book again.",
         author: "Priya Rawat",
         date: "Travelled September 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -8747,7 +8777,7 @@ export const tours = [
         text: "Quick escape from the city — Nainital in 3 days was just what we needed. Well priced, smooth transfers, and beautiful hotel. Recommended!",
         author: "Akash Verma",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -8798,22 +8828,25 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi by coach. Arrive Nainital; check-in. Evening at Mall Road and Naini Lake boat ride. Overnight.",
+        details: [
+          "Depart Delhi by coach. Arrive Nainital; check-in. Evening at Mall Road and Naini Lake boat ride. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nainital Sightseeing",
-        details:
-          "Visit Naina Devi Temple, Snow View Point (cable car), Eco Cave Gardens, and Tiffin Top. Evening lakeside leisure. Overnight.",
+        details: [
+          "Visit Naina Devi Temple, Snow View Point (cable car), Eco Cave Gardens, and Tiffin Top. Evening lakeside leisure. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Nainital → Delhi",
-        details:
-          "Morning shopping at Bara Bazaar. Post-breakfast drive back to Delhi. Tour concludes.",
+        details: [
+          "Morning shopping at Bara Bazaar. Post-breakfast drive back to Delhi. Tour concludes."
+          ],
       },
     ],
 
@@ -8885,7 +8918,7 @@ export const tours = [
         text: "Two incredible experiences in one trip — the misty lakes of Nainital and the thrilling Corbett jeep safari! Indruka Trips and Trip planned it perfectly.",
         author: "Kunal Mehta",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -8893,7 +8926,7 @@ export const tours = [
         text: "We spotted a tiger on the Corbett safari — a life memory! The Nainital portion was equally beautiful. Great value 4-day package.",
         author: "Nisha Joshi",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -8945,29 +8978,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi by coach. Arrive Nainital; check-in. Evening at Naini Lake and Mall Road. Overnight.",
+        details: [
+          "Depart Delhi by coach. Arrive Nainital; check-in. Evening at Naini Lake and Mall Road. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nainital Sightseeing → Corbett",
-        details:
-          "Morning: Naina Devi Temple and Snow View Point (cable car). Post-lunch drive to Jim Corbett National Park. Check-in to jungle resort. Overnight.",
+        details: [
+          "Morning: Naina Devi Temple and Snow View Point (cable car). Post-lunch drive to Jim Corbett National Park. Check-in to jungle resort. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Jim Corbett Jeep Safari",
-        details:
-          "Early morning jeep safari into Dhikala or Bijrani zone — spot tigers, elephants, leopards, and diverse birdlife. Afternoon visit Garjia Devi Temple and Corbett Museum. Overnight at resort.",
+        details: [
+          "Early morning jeep safari into Dhikala or Bijrani zone — spot tigers, elephants, leopards, and diverse birdlife. Afternoon visit Garjia Devi Temple and Corbett Museum. Overnight at resort."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Corbett → Delhi",
-        details:
-          "Optional early morning nature walk. Post-breakfast drive to Delhi. Tour concludes.",
+        details: [
+          "Optional early morning nature walk. Post-breakfast drive to Delhi. Tour concludes."
+          ],
       },
     ],
 
@@ -9042,7 +9079,7 @@ export const tours = [
         text: "A birder's paradise! We spotted over 120 species in 5 days across Corbett and Sat Tal. The expert guide from Indruka Trips and Trip was phenomenal.",
         author: "Dr. Suresh Nair",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9050,7 +9087,7 @@ export const tours = [
         text: "Sat Tal in winter is magical — hundreds of migratory birds! The itinerary was perfectly crafted for serious birders. Highly recommended.",
         author: "Geeta Krishnan",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -9103,36 +9140,41 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Jim Corbett",
-        details:
-          "Depart Delhi by coach. Arrive Jim Corbett; check-in to birding resort. Afternoon nature walk with expert naturalist guide. Overnight.",
+        details: [
+          "Depart Delhi by coach. Arrive Jim Corbett; check-in to birding resort. Afternoon nature walk with expert naturalist guide. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Corbett Birding — Full Day",
-        details:
-          "Early morning bird walk along Ramganga riverine forest — spot Pallas's fish eagle, great hornbill, and hundreds of resident Himalayan species. Afternoon rest and evening riverside bird watch. Overnight.",
+        details: [
+          "Early morning bird walk along Ramganga riverine forest — spot Pallas's fish eagle, great hornbill, and hundreds of resident Himalayan species. Afternoon rest and evening riverside bird watch. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Corbett → Sat Tal",
-        details:
-          "Post-breakfast drive to Sat Tal (Seven Lakes). Afternoon birding around the seven interconnected lakes — a premier winter migratory bird destination. Spot Oriental turtle dove, common teal, and kingfishers. Overnight.",
+        details: [
+          "Post-breakfast drive to Sat Tal (Seven Lakes). Afternoon birding around the seven interconnected lakes — a premier winter migratory bird destination. Spot Oriental turtle dove, common teal, and kingfishers. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Sat Tal → Nainital",
-        details:
-          "Dawn bird walk at Sat Tal. Drive to Nainital. Afternoon birding at Kilbury Bird Sanctuary — one of Kumaon's top high-altitude birding spots. Overnight in Nainital.",
+        details: [
+          "Dawn bird walk at Sat Tal. Drive to Nainital. Afternoon birding at Kilbury Bird Sanctuary — one of Kumaon's top high-altitude birding spots. Overnight in Nainital."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Nainital → Delhi",
-        details:
-          "Morning birding at Pangot village (a top birding village near Nainital). Post-breakfast drive to Delhi. Tour concludes.",
+        details: [
+          "Morning birding at Pangot village (a top birding village near Nainital). Post-breakfast drive to Delhi. Tour concludes."
+          ],
       },
     ],
 
@@ -9207,7 +9249,7 @@ export const tours = [
         text: "The most authentic Uttarakhand experience! Ranikhet and Almora are hidden gems — unspoilt, peaceful, and stunning. Indruka Trips and Trip curated a brilliant 7-day route.",
         author: "Vinod Chauhan",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9215,7 +9257,7 @@ export const tours = [
         text: "Almora's Kasar Devi temple and the Himalayan panorama from Bright End Corner were unforgettable. A truly off-the-beaten-path Kumaon tour.",
         author: "Ritu Pandey",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -9268,50 +9310,57 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi. Arrive Nainital; check-in. Evening at Naini Lake and Mall Road. Overnight.",
+        details: [
+          "Depart Delhi. Arrive Nainital; check-in. Evening at Naini Lake and Mall Road. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nainital Sightseeing",
-        details:
-          "Visit Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, Tiffin Top, and High Altitude Zoo. Overnight.",
+        details: [
+          "Visit Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, Tiffin Top, and High Altitude Zoo. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Nainital → Ranikhet",
-        details:
-          "Drive to Ranikhet (approx. 2 hrs). Check-in. Explore Chaubatia Orchards (apple, apricot, peach), the Jhula Devi Temple, and the famous Ranikhet Golf Course (one of Asia's highest). Overnight.",
+        details: [
+          "Drive to Ranikhet (approx. 2 hrs). Check-in. Explore Chaubatia Orchards (apple, apricot, peach), the Jhula Devi Temple, and the famous Ranikhet Golf Course (one of Asia's highest). Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Ranikhet Sightseeing",
-        details:
-          "Visit Kalika Temple, Binsar Mahadev Temple, Upat & Kalika golf courses, and Majhkhali viewpoint. Panoramic Himalayan views including Nanda Devi. Overnight.",
+        details: [
+          "Visit Kalika Temple, Binsar Mahadev Temple, Upat & Kalika golf courses, and Majhkhali viewpoint. Panoramic Himalayan views including Nanda Devi. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Ranikhet → Almora",
-        details:
-          "Drive to Almora (approx. 2 hrs). Check-in. Explore Lala Bazaar for traditional Kumaoni sweets and brassware. Overnight.",
+        details: [
+          "Drive to Almora (approx. 2 hrs). Check-in. Explore Lala Bazaar for traditional Kumaoni sweets and brassware. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Almora Sightseeing",
-        details:
-          "Visit Kasar Devi Temple (once home to Swami Vivekananda), Chitai Golu Devta Temple (famous for petition bells), Bright End Corner sunset, and Almora Deer Park. Overnight.",
+        details: [
+          "Visit Kasar Devi Temple (once home to Swami Vivekananda), Chitai Golu Devta Temple (famous for petition bells), Bright End Corner sunset, and Almora Deer Park. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Almora → Delhi",
-        details:
-          "Post-breakfast drive to Delhi (approx. 9 hrs). Tour concludes.",
+        details: [
+          "Post-breakfast drive to Delhi (approx. 9 hrs). Tour concludes."
+          ],
       },
     ],
 
@@ -9383,7 +9432,7 @@ export const tours = [
         text: "8 days covering Corbett, Ranikhet and Nainital — a perfect blend of wildlife, mountains and lakes. Indruka Trips and Trip's planning was excellent from start to finish.",
         author: "Arun Sharma",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9391,7 +9440,7 @@ export const tours = [
         text: "The Corbett safari was thrilling and Ranikhet was so peaceful. Sat Tal on the way to Nainital was a beautiful surprise. A wonderful Kumaon adventure!",
         author: "Pallavi Gupta",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -9444,56 +9493,63 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Corbett",
-        details:
-          "Depart Delhi. Arrive Jim Corbett; check-in to jungle resort. Overnight.",
+        details: [
+          "Depart Delhi. Arrive Jim Corbett; check-in to jungle resort. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Corbett Safari",
-        details:
-          "Morning and evening jeep safaris in Dhikala/Bijrani zones. Spot tigers, elephants, and leopards. Overnight.",
+        details: [
+          "Morning and evening jeep safaris in Dhikala/Bijrani zones. Spot tigers, elephants, and leopards. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Corbett → Ranikhet",
-        details:
-          "Post-breakfast drive to Ranikhet. Visit Garjia Devi Temple en-route. Check-in. Evening at leisure. Overnight.",
+        details: [
+          "Post-breakfast drive to Ranikhet. Visit Garjia Devi Temple en-route. Check-in. Evening at leisure. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Ranikhet Sightseeing",
-        details:
-          "Chaubatia Orchards, Jhula Devi Temple, Golf Course, Kalika Temple, and Majhkhali viewpoint. Overnight.",
+        details: [
+          "Chaubatia Orchards, Jhula Devi Temple, Golf Course, Kalika Temple, and Majhkhali viewpoint. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Ranikhet → Nainital",
-        details:
-          "Drive to Nainital via Bhimtal and Sat Tal Lakes — scenic stops for photography. Check-in. Evening on Mall Road.",
+        details: [
+          "Drive to Nainital via Bhimtal and Sat Tal Lakes — scenic stops for photography. Check-in. Evening on Mall Road."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Nainital Sightseeing",
-        details:
-          "Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, Tiffin Top, and High Altitude Zoo. Overnight.",
+        details: [
+          "Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, Tiffin Top, and High Altitude Zoo. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Nainital Leisure & Excursion",
-        details:
-          "Day excursion to Mukteshwar — stunning Himalayan views and Chauli Ki Jali cliff. Evening boat ride on Naini Lake. Overnight.",
+        details: [
+          "Day excursion to Mukteshwar — stunning Himalayan views and Chauli Ki Jali cliff. Evening boat ride on Naini Lake. Overnight."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Nainital → Delhi",
-        details: "Post-breakfast drive to Delhi. Tour concludes.",
+        details:["Post-breakfast drive to Delhi. Tour concludes."],
       },
     ],
 
@@ -9568,7 +9624,7 @@ export const tours = [
         text: "Covering Nainital, Ranikhet, Corbett and Mussoorie in one trip was fantastic. Each destination was so different. Indruka Trips and Trip made the logistics seamless.",
         author: "Sanjay Tripathi",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9576,7 +9632,7 @@ export const tours = [
         text: "Mussoorie's Kempty Falls and Corbett's safari were the highlights of our trip! Great 8-day Uttarakhand package at an excellent price.",
         author: "Meena Rawat",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -9630,56 +9686,63 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi. Arrive Nainital. Check-in. Evening at Naini Lake. Overnight.",
+        details: [
+          "Depart Delhi. Arrive Nainital. Check-in. Evening at Naini Lake. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nainital Sightseeing",
-        details:
-          "Snow View Point, Naina Devi Temple, Eco Cave Gardens, High Altitude Zoo. Overnight.",
+        details: [
+          "Snow View Point, Naina Devi Temple, Eco Cave Gardens, High Altitude Zoo. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Nainital → Ranikhet",
-        details:
-          "Drive to Ranikhet. Visit Chaubatia Orchards and Jhula Devi Temple. Overnight.",
+        details: [
+          "Drive to Ranikhet. Visit Chaubatia Orchards and Jhula Devi Temple. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Ranikhet → Corbett",
-        details:
-          "Drive to Corbett. Check-in to jungle resort. Evening nature walk. Overnight.",
+        details: [
+          "Drive to Corbett. Check-in to jungle resort. Evening nature walk. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Corbett Jeep Safari",
-        details:
-          "Morning and afternoon jeep safaris — spot tigers, elephants, and diverse birds. Overnight.",
+        details: [
+          "Morning and afternoon jeep safaris — spot tigers, elephants, and diverse birds. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Corbett → Mussoorie",
-        details:
-          "Drive to Mussoorie (approx. 4 hrs). Check-in. Evening at Mall Road and Gun Hill Point (cable car). Overnight.",
+        details: [
+          "Drive to Mussoorie (approx. 4 hrs). Check-in. Evening at Mall Road and Gun Hill Point (cable car). Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Mussoorie Sightseeing",
-        details:
-          "Visit Kempty Falls, Lal Tibba (highest point in Mussoorie), Camel's Back Road, Landour Clock Tower, and Cloud's End. Overnight.",
+        details: [
+          "Visit Kempty Falls, Lal Tibba (highest point in Mussoorie), Camel's Back Road, Landour Clock Tower, and Cloud's End. Overnight."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Mussoorie → Delhi",
-        details: "Post-breakfast drive to Delhi. Tour concludes.",
+        details:[ "Post-breakfast drive to Delhi. Tour concludes."],
       },
     ],
 
@@ -9754,7 +9817,7 @@ export const tours = [
         text: "Kausani's sunrise was worth the entire trip! The Himalayan panorama from Kausani is something you never forget. Indruka Trips and Trip added this gem to our itinerary.",
         author: "Deepika Joshi",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9762,7 +9825,7 @@ export const tours = [
         text: "Majestic indeed! Every single destination on this tour felt regal — especially Ranikhet with its alpine meadows and Corbett with its wild beauty.",
         author: "Harish Bisht",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -9816,56 +9879,63 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Nainital",
-        details:
-          "Depart Delhi. Arrive Nainital. Check-in. Evening at Naini Lake. Overnight.",
+        details: [
+          "Depart Delhi. Arrive Nainital. Check-in. Evening at Naini Lake. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nainital Sightseeing",
-        details:
-          "Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, High Altitude Zoo, Tiffin Top. Overnight.",
+        details: [
+          "Snow View Point (cable car), Naina Devi Temple, Eco Cave Gardens, High Altitude Zoo, Tiffin Top. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Nainital → Kausani",
-        details:
-          "Scenic drive to Kausani (approx. 3 hrs). Check-in. Evening witness stunning sunset over the Himalayan range from Anasakti Ashram (where Mahatma Gandhi stayed). Overnight.",
+        details: [
+          "Scenic drive to Kausani (approx. 3 hrs). Check-in. Evening witness stunning sunset over the Himalayan range from Anasakti Ashram (where Mahatma Gandhi stayed). Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Kausani Sunrise → Ranikhet",
-        details:
-          "Early morning sunrise view of Nanda Devi, Trishul, and Panchchuli peaks. Drive to Ranikhet. Sightseeing: Chaubatia Orchards and Jhula Devi Temple. Overnight.",
+        details: [
+          "Early morning sunrise view of Nanda Devi, Trishul, and Panchchuli peaks. Drive to Ranikhet. Sightseeing: Chaubatia Orchards and Jhula Devi Temple. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Ranikhet Sightseeing",
-        details:
-          "Kalika Temple, Binsar Mahadev, Golf Course, Majhkhali Viewpoint, and Rani Lake. Overnight Ranikhet.",
+        details: [
+          "Kalika Temple, Binsar Mahadev, Golf Course, Majhkhali Viewpoint, and Rani Lake. Overnight Ranikhet."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Ranikhet → Corbett",
-        details:
-          "Drive to Jim Corbett. Check-in to jungle resort. Afternoon nature walk. Overnight.",
+        details: [
+          "Drive to Jim Corbett. Check-in to jungle resort. Afternoon nature walk. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Corbett Jeep Safari",
-        details:
-          "Morning and afternoon jeep safaris. Spot tigers, leopards, elephants, and over 600 bird species. Overnight.",
+        details: [
+          "Morning and afternoon jeep safaris. Spot tigers, leopards, elephants, and over 600 bird species. Overnight."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Corbett → Delhi",
-        details: "Post-breakfast drive to Delhi. Tour concludes.",
+        details: ["Post-breakfast drive to Delhi. Tour concludes."],
       },
     ],
 
@@ -9944,7 +10014,7 @@ export const tours = [
         text: "The toy train ride and Tiger Hill sunrise were two bucket list experiences in one trip! Darjeeling is magical and Indruka Trips and Trip made it very affordable.",
         author: "Kaveri Sen",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -9952,7 +10022,7 @@ export const tours = [
         text: "Perfect 3-day getaway! The tea estate tour was fascinating and the Kanchenjunga views from Tiger Hill at sunrise were absolutely breathtaking.",
         author: "Arnab Ghosh",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10003,22 +10073,25 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Darjeeling",
-        details:
-          "Arrive Bagdogra airport. Transfer to Darjeeling (approx. 3 hrs via NH10). Check-in to hotel. Evening at Mall Road — enjoy hot Darjeeling tea. Overnight.",
+        details: [
+          "Arrive Bagdogra airport. Transfer to Darjeeling (approx. 3 hrs via NH10). Check-in to hotel. Evening at Mall Road — enjoy hot Darjeeling tea. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Tiger Hill Sunrise & Darjeeling Sightseeing",
-        details:
-          "Pre-dawn drive to Tiger Hill for the legendary sunrise view over Kanchenjunga and Mt. Everest. Return via Ghoom Monastery and Batasia Loop. Breakfast at hotel. Visit Himalayan Mountaineering Institute & Zoo, Happy Valley Tea Estate, Padmaja Naidu Zoological Park, Tibetan Refugee Self-Help Centre. Afternoon toy train ride (joy ride). Overnight.",
+        details: [
+          "Pre-dawn drive to Tiger Hill for the legendary sunrise view over Kanchenjunga and Mt. Everest. Return via Ghoom Monastery and Batasia Loop. Breakfast at hotel. Visit Himalayan Mountaineering Institute & Zoo, Happy Valley Tea Estate, Padmaja Naidu Zoological Park, Tibetan Refugee Self-Help Centre. Afternoon toy train ride (joy ride). Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Darjeeling → Bagdogra — Departure",
-        details:
-          "Morning at leisure — browse Chowrasta market for teas and handicrafts. Transfer to Bagdogra airport. Tour concludes.",
+        details: [
+          "Morning at leisure — browse Chowrasta market for teas and handicrafts. Transfer to Bagdogra airport. Tour concludes."
+          ],
       },
     ],
 
@@ -10090,7 +10163,7 @@ export const tours = [
         text: "Nathula Pass was surreal — standing at the India-China border at 14,000 ft! Gangtok and Darjeeling both had their own unique charm. A brilliant 5-day tour.",
         author: "Rohit Banerjee",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10098,7 +10171,7 @@ export const tours = [
         text: "Combining Gangtok and Darjeeling in one package was the best decision. Indruka Trips and Trip managed the Nathula Pass permits efficiently — highly recommended!",
         author: "Divya Krishnamurthy",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10150,35 +10223,39 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Gangtok",
-        details:
-          "Arrive Bagdogra. Drive to Gangtok (approx. 4 hrs). Check-in. Evening at MG Marg. Overnight.",
+        details: [
+          "Arrive Bagdogra. Drive to Gangtok (approx. 4 hrs). Check-in. Evening at MG Marg. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Nathula Pass & Gangtok Sightseeing",
-        details:
-          "Morning excursion to Nathula Pass (permit required). Return to Gangtok. Afternoon: Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, and Flower Show (seasonal). Overnight.",
+        details: [
+          "Morning excursion to Nathula Pass (permit required). Return to Gangtok. Afternoon: Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, and Flower Show (seasonal). Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Gangtok → Darjeeling",
-        details:
-          "Drive to Darjeeling (approx. 4 hrs). Check-in. Evening stroll at Mall Road and Chowrasta. Overnight.",
+        details: [
+          "Drive to Darjeeling (approx. 4 hrs). Check-in. Evening stroll at Mall Road and Chowrasta. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Tiger Hill & Darjeeling Sightseeing",
-        details:
-          "Pre-dawn Tiger Hill sunrise drive. Ghoom Monastery, Batasia Loop, Himalayan Zoo, Tea Estate, and toy train joy ride. Overnight.",
+        details: [
+          "Pre-dawn Tiger Hill sunrise drive. Ghoom Monastery, Batasia Loop, Himalayan Zoo, Tea Estate, and toy train joy ride. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Darjeeling → Bagdogra",
-        details: "Morning at leisure. Transfer to Bagdogra. Tour concludes.",
+        details: ["Morning at leisure. Transfer to Bagdogra. Tour concludes."],
       },
     ],
 
@@ -10253,7 +10330,7 @@ export const tours = [
         text: "The most romantic honeymoon destination! Darjeeling's misty mornings and Gangtok's vibrant evenings were perfect contrasts. Every detail was taken care of by Indruka Trips and Trip.",
         author: "Aman & Shreya Kapoor",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10261,7 +10338,7 @@ export const tours = [
         text: "Watching sunrise over Kanchenjunga together from Tiger Hill was the most beautiful moment of our honeymoon. Indruka Trips and Trip made it a dream come true!",
         author: "Nitin & Pooja Sharma",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10313,43 +10390,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Darjeeling",
-        details:
-          "Arrive Bagdogra. Transfer to Darjeeling. Check-in to romantic hill-view hotel. Evening at Chowrasta with hot Darjeeling tea. Overnight.",
+        details: [
+          "Arrive Bagdogra. Transfer to Darjeeling. Check-in to romantic hill-view hotel. Evening at Chowrasta with hot Darjeeling tea. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Tiger Hill Sunrise & Sightseeing",
-        details:
-          "Pre-dawn Tiger Hill sunrise drive — Kanchenjunga and Mt. Everest views. Ghoom Monastery, Batasia Loop, Zoo, Tea Estate, toy train joy ride. Romantic dinner. Overnight.",
+        details: [
+          "Pre-dawn Tiger Hill sunrise drive — Kanchenjunga and Mt. Everest views. Ghoom Monastery, Batasia Loop, Zoo, Tea Estate, toy train joy ride. Romantic dinner. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Darjeeling Leisure",
-        details:
-          "Morning walk through tea gardens. Visit Rock Garden and Gorkha Rangit Valley Ropeway (cable car). Evening at leisure. Overnight.",
+        details: [
+          "Morning walk through tea gardens. Visit Rock Garden and Gorkha Rangit Valley Ropeway (cable car). Evening at leisure. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Darjeeling → Gangtok",
-        details:
-          "Drive to Gangtok (approx. 4 hrs). Check-in. Evening stroll at MG Marg. Overnight.",
+        details: [
+          "Drive to Gangtok (approx. 4 hrs). Check-in. Evening stroll at MG Marg. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Tsomgo Lake & Gangtok Sightseeing",
-        details:
-          "Morning excursion to Tsomgo Lake (12,400 ft glacial lake) and Baba Mandir. Return to Gangtok. Afternoon: Rumtek Monastery, Ganesh Tok, and Ropeway ride. Romantic dinner. Overnight.",
+        details: [
+          "Morning excursion to Tsomgo Lake (12,400 ft glacial lake) and Baba Mandir. Return to Gangtok. Afternoon: Rumtek Monastery, Ganesh Tok, and Ropeway ride. Romantic dinner. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Gangtok → Bagdogra",
-        details:
-          "Morning at leisure. Transfer to Bagdogra airport. Tour concludes.",
+        details: [
+          "Morning at leisure. Transfer to Bagdogra airport. Tour concludes."
+          ],
       },
     ],
 
@@ -10427,7 +10510,7 @@ export const tours = [
         text: "Three beautiful hill towns in 6 days — Kalimpong was the most underrated! The flower nurseries and Deolo Hill views were incredible. Great itinerary by Indruka Trips and Trip.",
         author: "Sudha Rao",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10435,7 +10518,7 @@ export const tours = [
         text: "Each town had its own unique personality. Kalimpong was artsy, Gangtok buzzing, and Darjeeling serene. Wonderfully balanced 6-day trip.",
         author: "Vivek Das",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10488,43 +10571,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Kalimpong",
-        details:
-          "Arrive Bagdogra. Drive to Kalimpong (approx. 3 hrs). Check-in. Explore Deolo Hill for panoramic views of Kanchenjunga. Overnight.",
+        details: [
+          "Arrive Bagdogra. Drive to Kalimpong (approx. 3 hrs). Check-in. Explore Deolo Hill for panoramic views of Kanchenjunga. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Kalimpong → Gangtok",
-        details:
-          "Morning visit Kalimpong's famous flower nurseries, Zang Dhok Palri Phodang Monastery, and Morgan House. Drive to Gangtok. Check-in. Evening at MG Marg. Overnight.",
+        details: [
+          "Morning visit Kalimpong's famous flower nurseries, Zang Dhok Palri Phodang Monastery, and Morgan House. Drive to Gangtok. Check-in. Evening at MG Marg. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Gangtok Sightseeing",
-        details:
-          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Sikkim State Museum, and Ropeway ride. Overnight.",
+        details: [
+          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Sikkim State Museum, and Ropeway ride. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Gangtok → Darjeeling",
-        details:
-          "Drive to Darjeeling (approx. 4 hrs). Check-in. Evening at Mall Road and Chowrasta. Overnight.",
+        details: [
+          "Drive to Darjeeling (approx. 4 hrs). Check-in. Evening at Mall Road and Chowrasta. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Tiger Hill & Darjeeling Sightseeing",
-        details:
-          "Pre-dawn Tiger Hill drive. Batasia Loop, Ghoom Monastery, Happy Valley Tea Estate, Himalayan Mountaineering Institute, Zoo, and toy train ride. Overnight.",
+        details: [
+          "Pre-dawn Tiger Hill drive. Batasia Loop, Ghoom Monastery, Happy Valley Tea Estate, Himalayan Mountaineering Institute, Zoo, and toy train ride. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Darjeeling → Bagdogra",
-        details:
-          "Morning shopping at Chowrasta. Transfer to Bagdogra. Tour concludes.",
+        details: [
+          "Morning shopping at Chowrasta. Transfer to Bagdogra. Tour concludes."
+          ],
       },
     ],
 
@@ -10599,7 +10688,7 @@ export const tours = [
         text: "Gurudongmar Lake at 17,800 ft was the most awe-inspiring moment of our lives! Indruka Trips and Trip managed all the high-altitude permits and logistics seamlessly.",
         author: "Manish Agarwal",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10607,7 +10696,7 @@ export const tours = [
         text: "Yumthang Valley in bloom was like a painting — thousands of rhododendrons everywhere! This North Sikkim extension made our Darjeeling tour truly epic.",
         author: "Shalini Bose",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10661,57 +10750,65 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Gangtok",
-        details:
-          "Arrive Bagdogra. Drive to Gangtok (4 hrs). Check-in. Evening MG Marg. Overnight.",
+        details: [
+          "Arrive Bagdogra. Drive to Gangtok (4 hrs). Check-in. Evening MG Marg. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Gangtok Sightseeing",
-        details:
-          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Ropeway ride. Overnight.",
+        details: [
+          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Ropeway ride. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Gangtok → Lachung",
-        details:
-          "Drive to Lachung (4–5 hrs) through North Sikkim — stunning gorge and waterfall scenery. Check-in to homestay. Overnight.",
+        details: [
+          "Drive to Lachung (4–5 hrs) through North Sikkim — stunning gorge and waterfall scenery. Check-in to homestay. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Yumthang Valley Excursion",
-        details:
-          "Morning excursion to Yumthang Valley (Valley of Flowers, 11,800 ft) — rhododendrons, hot springs, and glacial streams. Return to Lachung. Overnight.",
+        details: [
+          "Morning excursion to Yumthang Valley (Valley of Flowers, 11,800 ft) — rhododendrons, hot springs, and glacial streams. Return to Lachung. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Lachung → Lachen",
-        details:
-          "Drive to Lachen village. En-route visit Chungthang confluence. Overnight at Lachen.",
+        details: [
+          "Drive to Lachen village. En-route visit Chungthang confluence. Overnight at Lachen."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Gurudongmar Lake → Gangtok",
-        details:
-          "Pre-dawn drive to Gurudongmar Lake (17,800 ft) — one of the world's highest lakes, sacred to both Buddhists and Hindus. Return and drive to Gangtok. Overnight.",
+        details: [
+          "Pre-dawn drive to Gurudongmar Lake (17,800 ft) — one of the world's highest lakes, sacred to both Buddhists and Hindus. Return and drive to Gangtok. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Gangtok → Darjeeling",
-        details:
-          "Drive to Darjeeling. Check-in. Evening at Mall Road. Overnight.",
+        details: [
+          "Drive to Darjeeling. Check-in. Evening at Mall Road. Overnight."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Tiger Hill & Departure",
-        details:
-          "Pre-dawn Tiger Hill sunrise. Batasia Loop, Ghoom Monastery. Transfer to Bagdogra airport. Tour concludes.",
+        details: [
+          "Pre-dawn Tiger Hill sunrise. Batasia Loop, Ghoom Monastery. Transfer to Bagdogra airport. Tour concludes."
+          ],
       },
     ],
 
@@ -10787,7 +10884,7 @@ export const tours = [
         text: "The most comprehensive Eastern Himalaya tour available. 9 days covering Kalimpong, Gangtok and Darjeeling — each with its own unique beauty. Indruka Trips and Trip was exceptional.",
         author: "Priya Chakraborty",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10795,7 +10892,7 @@ export const tours = [
         text: "From Nathula Pass to Kanchenjunga sunrise — this tour had it all! Brilliant value for 9 days covering the best of East India's hill stations.",
         author: "Sunil Mukherjee",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -10848,64 +10945,73 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Bagdogra → Kalimpong",
-        details:
-          "Arrive Bagdogra. Transfer to Kalimpong (3 hrs). Check-in. Evening Deolo Hill. Overnight.",
+        details: [
+          "Arrive Bagdogra. Transfer to Kalimpong (3 hrs). Check-in. Evening Deolo Hill. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Kalimpong Sightseeing",
-        details:
-          "Flower nurseries (Kalimpong is Asia's top orchid exporter), Zang Dhok Palri Monastery, Morgan House, and Durpin Dara Hill. Overnight.",
+        details: [
+          "Flower nurseries (Kalimpong is Asia's top orchid exporter), Zang Dhok Palri Monastery, Morgan House, and Durpin Dara Hill. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Kalimpong → Gangtok",
-        details:
-          "Drive to Gangtok via Teesta River gorge. Check-in. Evening MG Marg. Overnight.",
+        details: [
+          "Drive to Gangtok via Teesta River gorge. Check-in. Evening MG Marg. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Gangtok Sightseeing",
-        details:
-          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Flower Show (seasonal), Ropeway ride. Overnight.",
+        details: [
+          "Rumtek Monastery, Ganesh Tok, Hanuman Tok, Enchey Monastery, Flower Show (seasonal), Ropeway ride. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Nathula Pass & Tsomgo Lake",
-        details:
-          "Morning excursion to Nathula Pass (14,140 ft) — India-China border. Afternoon at Tsomgo (Changu) Lake (12,400 ft). Overnight Gangtok.",
+        details: [
+          "Morning excursion to Nathula Pass (14,140 ft) — India-China border. Afternoon at Tsomgo (Changu) Lake (12,400 ft). Overnight Gangtok."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Gangtok → Darjeeling",
-        details:
-          "Drive to Darjeeling (4 hrs). Check-in. Evening stroll at Mall Road. Overnight.",
+        details: [
+          "Drive to Darjeeling (4 hrs). Check-in. Evening stroll at Mall Road. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Tiger Hill & Darjeeling Sightseeing",
-        details:
-          "Pre-dawn Tiger Hill sunrise drive. Ghoom Monastery, Batasia Loop, Tea Estate, Himalayan Zoo, and toy train joy ride. Overnight.",
+        details: [
+          "Pre-dawn Tiger Hill sunrise drive. Ghoom Monastery, Batasia Loop, Tea Estate, Himalayan Zoo, and toy train joy ride. Overnight."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Darjeeling Day Excursion",
-        details:
-          "Excursion to Mirik — serene lake and tea gardens on the Nepal border. Return to Darjeeling. Overnight.",
+        details: [
+          "Excursion to Mirik — serene lake and tea gardens on the Nepal border. Return to Darjeeling. Overnight."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Darjeeling → Bagdogra",
-        details:
-          "Morning shopping at Chowrasta. Transfer to Bagdogra. Tour concludes.",
+        details: [
+          "Morning shopping at Chowrasta. Transfer to Bagdogra. Tour concludes."
+          ],
       },
     ],
 
@@ -10982,7 +11088,7 @@ export const tours = [
         text: "The Alleppey houseboat night was the most unique experience! Waking up in the Kerala backwaters was magical. Munnar's tea gardens and Thekkady's wildlife were equally stunning.",
         author: "Siddharth Nair",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -10990,7 +11096,7 @@ export const tours = [
         text: "Kerala in 6 days — absolutely incredible! The houseboat on the backwaters was the highlight but every day had something special. Brilliant package by Indruka Trips and Trip.",
         author: "Radha Menon",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11043,43 +11149,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Cochin",
-        details:
-          "Arrive Cochin airport. Cochin city tour — Fort Kochi, Chinese Fishing Nets, St. Francis Church, Mattancherry Palace, and Jewish Synagogue. Evening Kathakali dance performance. Overnight.",
+        details: [
+          "Arrive Cochin airport. Cochin city tour — Fort Kochi, Chinese Fishing Nets, St. Francis Church, Mattancherry Palace, and Jewish Synagogue. Evening Kathakali dance performance. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Cochin → Munnar",
-        details:
-          "Drive to Munnar (approx. 4 hrs) through spice plantations. Check-in. Visit Attukal Waterfalls and Echo Point. Overnight.",
+        details: [
+          "Drive to Munnar (approx. 4 hrs) through spice plantations. Check-in. Visit Attukal Waterfalls and Echo Point. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Munnar Sightseeing",
-        details:
-          "Visit Eravikulam National Park (home of Nilgiri tahr), Tea Museum, Mattupetty Dam, Kundala Lake, and Rajamala. Overnight Munnar.",
+        details: [
+          "Visit Eravikulam National Park (home of Nilgiri tahr), Tea Museum, Mattupetty Dam, Kundala Lake, and Rajamala. Overnight Munnar."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Munnar → Thekkady",
-        details:
-          "Drive to Thekkady (approx. 3 hrs). Spice Plantation visit. Afternoon Periyar Wildlife Sanctuary boat ride — spot elephants, deer, and birds. Overnight.",
+        details: [
+          "Drive to Thekkady (approx. 3 hrs). Spice Plantation visit. Afternoon Periyar Wildlife Sanctuary boat ride — spot elephants, deer, and birds. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Thekkady → Alleppey Houseboat",
-        details:
-          "Drive to Alleppey (approx. 4 hrs). Board a traditional Kerala houseboat for an overnight stay on the backwaters — complete with onboard meals and sunset views.",
+        details: [
+          "Drive to Alleppey (approx. 4 hrs). Board a traditional Kerala houseboat for an overnight stay on the backwaters — complete with onboard meals and sunset views."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Alleppey → Cochin — Departure",
-        details:
-          "Disembark houseboat morning. Drive to Cochin airport. Tour concludes.",
+        details: [
+          "Disembark houseboat morning. Drive to Cochin airport. Tour concludes."
+          ],
       },
     ],
 
@@ -11154,7 +11266,7 @@ export const tours = [
         text: "Wayanad was the highlight — the Edakkal Caves with ancient rock art were fascinating! Munnar's tea gardens were spectacular. A perfect Kerala hill stations tour.",
         author: "Aditya Kumar",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -11162,7 +11274,7 @@ export const tours = [
         text: "We loved exploring both Munnar and Wayanad in one trip. Two very different green landscapes. The Wayanad wildlife safari was thrilling. Excellent trip planning!",
         author: "Sangeetha Pillai",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11215,50 +11327,57 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Cochin",
-        details:
-          "Arrive Cochin. Fort Kochi sightseeing — Chinese Fishing Nets, St. Francis Church, Mattancherry Palace. Overnight.",
+        details: [
+          "Arrive Cochin. Fort Kochi sightseeing — Chinese Fishing Nets, St. Francis Church, Mattancherry Palace. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Cochin → Munnar",
-        details:
-          "Drive to Munnar (4 hrs). Check-in. Attukal Waterfalls and Echo Point. Overnight.",
+        details: [
+          "Drive to Munnar (4 hrs). Check-in. Attukal Waterfalls and Echo Point. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Munnar Sightseeing",
-        details:
-          "Eravikulam National Park, Tea Museum, Mattupetty Dam, Kundala Lake. Overnight Munnar.",
+        details: [
+          "Eravikulam National Park, Tea Museum, Mattupetty Dam, Kundala Lake. Overnight Munnar."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Munnar → Wayanad",
-        details:
-          "Scenic drive to Wayanad (approx. 5 hrs) through winding forested roads. Check-in to jungle resort. Afternoon at leisure. Overnight.",
+        details: [
+          "Scenic drive to Wayanad (approx. 5 hrs) through winding forested roads. Check-in to jungle resort. Afternoon at leisure. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Wayanad Sightseeing",
-        details:
-          "Visit Edakkal Caves (prehistoric rock engravings), Soochipara/Sentinel Rock Waterfalls, Chembra Peak viewpoint, and Muthanga Wildlife Sanctuary jeep safari. Overnight.",
+        details: [
+          "Visit Edakkal Caves (prehistoric rock engravings), Soochipara/Sentinel Rock Waterfalls, Chembra Peak viewpoint, and Muthanga Wildlife Sanctuary jeep safari. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Wayanad → Calicut",
-        details:
-          "Drive to Calicut (Kozhikode) — approx. 3 hrs. Check-in. Visit Kappad Beach (where Vasco da Gama landed in 1498), Pazhassiraja Museum, and local food street. Overnight.",
+        details: [
+          "Drive to Calicut (Kozhikode) — approx. 3 hrs. Check-in. Visit Kappad Beach (where Vasco da Gama landed in 1498), Pazhassiraja Museum, and local food street. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Calicut → Cochin — Departure",
-        details:
-          "Morning drive to Cochin airport (approx. 4 hrs). Tour concludes.",
+        details: [
+          "Morning drive to Cochin airport (approx. 4 hrs). Tour concludes."
+          ],
       },
     ],
 
@@ -11331,7 +11450,7 @@ export const tours = [
         text: "The Nilgiri Mountain Railway toy train ride through mist-covered forests was pure magic! Kodaikanal's lake and Coaker's Walk were equally breathtaking. Wonderful tour!",
         author: "Arjun Venkataraman",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -11339,7 +11458,7 @@ export const tours = [
         text: "Ooty and Kodaikanal are like two pearls of Tamil Nadu. Both uniquely beautiful! Indruka Trips and Trip's itinerary balanced them perfectly. Very smooth travel experience.",
         author: "Leena Subramaniam",
         date: "Travelled April 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11392,43 +11511,49 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Chennai → Ooty",
-        details:
-          "Fly or train to Coimbatore; drive to Ooty (Mettupalayam). Or take the iconic Nilgiri Mountain Railway (toy train) from Mettupalayam to Ooty (UNESCO World Heritage). Check-in Ooty. Overnight.",
+        details: [
+          "Fly or train to Coimbatore; drive to Ooty (Mettupalayam). Or take the iconic Nilgiri Mountain Railway (toy train) from Mettupalayam to Ooty (UNESCO World Heritage). Check-in Ooty. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Ooty Sightseeing",
-        details:
-          "Botanical Gardens (Government Rose Garden), Ooty Lake boating, Doddabetta Peak (highest in Nilgiris — 2,637 m), Wax World, and Deer Park. Overnight Ooty.",
+        details: [
+          "Botanical Gardens (Government Rose Garden), Ooty Lake boating, Doddabetta Peak (highest in Nilgiris — 2,637 m), Wax World, and Deer Park. Overnight Ooty."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Ooty → Kodaikanal",
-        details:
-          "Scenic drive to Kodaikanal (approx. 4 hrs) via Palani Hills. Check-in. Evening Kodaikanal Lake boating. Overnight.",
+        details: [
+          "Scenic drive to Kodaikanal (approx. 4 hrs) via Palani Hills. Check-in. Evening Kodaikanal Lake boating. Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Kodaikanal Sightseeing",
-        details:
-          "Visit Coaker's Walk (stunning valley views), Bear Shola Falls, Pillar Rocks, Guna Caves, Green Valley View (formerly Suicide Point), and Dolphin's Nose. Overnight.",
+        details: [
+          "Visit Coaker's Walk (stunning valley views), Bear Shola Falls, Pillar Rocks, Guna Caves, Green Valley View (formerly Suicide Point), and Dolphin's Nose. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Kodaikanal → Coimbatore",
-        details:
-          "Morning drive to Coimbatore (approx. 4 hrs). Visit Marudamalai Temple and Perur Pateeswarar Temple. Check-in. Overnight.",
+        details: [
+          "Morning drive to Coimbatore (approx. 4 hrs). Visit Marudamalai Temple and Perur Pateeswarar Temple. Check-in. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Coimbatore → Chennai — Departure",
-        details:
-          "Morning at leisure. Fly/train back to Chennai. Tour concludes.",
+        details: [
+          "Morning at leisure. Fly/train back to Chennai. Tour concludes."
+          ],
       },
     ],
 
@@ -11500,7 +11625,7 @@ export const tours = [
         text: "This tour was the perfect Tamil Nadu summary — ancient temples, colonial hill stations, and vibrant culture all in 8 days. Indruka Trips and Trip was outstanding throughout.",
         author: "Balaji Rajan",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -11508,7 +11633,7 @@ export const tours = [
         text: "Mahabalipuram's shore temple at sunrise and Meenakshi temple's evening Aarthi were the most spiritual moments of our lives. Excellent 8-day coverage of Tamil Nadu!",
         author: "Chitra Anand",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11561,56 +11686,63 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Chennai → Mahabalipuram",
-        details:
-          "Arrive Chennai. Drive to Mahabalipuram (60 km). Visit Shore Temple, Arjuna's Penance, Five Rathas, and Krishna's Butter Ball. Overnight.",
+        details: [
+          "Arrive Chennai. Drive to Mahabalipuram (60 km). Visit Shore Temple, Arjuna's Penance, Five Rathas, and Krishna's Butter Ball. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Mahabalipuram → Ooty",
-        details:
-          "Drive to Ooty via Coimbatore (approx. 6 hrs) or take the iconic toy train from Mettupalayam. Check-in Ooty. Overnight.",
+        details: [
+          "Drive to Ooty via Coimbatore (approx. 6 hrs) or take the iconic toy train from Mettupalayam. Check-in Ooty. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Ooty Sightseeing",
-        details:
-          "Botanical Gardens, Ooty Lake, Doddabetta Peak, Wax World, Rose Garden. Overnight Ooty.",
+        details: [
+          "Botanical Gardens, Ooty Lake, Doddabetta Peak, Wax World, Rose Garden. Overnight Ooty."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Ooty → Kodaikanal",
-        details:
-          "Drive to Kodaikanal (4 hrs). Check-in. Evening lake boating. Overnight.",
+        details: [
+          "Drive to Kodaikanal (4 hrs). Check-in. Evening lake boating. Overnight."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Kodaikanal Sightseeing",
-        details:
-          "Coaker's Walk, Bear Shola Falls, Pillar Rocks, Guna Caves, Dolphin's Nose, Green Valley View. Overnight.",
+        details: [
+          "Coaker's Walk, Bear Shola Falls, Pillar Rocks, Guna Caves, Dolphin's Nose, Green Valley View. Overnight."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Kodaikanal → Madurai",
-        details:
-          "Drive to Madurai (approx. 4 hrs). Check-in. Evening Meenakshi Amman Temple — breathtaking Gopurams and evening Aarthi. Overnight.",
+        details: [
+          "Drive to Madurai (approx. 4 hrs). Check-in. Evening Meenakshi Amman Temple — breathtaking Gopurams and evening Aarthi. Overnight."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Madurai Sightseeing",
-        details:
-          "Thirumalai Nayak Palace, Alagar Kovil, Gandhi Memorial Museum, and local market. Overnight Madurai.",
+        details: [
+          "Thirumalai Nayak Palace, Alagar Kovil, Gandhi Memorial Museum, and local market. Overnight Madurai."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Madurai → Chennai — Departure",
-        details: "Fly or train to Chennai. Tour concludes.",
+        details:[ "Fly or train to Chennai. Tour concludes."],
       },
     ],
 
@@ -11686,7 +11818,7 @@ export const tours = [
         text: "Radhanagar Beach is everything they say and more — crystal clear turquoise water, white sand, and dramatic sunsets. The Cellular Jail sound and light show was emotionally powerful.",
         author: "Gaurav Mehta",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -11694,7 +11826,7 @@ export const tours = [
         text: "Snorkeling at Elephant Beach was the best underwater experience of our lives! The coral reefs were pristine. Indruka Trips and Trip arranged everything flawlessly.",
         author: "Smita Rao",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11746,29 +11878,33 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Port Blair",
-        details:
-          "Arrive Port Blair airport. Visit Cellular Jail (Kala Pani) and the evening Light & Sound Show. Check-in. Overnight.",
+        details: [
+          "Arrive Port Blair airport. Visit Cellular Jail (Kala Pani) and the evening Light & Sound Show. Check-in. Overnight."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Port Blair → Havelock Island",
-        details:
-          "Morning ferry to Havelock Island (approx. 2 hrs). Check-in to beach resort. Afternoon visit Radhanagar Beach (Beach No. 7 — one of Asia's best). Sunset swim. Overnight.",
+        details: [
+          "Morning ferry to Havelock Island (approx. 2 hrs). Check-in to beach resort. Afternoon visit Radhanagar Beach (Beach No. 7 — one of Asia's best). Sunset swim. Overnight."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Havelock → Neil Island",
-        details:
-          "Morning snorkeling at Elephant Beach. Afternoon ferry to Neil Island. Check-in. Visit Bharatpur Beach and Laxmanpur Beach (natural rock arch formation). Overnight.",
+        details: [
+          "Morning snorkeling at Elephant Beach. Afternoon ferry to Neil Island. Check-in. Visit Bharatpur Beach and Laxmanpur Beach (natural rock arch formation). Overnight."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Neil Island → Port Blair — Departure",
-        details:
-          "Morning ferry to Port Blair. Shopping at Aberdeen Bazaar. Transfer to airport. Tour concludes.",
+        details: [
+          "Morning ferry to Port Blair. Shopping at Aberdeen Bazaar. Transfer to airport. Tour concludes."
+          ],
       },
     ],
 
@@ -11843,7 +11979,7 @@ export const tours = [
         text: "Perfect short escape to Andaman! 4 days felt complete covering Port Blair and Havelock. The Ross Island ruins were fascinating and Radhanagar was paradise.",
         author: "Tanya Kapoor",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -11851,7 +11987,7 @@ export const tours = [
         text: "Best 4-day holiday we've had in years! The Andaman water is like nothing we've seen before. Indruka Trips and Trip's ferry and hotel arrangements were seamless.",
         author: "Ravi Sharma",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -11902,30 +12038,30 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Port Blair",
-        details:
+        details:[
           "Arrive Port Blair. Check-in. Visit Cellular Jail and evening Light & Sound Show. Overnight.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Port Blair Sightseeing",
-        details:
+        details:[
           "Morning visit Ross Island and North Bay Island (glass-bottom boat ride). Afternoon at Corbyn's Cove Beach for water sports. Overnight Port Blair.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Port Blair → Havelock Island",
-        details:
+        details:[
           "Ferry to Havelock. Check-in to beach resort. Explore Radhanagar Beach and Kala Pathar Beach at sunset. Overnight.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Havelock → Port Blair — Departure",
-        details:
+        details:[
           "Morning leisure at beach. Ferry back to Port Blair. Transfer to airport. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -11996,7 +12132,7 @@ export const tours = [
         text: "My first scuba dive at Havelock and I was completely hooked! The coral gardens and tropical fish were unbelievable. Our dive instructor was patient and professional.",
         author: "Vikram Malhotra",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12004,7 +12140,7 @@ export const tours = [
         text: "Long Island's Merk Bay is untouched and incredible — felt like we had the island to ourselves! The scuba diving at Havelock completed a perfect adventure trip.",
         author: "Nadia Sharma",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12056,30 +12192,30 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Port Blair",
-        details:
+        details:[
           "Arrive Port Blair. North Bay Island excursion — glass-bottom boat ride and sea walking experience. Cellular Jail evening show. Check-in. Overnight.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Havelock Island — Scuba Diving",
-        details:
+        details:[
           "Ferry to Havelock Island. Check-in to dive resort. Afternoon certified scuba diving session at Elephant Beach (beginners welcome — PADI-certified instructors). Radhanagar Beach sunset. Overnight.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Havelock → Long Island",
-        details:
+        details:[
           "Morning second scuba dive or advanced dive at Nemo Reef. Ferry to Long Island. Check-in. Explore pristine Merk Bay Beach (hike through jungle to reach). Overnight.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Long Island → Port Blair — Departure",
-        details:
+        details:[
           "Ferry to Port Blair. Aberdeen Bazaar souvenir shopping. Transfer to airport. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -12153,7 +12289,7 @@ export const tours = [
         text: "Our Andaman honeymoon was absolutely dreamy! Private beach dinners, turquoise water, and stunning sunsets — Indruka Trips and Trip planned every romantic detail to perfection.",
         author: "Rohit & Priya Sharma",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12161,7 +12297,7 @@ export const tours = [
         text: "Radhanagar Beach at sunset with my partner was the most beautiful moment of our lives! The Andaman waters are genuinely paradise. Best honeymoon destination in India.",
         author: "Anil & Sunita Verma",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12213,44 +12349,44 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Port Blair",
-        details:
+        details:[
           "Arrive Port Blair. Check-in to boutique hotel. Evening at Cellular Jail Light & Sound Show — emotionally stirring. Romantic dinner. Overnight.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Port Blair Sightseeing",
-        details:
+        details:[
           "Morning Ross Island excursion (British-era ruins surrounded by deer and peacocks). Afternoon Corbyn's Cove Beach for water sports. Sunset cruise. Overnight Port Blair.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Port Blair → Havelock Island",
-        details:
+        details:[
           "Ferry to Havelock. Check-in to romantic beach resort. Afternoon walk on Radhanagar Beach. Sunset candle-light beach dinner. Overnight.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Havelock — Couple's Beach Day",
-        details:
+        details:[
           "Morning couple snorkeling at Elephant Beach. Afternoon at Kala Pathar Beach — serene and secluded. Optional kayaking. Romantic bonfire dinner. Overnight.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Havelock → Neil Island",
-        details:
+        details:[
           "Morning ferry to Neil Island. Check-in. Explore Bharatpur Beach, Natural Bridge (rock arch at Laxmanpur), and Sitapur Beach sunrise point. Romantic dinner. Overnight.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Neil Island → Port Blair — Departure",
-        details:
+        details:[
           "Ferry to Port Blair. Shopping at Aberdeen Bazaar for pearl jewelry. Transfer to airport. Honeymoon tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -12333,7 +12469,7 @@ export const tours = [
         text: "The most comprehensive Andaman tour available! Jolly Buoy Island was like swimming in an aquarium — the most vibrant coral reefs I've ever seen. 8 days was perfect.",
         author: "Ashish Tandon",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12341,7 +12477,7 @@ export const tours = [
         text: "We did everything — Cellular Jail, Ross Island, Havelock scuba, Jolly Buoy snorkeling, and the semi-submarine! Indruka Trips and Trip managed the complex island-hopping logistics perfectly.",
         author: "Rekha Jain",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12394,58 +12530,58 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Port Blair",
-        details:
+        details:[
           "Arrive Port Blair. Check-in. Cellular Jail visit and evening Light & Sound Show. Overnight.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Ross Island & North Bay",
-        details:
+        details:[
           "Morning Ross Island excursion (ruined British-era buildings, peacocks and deer). Afternoon North Bay Island — sea walking and glass-bottom boat ride. Semi-submarine experience. Overnight.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jolly Buoy Island",
-        details:
+        details:[
           "Full-day excursion to Jolly Buoy Island (Mahatma Gandhi Marine National Park) — snorkeling in crystal-clear water with pristine coral gardens. Return Port Blair. Overnight.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Port Blair → Havelock Island",
-        details:
+        details:[
           "Ferry to Havelock. Check-in. Explore Radhanagar Beach (Beach No. 7). Overnight.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Havelock — Scuba & Elephant Beach",
-        details:
+        details:[
           "Morning beginner scuba diving session. Afternoon explore Elephant Beach via boat — snorkeling and water sports. Overnight.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Havelock → Neil Island",
-        details:
+        details:[
           "Ferry to Neil Island. Bharatpur Beach, Laxmanpur Natural Rock Bridge, Sitapur Beach sunrise point. Overnight.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Neil Island → Port Blair — Baratang",
-        details:
+        details:[
           "Ferry to Port Blair. Afternoon excursion to Baratang Island — mangrove creeks, limestone caves, and mud volcanoes. Overnight Port Blair.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Port Blair — Departure",
-        details:
+        details:[
           "Morning at Corbyn's Cove Beach. Souvenir shopping at Aberdeen Bazaar. Transfer to airport. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -12529,7 +12665,7 @@ export const tours = [
         text: "An extraordinary temple circuit! The Meenakshi Amman night ceremony in Madurai was deeply moving. Indruka Trips and Trip arranged VIP darshan at every temple — no queues, all devotion.",
         author: "Suresh & Lakshmi Rajan",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12537,7 +12673,7 @@ export const tours = [
         text: "From the French streets of Pondicherry to the sacred shores of Rameswaram, every day was a new discovery. The itinerary was perfectly paced for our family with senior citizens.",
         author: "Vijay & Meena Krishnaswamy",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12593,58 +12729,58 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Chennai",
-        details:
+        details:[
           "Arrive Chennai, India's gateway to the South. Check-in to hotel. Evening visit to Marina Beach — one of the longest urban beaches in the world. Welcome dinner. Overnight Chennai.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Chennai → Pondicherry",
-        details:
+        details:[
           "Drive to Pondicherry (3 hrs). Explore the charming French Quarter — colonial heritage buildings, Rue Dumas, and French-style cafés. Visit Sri Aurobindo Ashram and the peaceful Auroville. Evening stroll along Promenade Beach. Overnight Pondicherry.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Pondicherry → Chidambaram",
-        details:
+        details:[
           "Drive to Chidambaram. Visit the magnificent Nataraja Temple — one of the Pancha Bootha Stalams (five elemental Shiva shrines). Witness the elaborate puja rituals dedicated to Lord Shiva as the Cosmic Dancer. Drive onwards to Rameswaram. Overnight en route / Rameswaram.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Rameswaram — Sacred Island",
-        details:
+        details:[
           "Full day at the sacred Pamban Island. VIP Darshan at Ramanathaswamy Temple — sacred dip at the 22 Theerthams (holy water bodies). Visit Dhanushkodi beach ruins and enjoy the surreal landscape. Sunset at the tip of the Indian subcontinent. Overnight Rameswaram.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Rameswaram → Kanyakumari",
-        details:
+        details:[
           "Drive to Kanyakumari — the southernmost tip of India. Witness the iconic confluence of the Arabian Sea, Bay of Bengal, and Indian Ocean. Visit Kumari Amman Temple and Vivekananda Rock Memorial. Famous Kanyakumari sunset. Overnight Kanyakumari.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Kanyakumari → Madurai",
-        details:
+        details:[
           "Drive to Madurai — the Temple City of South India. Afternoon visit to the awe-inspiring Meenakshi Amman Temple with 14 Gopurams. Attend the special night ceremony where deities are put to sleep — Palliyarai Pooja. Overnight Madurai.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Madurai → Trichy",
-        details:
+        details:[
           "Morning visit to Thiruparankundram Murugan Temple. Drive to Trichy. Climb Rock Fort Temple at sunset for panoramic views of the city. Visit Sri Ranganathaswamy Temple at Srirangam — one of the largest functioning Hindu temples in the world. Overnight Trichy.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Trichy → Chennai — Departure",
-        details:
+        details:[
           "Morning at leisure. Drive back to Chennai (4–5 hrs) or take a train. Shopping at Chennai's T. Nagar for silk sarees, temple jewellery, and Tanjore art pieces. Transfer to airport / railway station. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -12722,7 +12858,7 @@ export const tours = [
         text: "Pondicherry is magical — the French cafés, the peaceful ashram, and that golden promenade at sunrise. Perfect 4-day escape from the city. Indruka Trips and Trip got every detail right.",
         author: "Arjun & Deepa Nair",
         date: "Travelled March 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12730,7 +12866,7 @@ export const tours = [
         text: "Auroville was a revelation — unlike anywhere in India. The colonial streets of White Town felt like stepping into French history. A truly unique short getaway!",
         author: "Ramesh & Pritha Bose",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12781,30 +12917,31 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Chennai → Pondicherry",
-        details:
-          "Arrive Chennai and transfer to Pondicherry (3 hrs by road). Check in to a boutique French-quarter hotel. Evening stroll along Promenade Beach. Dinner at a beachside restaurant. Overnight Pondicherry.",
+        details: [
+          "Arrive Chennai and transfer to Pondicherry (3 hrs by road). Check in to a boutique French-quarter hotel. Evening stroll along Promenade Beach. Dinner at a beachside restaurant. Overnight Pondicherry."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Pondicherry — French Quarter & Ashram",
-        details:
+        details:[
           "Morning visit to Sri Aurobindo Ashram — a centre of spiritual learning and peace. Heritage walk through White Town (French Quarter) — colourful colonial buildings, Rue Dumas, Rue Romain Rolland. Visit Puducherry Museum. Afternoon French bakery trail — Baker Street, Zuka, Bouche Sucrée. Overnight Pondicherry.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Auroville & Pondicherry Beaches",
-        details:
+        details:[
           "Morning visit to Auroville — the universal township and the golden Matri Mandir (meditation centre). Afternoon at Serenity Beach and Paradise Beach. Optional watersports at Promenade Beach. Sunset at Rock Beach. Overnight Pondicherry.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Pondicherry → Chennai — Departure",
-        details:
+        details:[
           "Morning at leisure; coffee at a French café. Drive back to Chennai. Shopping at Pondy Bazaar or T. Nagar for souvenirs. Transfer to Chennai airport / railway station. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -12877,7 +13014,7 @@ export const tours = [
         text: "Varkala's cliffs above the sea are unlike anything in India — dramatic, peaceful, breathtaking. The Poovar backwater cruise was the hidden gem of the trip. Loved every moment.",
         author: "Nikhil & Priya Menon",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -12885,7 +13022,7 @@ export const tours = [
         text: "Kovalam is paradise for beach lovers. The Lighthouse Beach sunset and fresh seafood made it unforgettable. NIT's planning was seamless from start to finish.",
         author: "Sanjay & Anitha Pillai",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -12938,37 +13075,37 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Trivandrum",
-        details:
+        details:[
           "Arrive Trivandrum (TRV). Check-in to hotel. Visit Padmanabhaswamy Temple, Napier Museum, and Kuthiramalika Palace. Evening Kathakali dance performance. Overnight Trivandrum.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Trivandrum → Kovalam",
-        details:
+        details:[
           "Transfer to Kovalam Beach (16 km). Check-in to a beach resort. Spend the day at Lighthouse Beach and Hawa Beach. Sunset at the iconic Kovalam Lighthouse. Fresh seafood dinner by the sea. Overnight Kovalam.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Kovalam → Varkala",
-        details:
+        details:[
           "Drive to Varkala (54 km). Check-in to a cliff-top resort. Explore the dramatic red laterite cliffs with views of the Arabian Sea. Visit Janardhanaswamy Temple (2000-year-old coastal temple). Cliff walk at sunset. Overnight Varkala.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Varkala → Poovar",
-        details:
+        details:[
           "Drive to Poovar (50 km). Boat cruise through Poovar backwaters — mangroves, estuary, and Golden Island beach (accessible only by boat). Ayurvedic massage at the resort. Evening at leisure by the sea. Overnight Poovar.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Poovar → Trivandrum — Departure",
-        details:
+        details:[
           "Morning at leisure on Golden Island beach. Transfer back to Trivandrum. Shopping at Chalai Bazaar for spices, handicrafts, and Kerala textiles. Transfer to airport / railway station. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13039,7 +13176,7 @@ export const tours = [
         text: "The Alleppey houseboat was the highlight of our trip — sleeping on the backwaters with nothing but stars above you. Kerala is truly God's Own Country. NIT made it effortless.",
         author: "Ravi & Sunita Chandran",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -13047,7 +13184,7 @@ export const tours = [
         text: "From the Chinese fishing nets of Kochi to the cliff-top sunsets of Varkala — 7 days, 5 destinations, and countless memories. Expertly planned by Indruka Trips and Trip.",
         author: "Anand & Kavitha Iyer",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -13104,51 +13241,51 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Cochin",
-        details:
+        details:[
           "Arrive Cochin (COK). Check-in to hotel. Evening visit to Fort Kochi — Chinese fishing nets, Santa Cruz Basilica, and Mattancherry Dutch Palace. Kathakali dance performance. Overnight Cochin.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Cochin Sightseeing",
-        details:
+        details:[
           "Morning cruise of the Cochin harbour. Visit Cherai Beach, Bolghatty Palace, and Willingdon Island. Afternoon at the famous Jew Town antique shops and Paradesi Synagogue. Overnight Cochin.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Cochin → Alleppey — Houseboat",
-        details:
+        details:[
           "Drive to Alleppey (1.5 hrs). Board a traditional Kerala houseboat — cruise through the famous backwaters, paddy fields, village life, coconut groves, and canals. Enjoy Kerala meals on board. Overnight on houseboat.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Alleppey → Varkala",
-        details:
+        details:[
           "Disembark houseboat. Drive to Varkala (2 hrs). Check-in to cliff-top resort. Explore North Cliff, Janardhanaswamy Temple, and unique mineral springs. Sunset from the dramatic laterite cliffs above the Arabian Sea. Overnight Varkala.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Varkala → Kovalam",
-        details:
+        details:[
           "Drive to Kovalam (54 km). Check-in to beach resort. Spend the afternoon at Lighthouse Beach and Samudra Beach. Optional water sports — jet ski, parasailing, surfing. Overnight Kovalam.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Kovalam → Trivandrum",
-        details:
+        details:[
           "Drive to Trivandrum (16 km). Visit Padmanabhaswamy Temple, Napier Museum, and Kuthiramalika Palace Museum. Evening Ayurvedic massage. Farewell dinner. Overnight Trivandrum.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Trivandrum — Departure",
-        details:
+        details:[
           "Morning at leisure. Shopping at Chalai Bazaar for Kerala spices, cashews, and handicrafts. Transfer to Trivandrum airport. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13236,7 +13373,7 @@ export const tours = [
         text: "The Kedarnath darshan in the early morning fog was one of the most spiritually profound moments of my life. NIT's team handled the entire trek logistics, aarti passes, and stay without a single hitch.",
         author: "Sudhir & Malati Joshi",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -13244,7 +13381,7 @@ export const tours = [
         text: "Attending Ganga Aarti at Har Ki Pauri and then doing Badri Vishal darshan at sunset — this Do Dham tour touched my soul. Well organized and very comfortable even for seniors.",
         author: "Krishnamurthy & Saroja Rao",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -13297,58 +13434,58 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Haridwar",
-        details:
+        details:[
           "Arrive Haridwar. Check-in to hotel. Evening at Har Ki Pauri for the magnificent Ganga Aarti — one of India's most mesmerizing spiritual spectacles. Overnight Haridwar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Haridwar → Guptkashi",
-        details:
+        details:[
           "Drive to Guptkashi (220 km / ~7 hrs) via Rishikesh, Devprayag, and Rudraprayag. Scenic mountain drives along the Alaknanda and Mandakini rivers. Check-in at Guptkashi. Evening visit to Vishwanath Temple at Guptkashi. Overnight Guptkashi.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Guptkashi → Kedarnath",
-        details:
+        details:[
           "Early start. Drive to Gaurikund (30 km). Begin the 18 km trek to Kedarnath (or hire a pony / palki). Check-in at Kedarnath. Afternoon darshan at the sacred Kedarnath Temple — one of the 12 Jyotirlingas. Evening Rudrabhishek Aarti. Overnight Kedarnath.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Kedarnath → Guptkashi",
-        details:
+        details:[
           "Early morning Kedarnath Darshan at sunrise — ethereal experience in the Himalayan snow. Trek back down to Gaurikund. Drive to Guptkashi. Rest and overnight Guptkashi.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Guptkashi → Badrinath",
-        details:
+        details:[
           "Drive from Guptkashi to Badrinath (180 km / ~6 hrs) via Chopta and Joshimath. Arrive Badrinath. Check-in to hotel near the temple. Evening Darshan at Badri Vishal (Lord Vishnu). Evening Aarti. Overnight Badrinath.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Badrinath — Sightseeing",
-        details:
+        details:[
           "Morning Abhishek Puja at Badrinath Temple. Visit Mana Village — last Indian village before the Tibet border. See Bhim Pul, Vasudhara Waterfall, and Vyas Gufa. Saraswati River origin point. Overnight Badrinath.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Badrinath → Rudraprayag",
-        details:
+        details:[
           "Return drive from Badrinath. Stop at Vishnuprayag, Nandaprayag, and Karnaprayag — confluence points of the sacred Himalayan rivers. Overnight at Rudraprayag / Srinagar.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Rudraprayag → Haridwar — Departure",
-        details:
+        details:[
           "Drive back to Haridwar via Rishikesh. Last dip at Har Ki Pauri Ghat. Transfer to railway station / airport. Do Dham Yatra concludes with blessings of Kedarnath and Badrinath.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13437,7 +13574,7 @@ export const tours = [
         text: "The best decision to choose Indruka Trips and Trip for our Chardham Yatra. Affordable package with excellent accommodations and transport. Spiritually fulfilling and an experience to return to.",
         author: "Mr Ramesh Rao and group",
         date: "Travelled March 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -13445,7 +13582,7 @@ export const tours = [
         text: "Chardham Yatra with NIT was truly excellent! Hotels were comfortable, food was great. Travelling with like-minded pilgrims made it all the more fulfilling. Guides were knowledgeable and ensured a smooth journey.",
         author: "Mr. Padmanaban and family",
         date: "Travelled March 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -13507,86 +13644,86 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Haridwar",
-        details:
+        details:[
           "Drive from Delhi to Haridwar (210 km / ~5 hrs). Check-in. Evening Ganga Aarti at Har Ki Pauri — one of India's most spiritual spectacles. Overnight Haridwar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Haridwar → Rishikesh → Barkot",
-        details:
+        details:[
           "Visit Triveni Ghat in Rishikesh. Drive to Barkot (210 km) via Kempty Falls, Mussoorie viewpoints, and Yamuna Valley. Overnight Barkot.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Barkot → Yamunotri → Barkot",
-        details:
+        details:[
           "Drive to Janki Chatti (50 km). Trek 6 km to Yamunotri Temple or take a pony/palki. Darshan of Goddess Yamuna. Dip in Surya Kund hot spring. Return to Barkot. Overnight Barkot.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Barkot → Uttarkashi (Gangotri)",
-        details:
+        details:[
           "Drive to Uttarkashi (100 km). En route visit Vishwanath Temple. Drive to Gangotri (100 km). Darshan at Gangotri Temple dedicated to Goddess Ganga. Overnight Gangotri / Harsil.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Gangotri → Guptkashi",
-        details:
+        details:[
           "Drive from Gangotri to Guptkashi (220 km via Uttarkashi and Tehri). Scenic route through the Himalayan valleys. Overnight Guptkashi.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Guptkashi → Kedarnath",
-        details:
+        details:[
           "Drive to Gaurikund (30 km). Trek or pony ride 18 km to Kedarnath. VIP Darshan at Kedarnath Jyotirlinga Temple. Visit Samadhi of Adi Shankaracharya. Overnight Kedarnath.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Kedarnath → Guptkashi",
-        details:
+        details:[
           "Morning Kedarnath Abhishek Puja. Trek down to Gaurikund. Drive back to Guptkashi. Rest and overnight.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Guptkashi → Badrinath",
-        details:
+        details:[
           "Drive to Badrinath (180 km) via Joshimath. Arrive Badrinath. Evening Darshan at Badri Vishal. Attend Aarti at the temple. Overnight Badrinath.",
-      },
+      ]},
       {
         day: 9,
         date: "Day 9",
         title: "Badrinath — Sightseeing",
-        details:
+        details:[
           "Abhishek Puja at Badrinath. Visit Mana Village — India's last village before Tibet. Bhim Pul, Vasudhara Waterfall, Vyas Gufa, Ganesh Gufa. Overnight Badrinath.",
-      },
+      ]},
       {
         day: 10,
         date: "Day 10",
         title: "Badrinath → Rudraprayag",
-        details:
+        details:[
           "Drive back via Joshimath, Vishnuprayag, and Nandaprayag — holy river confluences. Overnight Rudraprayag.",
-      },
+      ]},
       {
         day: 11,
         date: "Day 11",
         title: "Rudraprayag → Haridwar",
-        details:
+        details:[
           "Drive back to Haridwar via Devprayag and Rishikesh. Final dip at Har Ki Pauri. Evening Ganga Aarti. Overnight Haridwar.",
-      },
+      ]},
       {
         day: 12,
         date: "Day 12",
         title: "Haridwar → Delhi — Departure",
-        details:
+        details:[
           "Drive back to Delhi (210 km / ~5 hrs). Tour concludes with the divine blessings of all four Dhams.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13664,7 +13801,7 @@ export const tours = [
         text: "Mata's darshan in the holy cave was a life-changing experience. The 14 km trek felt effortless because of the spiritual energy around. NIT arranged our yatra pass, pony service, and hotel all seamlessly.",
         author: "Rakesh & Sunita Sharma",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -13672,7 +13809,7 @@ export const tours = [
         text: "We are senior citizens and NIT customized the trek support with pony and battery vehicle rides. The cave darshan at night was absolutely divine. Highly recommended for all devotees.",
         author: "Rajendra & Kamla Gupta",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -13724,30 +13861,30 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Jammu (Overnight Train / Drive)",
-        details:
+        details:[
           "Depart Delhi for Jammu by overnight train or AC vehicle. Arrive Jammu in the morning. Visit Raghunath Temple and Bahu Fort. Afternoon drive to Katra (50 km). Check-in to hotel near the base camp. Register for the Vaishno Devi Yatra. Overnight Katra.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Katra → Vaishno Devi Bhawan",
-        details:
+        details:[
           "Begin the 14 km trek from Katra to Bhawan (or take a pony / battery vehicle). En route: Banganga Kund, Charan Paduka, Adhkwari (optional), Sanjhi Chatt helipad, Bhawan. Darshan at Mata Vaishno Devi Cave Shrine — three Pindis (Maha Kali, Maha Lakshmi, Maha Saraswati). Evening Aarti at Bhawan. Overnight at Bhawan / Katra.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Vaishno Devi → Shiv Khori → Katra",
-        details:
+        details:[
           "Early morning optional visit to Bhairon Baba Temple (3 km beyond Bhawan — completing the yatra). Trek down to Katra. Afternoon drive to Shiv Khori Temple — a natural cave shrine dedicated to Lord Shiva with a 200 m long cave. Return to Katra. Overnight Katra.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Katra → Jammu → Delhi — Departure",
-        details:
+        details:[
           "Morning at leisure. Drive to Jammu (50 km). Shopping at Raghunath Bazaar for dry fruits, Kashmiri shawls, and souvenirs. Board train / flight back to Delhi. Yatra concludes with Mata's blessings.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13830,7 +13967,7 @@ export const tours = [
         text: "The pre-dawn Amrit Vela at the Golden Temple was transcendently peaceful — the reflection in the Sarovar, the kirtan echoing across the water. Jallianwala Bagh moved us to tears. An unforgettable 4 days.",
         author: "Vikram & Harpreet Singh",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -13838,7 +13975,7 @@ export const tours = [
         text: "The Wagah Border ceremony is something every Indian must witness. The patriotic fervour, the march, the crowd — incredible! NIT arranged front-row seats and brilliant logistics.",
         author: "Srinath & Meenakshi Iyer",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -13888,30 +14025,30 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Amritsar",
-        details:
+        details:[
           "Depart Delhi for Amritsar by Shatabdi Express or AC vehicle (5–6 hrs). Check-in to hotel. Evening visit to the magnificent Golden Temple (Harmandir Sahib). Witness the Palki Sahib procession — the ceremonial return of the Guru Granth Sahib to the inner sanctum. Overnight Amritsar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Amritsar — Golden Temple & Sightseeing",
-        details:
+        details:[
           "4 AM Amrit Vela visit to the Golden Temple — the most peaceful and spiritual time of the day. Participate in the Langar (free community kitchen — feeds 100,000+ people daily). Visit Akal Takht, the highest temporal seat of Sikh authority. Morning visit to Jallianwala Bagh Memorial. Afternoon at Ram Bagh Gardens and Maharaja Ranjit Singh Museum. Overnight Amritsar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Amritsar — Wagah Border Ceremony",
-        details:
+        details:[
           "Morning visit to Durgiana Temple (the Hindu counterpart to the Golden Temple). Visit Partition Museum — India's first museum dedicated to the 1947 Partition. Afternoon drive to Wagah Border (30 km). Witness the iconic Beating Retreat Ceremony — electrifying display of patriotism with BSF soldiers. Return to Amritsar. Overnight Amritsar.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Amritsar → Delhi — Departure",
-        details:
+        details:[
           "Morning visit to Gobindgarh Fort. Shopping at Hall Bazaar and Lawrence Road for Punjabi juttis, phulkari dupattas, and Amritsari papad. Transfer to Amritsar railway station / airport. Return to Delhi. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -13999,7 +14136,7 @@ export const tours = [
         text: "The Jagannath Temple darshan was a deeply moving spiritual experience. Konark's Sun Temple left us speechless — the architecture is beyond imagination. Chilika Lake with dolphins was the perfect bonus. NIT made every detail seamless.",
         author: "Sourabh Chouhan & Family",
         date: "Travelled January 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14007,7 +14144,7 @@ export const tours = [
         text: "Orissa is truly the soul of India — its temples, beaches, and the Chilika Lake experience were all exceptional. The itinerary was perfectly paced for our senior parents. Hotels and transport were very comfortable.",
         author: "Krishnan & Saroja Pillai",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -14063,30 +14200,30 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Bhubaneswar — Temple Trail",
-        details:
+        details:[
           "Arrive Bhubaneswar airport / railway station. Met by NIT representative and transferred to hotel. Check-in and freshen up. Afternoon full-day Bhubaneswar temple tour — Lingaraj Temple, Mukteshwar Temple, Parshuram Temple, Rajarani Temple, Kedargouri Temple, and the serene Bindusagar Lake. Overnight Bhubaneswar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Bhubaneswar → Dhauli → Pipli → Konark → Puri",
-        details:
+        details:[
           "Post-breakfast, drive via the peaceful Buddhist stupa at Dhauli and the appliqué craft village of Pipli. Visit the iconic Konark Sun Temple (UNESCO World Heritage Site & Black Pagoda). Continue to Chandrabhaga Beach. Stop at Ramchandi Temple en route. Arrive Puri and check in to beach hotel. Evening VIP Darshan at Shri Jagannath Temple. Overnight Puri.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Puri — Chilika Lake & Golden Beach",
-        details:
+        details:[
           "Morning excursion to Chilika Lake — Asia's largest brackish water lagoon. Boat ride to spot Irrawaddy dolphins and thousands of migratory birds. Visit Kalijai Island Temple on the lake. Return to Puri for the afternoon. Sunset at Golden Beach — one of India's most beautiful beaches. Overnight Puri.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Puri → Bhubaneswar — Departure",
-        details:
+        details:[
           "Breakfast at hotel. Drive back to Bhubaneswar. Shopping for Pattachitra paintings, Odissi craft, and local handicrafts. Transfer to Bhubaneswar airport / railway station. Tour concludes with the blessings of Lord Jagannath.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -14174,7 +14311,7 @@ export const tours = [
         text: "The morning yoga sessions overlooking the Ganga were transformative. The Ganga Aarti at Haridwar and the Vashishtha Cave meditation — this trip genuinely reset my mind and soul. NIT's planning was flawless.",
         author: "Vanita Jashnani",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14182,7 +14319,7 @@ export const tours = [
         text: "River rafting by day, Ayurvedic spa by evening, and yoga at dawn — Rishikesh is the perfect wellness destination. The Himalayan air and the Ganga's energy are incomparable. Thank you NIT for an exceptional experience.",
         author: "Rao Yagneswar & Family",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -14234,44 +14371,44 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi",
-        details:
+        details:[
           "Arrive Delhi International Airport. Meet and greet by NIT representative. Transfer to hotel. Evening at Delhi Haat or Connaught Place for a feel of the city. Overnight Delhi.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Delhi → Haridwar — Ganga Aarti",
-        details:
+        details:[
           "Post-breakfast, drive to Haridwar (210 km / ~5 hrs). En route, cross the lush Himalayan foothills. Check-in to hotel. Evening attend the magnificent Ganga Aarti at Har Ki Pauri — the divine gateway to god. Overnight Haridwar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Haridwar → Rishikesh — Yoga Capital",
-        details:
+        details:[
           "Morning Haridwar temple tour — Mansa Devi, Chandi Devi, Maya Devi, Bharat Mata Temple, and Sapt Rishi Ashram. Evening Ganga Aarti at Har Ki Pauri. Drive to Rishikesh (20 km). Check-in. Evening walk on Ram Jhula and Lakshman Jhula. Overnight Rishikesh.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Rishikesh — Yoga, Vashishtha Cave & Waterfall Trek",
-        details:
+        details:[
           "Early morning Yoga and Meditation session with a professional trainer by the Ganga. Post-breakfast trek to Vashishtha Cave — where sage Vasistha meditated on the banks of the holy Ganga. Visit Neer Garh Waterfall — a scenic 30-minute forest walk. Evening Meditation session. Overnight Rishikesh.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Rishikesh — River Rafting & Ayurvedic Spa",
-        details:
+        details:[
           "Morning Yoga session. Post-breakfast: thrilling Ganga river rafting — navigate rapids like Roller Coaster, Return to Sender, Golf Course, and Three Blind Mice. Optional cliff jumping and body surfing. Afternoon: Ayurvedic spa treatment and Panchakarma session at the resort. Evening crystal healing and meditation. Overnight Rishikesh.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Rishikesh → Delhi — Departure",
-        details:
+        details:[
           "Final sunrise Yoga session. Breakfast. Drive back to Delhi (5–6 hrs). Shopping at Rishikesh for Ayurvedic products, yoga gear, rudraksha, and spiritual souvenirs. Transfer to Delhi airport. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -14359,7 +14496,7 @@ export const tours = [
         text: "Udaipur at sunset from a boat on Lake Pichola — one of the most beautiful sights I have ever seen. The palace hotel stay was extraordinary. NIT's Royal Rajasthan tour is truly worthy of its name.",
         author: "Manisha Dalvi & Family",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14367,7 +14504,7 @@ export const tours = [
         text: "From the pink city of Jaipur to the blue city of Jodhpur and the lake city of Udaipur — this tour is Rajasthan at its absolute finest. The elephant ride at Amber Fort and the camel safari were unforgettable.",
         author: "Kanchan Jorwal",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -14419,72 +14556,72 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi",
-        details:
+        details:[
           "Arrive Delhi. Transfer to hotel. Evening at leisure — optional visit to India Gate, Rajpath, or Connaught Place. Welcome dinner. Overnight Delhi.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Delhi → Jaipur — Pink City",
-        details:
+        details:[
           "Drive to Jaipur (280 km / ~5 hrs). Check-in to palace/heritage hotel. Afternoon visit Hawa Mahal (Palace of Winds) and Jantar Mantar (UNESCO astronomical observatory). Evening at Chokhi Dhani — Rajasthani village experience, folk dances, and dinner. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jaipur — Amber Fort & City Palace",
-        details:
+        details:[
           "Morning elephant ride to Amber Fort — explore the Sheesh Mahal (Mirror Palace) and Diwan-i-Khas. Visit Jaigarh Fort and panoramic views of Jaipur. Afternoon at City Palace Museum and Maharaja's art collection. Evening at Johari Bazaar for gems and jewellery shopping. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Jaipur — Day at Leisure / Pushkar Excursion",
-        details:
+        details:[
           "Option A: Day at leisure in Jaipur — visit Nahargarh Fort at sunset. Option B: Full-day excursion to Pushkar (150 km) — visit the only Brahma Temple in India, bathe at Pushkar Lake Ghats. Return to Jaipur. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaipur → Jodhpur — Blue City",
-        details:
+        details:[
           "Drive to Jodhpur (340 km / ~5 hrs). Check-in. Afternoon visit Mehrangarh Fort — one of India's largest and most majestic forts, with sweeping views of the Blue City. Explore Jaswant Thada cenotaph. Overnight Jodhpur.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jodhpur — Old City & Clock Tower",
-        details:
+        details:[
           "Morning visit Umaid Bhawan Palace (part-royal residence, part-museum, part-luxury hotel). Explore the vibrant Sardar Market at Ghanta Ghar (Clock Tower). Spice market and blue-house walking tour of Old Jodhpur. Rajasthani thali dinner. Overnight Jodhpur.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Jodhpur → Udaipur — City of Lakes",
-        details:
+        details:[
           "Drive to Udaipur (250 km / ~4.5 hrs). Check-in to lake-view heritage hotel. Evening boat ride on Lake Pichola — views of the Lake Palace and City Palace at sunset. Dinner at a rooftop restaurant overlooking the lake. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Udaipur — City Palace & Jagdish Temple",
-        details:
+        details:[
           "Morning visit City Palace Museum — the largest palace complex in Rajasthan. Visit Jagdish Temple (17th century Indo-Aryan architecture). Afternoon Saheliyon Ki Bari (Garden of the Maids of Honour). Evening cultural show at Bagore Ki Haveli — Rajasthani folk dances and puppetry. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 9,
         date: "Day 9",
         title: "Udaipur — Chittorgarh Excursion",
-        details:
+        details:[
           "Full-day excursion to Chittorgarh Fort (110 km) — India's largest fort complex. Visit Vijay Stambha (Tower of Victory), Kirti Stambha, Padmini Palace, and Meera Temple. Return to Udaipur in the evening. Farewell dinner at a palace restaurant. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 10,
         date: "Day 10",
         title: "Udaipur — Departure",
-        details:
+        details:[
           "Morning at leisure. Shopping at Udaipur's Hathi Pol Bazaar for miniature paintings, silver jewellery, and block-printed textiles. Transfer to Udaipur airport (UDR) or railway station. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -14568,7 +14705,7 @@ export const tours = [
         text: "Our Rajasthan honeymoon was a dream come true — the Lake Palace boat ride at sunset, the rooftop dinners in Udaipur, and the romantic Amber Fort elephant ride. NIT planned every romantic detail to perfection.",
         author: "Arjun & Priya Mehta",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14576,7 +14713,7 @@ export const tours = [
         text: "Pushkar's sacred lake at dusk, Jaipur's pink palaces, and Udaipur's shimmering Lake Pichola — Rajasthan is the most romantic destination in India. Our NIT honeymoon package exceeded every expectation.",
         author: "Rahul & Deepika Singhania",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -14628,44 +14765,44 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Delhi → Jaipur — Pink City Arrival",
-        details:
+        details:[
           "Drive / fly from Delhi to Jaipur. Check-in to luxury boutique hotel. Evening visit Hawa Mahal and Jantar Mantar. Candlelight dinner at a rooftop restaurant. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Jaipur — Amber Fort & City Palace",
-        details:
+        details:[
           "Sunrise visit to Nahargarh Fort for panoramic views. Morning elephant ride to Amber Fort — explore the Sheesh Mahal and Sheesh Mahal. Afternoon City Palace and Hawa Mahal photo session. Romantic dinner at a palace restaurant. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jaipur → Pushkar — Sacred Romantic Town",
-        details:
+        details:[
           "Drive to Pushkar (150 km). Check-in to a lake-view boutique hotel. Visit the only Brahma Temple in India. Couple walk around the sacred Pushkar Lake at sunset — 52 ghats and evening lamps. Camel ride at the desert dunes. Romantic dinner. Overnight Pushkar.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Pushkar → Udaipur — City of Lakes",
-        details:
+        details:[
           "Drive to Udaipur (270 km). Check-in to luxury lake-view hotel. Sunset boat ride on Lake Pichola — floating by the legendary Lake Palace. Candlelight dinner at a rooftop lakeside restaurant. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Udaipur — City Palace & Romantic Sightseeing",
-        details:
+        details:[
           "Morning visit City Palace and Jagdish Temple. Afternoon Saheliyon Ki Bari gardens. Evening Bagore Ki Haveli cultural show — Rajasthani folk dances and puppetry. Private spa and Ayurvedic couple's massage. Farewell dinner by the lake. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Udaipur — Departure",
-        details:
+        details:[
           "Morning at leisure — sunrise views of Lake Pichola from the hotel terrace. Shopping for Rajasthani silver jewellery and miniature paintings. Transfer to Udaipur airport (UDR) or railway station. Fly or drive back to Delhi. Honeymoon tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -14745,7 +14882,7 @@ export const tours = [
         text: "The car was great, our driver Manish was excellent and very patient. The Taj Mahal and the Amber Fort were highlights. When we return to India we would definitely use Indruka Trips and Trip again.",
         author: "Alex de Aboitiz",
         date: "Travelled March 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14753,7 +14890,7 @@ export const tours = [
         text: "Excellent management — all hotels were good, food was fresh and tasty, driver was calm. No hurry during sightseeing. Thank you Indruka Trips and Team for making our journey a memorable one.",
         author: "Manisha Dalvi",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -14805,44 +14942,44 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi — Old Delhi Exploration",
-        details:
+        details:[
           "Arrive Delhi. Transfer to hotel. Afternoon rickshaw ride through Chandni Chowk — the iconic old Delhi spice, silver and textile market. Visit Jama Masjid and Red Fort (exterior). Guided tour of Raj Ghat (Mahatma Gandhi Memorial). Overnight Delhi.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Delhi — New Delhi Monuments",
-        details:
+        details:[
           "Morning guided tour of Qutub Minar (UNESCO) and Humayun's Tomb (UNESCO). Afternoon India Gate, Rajpath, Parliament House drive-by. Visit Akshardham Temple and Lotus Temple (exteriors). Evening at Connaught Place. Overnight Delhi.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Delhi → Mathura → Agra",
-        details:
+        details:[
           "Drive to Agra (230 km) via Mathura — birthplace of Lord Krishna. Visit Krishna Janmabhoomi Temple and Dwarkadhish Temple in Mathura. Continue to Agra. Check-in to hotel with Taj Mahal view if possible. Evening sunset view of the Taj Mahal from Mehtab Bagh. Overnight Agra.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Agra — Taj Mahal & Fatehpur Sikri",
-        details:
+        details:[
           "Sunrise visit to the Taj Mahal — the most beautiful monument in the world. Tonga ride on arrival at Agra Fort (Red Fort of Agra). Drive to Fatehpur Sikri — Akbar's abandoned Mughal capital (UNESCO World Heritage Site). Evening drive to Jaipur (240 km). Overnight Jaipur.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaipur — Amber Fort & Pink City",
-        details:
+        details:[
           "Morning elephant ride to Amber Fort — explore Sheesh Mahal and Diwan-i-Aam. Visit Jaigarh Fort and City Palace Museum. Hawa Mahal photo stop. Afternoon Jantar Mantar (UNESCO). Evening at Johari Bazaar and Bapu Bazaar for gems and handicraft shopping. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jaipur → Delhi — Departure",
-        details:
+        details:[
           "Morning at leisure. Drive back to Delhi (280 km / ~5 hrs) or take Shatabdi Express. Transfer to Delhi airport for onward travel. Golden Triangle Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -14938,7 +15075,7 @@ export const tours = [
         text: "The full Rajasthan circuit is a journey through time — from the golden sands of Jaisalmer to the blue city of Jodhpur and the lake city of Udaipur. Every heritage hotel was exceptional. NIT's planning was meticulous.",
         author: "George Christopher",
         date: "Travelled March 2026",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -14946,7 +15083,7 @@ export const tours = [
         text: "Sleeping under the stars at Sam Sand Dunes after a camel safari was pure magic. The Dilwara Jain temples at Mount Abu are the most intricate marble carvings I have ever seen. An extraordinary 10 days.",
         author: "Rallabandi Srinivasa",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -15001,72 +15138,72 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Jaipur — Pink City",
-        details:
+        details:[
           "Arrive Jaipur (JAI). Transfer to heritage hotel. Afternoon Amber Fort elephant ride and Sheesh Mahal. Evening at Chokhi Dhani — Rajasthani folk performance and dinner. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Jaipur — City Palace & Hawa Mahal",
-        details:
+        details:[
           "Morning City Palace Museum, Jantar Mantar (UNESCO), Hawa Mahal. Afternoon Nahargarh Fort at sunset — panoramic Pink City views. Shopping at Johari Bazaar for gems. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jaipur → Bikaner",
-        details:
+        details:[
           "Drive to Bikaner (330 km). Visit Junagarh Fort — one of the few unconquered forts in Rajasthan. National Research Centre on Camel (Camel Breeding Farm). Karni Mata Temple (Rat Temple) en route. Overnight Bikaner.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Bikaner → Jaisalmer — Golden City",
-        details:
+        details:[
           "Drive to Jaisalmer (330 km). Arrive the golden city. Check-in to heritage haveli. Visit Jaisalmer Fort (a living fort — UNESCO). Patwon Ki Haveli and Salim Singh Ki Haveli. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaisalmer — Desert Safari & Luxury Camp",
-        details:
+        details:[
           "Morning Gadsisar Lake boat ride. Afternoon drive to Sam Sand Dunes. Camel safari at sunset. Check-in to luxury desert camp. Rajasthani folk dance and music under the stars. Bonfire dinner. Overnight luxury desert camp.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jaisalmer → Jodhpur — Blue City",
-        details:
+        details:[
           "Drive to Jodhpur (300 km). Visit Mehrangarh Fort — massive 15th-century hilltop fortress. Jaswant Thada cenotaph. Old city walking tour through the blue-painted lanes of Brahmpuri. Rajasthani gala dinner. Overnight Jodhpur.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Jodhpur → Udaipur — City of Lakes",
-        details:
+        details:[
           "Drive to Udaipur (250 km). Check-in to lake-view luxury hotel. Sunset boat ride on Lake Pichola. Rooftop candlelight dinner overlooking the Lake Palace. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Udaipur — City Palace & Cultural Show",
-        details:
+        details:[
           "Morning City Palace Museum, Jagdish Temple, Saheliyon Ki Bari. Afternoon Pichola village excursion. Evening Bagore Ki Haveli cultural show — folk dances and puppetry. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 9,
         date: "Day 9",
         title: "Udaipur → Mount Abu",
-        details:
+        details:[
           "Drive to Mount Abu (165 km) — Rajasthan's only hill station. Check-in. Visit Dilwara Jain Temples — considered among the finest marble temple carvings in the world. Sunset point. Nakki Lake boat ride. Overnight Mount Abu.",
-      },
+      ]},
       {
         day: 10,
         date: "Day 10",
         title: "Mount Abu → Ajmer → Pushkar — Departure",
-        details:
+        details:[
           "Drive to Ajmer (185 km). Visit Dargah Sharif of Khwaja Moinuddin Chishti. Continue to Pushkar — Brahma Temple and Pushkar Lake Ghats. Transfer to Jaipur airport (JAI) or Ajmer railway station. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -15164,7 +15301,7 @@ export const tours = [
         text: "The Indian Splendour luxury train is the most extraordinary way to experience Rajasthan. Waking up to a new royal destination each morning, dining in style, and watching the tiger in Ranthambore — absolutely peerless.",
         author: "Prashant Singh",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -15172,7 +15309,7 @@ export const tours = [
         text: "Every meal, every excursion, every sunrise from the train window was a luxury experience. The gala dinner in Jodhpur and the royal lunch in Udaipur were highlights we will never forget. Worth every rupee.",
         author: "Yatthra Karunaratne",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -15233,51 +15370,51 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Board Indian Splendour — Delhi Departure",
-        details:
+        details:[
           "Board the Indian Splendour luxury train at Safdarjung Railway Station, Delhi. Welcome reception, cocktails, and orientation. Gourmet dinner in the dining car. Train departs overnight towards Agra. Overnight on train.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Agra — Taj Mahal & Exclusive Dinner",
-        details:
+        details:[
           "Arrive Agra. Morning Taj Mahal visit at sunrise — the greatest monument to love. Agra Fort tour. Exclusive dinner at a private heritage venue in Agra. Return to train. Overnight on train.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Ranthambore — Tiger Safari",
-        details:
+        details:[
           "Arrive Ranthambore. Shared Jeep Safari in Ranthambore National Park with naturalist — spot tigers, leopards, and crocodiles. Sundowners at a heritage property. Return to train. Overnight on train.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Jaipur — Elephant Ride & City",
-        details:
+        details:[
           "Arrive Jaipur. Elephant ride to Amber Fort. City Palace and Hawa Mahal. Rajasthani craft shopping. Gourmet dinner on board. Train departs for Bikaner. Overnight on train.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Bikaner → Jaisalmer — Sundowners at Sand Dunes",
-        details:
+        details:[
           "Arrive Bikaner. Junagarh Fort and Karni Mata Temple. Continue to Jaisalmer. Afternoon Jaisalmer Fort and Patwon Ki Haveli. Sundowner cocktails and camel ride at Sam Sand Dunes. Rajasthani folk music under the stars. Overnight on train.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jodhpur — Blue City & Gala Dinner",
-        details:
+        details:[
           "Arrive Jodhpur. Visit Mehrangarh Fort and Jaswant Thada. Blue city walking tour. Gala dinner at a Jodhpur heritage property. Train departs for Udaipur. Overnight on train.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Udaipur — Royal Lunch & Departure",
-        details:
+        details:[
           "Arrive Udaipur. Boat ride on Lake Pichola. City Palace Museum. Royal lunch at a lake-view palace restaurant. Visit Saheliyon Ki Bari. Transfer to Udaipur airport (UDR) for onward travel. Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -15385,7 +15522,7 @@ export const tours = [
         text: "Munnar's misty tea gardens in the morning and floating through the Alleppey backwaters at night — Kerala is impossibly beautiful. The premium houseboat was spacious, the food was authentic Kerala cuisine. Loved every moment.",
         author: "Ravi & Sunita Chandran",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -15393,7 +15530,7 @@ export const tours = [
         text: "7 destinations in 7 days — each one completely different from the last. Periyar boat safari, Varkala cliffs, Kovalam beach — God's Own Country lives up to every word of its name. Brilliantly planned by NIT.",
         author: "Anand & Kavitha Iyer",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -15448,51 +15585,51 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Cochin — Fort Kochi",
-        details:
+        details:[
           "Arrive Cochin (COK). Transfer to hotel. Visit Fort Kochi — Chinese fishing nets, Santa Cruz Basilica, Mattancherry Palace, Jew Town. Evening Kathakali dance performance. Overnight Cochin.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Cochin → Munnar — Tea Hills",
-        details:
+        details:[
           "Drive to Munnar (130 km / ~4 hrs) through scenic Ghats. Arrive Munnar — check-in to hill resort. Visit Eravikulam National Park (Nilgiri Tahr), Mattupetty Dam, and Echo Point. Tea estate walk. Overnight Munnar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Munnar → Thekkady — Wildlife Sanctuary",
-        details:
+        details:[
           "Drive to Thekkady (90 km). Periyar Wildlife Sanctuary boat ride — spot wild elephants, bison, and migratory birds on the Periyar Lake. Spice plantation tour. Evening cultural show — Kalaripayattu martial arts. Overnight Thekkady.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Thekkady → Alleppey — Premium Houseboat",
-        details:
+        details:[
           "Drive to Alleppey (140 km). Board your premium private houseboat. Cruise through the Alleppey backwaters — coconut groves, paddy fields, village canals. All Kerala meals served on board. Sunset on the backwaters. Overnight on houseboat.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Alleppey → Varkala — Cliff Beach",
-        details:
+        details:[
           "Disembark houseboat. Drive to Varkala (80 km). Check-in to cliff-top resort. Walk along the dramatic laterite cliffs. Visit Janardhanaswamy Temple (2000+ years old). Sunset from the cliff with the Arabian Sea below. Overnight Varkala.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Varkala → Kovalam — Lighthouse Beach",
-        details:
+        details:[
           "Drive to Kovalam (54 km). Check-in to beach resort. Day at Lighthouse Beach and Samudra Beach. Optional water sports. Ayurvedic massage. Sunset at the iconic Kovalam Lighthouse. Overnight Kovalam.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Kovalam → Trivandrum — Departure",
-        details:
+        details:[
           "Drive to Trivandrum (16 km). Visit Padmanabhaswamy Temple, Napier Museum. Shopping at Chalai Bazaar for Kerala spices and handicrafts. Transfer to Trivandrum airport (TRV). Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -15584,7 +15721,7 @@ export const tours = [
         text: "Kerala is the most romantic destination in India — the misty Munnar hills, the magical Alleppey houseboat night, and the Kovalam sunset. Our NIT honeymoon package was perfectly curated down to the last candlelit dinner.",
         author: "Rohit & Priya Sharma",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -15592,7 +15729,7 @@ export const tours = [
         text: "Kumarakom was the hidden gem of the trip — waking up to birds calling on Vembanad Lake, drifting through the backwaters in our private houseboat. NIT took care of every romantic detail flawlessly.",
         author: "Anil & Sunita Verma",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -15645,58 +15782,58 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Cochin — Romantic Fort Kochi",
-        details:
+        details:[
           "Arrive Cochin (COK). Transfer to boutique hotel. Evening stroll at Fort Kochi — Chinese fishing nets, colonial streets. Candlelight dinner at a waterfront restaurant. Overnight Cochin.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Cochin → Munnar — Misty Hill Romance",
-        details:
+        details:[
           "Drive to Munnar (130 km). Check-in to luxury hillside resort. Afternoon tea estate walk with couple's high tea overlooking the tea gardens. Sunset from Echo Point. Overnight Munnar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Munnar — Sunrise Trek & Nature",
-        details:
+        details:[
           "Sunrise nature walk / couple's trek. Visit Eravikulam National Park (Nilgiri Tahr). Mattupetty Dam and Kundala Lake. Couples Ayurvedic massage at the resort spa. Romantic dinner. Overnight Munnar.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Munnar → Alleppey — Luxury Houseboat",
-        details:
+        details:[
           "Drive to Alleppey (140 km). Board your private luxury houseboat. Cruise through the famous Kerala backwaters — paddy fields, canals, village life. Candlelight dinner on the houseboat deck. Overnight on houseboat.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Alleppey → Kumarakom — Vembanad Lake",
-        details:
+        details:[
           "Disembark houseboat. Drive to Kumarakom (30 km). Check-in to a luxury backwater resort on Vembanad Lake. Afternoon Kumarakom Bird Sanctuary boat ride. Sunset from the resort deck over the lake. Overnight Kumarakom.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Kumarakom — Lake & Leisure",
-        details:
+        details:[
           "Day at leisure in Kumarakom. Optional canoe ride through the mangroves. Couple's Panchakarma Ayurvedic spa treatment. Evening romantic dinner on a floating platform. Overnight Kumarakom.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Kumarakom → Kovalam — Lighthouse Beach",
-        details:
+        details:[
           "Drive to Kovalam (175 km). Check-in to beachside luxury resort. Sunset walk on Lighthouse Beach. Candlelight beachside dinner with the sound of the Arabian Sea. Overnight Kovalam.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Kovalam → Trivandrum — Departure",
-        details:
+        details:[
           "Morning couples yoga and meditation on the beach. Drive to Trivandrum (16 km). Shopping for Kerala spices, coconut products, and handicrafts. Transfer to Trivandrum airport (TRV). Honeymoon tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -15789,7 +15926,7 @@ export const tours = [
         text: "Pangong Tso at sunrise — the water changing from turquoise to sapphire to silver — is one of the most otherworldly sights on earth. NIT's Ladakh tour was meticulously planned with excellent acclimatization built in.",
         author: "Rallabandi Srinivasa",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -15797,7 +15934,7 @@ export const tours = [
         text: "Crossing Khardung La on the way to Nubra Valley and watching Bactrian camels against the Karakoram backdrop — Ladakh is unlike anywhere on earth. Every detail was handled perfectly by NIT's team.",
         author: "Krishan Bhardwaj",
         date: "Travelled September 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -15852,71 +15989,81 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Srinagar — Dal Lake & Shikara",
-        details:
-          "Arrive Srinagar (SXR). Transfer to houseboat on Dal Lake. Evening Shikara ride — floating gardens, lotus blooms, and Himalayan reflections on the lake. Welcome dinner on houseboat. Overnight Srinagar.",
+        details: [
+          "Arrive Srinagar (SXR). Transfer to houseboat on Dal Lake. Evening Shikara ride — floating gardens, lotus blooms, and Himalayan reflections on the lake. Welcome dinner on houseboat. Overnight Srinagar."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar — Mughal Gardens & Old City",
-        details:
-          "Morning visit Shalimar Bagh, Nishat Bagh (Mughal Gardens), and Chashme Shahi. Afternoon Hazratbal Shrine and Jamia Masjid. Old city bazaars — Pashmina shawls, Kashmiri embroidery, saffron. Overnight Srinagar.",
+        details: [
+          "Morning visit Shalimar Bagh, Nishat Bagh (Mughal Gardens), and Chashme Shahi. Afternoon Hazratbal Shrine and Jamia Masjid. Old city bazaars — Pashmina shawls, Kashmiri embroidery, saffron. Overnight Srinagar."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar → Gulmarg — Snow & Gondola",
-        details:
-          "Drive to Gulmarg (56 km). Board the Gulmarg Gondola — Asia's highest cable car (Phase 1: 2,650 m; Phase 2: 3,980 m). Snow activities, skiing, and panoramic Himalayan views. Overnight Gulmarg.",
+        details: [
+          "Drive to Gulmarg (56 km). Board the Gulmarg Gondola — Asia's highest cable car (Phase 1: 2,650 m; Phase 2: 3,980 m). Snow activities, skiing, and panoramic Himalayan views. Overnight Gulmarg."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Gulmarg → Sonamarg → Leh",
-        details:
-          "Drive through Sonamarg (Meadow of Gold) — stunning glacier views. Continue on the Srinagar-Leh Highway via Zoji La Pass, Drass, Kargil. Arrive Leh (3,500 m). Check-in. Rest for acclimatization. Overnight Leh.",
+        details: [
+          "Drive through Sonamarg (Meadow of Gold) — stunning glacier views. Continue on the Srinagar-Leh Highway via Zoji La Pass, Drass, Kargil. Arrive Leh (3,500 m). Check-in. Rest for acclimatization. Overnight Leh."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Leh — Acclimatization & Local Sightseeing",
-        details:
-          "Easy day for acclimatization. Visit Leh Palace, Shanti Stupa, and Leh Market. Walk through the old town. Visit Namgyal Tsemo Monastery. Magnetic Hill afternoon. Sangam (Indus-Zanskar confluence) drive-by. Overnight Leh.",
+        details: [
+          "Easy day for acclimatization. Visit Leh Palace, Shanti Stupa, and Leh Market. Walk through the old town. Visit Namgyal Tsemo Monastery. Magnetic Hill afternoon. Sangam (Indus-Zanskar confluence) drive-by. Overnight Leh."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Leh — Monasteries Tour",
-        details:
-          "Full day monastery circuit: Thiksey Monastery (resembles Potala Palace), Hemis Monastery (largest in Ladakh), Shey Palace, and Rancho School (3 Idiots filming location). Sunset at Stakna Monastery. Overnight Leh.",
+        details: [
+          "Full day monastery circuit: Thiksey Monastery (resembles Potala Palace), Hemis Monastery (largest in Ladakh), Shey Palace, and Rancho School (3 Idiots filming location). Sunset at Stakna Monastery. Overnight Leh."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Leh → Pangong Tso — Blue Lake",
-        details:
-          "Early drive to Pangong Tso Lake (160 km) via Chang La Pass (5,360 m — third highest motorable road in the world). First sight of the stunning blue-green lake (4,350 m). Afternoon at leisure by the lake. Overnight at Pangong camp.",
+        details: [
+          "Early drive to Pangong Tso Lake (160 km) via Chang La Pass (5,360 m — third highest motorable road in the world). First sight of the stunning blue-green lake (4,350 m). Afternoon at leisure by the lake. Overnight at Pangong camp."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Pangong Tso → Nubra Valley via Khardung La",
-        details:
-          "Sunrise at Pangong Tso. Drive back to Leh via Chang La. Continue via Khardung La Pass (one of the world's highest motorable roads at 5,359 m). Descend to Nubra Valley — the valley of flowers. Bactrian double-humped camel safari at Hunder Sand Dunes. Overnight Nubra.",
+        details: [
+          "Sunrise at Pangong Tso. Drive back to Leh via Chang La. Continue via Khardung La Pass (one of the world's highest motorable roads at 5,359 m). Descend to Nubra Valley — the valley of flowers. Bactrian double-humped camel safari at Hunder Sand Dunes. Overnight Nubra."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Nubra → Leh → Manali Highway",
-        details:
-          "Morning at Diskit Monastery — giant Maitreya Buddha statue overlooking the valley. Drive back to Leh (120 km). Afternoon start on the legendary Manali-Leh Highway. Overnight Sarchu / Jispa.",
+        details: [
+          "Morning at Diskit Monastery — giant Maitreya Buddha statue overlooking the valley. Drive back to Leh (120 km). Afternoon start on the legendary Manali-Leh Highway. Overnight Sarchu / Jispa."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Sarchu → Manali — Departure",
-        details:
-          "Drive through Baralacha La, Rohtang Pass, and descend into the Kullu Valley. Arrive Manali — the end of the Ladakh adventure. Transfer to Manali bus stand or Bhuntar airport. Tour concludes.",
+        details: [
+          "Drive through Baralacha La, Rohtang Pass, and descend into the Kullu Valley. Arrive Manali — the end of the Ladakh adventure. Transfer to Manali bus stand or Bhuntar airport. Tour concludes."
+          ],
       },
     ],
 
@@ -16009,7 +16156,7 @@ export const tours = [
         text: "Riding through Rohtang Pass, Baralacha La, and Khardung La on a Royal Enfield — this is the adventure of a lifetime. NIT provided top-maintained bikes, a support vehicle, and brilliant route guidance throughout.",
         author: "Vikram & Sanjay Khanna",
         date: "Travelled July 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -16017,7 +16164,7 @@ export const tours = [
         text: "The Manali-Leh highway is the most spectacular road I have ever ridden. Camping at Pangong Tso under the Milky Way was indescribable. This bike tour is for anyone who wants to live fully.",
         author: "Anirudh & Prateek Sharma",
         date: "Travelled August 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -16072,85 +16219,97 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Manali — Bike Briefing",
-        details:
-          "Arrive Manali. Check-in. Afternoon bike collection, safety briefing, and gear check. Test ride in Manali. Evening route briefing and acclimatization walk. Overnight Manali.",
+        details: [
+          "Arrive Manali. Check-in. Afternoon bike collection, safety briefing, and gear check. Test ride in Manali. Evening route briefing and acclimatization walk. Overnight Manali."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Manali — Acclimatization & Local Ride",
-        details:
-          "Easy local ride to Solang Valley and Hadimba Temple. Afternoon at leisure for acclimatization. Gear check and final preparations. Overnight Manali.",
+        details: [
+          "Easy local ride to Solang Valley and Hadimba Temple. Afternoon at leisure for acclimatization. Gear check and final preparations. Overnight Manali."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Manali → Rohtang Pass → Keylong",
-        details:
-          "Ride over Rohtang Pass (3,978 m) — first high-altitude pass of the trip. Descend into the Lahaul Valley. Continue to Keylong (110 km). Overnight Keylong.",
+        details: [
+          "Ride over Rohtang Pass (3,978 m) — first high-altitude pass of the trip. Descend into the Lahaul Valley. Continue to Keylong (110 km). Overnight Keylong."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Keylong → Baralacha La → Sarchu",
-        details:
-          "Ride through Sissu, Tandi, and up to the dramatic Baralacha La Pass (4,890 m). Descend to Sarchu (140 km) — camped at the Himachal-Ladakh border plateau. Overnight camp Sarchu.",
+        details: [
+          "Ride through Sissu, Tandi, and up to the dramatic Baralacha La Pass (4,890 m). Descend to Sarchu (140 km) — camped at the Himachal-Ladakh border plateau. Overnight camp Sarchu."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Sarchu → Lachulung La → Pang → Leh",
-        details:
-          "Ride through the incredible Gata Loops (21 consecutive hairpin bends), Lachulung La (5,059 m), More Plains — the world's highest plateau. Arrive Leh (260 km). Overnight Leh.",
+        details: [
+          "Ride through the incredible Gata Loops (21 consecutive hairpin bends), Lachulung La (5,059 m), More Plains — the world's highest plateau. Arrive Leh (260 km). Overnight Leh."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Leh — Acclimatization & Rest",
-        details:
-          "Rest day in Leh for acclimatization. Light walk to Leh Palace, Leh Market, and Shanti Stupa. Gear maintenance. Overnight Leh.",
+        details: [
+          "Rest day in Leh for acclimatization. Light walk to Leh Palace, Leh Market, and Shanti Stupa. Gear maintenance. Overnight Leh."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Leh — Monastery Circuit Ride",
-        details:
-          "Ride to Thiksey, Hemis, and Shey Monasteries. Visit the Sangam (Indus-Zanskar confluence). Magnetic Hill experience. Overnight Leh.",
+        details: [
+          "Ride to Thiksey, Hemis, and Shey Monasteries. Visit the Sangam (Indus-Zanskar confluence). Magnetic Hill experience. Overnight Leh."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Leh → Khardung La → Nubra Valley",
-        details:
-          "Ride up to Khardung La Pass (5,359 m) — one of the highest motorable roads in the world. Descend to Nubra Valley (120 km). Camel ride at Hunder Sand Dunes. Overnight Nubra camp.",
+        details: [
+          "Ride up to Khardung La Pass (5,359 m) — one of the highest motorable roads in the world. Descend to Nubra Valley (120 km). Camel ride at Hunder Sand Dunes. Overnight Nubra camp."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Nubra → Leh → Pangong Tso",
-        details:
-          "Ride back to Leh via Khardung La. Continue to Pangong Tso (160 km) via Chang La Pass (5,360 m). Arrive at the iconic blue lake. Overnight camp at Pangong Tso.",
+        details: [
+          "Ride back to Leh via Khardung La. Continue to Pangong Tso (160 km) via Chang La Pass (5,360 m). Arrive at the iconic blue lake. Overnight camp at Pangong Tso."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Pangong Tso — Sunrise & Lake Day",
-        details:
-          "Sunrise at Pangong — the colours shifting from gold to silver to blue. Day at leisure by the lake. Evening campfire under the Ladakhi stars. Overnight Pangong camp.",
+        details: [
+          "Sunrise at Pangong — the colours shifting from gold to silver to blue. Day at leisure by the lake. Evening campfire under the Ladakhi stars. Overnight Pangong camp."
+          ],
       },
       {
         day: 11,
         date: "Day 11",
         title: "Pangong Tso → Leh — Return Ride",
-        details:
-          "Return ride from Pangong to Leh via Chang La. Bike handover. Farewell dinner in Leh. Overnight Leh.",
+        details: [
+          "Return ride from Pangong to Leh via Chang La. Bike handover. Farewell dinner in Leh. Overnight Leh."
+          ],
       },
       {
         day: 12,
         date: "Day 12",
         title: "Leh — Departure",
-        details:
-          "Transfer to Leh Kushok Bakula Rimpochhe Airport (IXL). Fly to Delhi or Srinagar. Ladakh Bike Tour concludes — a journey of a lifetime complete.",
+        details: [
+          "Transfer to Leh Kushok Bakula Rimpochhe Airport (IXL). Fly to Delhi or Srinagar. Ladakh Bike Tour concludes — a journey of a lifetime complete."
+          ],
       },
     ],
 
@@ -16246,7 +16405,7 @@ export const tours = [
         text: "Watching the sunrise together over Pangong Tso — the lake turning from deep blue to blazing gold in minutes — was the most romantic moment of our lives. Ladakh is an extraordinary honeymoon destination. NIT made it flawless.",
         author: "Rohit & Priya Kapoor",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -16254,7 +16413,7 @@ export const tours = [
         text: "We had never imagined honeymooning in Ladakh but it surpassed every beach destination we have ever visited. The Nubra Valley camel ride and the Pangong lake camp were moments we will cherish forever. Thank you NIT.",
         author: "Aakash & Sneha Bhatia",
         date: "Travelled July 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -16306,57 +16465,65 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Leh — Rest & Acclimatization",
-        details:
-          "Arrive Leh (IXL). Transfer to luxury hotel. Complete rest for acclimatization (altitude 3,500 m). Evening light walk to Leh Market. Welcome dinner. Overnight Leh.",
+        details: [
+          "Arrive Leh (IXL). Transfer to luxury hotel. Complete rest for acclimatization (altitude 3,500 m). Evening light walk to Leh Market. Welcome dinner. Overnight Leh."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Leh — Monastery & Shanti Stupa",
-        details:
-          "Acclimatization continues. Visit Shanti Stupa at sunset — panoramic views of Leh and the Ladakhi Himalayas. Explore Leh Palace (17th-century royal residence) and Namgyal Tsemo Monastery. Romantic dinner at a Leh rooftop restaurant. Overnight Leh.",
+        details: [
+          "Acclimatization continues. Visit Shanti Stupa at sunset — panoramic views of Leh and the Ladakhi Himalayas. Explore Leh Palace (17th-century royal residence) and Namgyal Tsemo Monastery. Romantic dinner at a Leh rooftop restaurant. Overnight Leh."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Leh — Monastery Circuit",
-        details:
-          "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — the confluence of the Indus and Zanskar rivers. Magnetic Hill. Overnight Leh.",
+        details: [
+          "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — the confluence of the Indus and Zanskar rivers. Magnetic Hill. Overnight Leh."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Leh → Khardung La → Nubra Valley",
-        details:
-          "Drive over Khardung La Pass (5,359 m) — couples photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Check-in to camp/resort. Bactrian camel safari at Hunder Sand Dunes — double-humped camels against the Karakoram backdrop. Campfire dinner. Overnight Nubra.",
+        details: [
+          "Drive over Khardung La Pass (5,359 m) — couples photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Check-in to camp/resort. Bactrian camel safari at Hunder Sand Dunes — double-humped camels against the Karakoram backdrop. Campfire dinner. Overnight Nubra."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Nubra → Pangong Tso — Blue Lake",
-        details:
-          "Drive to Pangong Tso Lake (150 km) via Shyok River route. First view of the legendary blue-green lake (4,350 m). Check-in to luxury lake-side camp. Afternoon at the lakeside — the turquoise waters, white peaks, and changing light. Candlelight dinner by the lake. Overnight Pangong camp.",
+        details: [
+          "Drive to Pangong Tso Lake (150 km) via Shyok River route. First view of the legendary blue-green lake (4,350 m). Check-in to luxury lake-side camp. Afternoon at the lakeside — the turquoise waters, white peaks, and changing light. Candlelight dinner by the lake. Overnight Pangong camp."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Pangong Tso — Sunrise & Romantic Day",
-        details:
-          "Wake up before dawn for the Pangong Tso sunrise — one of nature's most spectacular colour shows. Morning walk along the lakeshore. Afternoon at leisure — photography, kayaking (optional), or simply sitting together by the lake. Overnight Pangong camp.",
+        details: [
+          "Wake up before dawn for the Pangong Tso sunrise — one of nature's most spectacular colour shows. Morning walk along the lakeshore. Afternoon at leisure — photography, kayaking (optional), or simply sitting together by the lake. Overnight Pangong camp."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Pangong Tso → Leh",
-        details:
-          "Drive back to Leh via Chang La Pass (5,360 m). Afternoon free for shopping at Leh Market — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh.",
+        details: [
+          "Drive back to Leh via Chang La Pass (5,360 m). Afternoon free for shopping at Leh Market — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Leh — Departure",
-        details:
-          "Sunrise moment from the hotel. Transfer to Leh Kushok Bakula Rimpochhe Airport (IXL). Fly to Delhi. Ladakh Honeymoon Tour concludes with memories that will last a lifetime.",
+        details: [
+          "Sunrise moment from the hotel. Transfer to Leh Kushok Bakula Rimpochhe Airport (IXL). Fly to Delhi. Ladakh Honeymoon Tour concludes with memories that will last a lifetime."
+          ],
       },
     ],
 
@@ -16460,7 +16627,7 @@ export const tours = [
         text: "14 days, two worlds — lush Kashmir and barren Ladakh. From Dal Lake's floating gardens to Pangong's blue silence, this grand tour is the ultimate Indian road journey. NIT handled every pass and valley flawlessly.",
         author: "Vikram & Ananya Sharma",
         date: "Travelled July 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -16468,7 +16635,7 @@ export const tours = [
         text: "Kargil and Lamayuru were unexpected highlights nobody talks about. The Leh–Manali highway finale through Rohtang was surreal. One trip, every landscape India has to offer. Thank you NIT.",
         author: "Rajesh & Pooja Mehta",
         date: "Travelled August 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -16523,100 +16690,100 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Srinagar — Shikara Ride on Dal Lake",
-        details:
+        details:[
           "Arrive Srinagar airport. Transfer to houseboat on Dal Lake. 2-hour Shikara ride past Char Chinar Island, Floating Gardens, and the lake bazaar. Welcome dinner on the houseboat. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar — Mughal Gardens & Pahalgam Excursion",
-        details:
+        details:[
           "Morning visit to Nishat Bagh, Shalimar Bagh, and Chashma Shahi Mughal Gardens. Full-day excursion to Pahalgam (88 km) — Betaab Valley, Aru Valley, and Chandanwari. Return for dinner on houseboat. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar — Gulmarg Gondola Ride",
-        details:
+        details:[
           "Full-day excursion to Gulmarg (50 km). Ride the world's 2nd highest cable car — Gulmarg Gondola — for sweeping Himalayan views. Optional skiing and snow activities. Return to houseboat for dinner. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Srinagar → Sonamarg → Kargil",
-        details:
+        details:[
           "Checkout and drive to Kargil (200 km) via Sonamarg — the 'Meadow of Gold'. Cross Zoji La Pass. Stop at Drass — India's coldest town and site of the 1999 Kargil War. Visit Kargil War Memorial. Overnight Kargil.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Kargil → Lamayuru → Leh",
-        details:
+        details:[
           "Drive to Leh (200 km) via Lamayuru — Ladakh's oldest monastery perched above the surreal Moonland landscape. Visit Alchi Monastery and Magnetic Hill en route. Arrive Leh, check-in and rest. Overnight Leh.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Leh — Acclimatization & Local Sightseeing",
-        details:
+        details:[
           "Rest morning for high-altitude acclimatization (3,500 m). Afternoon visit to Shanti Stupa at sunset, 17th-century Leh Palace, and Namgyal Tsemo Monastery. Evening walk through Leh Market. Overnight Leh.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Leh — Monastery Circuit & Sangam",
-        details:
+        details:[
           "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — confluence of the Indus and Zanskar rivers. Magnetic Hill stop. Overnight Leh.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Leh → Khardung La → Nubra Valley",
-        details:
+        details:[
           "Drive over Khardung La Pass (5,359 m) — photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Bactrian camel safari at Hunder Sand Dunes. Campfire dinner under Himalayan skies. Overnight Nubra Valley.",
-      },
+      ]},
       {
         day: 9,
         date: "Day 9",
         title: "Nubra Valley → Shyok River → Pangong Tso",
-        details:
+        details:[
           "Drive to Pangong Tso (140 km) via the scenic Shyok River Valley. First view of the legendary blue-green lake at 4,350 m. Check-in to lakeside camp. Candlelight dinner by the water. Overnight Pangong Tso.",
-      },
+      ]},
       {
         day: 10,
         date: "Day 10",
         title: "Pangong Tso — Sunrise & Full Day at the Lake",
-        details:
+        details:[
           "Wake before dawn for the Pangong Tso sunrise — the lake shifts from deep cobalt to blazing gold. Morning walk along the shore. Afternoon at leisure — photography, optional kayaking, or quiet time by the Indo-China border lake. Overnight Pangong Tso.",
-      },
+      ]},
       {
         day: 11,
         date: "Day 11",
         title: "Pangong Tso → Leh via Chang La Pass",
-        details:
+        details:[
           "Drive back to Leh (220 km) over Chang La Pass (5,360 m). Afternoon free for Leh Market shopping — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh.",
-      },
+      ]},
       {
         day: 12,
         date: "Day 12",
         title: "Leh → Sarchu — Leh–Manali Highway Begins",
-        details:
+        details:[
           "Begin the legendary Leh–Manali Highway (Day 1 of 2). Drive through Upshi and cross Tanglang La Pass (5,328 m). Descend into the high plains of Morey. Arrive Sarchu (4,290 m) camp by evening. Overnight Sarchu camp.",
-      },
+      ]},
       {
         day: 13,
         date: "Day 13",
         title: "Sarchu → Rohtang Pass → Manali",
-        details:
+        details:[
           "Cross Baralacha La (4,890 m) and Rohtang Pass (3,978 m) — a dramatic shift from barren desert to pine-forested Kullu Valley. Arrive Manali by evening. Celebration dinner. Overnight Manali.",
-      },
+      ]},
       {
         day: 14,
         date: "Day 14",
         title: "Manali — Solang Valley & Departure",
-        details:
+        details:[
           "Morning excursion to Solang Valley and Hadimba Devi Temple (16th-century pagoda in cedar forest). Last souvenir browse at Manali Mall Road. Transfer to Bhuntar Airport or bus stand. Kashmir to Ladakh Grand Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -16728,7 +16895,7 @@ export const tours = [
         text: "The Jaisalmer desert camp under a canopy of stars was unlike anything we have ever experienced. Rajasthan is pure magic — every fort, every palace, every sunset. NIT made sure we didn't miss a single moment.",
         author: "Arjun & Meera Singhania",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -16736,7 +16903,7 @@ export const tours = [
         text: "From the Pink City to the Blue City to the City of Lakes — 9 days was just enough to fall completely in love with Rajasthan. Amber Fort at sunrise was breathtaking. Highly recommend this itinerary.",
         author: "Sameer & Divya Lakhani",
         date: "Travelled October 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -16789,65 +16956,65 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi — Transfer to Jaipur",
-        details:
+        details:[
           "Arrive Delhi. Transfer to Jaipur by road (280 km, ~5 hrs). Check-in to heritage hotel. Evening walk through Jaipur's bazaars — bangles, block prints, and blue pottery. Welcome dinner. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Jaipur — Amber Fort & City Palace",
-        details:
+        details:[
           "Morning visit to Amber Fort — jeep or elephant ride to the hilltop entrance. Explore Sheesh Mahal (Hall of Mirrors). Afternoon at City Palace, Jantar Mantar observatory, and the iconic Hawa Mahal. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jaipur → Pushkar → Jaisalmer",
-        details:
+        details:[
           "Drive via Pushkar — visit the sacred Brahma Temple and the ghats of Pushkar Lake. Continue to Jaisalmer (550 km total). Check-in to haveli-style hotel inside the golden fort city. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Jaisalmer — Golden Fort & Sam Sand Dunes",
-        details:
+        details:[
           "Morning exploration of Jaisalmer Fort, Patwon Ki Haveli, and Gadisar Lake. Evening drive to Sam Sand Dunes — camel safari at sunset, Rajasthani folk music and dinner at the desert camp. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaisalmer → Jodhpur — The Blue City",
-        details:
+        details:[
           "Drive to Jodhpur (280 km). Visit the magnificent Mehrangarh Fort — panoramic views of the blue-painted city below. Explore Jaswant Thada and the Clock Tower market. Overnight Jodhpur.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jodhpur → Udaipur — City of Lakes",
-        details:
+        details:[
           "Drive to Udaipur (250 km) through the Aravalli hills. Check-in to lakeside hotel on the banks of Lake Pichola. Evening boat ride on Lake Pichola — views of the illuminated Lake Palace. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Udaipur — City Palace & Vintage Car Museum",
-        details:
+        details:[
           "Visit the grand City Palace complex — seven palaces merged over centuries. Explore the Vintage Car Museum, Saheliyon Ki Bari gardens, and the Jagdish Temple. Sunset from the Monsoon Palace hilltop. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Udaipur — Leisure & Local Markets",
-        details:
+        details:[
           "Morning at leisure — optional cooking class or pottery workshop. Afternoon stroll through Udaipur's art galleries and Hathi Pol market — miniature paintings, silver jewellery, and local textiles. Farewell dinner. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 9,
         date: "Day 9",
         title: "Udaipur — Departure to Delhi",
-        details:
+        details:[
           "Transfer to Udaipur airport or railway station. Fly or train to Delhi. Rajasthan Royal Triangle Tour concludes — the colours, forts, and deserts of Rajasthan etched into memory.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -16941,7 +17108,7 @@ export const tours = [
         text: "Rajasthan is the most romantic destination in India and nobody talks about it enough. The candlelight dinner at Sam Sand Dunes and the Lake Palace boat ride in Udaipur were pure magic. NIT took care of every detail.",
         author: "Karan & Nisha Malhotra",
         date: "Travelled December 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -16949,7 +17116,7 @@ export const tours = [
         text: "We chose Rajasthan over Goa for our honeymoon and it was the best decision we ever made. The colours, the forts, the desert — it is like honeymooning inside a fairytale. Thank you Indruka Trips and Trip.",
         author: "Dev & Preethi Iyer",
         date: "Travelled November 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -17001,58 +17168,58 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi — Transfer to Jaipur",
-        details:
+        details:[
           "Arrive Delhi. Drive to Jaipur (280 km). Check-in to luxury hotel. Evening candlelit dinner at a rooftop Jaipur restaurant with fort views. Welcome to Rajasthan. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Jaipur — Amber Fort & Hawa Mahal",
-        details:
+        details:[
           "Sunrise jeep ride to Amber Fort — explore Sheesh Mahal and the royal zenana quarters. Afternoon at Hawa Mahal, City Palace, and Jantar Mantar. Romantic rooftop dinner overlooking the Pink City. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Jaipur → Jaisalmer — Golden City Arrival",
-        details:
+        details:[
           "Drive to Jaisalmer (540 km). Check-in to a luxury heritage haveli inside or near Jaisalmer Fort. Sunset walk through the golden sandstone lanes of the living fort. Dinner at a haveli rooftop. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Jaisalmer — Fort, Havelis & Sam Sand Dunes Camp",
-        details:
+        details:[
           "Morning visit to Patwon Ki Haveli and Gadisar Lake. Evening camel safari at Sam Sand Dunes at sunset. Candlelight dinner at a luxury desert camp with folk music and dance under the stars. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaisalmer → Udaipur — City of Lakes",
-        details:
+        details:[
           "Drive to Udaipur (490 km). Check-in to a lakeside luxury hotel overlooking Lake Pichola. Evening sunset boat ride on Lake Pichola — the illuminated Lake Palace glowing on the water. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Udaipur — City Palace & Lake Palace Views",
-        details:
+        details:[
           "Visit the City Palace complex — seven palaces merged over centuries of royal history. Explore Jagdish Temple and Saheliyon Ki Bari gardens. Romantic dinner at a Lake Pichola-facing terrace restaurant. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Udaipur — Monsoon Palace & Leisure",
-        details:
+        details:[
           "Morning at leisure — optional couple's spa at the hotel. Afternoon drive to Monsoon Palace (Sajjan Garh) for panoramic sunset views of the Aravalli hills and the lakes of Udaipur. Farewell dinner. Overnight Udaipur.",
-      },
+      ]},
       {
         day: 8,
         date: "Day 8",
         title: "Udaipur — Departure",
-        details:
+        details:[
           "Transfer to Udaipur airport or railway station. Fly or train onward. Rajasthan Honeymoon Tour concludes — the forts, lakes, and desert skies of Rajasthan forever in your hearts.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -17140,7 +17307,7 @@ export const tours = [
         text: "6 days felt like a complete Rajasthan experience — the heritage of Jaipur, the quirky charm of Bikaner, and the sheer silence of the Jaisalmer desert. The Sam Sand Dunes camp night was unforgettable. Brilliant value from NIT.",
         author: "Rohit Sharma & Friends",
         date: "Travelled January 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -17148,7 +17315,7 @@ export const tours = [
         text: "The camel safari at sunset and the campfire dinner under a sky full of stars at Sam Dunes — I still think about it. Jaipur's Amber Fort is also something everyone should see. NIT delivered everything on time.",
         author: "Priya & Ankit Verma",
         date: "Travelled February 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -17200,44 +17367,44 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Delhi — Transfer to Jaipur",
-        details:
+        details:[
           "Arrive Delhi. Drive to Jaipur (280 km, ~5 hrs). Check-in to hotel. Evening stroll through Jaipur's Johari Bazaar — gems, silver, and block-printed textiles. Dinner at a local Rajasthani dhaba. Overnight Jaipur.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Jaipur — Amber Fort & City Heritage",
-        details:
+        details:[
           "Sunrise jeep ride to Amber Fort — Sheesh Mahal, Ganesh Pol, and the panoramic Maota Lake views. Afternoon at Hawa Mahal, City Palace, and Jantar Mantar. Drive to Bikaner (330 km) by evening. Overnight Bikaner.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Bikaner — Junagarh Fort & Camel Research Centre",
-        details:
+        details:[
           "Morning visit to Junagarh Fort — one of Rajasthan's most intact medieval fortresses. Visit the National Research Centre on Camels — the world's only camel research station. Drive to Jaisalmer (330 km). Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Jaisalmer — Golden Fort & Havelis",
-        details:
+        details:[
           "Explore Jaisalmer Fort — a living 12th-century citadel still inhabited today. Visit Patwon Ki Haveli and Nathmal Ki Haveli for intricate sandstone carvings. Afternoon at Gadisar Lake. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Jaisalmer — Sam Sand Dunes Desert Adventure",
-        details:
+        details:[
           "Free morning in Jaisalmer. Afternoon drive to Sam Sand Dunes (42 km). Camel safari at golden hour sunset over the Thar Desert. Dinner at a desert camp — Rajasthani folk music and bonfire under stars. Overnight Jaisalmer.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Jaisalmer — Departure to Delhi",
-        details:
+        details:[
           "Early morning sunrise over the dunes. Drive to Jaisalmer railway station or airport. Train or flight to Delhi. Jaisalmer Desert Camp & Jaipur Heritage Circuit Tour concludes.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -17335,7 +17502,7 @@ export const tours = [
         text: "Dal Lake from a houseboat at dawn, with mist over the mountains and a Shikara bringing fresh lotus flowers — Kashmir is truly heaven on earth. NIT made every day smooth and memorable.",
         author: "Suresh & Kavita Nair",
         date: "Travelled June 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -17343,7 +17510,7 @@ export const tours = [
         text: "The Gulmarg Gondola was worth the entire trip alone. Snow in June! Pahalgam's Betaab Valley is stunning. This is the Kashmir tour everyone should do at least once. Excellent arrangements by NIT.",
         author: "Amit & Shruti Joshi",
         date: "Travelled July 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -17396,51 +17563,51 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Srinagar — Shikara Ride on Dal Lake",
-        details:
+        details:[
           "Arrive Srinagar airport. Transfer to luxury houseboat on Dal Lake. 2-hour Shikara ride — Char Chinar Island, Floating Gardens, and the lake bazaar. Welcome Wazwan dinner on the houseboat. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar — Mughal Gardens & Local Sightseeing",
-        details:
+        details:[
           "Visit the Mughal Gardens — Nishat Bagh, Shalimar Bagh, and Chashma Shahi. Explore Shankaracharya Temple hilltop for panoramic views of the valley. Evening shopping at Lal Chowk for Pashmina and Kashmiri handicrafts. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar → Pahalgam — Valley of Shepherds",
-        details:
+        details:[
           "Drive to Pahalgam (88 km, ~2.5 hrs). Visit Betaab Valley, Aru Valley, and Chandanwari along the banks of the Lidder River. Optional pony ride in the meadows. Check-in to hotel. Overnight Pahalgam.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Pahalgam → Gulmarg — Meadow of Flowers",
-        details:
+        details:[
           "Drive to Gulmarg (140 km). Ride the Gulmarg Gondola — world's 2nd highest cable car — for sweeping views of Nanga Parbat and the Kashmir peaks. Optional skiing or snow activities. Check-in to hotel. Overnight Gulmarg.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Gulmarg → Sonamarg — Meadow of Gold",
-        details:
+        details:[
           "Drive to Sonamarg (100 km) — the golden meadow at the gateway to Ladakh. Visit Thajiwas Glacier by pony or on foot — snow even in summer. Dramatic views of the Sindh River valley. Check-in to hotel. Overnight Sonamarg.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Sonamarg → Srinagar — Return & Leisure",
-        details:
+        details:[
           "Drive back to Srinagar (80 km). Afternoon free for last-minute shopping — Kashmiri carpets, crewel embroidery, and dry fruits. Evening Shikara ride at sunset on Dal Lake. Farewell dinner. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Srinagar — Departure",
-        details:
+        details:[
           "Morning sunrise over Dal Lake from the houseboat deck. Transfer to Srinagar airport (SXR). Kashmir Tour concludes — the valley, the lake, and the mountains will stay with you forever.",
-      },
+      ]},
     ],
 
     tourDetails: [
@@ -17545,7 +17712,7 @@ export const tours = [
         text: "Waking up on the houseboat with mountains reflected on Dal Lake, breakfast served by a floating Shikara, the smell of saffron in the air — Kashmir is the world's most romantic destination, period. NIT was perfect.",
         author: "Rohan & Simran Khanna",
         date: "Travelled May 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -17553,7 +17720,7 @@ export const tours = [
         text: "We honeymooned in Kashmir after everyone said go to Maldives. Best decision ever. The private Shikara ride at sunset and the snow at Gulmarg in June were moments from a dream. Thank you NIT.",
         author: "Nikhil & Aarti Desai",
         date: "Travelled June 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -17604,51 +17771,52 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Srinagar — Luxury Houseboat Welcome",
-        details:
+        details:[
           "Arrive Srinagar airport. Transfer to your luxury houseboat on Dal Lake. Private Shikara welcome ride across the lake — Floating Gardens, Char Chinar, and lotus beds. Candlelight Wazwan dinner on the houseboat. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar — Mughal Gardens & Sunset Shikara",
-        details:
+        details:[
           "Morning visit to Nishat Bagh and Shalimar Bagh — the Mughal emperor's love letters to Kashmir. Afternoon at Shankaracharya Temple hilltop. Private sunset Shikara ride on Dal Lake. Romantic dinner on the houseboat deck. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar → Gulmarg — Snow & Gondola Romance",
-        details:
+        details:[
           "Drive to Gulmarg (50 km). Ride the Gulmarg Gondola — 2nd highest cable car in the world — for sweeping snow-peak views. Couple's walk through the flower meadows. Check-in to boutique Gulmarg hotel. Overnight Gulmarg.",
-      },
+      ]},
       {
         day: 4,
         date: "Day 4",
         title: "Gulmarg → Pahalgam — Valley of Shepherds",
-        details:
+        details:[
           "Drive to Pahalgam (140 km) through the Wular Lake region. Check-in to a riverside resort on the Lidder River. Evening stroll along the river banks — snow-melt waters, pine forests, and mountain air. Overnight Pahalgam.",
-      },
+      ]},
       {
         day: 5,
         date: "Day 5",
         title: "Pahalgam — Betaab Valley & Aru Valley",
-        details:
+        details:[
           "Full day in Pahalgam's valleys. Betaab Valley — the lush meadow made famous by Bollywood's most iconic scenes. Aru Valley — a quiet hamlet surrounded by glaciers and alpine flowers. Optional pony ride. Romantic picnic lunch. Overnight Pahalgam.",
-      },
+      ]},
       {
         day: 6,
         date: "Day 6",
         title: "Pahalgam → Srinagar — Return & Farewell",
-        details:
+        details:[
           "Drive back to Srinagar (88 km). Afternoon at Lal Chowk market — Kashmiri carpets, Pashmina shawls, and crewel embroidery. Final private Shikara ride at dusk. Farewell dinner on the houseboat. Overnight Srinagar.",
-      },
+      ]},
       {
         day: 7,
         date: "Day 7",
         title: "Srinagar — Departure",
-        details:
+        details:[
           "Wake to a last Dal Lake sunrise from the houseboat deck. Transfer to Srinagar Airport (SXR). Kashmir Honeymoon Tour concludes — the mountains, the lake, and the love story stay with you forever.",
-      },
+    ]
+        },
     ],
 
     tourDetails: [
@@ -17756,7 +17924,7 @@ export const tours = [
         text: "14 days, two worlds — lush Kashmir and barren Ladakh. From Dal Lake's floating gardens to Pangong's blue silence, this grand tour is the ultimate Indian road journey. NIT handled every pass and valley flawlessly.",
         author: "Vikram & Ananya Sharma",
         date: "Travelled July 2025",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
       {
@@ -17764,7 +17932,7 @@ export const tours = [
         text: "Kargil and Lamayuru were unexpected highlights nobody talks about. The Leh–Manali highway finale through Rohtang was surreal. One trip, every landscape India has to offer. Thank you NIT.",
         author: "Rajesh & Pooja Mehta",
         date: "Travelled August 2024",
-        manager: "Indruka Trips and Trip Team",
+        manager: "Indruka Trips and ",
         managerRole: "Tour Manager",
       },
     ],
@@ -17819,99 +17987,113 @@ export const tours = [
         day: 1,
         date: "Day 1",
         title: "Arrive Srinagar — Shikara Ride on Dal Lake",
-        details:
-          "Arrive Srinagar airport. Transfer to houseboat on Dal Lake. 2-hour Shikara ride past Char Chinar Island, Floating Gardens, and the lake bazaar. Welcome dinner on the houseboat. Overnight Srinagar.",
+        details: [
+          "Arrive Srinagar airport. Transfer to houseboat on Dal Lake. 2-hour Shikara ride past Char Chinar Island, Floating Gardens, and the lake bazaar. Welcome dinner on the houseboat. Overnight Srinagar."
+          ],
       },
       {
         day: 2,
         date: "Day 2",
         title: "Srinagar — Mughal Gardens & Pahalgam Excursion",
-        details:
-          "Morning visit to Nishat Bagh, Shalimar Bagh, and Chashma Shahi Mughal Gardens. Full-day excursion to Pahalgam (88 km) — Betaab Valley, Aru Valley, and Chandanwari. Return for dinner on houseboat. Overnight Srinagar.",
+        details: [
+          "Morning visit to Nishat Bagh, Shalimar Bagh, and Chashma Shahi Mughal Gardens. Full-day excursion to Pahalgam (88 km) — Betaab Valley, Aru Valley, and Chandanwari. Return for dinner on houseboat. Overnight Srinagar."
+          ],
       },
       {
         day: 3,
         date: "Day 3",
         title: "Srinagar — Gulmarg Gondola Ride",
-        details:
-          "Full-day excursion to Gulmarg (50 km). Ride the world's 2nd highest cable car — Gulmarg Gondola — for sweeping Himalayan views. Optional skiing and snow activities. Return to houseboat for dinner. Overnight Srinagar.",
+        details: [
+          "Full-day excursion to Gulmarg (50 km). Ride the world's 2nd highest cable car — Gulmarg Gondola — for sweeping Himalayan views. Optional skiing and snow activities. Return to houseboat for dinner. Overnight Srinagar."
+          ],
       },
       {
         day: 4,
         date: "Day 4",
         title: "Srinagar → Sonamarg → Kargil",
-        details:
-          "Checkout and drive to Kargil (200 km) via Sonamarg — the 'Meadow of Gold'. Cross Zoji La Pass. Stop at Drass — India's coldest town and site of the 1999 Kargil War. Visit Kargil War Memorial. Overnight Kargil.",
+        details: [
+          "Checkout and drive to Kargil (200 km) via Sonamarg — the 'Meadow of Gold'. Cross Zoji La Pass. Stop at Drass — India's coldest town and site of the 1999 Kargil War. Visit Kargil War Memorial. Overnight Kargil."
+          ],
       },
       {
         day: 5,
         date: "Day 5",
         title: "Kargil → Lamayuru → Leh",
-        details:
-          "Drive to Leh (200 km) via Lamayuru — Ladakh's oldest monastery perched above the surreal Moonland landscape. Visit Alchi Monastery and Magnetic Hill en route. Arrive Leh, check-in and rest. Overnight Leh.",
+        details: [
+          "Drive to Leh (200 km) via Lamayuru — Ladakh's oldest monastery perched above the surreal Moonland landscape. Visit Alchi Monastery and Magnetic Hill en route. Arrive Leh, check-in and rest. Overnight Leh."
+          ],
       },
       {
         day: 6,
         date: "Day 6",
         title: "Leh — Acclimatization & Local Sightseeing",
-        details:
-          "Rest morning for high-altitude acclimatization (3,500 m). Afternoon visit to Shanti Stupa at sunset, 17th-century Leh Palace, and Namgyal Tsemo Monastery. Evening walk through Leh Market. Overnight Leh.",
+        details: [
+          "Rest morning for high-altitude acclimatization (3,500 m). Afternoon visit to Shanti Stupa at sunset, 17th-century Leh Palace, and Namgyal Tsemo Monastery. Evening walk through Leh Market. Overnight Leh."
+          ],
       },
       {
         day: 7,
         date: "Day 7",
         title: "Leh — Monastery Circuit & Sangam",
-        details:
-          "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — confluence of the Indus and Zanskar rivers. Magnetic Hill stop. Overnight Leh.",
+        details: [
+          "Visit Thiksey Monastery (resembles Tibet's Potala Palace), Hemis Monastery (largest in Ladakh), and Shey Palace. Sangam — confluence of the Indus and Zanskar rivers. Magnetic Hill stop. Overnight Leh."
+          ],
       },
       {
         day: 8,
         date: "Day 8",
         title: "Leh → Khardung La → Nubra Valley",
-        details:
-          "Drive over Khardung La Pass (5,359 m) — photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Bactrian camel safari at Hunder Sand Dunes. Campfire dinner under Himalayan skies. Overnight Nubra Valley.",
+        details: [
+          "Drive over Khardung La Pass (5,359 m) — photo stop at one of the world's highest motorable roads. Descend to Nubra Valley (120 km). Bactrian camel safari at Hunder Sand Dunes. Campfire dinner under Himalayan skies. Overnight Nubra Valley."
+          ],
       },
       {
         day: 9,
         date: "Day 9",
         title: "Nubra Valley → Shyok River → Pangong Tso",
-        details:
-          "Drive to Pangong Tso (140 km) via the scenic Shyok River Valley. First view of the legendary blue-green lake at 4,350 m. Check-in to lakeside camp. Candlelight dinner by the water. Overnight Pangong Tso.",
+        details: [
+          "Drive to Pangong Tso (140 km) via the scenic Shyok River Valley. First view of the legendary blue-green lake at 4,350 m. Check-in to lakeside camp. Candlelight dinner by the water. Overnight Pangong Tso."
+          ],
       },
       {
         day: 10,
         date: "Day 10",
         title: "Pangong Tso — Sunrise & Full Day at the Lake",
-        details:
-          "Wake before dawn for the Pangong Tso sunrise — the lake shifts from deep cobalt to blazing gold. Morning walk along the shore. Afternoon at leisure — photography, optional kayaking, or quiet time by the Indo-China border lake. Overnight Pangong Tso.",
+        details: [
+          "Wake before dawn for the Pangong Tso sunrise — the lake shifts from deep cobalt to blazing gold. Morning walk along the shore. Afternoon at leisure — photography, optional kayaking, or quiet time by the Indo-China border lake. Overnight Pangong Tso."
+          ],
       },
       {
         day: 11,
         date: "Day 11",
         title: "Pangong Tso → Leh via Chang La Pass",
-        details:
-          "Drive back to Leh (220 km) over Chang La Pass (5,360 m). Afternoon free for Leh Market shopping — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh.",
+        details: [
+          "Drive back to Leh (220 km) over Chang La Pass (5,360 m). Afternoon free for Leh Market shopping — Pashmina, turquoise jewellery, Ladakhi handicrafts. Farewell dinner at a Leh heritage restaurant. Overnight Leh."
+          ],
       },
       {
         day: 12,
         date: "Day 12",
         title: "Leh → Sarchu — Leh–Manali Highway Begins",
-        details:
-          "Begin the legendary Leh–Manali Highway. Drive through Upshi and cross Tanglang La Pass (5,328 m). Descend into the high plains of Morey. Arrive Sarchu (4,290 m) camp by evening. Overnight Sarchu camp.",
+        details: [
+          "Begin the legendary Leh–Manali Highway. Drive through Upshi and cross Tanglang La Pass (5,328 m). Descend into the high plains of Morey. Arrive Sarchu (4,290 m) camp by evening. Overnight Sarchu camp."
+          ],
       },
       {
         day: 13,
         date: "Day 13",
         title: "Sarchu → Rohtang Pass → Manali",
-        details:
-          "Cross Baralacha La (4,890 m) and Rohtang Pass (3,978 m) — dramatic shift from barren desert to pine-forested Kullu Valley. Arrive Manali by evening. Celebration dinner. Overnight Manali.",
+        details: [
+          "Cross Baralacha La (4,890 m) and Rohtang Pass (3,978 m) — dramatic shift from barren desert to pine-forested Kullu Valley. Arrive Manali by evening. Celebration dinner. Overnight Manali."
+          ],
       },
       {
         day: 14,
         date: "Day 14",
         title: "Manali — Solang Valley & Departure",
-        details:
-          "Morning excursion to Solang Valley and Hadimba Devi Temple (16th-century pagoda in cedar forest). Last browse at Manali Mall Road. Transfer to Bhuntar Airport or bus stand. Kashmir to Ladakh Grand Tour concludes.",
+        details: [
+          "Morning excursion to Solang Valley and Hadimba Devi Temple (16th-century pagoda in cedar forest). Last browse at Manali Mall Road. Transfer to Bhuntar Airport or bus stand. Kashmir to Ladakh Grand Tour concludes."
+          ],
       },
     ],
 
@@ -17938,18 +18120,3840 @@ export const tours = [
 
     onViewItinerary: () => console.log("view itinerary clicked"),
   },
+
+  //Bhutan Itininary
+
+  {
+    id: 512,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Bhutan Tour with Haa Valley",
+    type: "Cultural",
+    duration: "11 Days / 10 Nights",
+    durationTag: "11 Days",
+    startEnd: "Paro → Thimphu → Punakha → Bumthang → Haa → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Punakha",
+      "Phobjikha Valley",
+      "Bumthang",
+      "Tang Valley",
+      "Haa Valley",
+    ],
+    amenities: ["Hotel & Homestay", "Meals", "Transfers", "Sightseeing"],
+    price: 3370,
+    rating: 4.9,
+    reviews: 59,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Road",
+    img: "/haa1.jpg",
+    popular: true,
+
+    tourFeatures: [
+      { icon: Home, label: "Homestay", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Hiking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      { title: "Scenic Himalayan Views — Dochula Pass & Himalayan Panorama" },
+      {
+        title:
+          "Haa Panorama Trail — Pine Forests & Sacred Peak of Meri Puensum",
+      },
+      { title: "Thimphu City Tour — Buddha Dordenma & Memorial Chorten" },
+      { title: "Chele La Pass — Prayer Flags & Sweeping Himalayan Vistas" },
+      {
+        title:
+          "Historic Haa Valley Discovery — Authentic Homestay & Hot Stone Bath",
+      },
+    ],
+
+    tourManagerCompany: "",
+
+    heroImage: {
+      src: "/haa1.jpg",
+      alt: "Bhutan Tour with Haa Valley — Paro to Bumthang via Punakha and Haa",
+    },
+
+    testimonials: [],
+    thumbnails: [
+        {
+        id: 1,
+        src: "/haa2.jpg",
+        alt: "Haa Dzong",
+      },
+      {
+        id: 2,
+        src: "/haa3.jpg",
+        alt: "Haa Dzongkhag",
+      },
+      {
+        id: 3,
+        src: "/haa4.jpg",
+        alt: "haa places",
+      },
+    ],
+
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Bhutan Tour with Haa Valley" },
+    ],
+
+    badges: [
+      { label: "FEATURED", variant: "solid" as const, color: "orange" },
+      { label: "11 DAYS", variant: "outlined" as const, color: "cyan" },
+    ],
+
+    durationDays: 11,
+    countryCount: 1,
+    cityCount: 7,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Punakha", nights: 1 },
+      { city: "Phobjikha Valley", nights: 1 },
+      { city: "Tang Valley", nights: 1 },
+      { city: "Bumthang", nights: 1 },
+      { city: "Thimphu (Return)", nights: 1 },
+      { city: "Haa Valley", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Into the Kingdom — Arrival in Paro & Drive to Thimphu",
+        details: [
+          "Arrive at Paro International Airport greeted by a breathtaking aerial panorama of snow-capped Himalayan peaks on descent into the narrow Paro Valley.",
+          "Clear immigration and customs at one of the world's most dramatically situated airports, framed by the iconic silhouettes of Paro Dzong and Ta Dzong along the Pa Chu River.",
+          "Receive a warm traditional welcome from your guide before beginning the scenic drive eastward towards Thimphu.",
+          "En route, stop near Chhuzom at the sacred Tachog Lhakhang — a revered temple with deep spiritual significance dating back to the 14th century.",
+          "Cross the traditional iron chain bridge over the river, a masterpiece of ancient engineering crafted by the legendary Bhutanese bridge-builder Thangtong Gyalpo.",
+          "Learn about the temple's fascinating history — having survived devastating floods over the centuries and been lovingly restored, it stands as a symbol of faith and resilience.",
+          "Arrive in Thimphu, Bhutan's capital city, by early evening and check in to your hotel, settling into the calm, unhurried rhythm of the Himalayan kingdom.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu's Living Heritage — Chortens, Buddha Point & Dzong",
+        details: [
+          "Begin the morning at Memorial Chorten, one of Thimphu's most sacred landmarks, where locals gather in quiet devotion and spin prayer wheels in a timeless daily ritual.",
+          "Drive up to Kuensel Phodrang to visit Buddha Dordenma, one of the largest Buddha statues in the world, commanding sweeping views across the entire Thimphu Valley.",
+          "Discover that the magnificent statue shelters thousands of smaller golden Buddhas within its interior, adding layers of spiritual depth to this iconic site.",
+          "Opt for a scenic hike from Buddha Point towards Changangkha Lhakhang, winding through quiet forest trails and open ridgelines for an intimate view of the city.",
+          "Explore the vibrant local vegetable market in the afternoon, where farmers and vendors create a colorful, lively snapshot of everyday Bhutanese life.",
+          "Visit the majestic Tashichho Dzong by the Wang Chhu river as the day draws to a close — its whitewashed walls and golden roofs glowing softly in the evening light.",
+          "Reflect on a full day steeped in culture and spirituality as the calm rhythm of Thimphu settles into a peaceful overnight stay.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "Depart Thimphu and begin a steady climb towards the breathtaking Dochula Pass, sitting at over 3,000 meters above sea level.",
+          "Arrive at the pass to find rows of 108 sacred chortens and, on a clear day, stunning views of the Himalayan giants including Gangkar Puensum — Bhutan's highest unclimbed peak.",
+          "Take an optional detour to Tashigang Goenpa, the starting point for the rewarding Lungchutse hike through rhododendron forests and prayer-flag-lined ridges.",
+          "Alternatively, follow the scenic Trans Bhutan Trail descending through Thinleygang — a peaceful route through ancient villages carrying the spirit of old Bhutan.",
+          "Continue the drive as the road drops dramatically into the warmer Wangduephodrang district, where the landscape shifts from highland cool to subtropical lush.",
+          "Arrive in Punakha Valley, where rice fields appear along the riverbanks and the air feels noticeably warmer compared to the highlands left behind.",
+          "Check in and unwind in one of Bhutan's most fertile and historically significant valleys, formerly the capital of the kingdom. Overnight Punakha.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Punakha → Chimi Lhakhang → Phobjikha Valley",
+        details: [
+          "Begin the morning with a visit to the awe-inspiring Punakha Dzong, a masterpiece of Bhutanese architecture standing proudly at the confluence of the Pho Chhu and Mo Chhu rivers.",
+          "Explore the dzong's richly decorated courtyards and corridors, layered with centuries of royal history and spiritual significance as the former seat of Bhutan's government.",
+          "Take a gentle walk through golden rice paddies to reach Chimi Lhakhang, a small yet deeply revered temple dedicated to the beloved and unconventional saint Drukpa Kuenley.",
+          "Receive blessings at the temple, a cherished tradition for visitors and pilgrims alike, in a setting of serene rural beauty.",
+          "Make a brief stop at the commanding Wangdue Phodrang Dzong, perched dramatically above the valley, before the road begins its climb into cooler mountain terrain.",
+          "Arrive in the wide, glacial expanse of Phobjikha Valley — a protected wildlife reserve and seasonal home of the graceful Black-necked Crane, revered in Bhutanese culture.",
+          "Visit the sacred Gangtey Monastery, perched above the valley floor and quietly watching over the land, before settling in for a crisp, peaceful evening. Overnight Phobjikha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Phobjikha → Trongsa Dzong → Tang Valley",
+        details: [
+          "Start the morning with a gentle walk along the Gangtey Nature Trail, a peaceful route through open meadows, pine forests, and quiet farming villages.",
+          "Visit Gangtey Monastery and nearby temples that anchor the deep spiritual essence of the Phobjikha Valley before departing eastward.",
+          "Stop at the striking Chendebji Chorten en route, its design echoing the famous Swayambhunath Stupa of Nepal and rooted in ancient legends of subduing dark forces.",
+          "Reach the dramatic Trongsa Dzong, dramatically perched along a narrow ridge and once the strategic stronghold from which Bhutan's kings shaped the nation's destiny.",
+          "Explore the dzong's historic corridors and courtyards, which still carry the powerful weight of Bhutan's royal and political history.",
+          "Continue into the spiritual heartland of Bumthang, where the valleys widen, rivers soften, and a deeper sense of sacred heritage begins to unfold.",
+          "Visit the historic Ogyen Choling Palace for a fascinating glimpse into the aristocratic life of Bhutan's noble past before arriving at Tang Valley for the night. Overnight Tang Valley.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Bumthang — Ogyen Choling, Jambay Lhakhang & Kurje Lhakhang",
+        details: [
+          "Begin the day at Ogyen Choling Museum, where centuries-old artifacts, thangkas, and royal heirlooms bring Bhutan's noble past vividly and intimately to life.",
+          "The museum's guesthouse occasionally offers the rare privilege of an evening conversation with Walter Roder, whose deep personal connection to Bhutan adds remarkable depth to the visit.",
+          "Return to the valley and visit Jambay Lhakhang, one of the oldest and most revered temples in Bhutan, believed to have been built in the 7th century by Tibetan King Songtsen Gampo.",
+          "Proceed to the sacred Kurje Lhakhang, where Guru Rinpoche is believed to have meditated and left the imprint of his body after subduing a powerful local demon — making it one of Bhutan's most hallowed pilgrimage sites.",
+          "Explore the three temples that make up the Kurje Lhakhang complex, each carrying layers of spiritual and historical significance unique to Bumthang.",
+          "In the afternoon, visit Jakar Dzong — gracefully perched above the valley with sweeping views, its whitewashed walls capturing both the strategic and spiritual essence of the region.",
+          "As evening settles over Bumthang, soak in the atmosphere of this living sanctuary, quietly echoing with centuries of devotion and timeless beauty. Overnight Bumthang.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Scenic Return — Bumthang to Thimphu",
+        details: [
+          "Bid farewell to the serene valleys of Bumthang after breakfast and begin the long, meditative drive back towards Thimphu along the kingdom's central mountain spine.",
+          "Pass through the dramatic Trongsa Dzong once more, its commanding ridge-top presence just as striking on the return journey as on the way in.",
+          "Climb steadily through winding mountain roads, watching the landscape shift from the warm, forested valleys of Bumthang to the cooler, misty highlands.",
+          "Ascend to the scenic heights of Dochula Pass for a final opportunity to soak in the panoramic Himalayan views, weather permitting.",
+          "Pause at the 108 chortens of Dochula, a reflective spot to absorb the grandeur of the mountains and the quiet spirituality of this high-altitude landmark.",
+          "As the road descends and the capital comes into view, the familiar rhythm of Thimphu gradually returns — a gentle transition from the remote east back to city life.",
+          "Arrive Thimphu by evening for a calm and restful overnight stay, bringing the eastern journey to a peaceful close. Overnight Thimphu.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Paro → Chele La Pass → Haa Valley Homestay",
+        details: [
+          "Depart after breakfast from Paro, heading westward on a road that gradually winds upward toward one of Bhutan's most scenic high-altitude passes.",
+          "Arrive at Chele La Pass, sitting at approximately 3,988 meters, where colorful prayer flags flutter wildly in the mountain breeze against a backdrop of sweeping Himalayan ridgelines.",
+          "Enjoy panoramic views from the pass, with clear days offering sightlines to Bhutan's sacred Jhomolhari and Jichu Drake peaks rising above the horizon.",
+          "Descend into the secluded Haa Valley, one of Bhutan's least-visited and most authentically preserved regions, where traditions remain deeply rooted and the pace of life is wonderfully unhurried.",
+          "Check in to a local farmhouse homestay for an immersive and intimate experience — shared meals, quiet conversations by the hearth, and the simple warmth of Bhutanese family hospitality.",
+          "As the evening deepens, prepare for a traditional Bhutanese hot stone bath (menchu), where river stones heated in a fire are placed in a wooden tub, releasing minerals into the water.",
+          "Let the soothing warmth of the menchu ease tired muscles after the day's journey, bringing the evening to a deeply relaxed and restorative close. Overnight Haa.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title:
+          "Farewell to the Hidden Valley — Haa Panorama Trail & Return to Paro",
+        details: [
+          "Rise early and begin the morning with the scenic Haa Panorama Hiking Trail, starting near the peaceful Yangthang Gonpa at the edge of the valley.",
+          "Follow the trail as it winds through fragrant pine and fir forests, with birdsong and the soft crunch of the path underfoot creating a deeply grounding sense of calm.",
+          "As the trail climbs, the treeline opens up to sweeping panoramic views across the Haa Valley, revealing the sacred triple peaks of Meri Puensum and distant Himalayan ridges.",
+          "The hike offers a sense of quiet expansion — both physically and spiritually — as the valley unfolds far below and the mountain silence wraps around you.",
+          "Descend from the trail and enjoy a relaxed lunch in Haa town, savoring a final taste of this hidden valley's peaceful charm before the return journey.",
+          "Retrace the route back over the windswept heights of Chele La Pass, where prayer flags dance one last time against the vast Himalayan sky.",
+          "Descend into the familiar warmth of Paro Valley by evening, arriving with a reflective sense of having discovered one of Bhutan's most authentic and lesser-known corners. Overnight Paro.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Paro — Tiger's Nest Hike & Rinpung Dzong",
+        details: [
+          "Begin Bhutan's most iconic experience with an early morning start toward Paro Taktsang — the legendary Tiger's Nest Monastery perched impossibly on a cliffside at 3,120 meters.",
+          "The trail ascends steadily through beautiful blue pine forests and corridors of fluttering prayer flags, with each turn revealing increasingly dramatic views of the monastery clinging to the rock face.",
+          "Pause at the Taktsang Cafeteria at the halfway point, where a panoramic viewpoint delivers one of the most breathtaking perspectives of the sacred site — a perfect spot to rest and absorb the moment.",
+          "Continue the final ascent to the monastery complex itself, a deeply spiritual experience believed to be the site where Guru Rinpoche meditated in the 8th century after flying here on the back of a tigress.",
+          "The full round-trip hike takes approximately 4 to 5 hours — an unforgettable physical and spiritual journey that forms the emotional highlight of the entire Bhutan tour.",
+          "In the afternoon, visit Ta Dzong — once a strategic watchtower and now the National Museum — followed by the magnificent Rinpung Dzong standing proudly above the Paro River.",
+          "End the evening with a leisurely stroll through Paro town, and optionally climb to Zuri Dzong for a quiet forest walk with panoramic valley views as the final act of this remarkable journey. Overnight Paro.",
+        ],
+      },
+      {
+        day: 11,
+        date: "Day 11",
+        title: "Departure",
+        details: [
+          "Wake up for a final breakfast in Paro, taking a quiet moment to reflect on eleven days of Himalayan wonder, sacred monasteries, and warm Bhutanese hospitality.",
+          "Complete any last-minute packing and check out of the hotel, carrying memories of tiger nests, hidden valleys, and mountain passes that will linger long after the journey ends.",
+          "Transfer to Paro International Airport for your flight to your onward destination, departing the Kingdom of Bhutan with a heart full of gratitude and wonder.",
+        ],
+      },
+    ],
+
+    tourDetails: [
+      { label: "Duration", value: "11 Days / 10 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Thimphu · Punakha · Phobjikha Valley · Bumthang · Tang Valley · Haa Valley",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-HAA-PBH-11" },
+      {
+        label: "Meals",
+        value:
+          "Breakfast & Dinner daily; Traditional homestay meals included in Haa Valley",
+      },
+      { label: "Best Time", value: "March–May & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+    ],
+
+    onViewItinerary: () => console.log("view itinerary clicked"),
+  },
+  {
+    id: 513,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Jomolhari Trekking in Bhutan",
+    type: "Adventure",
+    duration: "12 Days / 11 Nights",
+    durationTag: "12 Days",
+    startEnd:
+      "Paro → Shingkharap → Jangothang → Lingzhi → Thimphu → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Shingkharap",
+      "Soi Thangkha",
+      "Jangothang",
+      "Lingzhi",
+      "Shodu",
+      "Thimphu",
+      "Punakha",
+    ],
+    amenities: ["Hotel & Camp", "Meals", "Transfers", "Sightseeing"],
+    price: 0, // To be filled
+    rating: 0, // To be filled
+    reviews: 0, // To be filled
+    badge: "Adventure",
+    badgeColor: "bg-green-700",
+    mode: "Trek",
+    img: "", // To be filled
+    popular: true,
+
+    tourFeatures: [
+      { icon: Tent, label: "Camp Stay", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Trekking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      {
+        title:
+          "Remote Himalayan Camping — Nights Under the Stars at High Altitude",
+      },
+      { title: "Jomolhari Base Camp — Sacred Peak Views at 4,040m" },
+      {
+        title:
+          "Neyle La & Yale La — Crossing Two Dramatic High-Altitude Passes",
+      },
+      { title: "Tshophu Twin Lakes — Mirror-Like Alpine Waters at 4,400m" },
+      {
+        title:
+          "Lingzhi Dzong — Remote Historic Fortress in an Untouched Valley",
+      },
+    ],
+
+    tourManagerCompany: "", // To be filled
+
+    heroImage: {
+      src: "", // To be filled
+      alt: "Jomolhari Trekking in Bhutan — Paro to Thimphu via Jangothang and Lingzhi",
+    },
+
+    testimonials: [], // To be filled
+    thumbnails: [], // To be filled
+
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Jomolhari Trekking in Bhutan" },
+    ],
+
+    badges: [
+      { label: "ADVENTURE", variant: "solid" as const, color: "green" },
+      { label: "12 DAYS", variant: "outlined" as const, color: "cyan" },
+    ],
+
+    durationDays: 12,
+    countryCount: 1,
+    cityCount: 8,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+
+    itineraryStops: [
+      { city: "Paro", nights: 2 },
+      { city: "Shingkharap", nights: 1 },
+      { city: "Soi Thangkha", nights: 1 },
+      { city: "Jangothang", nights: 2 },
+      { city: "Lingzhi", nights: 1 },
+      { city: "Shodu", nights: 1 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Punakha", nights: 1 },
+      { city: "Paro (Return)", nights: 1 },
+    ],
+
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Touching Down in the Kingdom — Arrival in Paro",
+        details: [
+          "Arrive at Paro International Airport at 2,280m, greeted by one of the most spectacular flight approaches on earth — Himalayan peaks including Everest and Kanchenjunga visible on clear days.",
+          "Clear airport formalities and transfer to your hotel through the pine-covered valley, with whitewashed farmhouses and quiet Bhutanese charm lining the route.",
+          "Enjoy a relaxed welcome lunch and settle into the gentle, unhurried rhythm of Bhutanese time before the afternoon exploration begins.",
+          "Visit the striking Rinpung Dzong, standing proudly above the Paro River — an architectural masterpiece layered with centuries of history and spiritual significance.",
+          "Continue to Kichu Lhakhang, one of the oldest and most sacred temples in Bhutan, where the air carries a deep, reverent stillness that sets the spiritual tone for the journey.",
+          "Explore the historic ruins of Drukgyal Dzong, where stories of old battles and Bhutanese resilience linger in the mountain breeze.",
+          "End the day with a leisurely stroll through Paro town, absorbing its neat wooden shopfronts and soft valley light before retiring for the night. Overnight Paro.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Tiger's Nest Monastery Hike",
+        details: [
+          "Begin the morning with a short drive to the Taktsang trailhead, where the path immediately immerses you in a forest of fluttering prayer flags and whispering blue pines.",
+          "Ascend steadily over 4–5 hours to reach Paro Taktsang at 3,120m — Bhutan's most iconic monastery clinging impossibly to a sheer cliffside above the valley.",
+          "Be rewarded at every turn with sweeping panoramic views of the Paro Valley unfolding far below, deepening in beauty with every step of the climb.",
+          "Arrive at the monastery complex, where Guru Rinpoche is believed to have meditated in the 8th century — a moment of profound stillness that is difficult to put into words.",
+          "Explore the sacred halls and temples within the complex, each chamber carrying centuries of devotion and spiritual energy rooted deep in the mountain rock.",
+          "Descend along the same forested trail, a little easier on the legs and equally beautiful, bringing a well-earned sense of accomplishment back to Paro.",
+          "Spend the evening at leisure to rest, reflect, and quietly relive the day's unforgettable climb before the trek begins tomorrow. Overnight Paro.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Paro → Shingkharap — Trek Begins",
+        details: [
+          "Drive from Paro toward Gunitsawa, the true starting point of the Jomolhari Trek, where permits are checked and the trail officially begins.",
+          "Set off on a pleasant 9 km walk over 4–5 hours, immediately entering a sense of mountain solitude as the last signs of everyday life slowly fade behind.",
+          "Follow the soothing rhythm of the Paro Chhu river, its steady flow becoming a peaceful companion through dense forests of blue pine and rhododendron.",
+          "Walk a trail that feels almost meditative — soft underfoot, richly shaded, and alive with birdsong — making this first trekking day a gentle and welcoming introduction.",
+          "Pass through occasional clearings in the forest that offer fleeting glimpses of distant peaks, building anticipation for the high Himalayan landscapes ahead.",
+          "Ascend gradually to the campsite at Shingkharap at 3,110m, a quiet woodland retreat surrounded by towering trees and the sound of a nearby stream.",
+          "Settle into the crisp mountain air of camp for the first time, as the hush of nature and a star-filled sky mark the true beginning of life on the trail. Overnight Shingkharap Camp.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title:
+          "Shingkharap → Soi Thangkha — Following the River into the High Forests",
+        details: [
+          "Begin a longer day on the trail, covering around 15 km over 5–6 hours, with the Pachu River continuing as a steady and soothing companion throughout.",
+          "Walk through dense forests of pine, oak, and blooming rhododendron, the trail wrapped in deep greens and — in spring — vivid bursts of floral colour.",
+          "Feel the landscape gradually shift in character as the altitude climbs to 3,670m, with the body beginning to sense the increasing height in the thinner, crisper air.",
+          "The ascent is gradual and manageable, allowing time to appreciate the changing environment and occasional openings that reveal higher ridgelines ahead.",
+          "Pause for trail snacks and rest stops along the river, soaking in the peaceful mountain silence punctuated only by birdsong and flowing water.",
+          "Arrive at the campsite at Soi Thangkha in a wide alpine clearing beneath towering slopes, a setting that feels raw and beautifully remote.",
+          "As evening settles over camp at high altitude, the mountains begin to reveal their quieter, more untamed side, far removed from the valleys left behind. Overnight Soi Thangkha Camp.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Soi Thangkha → Jangothang — Arrival at Jomolhari's Doorstep",
+        details: [
+          "Step beyond the tree line today as the trail climbs into vast, open high-altitude wilderness, where the sky feels closer and every breath carries the sharpness of altitude.",
+          "Cover 17 km over approximately 4–5 hours, following the valley floor with a steady ascent past scattered yak herder settlements where traditional mountain life continues quietly.",
+          "Watch the landscape transform dramatically — broad alpine meadows replace the forests, and the sense of space becomes almost overwhelming in its grandeur.",
+          "As the altitude reaches 4,040m, the sacred Mount Jomolhari rises in commanding, almost otherworldly elegance directly ahead, one of Bhutan's most revered and spectacular peaks.",
+          "Jichu Drake stands proudly nearby, its sharp ridgelines completing a view that makes this one of the most photogenic and awe-inspiring stretches of the entire trek.",
+          "Arrive at Jangothang Base Camp, set in a wide open valley beneath these towering Himalayan giants — a place that feels simultaneously humbling and deeply exhilarating.",
+          "As the sun dips behind snow-capped ridges, the peaks glow softly in the fading light, marking an unforgettable arrival at the true doorstep of the high Himalaya. Overnight Jangothang Camp.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Jangothang — Acclimatization Day",
+        details: [
+          "Take a well-earned rest day at high altitude, allowing the body to acclimatize properly before the challenging passes ahead while soaking in the extraordinary mountain surroundings.",
+          "Choose from optional gentle hikes of 2–4 hours up the surrounding ridges, each offering increasingly dramatic perspectives of the valley below and the towering peaks above.",
+          "For those feeling strong, a rewarding climb to the Tshophu Twin Lakes at around 4,400m reveals still, mirror-like waters cradled beneath rugged alpine slopes — a scene of breathtaking serenity.",
+          "Keep an eye on the hillsides for herds of blue sheep grazing peacefully along the slopes, a remarkable sight in this remote high-altitude wilderness.",
+          "Scan the vast sky for the rare and exhilarating sight of a golden eagle soaring effortlessly above the mountain ridges on thermal currents.",
+          "Return to camp and spend the remainder of the day resting, journaling, or simply sitting in the profound silence of the mountains.",
+          "Let the altitude settle gently into the body as the evening closes in over Jangothang, preparing for the demanding days ahead. Overnight Jangothang Camp.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Jangothang → Lingzhi — Crossing Neyle La Pass",
+        details: [
+          "Begin the day with a steady, purposeful climb out of Jangothang, gaining altitude gradually as the trail winds toward the high and dramatic Neyle La Pass at 4,830m.",
+          "The ascent demands patience and a measured pace, but each step upward rewards with increasingly sweeping views of snow-capped giants stretching across the horizon.",
+          "Reach the top of Neyle La, where the world opens in every direction with panoramic Himalayan vistas that feel almost surreal in their scale and grandeur.",
+          "Begin the descent from the pass into the remote and windswept Lingzhi valley, where the landscape feels raw, expansive, and wonderfully untouched by the outside world.",
+          "Cover around 18 km over 6–7 hours, with the long day balanced by the extraordinary scenery and the deeply satisfying feeling of having crossed a major Himalayan pass.",
+          "Arrive at the historic Lingzhi Dzong, perched dramatically on a ridge overlooking the valley, silently guarding this isolated region as it has for centuries.",
+          "Set up camp near the dzong at 4,010m, surrounded by wide alpine plains and distant peaks, as the evening carries a quiet remoteness that few places on earth can offer. Overnight Lingzhi Camp.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Lingzhi → Shodu — Crossing Yale La Pass",
+        details: [
+          "Face one of the trek's most demanding days, with 19 km and approximately 7–8 hours of walking ahead, testing both physical endurance and mental resolve.",
+          "Climb steadily toward Yale La at 4,942m — the highest pass on the entire trek — where the trail narrows and the air grows noticeably thinner with every upward step.",
+          "As the altitude increases, the panoramic Himalayan views that unfold along the ascent become some of the most breathtaking of the entire journey — vast ridgelines, distant snow peaks, and open sky.",
+          "Stand at the summit of Yale La, where a raw, untouched mountain energy fills the air and the sense of standing on the very spine of the Himalayas is unmistakable.",
+          "Begin the long descent from the pass into the remote Shodu valley, where the terrain gradually softens into rolling alpine landscapes and wide-open silence.",
+          "Feel the deep physical satisfaction of completing the trek's most challenging passage as the valley floor comes into view and the campsite appears beside the river.",
+          "Settle in at camp at approximately 4,100m, surrounded by immense stillness, the day ending with a powerful sense of accomplishment. Overnight Shodu Camp.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Shodu → Thimphu — Farewell to the Mountains",
+        details: [
+          "Begin the final trekking day with a gentle descent alongside the Thimphu Chhu, the river's steady flow guiding the path back down through lush, welcoming landscapes.",
+          "Walk through forests, past cascading waterfalls, and into greener, lower terrain that feels almost tropical after days spent in the high alpine wilderness.",
+          "Cover around 16 km over 5–6 hours, with a bittersweet rhythm to each step — the mountains still towering behind as the familiar comforts of lower altitude slowly return.",
+          "Pause at the atmospheric ruins of Barshong Dzong en route, its weathered stone walls standing as a quiet, final reminder of Bhutan's rich and layered history in these remote valleys.",
+          "As the trek draws to its conclusion, the waiting vehicle marks the transition back to the world of roads and towns — a moment that carries both relief and a tinge of sadness.",
+          "Drive into Thimphu, the capital city gradually reappearing with its familiar warmth and gentle buzz after days of mountain silence.",
+          "Check in to the hotel, savour a hot shower and a proper bed, and allow the body and spirit to fully absorb the magnitude of what has been experienced on the trail. Overnight Thimphu.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "Begin the morning with a gentle exploration of Thimphu, starting at the peaceful National Memorial Chorten, where locals circle quietly in prayer in a timeless daily ritual.",
+          "Visit the grand Buddha Dordenma, one of the largest Buddha statues in the world, overlooking the entire valley in serene, commanding silence.",
+          "Stop at the Motithang Takin Preserve, home to the takin — Bhutan's wonderfully unique national animal — adding a touch of natural charm to the morning.",
+          "Drive up to the breathtaking Dochula Pass at 3,100m, where 108 sacred chortens stand in neat rows and, on a clear day, a sweeping panorama of Himalayan peaks stretches endlessly into the distance.",
+          "Descend from the pass into the warmer Punakha Valley, where the air softens, rice fields appear along the roadside, and the lush subtropical landscape feels like a welcome contrast to the highlands.",
+          "Take a gentle walk through golden rice paddies to the fertility temple of Chimi Lhakhang, a deeply revered and charming site filled with local stories and quiet blessings.",
+          "Arrive in Punakha by evening, settling into the hotel and enjoying the comforting warmth and greenery of one of Bhutan's most beautiful valleys. Overnight Punakha.",
+        ],
+      },
+      {
+        day: 11,
+        date: "Day 11",
+        title: "Punakha → Paro",
+        details: [
+          "Begin the morning at the magnificent Punakha Dzong, standing gracefully at the confluence of the Pho Chhu and Mo Chhu rivers — widely regarded as one of the most beautiful fortresses in Bhutan.",
+          "Marvel at the intricate woodwork, painted courtyards, and serene riverside setting that make Punakha Dzong a true masterpiece of Bhutanese architecture and royal heritage.",
+          "Cross the long Punakha Suspension Bridge just nearby, where prayer flags flutter above the rushing Pho Chhu below, adding a final touch of adventure to the morning.",
+          "Depart toward Paro, retracing the scenic route through Thimphu where a pause at local markets offers the perfect chance to pick up last-minute souvenirs and handicrafts.",
+          "Browse through the market stalls for traditional Bhutanese textiles, handcrafted jewelry, and locally made products — a colourful and lively end to the Thimphu chapter.",
+          "Continue the 4–5 hour drive through familiar mountain passes and valleys, the journey carrying a reflective quality as Bhutan's landscapes pass by one final time.",
+          "Arrive in Paro by evening with a calm, full-circle feeling — the same valley where the adventure first began now welcoming you back for one last peaceful night. Overnight Paro.",
+        ],
+      },
+      {
+        day: 12,
+        date: "Day 12",
+        title: "Departure from Paro",
+        details: [
+          "Wake up to a final, quiet morning in Paro, where the crisp mountain air and slow valley rhythm make the idea of leaving feel almost reluctant.",
+          "Enjoy a last breakfast in Bhutan, taking a quiet moment to reflect on twelve extraordinary days of trekking, culture, and Himalayan wonder.",
+          "Complete packing and check out, carrying with you not just souvenirs but a deeper connection to the spirit of Bhutan that will linger long after departure.",
+          "Transfer to Paro International Airport, the same peaceful gateway through which this remarkable journey first began.",
+          "As the flight lifts off and the valleys, rivers, and snow-capped peaks slowly dissolve beneath the clouds, let the memories of Jomolhari, Lingzhi, and the high passes settle into something permanent.",
+        ],
+      },
+    ],
+
+    tourDetails: [
+      { label: "Duration", value: "12 Days / 11 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Shingkharap · Soi Thangkha · Jangothang · Lingzhi · Shodu · Thimphu · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-JOM-PBH-12" },
+      {
+        label: "Meals",
+        value: "Breakfast & Dinner daily; All meals included during trek days",
+      },
+      { label: "Best Time", value: "April–June & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      {
+        label: "Trek Distance",
+        value: "Approx. 94 km total trekking distance",
+      },
+      { label: "Max Altitude", value: "Yale La Pass at 4,942m" },
+    ],
+
+    onViewItinerary: () => console.log("view itinerary clicked"),
+  },
+  {
+    id: 513,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Jomolhari Trekking in Bhutan",
+    type: "Adventure",
+    duration: "12 Days / 11 Nights",
+    durationTag: "12 Days",
+    startEnd:
+      "Paro → Shingkharap → Jangothang → Lingzhi → Thimphu → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Shingkharap",
+      "Soi Thangkha",
+      "Jangothang",
+      "Lingzhi",
+      "Shodu",
+      "Thimphu",
+      "Punakha",
+    ],
+    amenities: ["Hotel & Camp", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Adventure",
+    badgeColor: "bg-green-700",
+    mode: "Trek",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Tent, label: "Camp Stay", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Trekking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      {
+        title:
+          "Remote Himalayan Camping — Nights Under the Stars at High Altitude",
+      },
+      { title: "Jomolhari Base Camp — Sacred Peak Views at 4,040m" },
+      {
+        title:
+          "Neyle La & Yale La — Crossing Two Dramatic High-Altitude Passes",
+      },
+      { title: "Tshophu Twin Lakes — Mirror-Like Alpine Waters at 4,400m" },
+      {
+        title:
+          "Lingzhi Dzong — Remote Historic Fortress in an Untouched Valley",
+      },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Jomolhari Trekking in Bhutan — Paro to Thimphu via Jangothang and Lingzhi",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Jomolhari Trekking in Bhutan", href: "" },
+    ],
+    badges: [
+      { label: "ADVENTURE", variant: "solid", color: "green" },
+      { label: "12 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 12,
+    countryCount: 1,
+    cityCount: 8,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Paro", nights: 2 },
+      { city: "Shingkharap", nights: 1 },
+      { city: "Soi Thangkha", nights: 1 },
+      { city: "Jangothang", nights: 2 },
+      { city: "Lingzhi", nights: 1 },
+      { city: "Shodu", nights: 1 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Punakha", nights: 1 },
+      { city: "Paro (Return)", nights: 1 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Touching Down in the Kingdom of the Thunder Dragon",
+        details: [
+          "At 2,280 metres above sea level, the journey begins with one of the most breathtaking flights on earth, where the Himalayas rise like a grand stone curtain and, on a clear day, even Everest and Kanchenjunga make their majestic appearance from the window.",
+          "As the plane dips into Paro International Airport, the valley opens up with pine-covered hills, whitewashed farmhouses, and a quiet kind of beauty that feels almost unreal.",
+          "After the airport formalities, the drive to the hotel is short and gentle, followed by a relaxed lunch to settle into Bhutanese time.",
+          "In the afternoon, Paro begins to reveal its treasures with a visit to the striking Rinpung Dzong, standing proudly above the river, then onward to Kichu Lhakhang, one of the oldest and most sacred temples in the country, where the air feels still and deeply blessed.",
+          "The day continues to the historic ruins of Drukgyal Dzong, where stories of old battles and Bhutanese resilience seem to linger in the mountain breeze.",
+          "By evening, a leisurely stroll through Paro town rounds off the day nicely, with its neat wooden shopfronts, soft valley light, and first little taste of Bhutanese charm before settling in for the night at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Tiger's Nest Monastery Hike",
+        details: [
+          "The morning begins with a short drive to the trailhead, where the real adventure quietly unfolds, climbing through a forest of fluttering prayer flags and whispering pines toward Bhutan's most iconic sanctuary, Paro Taktsang.",
+          "The hike takes around 4–5 hours round trip, gradually ascending to 3,120 metres, and while the trail tests the lungs a little, it rewards every step with sweeping panoramic views of the Paro Valley unfolding far below.",
+          "As the monastery finally reveals itself, clinging impossibly to a sheer cliff, there's a moment of stillness that's hard to put into words — this is where Guru Rinpoche is said to have meditated, and the spiritual energy feels deeply rooted in the rock itself.",
+          "After exploring the sacred halls and soaking in the atmosphere, the descent follows the same forested path back down, a little easier on the legs but just as beautiful.",
+          "By late afternoon, the return to Paro brings a well-earned sense of accomplishment, with the evening left free to unwind at the hotel and quietly relive the day's unforgettable climb.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Paro → Shingkharap — Trek Begins",
+        details: [
+          "The journey takes a quieter, more intimate turn today as the road winds gently out of Paro toward Gunitsawa, the true beginning of the trek, where permits are checked and the last signs of the outside world slowly fade.",
+          "From here, the trail eases into a pleasant 9 km walk over 4–5 hours, following the soothing rhythm of the Paro Chhu river as it snakes through dense forests of blue pine and rhododendron, with occasional clearings revealing glimpses of distant peaks.",
+          "The path feels almost meditative — soft underfoot, shaded, and alive with birdsong — making this first day a gentle introduction to the mountain rhythm.",
+          "As the altitude gradually rises to 3,110 metres, the campsite at Shingkharap appears like a quiet woodland retreat, surrounded by towering trees and the sound of flowing water nearby.",
+          "The evening settles in with a simple, comforting camp atmosphere, where the crisp mountain air and the hush of nature mark the true beginning of life on the trail.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title:
+          "Shingkharap → Soi Thangkha — Following the River into the High Forests",
+        details: [
+          "The trail stretches deeper into the mountains today, covering around 15 km over 5–6 hours, as the path faithfully follows the winding course of the Pachu River, its steady flow becoming a quiet companion throughout the journey.",
+          "The landscape begins to shift in character, with dense forests of pine, oak, and blooming rhododendron wrapping the trail in shades of green and bursts of colour, especially in spring when the forest feels almost alive with blossoms.",
+          "The ascent is gradual but noticeable, allowing the body to slowly adjust as the altitude climbs to 3,670 metres, with occasional openings in the trees offering fleeting views of higher ridges ahead.",
+          "There's a peaceful rhythm to the day — walking, pausing, listening to the river — until the campsite at Soi Thangkha emerges in a wide alpine clearing beneath towering slopes.",
+          "The air feels thinner, crisper now, and as evening settles over camp, the mountains begin to reveal their quieter, more raw side, far removed from the valleys left behind.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Soi Thangkha → Jangothang — Arrival at Jomolhari's Doorstep",
+        details: [
+          "The landscape opens up dramatically today as the trail climbs beyond the tree line, leaving the forests behind and stepping into a vast, high-altitude wilderness where the sky feels closer and the air sharper with every breath.",
+          "Covering 17 km in about 4–5 hours, the path follows the valley floor with a gentle but steady ascent, passing scattered yak herder settlements where life continues in quiet harmony with the mountains.",
+          "As the altitude reaches 4,040 metres, the views become nothing short of spectacular, with the sacred Mount Jomolhari rising in commanding elegance and the striking Jichu Drake standing proudly nearby, both peaks seeming close enough to touch.",
+          "The campsite at Jangothang Base Camp sits in a wide open valley beneath these towering giants, a place that feels both humbling and awe-inspiring.",
+          "As the sun dips behind the snow-capped ridges, the mountains glow softly in the fading light, marking a truly unforgettable arrival at the doorstep of the high Himalaya.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Jangothang — Acclimatization Day",
+        details: [
+          "A well-earned pause at high altitude, this day is all about letting the body catch its breath while quietly soaking in the grandeur of the Himalayas that now feel incredibly close.",
+          "Gentle optional hikes of 2–4 hours lead up the surrounding ridges, each step offering even more dramatic perspectives of the valley below and the towering peaks above.",
+          "For those feeling strong, a rewarding climb to the Tshophu Twin Lakes at around 4,400 metres reveals still, mirror-like waters cradled beneath rugged slopes, a place that feels untouched and deeply serene.",
+          "The landscape here is alive in subtle ways — herds of blue sheep grazing along the hillsides and, if luck is on your side, a golden eagle soaring effortlessly across the vast sky.",
+          "Back at Jangothang camp, the rest of the day unfolds slowly, with time to rest, wander, and simply take in the silence of the mountains, allowing the altitude to settle gently into the body before the journey continues deeper into the range.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Jangothang → Lingzhi — Crossing Neyle La Pass",
+        details: [
+          "The day begins with a steady, purposeful climb out of Jangothang, as the trail gradually leads toward Neyle La at 4,830 metres, one of the highest and most rewarding passes on the journey.",
+          "The ascent demands patience, but the reward is immense — standing atop the pass, the world opens in every direction with sweeping, almost unreal views of snow-capped giants stretching across the horizon.",
+          "From here, the trail descends into the remote and windswept Lingzhi valley, where the landscape feels raw, expansive, and beautifully untouched.",
+          "After covering around 18 km over 6–7 hours, the path gently brings the journey to the historic Lingzhi Dzong, perched dramatically on a ridge overlooking the valley, silently guarding this isolated region.",
+          "The campsite rests nearby at 4,010 metres, surrounded by wide alpine plains and distant peaks, where the evening carries a quiet sense of remoteness that few places on earth can offer.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Lingzhi → Shodu — Crossing Yale La Pass",
+        details: [
+          "This is one of those days that quietly tests both body and spirit, as the trail stretches over 19 km and 7–8 hours, climbing steadily toward the formidable Yale La at 4,942 metres.",
+          "The ascent is demanding, but every step upward unfolds some of the most breathtaking panoramic Himalayan views of the entire journey — vast ridgelines, distant snow peaks, and a sense of standing on the very spine of the mountains.",
+          "At the top, the wind carries a raw, untouched energy, marking a true high point in both altitude and experience.",
+          "From here, the descent begins into the remote Shodu valley, where the terrain softens into rolling alpine landscapes and wide-open silence.",
+          "As the altitude settles around 4,100 metres, the campsite appears tucked beside the river, surrounded by an immense stillness that feels far removed from everything else.",
+          "The day ends with a deep sense of accomplishment, having crossed one of the trek's most challenging yet rewarding passages.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Shodu → Thimphu — Farewell to the Mountains",
+        details: [
+          "The final day on the trail begins with a gentle descent along the soothing flow of the Thimphu Chhu, as the path winds through lush forests, past cascading waterfalls, and back into greener, lower landscapes that feel almost welcoming after days in the high alpine.",
+          "Covering around 16 km over 5–6 hours, the walk carries a bittersweet rhythm, each step marking the end of a journey that has unfolded so deeply in the mountains.",
+          "Along the way, a quiet stop at the ruins of Barshong Dzong adds a final touch of history, its weathered walls standing as a reminder of Bhutan's past in this remote valley.",
+          "As the trek concludes, the vehicle awaits, and the drive to Thimphu slowly reintroduces the comforts of civilisation.",
+          "By evening, the capital feels lively yet gentle, offering a warm transition from wilderness to town, and a well-deserved rest in the comfort of a hotel after days of unforgettable trekking.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "The day begins with a gentle exploration of Thimphu, starting at the peaceful National Memorial Chorten, where locals quietly circle in prayer, followed by a visit to the grand Buddha Dordenma overlooking the valley in serene silence.",
+          "A short drive leads to the Motithang Takin Preserve, home to Bhutan's unique national animal, adding a touch of character to the morning.",
+          "Soon after, the journey continues toward Punakha, winding up to the breathtaking Dochula Pass at 3,100 metres, where on a clear day, a sweeping panorama of Himalayan peaks stretches endlessly beyond the 108 chortens.",
+          "As the road descends into the warmer Punakha valley, the air softens and the scenery shifts to terraced fields and riverside beauty.",
+          "Before settling in, a pleasant walk through rice fields leads to the fertility temple of Chimi Lhakhang, a place filled with local stories and quiet blessings.",
+          "By evening, Punakha's gentle climate and lush surroundings offer a comforting contrast to the high mountains left behind, with a restful night awaiting at the hotel.",
+        ],
+      },
+      {
+        day: 11,
+        date: "Day 11",
+        title: "Punakha → Paro",
+        details: [
+          "The morning begins in the heart of Punakha with a visit to the magnificent Punakha Dzong, standing gracefully at the confluence of two rivers, its intricate woodwork and riverside setting making it one of the most beautiful fortresses in Bhutan.",
+          "Just nearby, a walk across the long Punakha Suspension Bridge adds a touch of adventure, with prayer flags fluttering above the rushing Pho Chhu below.",
+          "Soon after, the journey winds back toward Paro, retracing the scenic route through Thimphu, where there's time to pause at local markets — perfect for picking up last-minute souvenirs and soaking in a bit more of Bhutan's everyday charm.",
+          "The drive, stretching around 4–5 hours, feels reflective in nature, as familiar valleys and mountain passes pass by once more.",
+          "By evening, arrival in Paro brings a calm, full-circle feeling, settling into the hotel for one last peaceful night in the kingdom.",
+        ],
+      },
+      {
+        day: 12,
+        date: "Day 12",
+        title: "Departure from Paro",
+        details: [
+          "The final morning arrives quietly in Paro, where the crisp mountain air and slow rhythm of the valley make it hard to say goodbye.",
+          "After breakfast, a short transfer leads back to Paro International Airport, the same peaceful gateway where the journey first began.",
+          "As the flight lifts off, the valleys, rivers, and distant snow peaks slowly fade beneath the clouds, leaving behind not just memories of places visited, but a deeper connection to the spirit of Bhutan that lingers long after departure.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "12 Days / 11 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Shingkharap · Soi Thangkha · Jangothang · Lingzhi · Shodu · Thimphu · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-JOM-PBH-12" },
+      {
+        label: "Meals",
+        value: "Breakfast & Dinner daily; All meals included during trek days",
+      },
+      { label: "Best Time", value: "April–June & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      {
+        label: "Trek Distance",
+        value: "Approx. 94 km total trekking distance",
+      },
+      { label: "Max Altitude", value: "Yale La Pass at 4,942m" },
+    ],
+  },
+  {
+    id: 514,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Dagala Thousand Lakes Trek in Bhutan",
+    type: "Adventure",
+    duration: "9 Days / 8 Nights",
+    durationTag: "9 Days",
+    startEnd:
+      "Paro → Geynekha → Gur → Labatama → Kheri Khewa → Tshokam → Thimphu → Paro",
+    destinations: [
+      "Paro",
+      "Geynekha",
+      "Gur",
+      "Labatama",
+      "Kheri Khewa",
+      "Tshokam",
+      "Thimphu",
+    ],
+    amenities: ["Hotel & Camp", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Adventure",
+    badgeColor: "bg-green-700",
+    mode: "Trek",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Tent, label: "Camp Stay", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Trekking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      {
+        title:
+          "Dagala Highlands — A Thousand Glacial Lakes Scattered Across the Alpine Plateau",
+      },
+      { title: "Pagalabtsa La Pass — Panoramic Himalayan Views at 4,170m" },
+      { title: "Highest Point Near Jomo Peak — Optional Climb to 4,716m" },
+      {
+        title:
+          "Sacred Serbho Tsho & Neighbouring Lakes — Revered Highland Waters",
+      },
+      {
+        title:
+          "Lingzhi Dzong Ruins — Remote Historic Remnants Deep in the Trek",
+      },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Dagala Thousand Lakes Trek in Bhutan — Paro to Thimphu via Dagala Highlands",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Dagala Thousand Lakes Trek in Bhutan", href: "" },
+    ],
+    badges: [
+      { label: "ADVENTURE", variant: "solid", color: "green" },
+      { label: "9 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 9,
+    countryCount: 1,
+    cityCount: 7,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Paro", nights: 2 },
+      { city: "Gur", nights: 1 },
+      { city: "Labatama", nights: 1 },
+      { city: "Kheri Khewa", nights: 1 },
+      { city: "Tshokam", nights: 1 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Paro (Return)", nights: 1 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Welcome into Paro Valley",
+        details: [
+          "At 2,280 metres above sea level, the experience begins with an unforgettable flight into Bhutan, where the Himalayan range unfolds in spectacular fashion and, on clear days, the legendary peaks of Everest and Kanchenjunga can be seen from the aircraft window.",
+          "As the flight descends into Paro International Airport, the valley comes into view with its pine-clad slopes, whitewashed farmhouses, and peaceful scenery, offering a beautiful first impression of the kingdom.",
+          "After completing airport formalities, take a short and easy transfer to the hotel, followed by a relaxed lunch and time to settle into Bhutan's gentle pace.",
+          "In the afternoon, begin exploring Paro with a visit to Rinpung Dzong, an impressive fortress rising above the river, before continuing to Kichu Lhakhang, one of Bhutan's oldest and most sacred temples, known for its quiet and spiritual atmosphere.",
+          "The journey then continues to the historic ruins of Drukgyal Dzong, a place that reflects stories of ancient battles and Bhutanese strength against the dramatic mountain backdrop.",
+          "As evening approaches, enjoy a leisurely stroll through Paro town, where traditional wooden shopfronts, soft valley light, and a welcoming local atmosphere offer the first taste of Bhutanese charm, before spending the night at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "The Sacred Climb to Tiger's Nest",
+        details: [
+          "After a wholesome Bhutanese breakfast, set out for one of the most iconic journeys in the Himalayas — the hike to Tiger's Nest Monastery, perched impossibly on a sheer cliff at 3,120 metres.",
+          "The trail begins gently, winding through fragrant pine forests draped in fluttering prayer flags, each step feeling like walking deeper into a living spiritual story.",
+          "It's a steady climb of about 2 to 3 hours to the top, though a horse ride is available halfway for those wishing to conserve energy for the final ascent.",
+          "About midway, the cafeteria viewpoint offers the first breathtaking, postcard-perfect view of the monastery clinging to the rock face — a moment worth the journey in itself.",
+          "From there, the path grows steeper, but the reward is profound; standing before Tiger's Nest carries a quiet stillness that is hard to put into words.",
+          "After soaking it all in, the descent completes the 4 to 5-hour round trip, with the afternoon spent strolling through the charming streets of Paro town before settling in for another overnight in Paro.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Paro → Geynekha → Gur — Trek Begins",
+        details: [
+          "Leaving Paro after breakfast, the drive to Geynekha takes about two hours, passing the iron bridge of Tachog Lhakhang and the sacred confluence at Chuzom, where the Paro Chu and Wang Chu rivers meet, each marked by chortens of different architectural styles.",
+          "On reaching Geynekha at around 2,900 metres, the trek begins with a steady and forgiving ascent, weaving through open meadows before pulling deeper into oak forests where the air feels cooler, richer, and alive.",
+          "Along the way, the quiet ruins of Genye Dzong stand as a reminder of stories long gone, before the trail climbs to a viewpoint at 3,200 metres offering sweeping views of the surrounding ridges.",
+          "A gentle final push leads to the campsite at Gur, sitting peacefully at 3,350 metres.",
+          "As the evening settles, the mountains glow softly and the highlands offer a kind of silence that only the mountains can provide — the first true night under Bhutan's trekking sky.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Gur → Labatama — Crossing the High Pass",
+        details: [
+          "Leaving Gur, the trail rolls gently at first through alpine pastures around 3,440 metres, where yaks graze lazily and the landscape opens wide and wild.",
+          "Climbing higher toward the shepherd huts of Gibze Kebze at 3,710 metres, the air begins to thin just a little, with the pace kept steady and in rhythm with the mountains.",
+          "The highlight of the day is the ascent to Pagalabtsa La Pass at 4,170 metres — a steady push rewarded with panoramic views of the Dagala range stretching endlessly across the horizon, peaks layered like waves frozen in time.",
+          "From the pass, the trail descends into a hidden highland world, where glacial lakes shimmer quietly in the distance and the vastness of Bhutan truly sinks in.",
+          "The campsite at Labatama at 4,050 metres sits tucked in the heart of this remote alpine basin, where the evening brings dropping temperatures and an overwhelming sense of being far from the ordinary — right where Bhutan feels most untouched.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Labatama → Kheri Khewa — Heart of the Dagala Lakes",
+        details: [
+          "The trail leads deeper into the heart of the Dagala lakes region, where the landscape shifts into a surreal high-altitude world dotted with glacial lakes that shimmer like mirrors to the sky.",
+          "Walking past Serbho Tsho and its neighbouring lakes, the stillness here feels blessed — these waters are considered sacred, and a quiet reverence fills the air.",
+          "The trail climbs steadily toward the day's highest pass at 4,520 metres, rewarding with jaw-dropping views stretching all the way to Jomolhari and even Kanchenjunga far in the distance.",
+          "For those with the energy, an optional push to a viewpoint near Jomo Peak at 4,716 metres offers one of the most memorable climbs of the entire journey.",
+          "The descent leads to the campsite at Kheri Khewa at 4,350 metres, tucked into a quiet windswept valley where the lakes reflect the fading light and the mountains turn golden as evening falls.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Kheri Khewa → Tshokam — Descending the Highlands",
+        details: [
+          "The morning unfolds quietly in Kheri Khewa, with the mountains holding onto that crisp, untouched stillness that has become so familiar over the past days.",
+          "The trail ahead is noticeably gentler, easing into a steady rhythm across open highland terrain where rolling ridges stretch endlessly under vast Bhutanese skies.",
+          "A soft climb leads to a pass at around 4,200 metres — not demanding, but offering just enough elevation to reveal one last sweep of the surrounding ranges.",
+          "From here, the journey begins its gradual descent, with the scenery becoming calmer and more expansive, and a peaceful silence inviting reflection on the days spent deep in the Dagala wilderness.",
+          "The campsite at Tshokam — meaning 'Dried Lake' — appears wide and open, a fitting place for the final night in the mountains, where the fading light brushes the highlands in soft tones and the atmosphere carries a quiet sense of closure.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Tshokam → Chamgang → Thimphu — Farewell to the Mountains",
+        details: [
+          "The final morning in the highlands carries a quiet mix of satisfaction and nostalgia, as the trail begins its steady descent toward Chamgang over about four hours.",
+          "The path winds down through changing landscapes — alpine terrain slowly giving way to forested slopes and warmer air, marking a gentle return to the valleys.",
+          "At Chamgang, a heartfelt farewell to the trekking crew takes place before the vehicle awaits, their smiles, stories, and quiet strength woven into the experience.",
+          "The drive to Thimphu feels like re-entering a different world, where the rhythm shifts from mountain silence to the subtle buzz of Bhutan's capital.",
+          "By evening, the city offers a relaxed stroll or quiet rest, with its comforts providing a gentle landing after days in the wild.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Thimphu → Paro",
+        details: [
+          "The day begins in Thimphu with a visit to Buddha Dordenma, the massive statue sitting high above the valley with a calm that stays long after leaving.",
+          "Down in the city, Norzin Lam brings a different energy, with local shops, cafés, and the gentle rhythm of daily Bhutanese life unfolding along the main street.",
+          "The nearby handicraft market offers a delightful wander through intricate textiles, handmade souvenirs, and stories woven into every piece.",
+          "A visit to Tashichho Dzong follows, an impressive fortress serving as the seat of the King and government, standing with quiet authority beside the river.",
+          "As the day winds down, the drive back to Paro feels familiar and comforting, tracing the valleys once more before settling in for a peaceful overnight in Paro.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Departure from Paro",
+        details: [
+          "The final morning arrives in Paro, where the crisp mountain air and slow valley rhythm make it hard to say goodbye.",
+          "After breakfast, a short transfer leads to Paro International Airport, the same peaceful gateway where the journey first began.",
+          "As the flight lifts off, the valleys, rivers, and distant snow peaks slowly fade beneath the clouds, leaving behind not just memories of places visited, but a deeper connection to the spirit of Bhutan that lingers long after departure.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "9 Days / 8 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Geynekha · Gur · Labatama · Kheri Khewa · Tshokam · Thimphu",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-DAG-PBH-09" },
+      {
+        label: "Meals",
+        value: "Breakfast daily; All meals included during trek days",
+      },
+      { label: "Best Time", value: "April–June & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Max Altitude", value: "Near Jomo Peak at 4,716m" },
+    ],
+  },
+  {
+    id: 515,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Glimpse of Bhutan",
+    type: "Cultural",
+    duration: "6 Days / 5 Nights",
+    durationTag: "6 Days",
+    startEnd: "Paro → Thimphu → Punakha → Paro",
+    destinations: ["Paro", "Thimphu", "Dochula Pass", "Punakha", "Paro"],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Two Rivers",
+      },
+      {
+        title:
+          "Dochula Pass — 108 Chortens & Panoramic Himalayan Views at 3,050m",
+      },
+      {
+        title: "Buddha Dordenma — Iconic Statue Overlooking the Thimphu Valley",
+      },
+      {
+        title:
+          "Chimi Lhakhang — The Revered Temple of Fertility in Lobesa Valley",
+      },
+      {
+        title:
+          "Khamsum Yulley Namgyal Chorten — Scenic Ridge Temple with Valley Views",
+      },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Glimpse of Bhutan — Paro, Thimphu, Punakha 6-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Glimpse of Bhutan", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "6 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 6,
+    countryCount: 1,
+    cityCount: 4,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Punakha", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Into the Kingdom of the Thunder Dragon",
+        details: [
+          "The flight into Bhutan is a spectacular introduction to the kingdom, offering breathtaking views of the majestic Himalayas and the glittering glaciers of some of the world's highest peaks.",
+          "As the flight descends into Paro Valley, the silvery Pa Chhu winds through the landscape alongside the striking Paro Dzong and the historic Ta Dzong watchtower, before a warm welcome marks the beginning of the journey.",
+          "En route toward Thimphu, a visit to Tachog Lhakhang — also known as Tachogang — involves crossing the river on a traditional iron chain bridge; this sacred site, meaning 'Temple of the Hill of the Excellent Horse,' was built in the 14th century by the revered saint and engineer Thangtong Gyalpo.",
+          "Though the original structure was washed away by floods in 1969, it was faithfully restored in 2005, preserving the legacy of a master architect credited with constructing 108 iron bridges across Bhutan and Tibet.",
+          "The scenic drive continues onward to Thimphu for an overnight stay.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu — Capital of the Last Himalayan Kingdom",
+        details: [
+          "After breakfast, the day begins with a visit to the Memorial Chorten, a beautiful stupa built in memory of Bhutan's Third King, His Majesty Jigme Dorji Wangchuck, before continuing to the iconic Buddha Dordenma — a magnificent statue perched atop Kuensel Phodrang housing over one hundred thousand smaller Buddha statues and offering sweeping views of the Thimphu Valley.",
+          "For those feeling active, an optional two-hour scenic hike from Buddha Point to Changangkha Lhakhang can be arranged, rewarding with stunning vistas along the way.",
+          "Before lunch, the Motithang Takin Preserve offers a chance to see Bhutan's unique national animal, the takin, followed by a stroll through the local vegetable market to experience the rhythm of daily Bhutanese life.",
+          "In the evening, a visit to the impressive Tashichho Dzong — meaning 'Fortress of the Glorious Religion' — reveals grand whitewashed walls, golden roofs, intricate woodwork, courtyards, and temples; originally built in 1216 and expanded in the 1960s, it now serves as the seat of Bhutan's government and the summer residence of the Je Khenpo.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "After breakfast, the drive to Dochula Pass at 3,050 metres offers sweeping panoramic views of the eastern Himalayas on clear days, including peaks such as Masagang, Terigang, Kangphugang, and the majestic Gangkar Puensum at 7,497 metres — Bhutan's highest peak.",
+          "The journey then descends along a winding road into the lush Wangduephodrang Valley, with a lunch stop in Wangduephodrang town and a visit to Wangdue Phodrang Dzong, a historic fortress perched on a ridge overlooking the confluence of the Punatsang Chhu and Dang Chhu rivers.",
+          "After lunch, a pleasant 30-minute walk through scenic fields leads to Chimi Lhakhang, set on a hillock in the Lobesa Valley and dedicated to the 15th-century saint Lama Drukpa Kuenley, the revered 'Divine Madman,' and widely regarded as the Temple of Fertility.",
+          "In the afternoon, the magnificent Punakha Dzong awaits — beautifully situated at the confluence of two rivers, it served as Bhutan's capital until 1955, remains the winter residence of the Central Monastic Body, and holds the historic significance of being where Bhutan's first king was crowned in 1907.",
+          "The evening is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Punakha → Paro",
+        details: [
+          "After breakfast, the morning begins with a visit to Khamsum Yulley Namgyal Chorten, standing majestically on a ridge overlooking the Punakha Valley and reached via a scenic one-hour hike through rice fields and pine forests.",
+          "Built over nine years by skilled Bhutanese artisans using traditional methods guided by sacred scriptures, this four-storey temple was commissioned by Her Majesty the Queen Mother and dedicated to the peace, stability, and well-being of the kingdom and all sentient beings.",
+          "A second visit to Punakha Dzong allows for deeper exploration of its historical significance — including its role as the site of Bhutan's first royal coronation in 1907 and its miraculous preservation of its most sacred statue through centuries of fires, earthquakes, and floods.",
+          "After lunch, the drive continues to Paro, with the evening left free for a relaxed stroll through Paro town before settling in for an overnight stay.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery begins — an iconic Buddhist temple complex dramatically perched on a cliff at 3,120 metres overlooking the upper Paro Valley, and one of Bhutan's most revered landmarks.",
+          "The ascent takes 2 to 3 hours depending on pace, with the option to ride a horse to the halfway point; the trail winds through serene blue pine forests adorned with colourful prayer flags, creating a peaceful and uplifting journey.",
+          "The Taktsang Cafeteria at the halfway point offers spectacular views of the monastery for those preferring a lighter experience, while the full climb rewards with an unmatched sense of spiritual presence.",
+          "The descent takes around 1.5 to 2 hours, completing the round trip in approximately 4 to 5 hours.",
+          "In the afternoon, if time permits, a visit to the Ta Dzong National Museum — originally built as a watchtower to safeguard Rinpung Dzong in 1646 — is followed by a leisurely evening stroll through Paro town for shopping and exploration, before an overnight stay in Paro.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, the drive to Paro International Airport brings the journey to a close.",
+          "As the flight lifts off from the valley, the mountains, rivers, and golden dzongs of Bhutan slowly fade beneath the clouds, leaving behind memories of a kingdom unlike any other.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "6 Days / 5 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-GLM-PBH-06" },
+      { label: "Meals", value: "Breakfast daily" },
+      { label: "Best Time", value: "March–May & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Sightseeing" },
+    ],
+  },
+  {
+    id: 516,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Bhutan Short Trip",
+    type: "Cultural",
+    duration: "4 Days / 3 Nights",
+    durationTag: "4 Days",
+    startEnd: "Paro → Thimphu → Paro",
+    destinations: ["Paro", "Thimphu"],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      { title: "Paro Dzong — Iconic Fortress Rising Above the Paro Valley" },
+      {
+        title:
+          "Thimphu City Tour — Capital Culture, Buddha Dordenma & Memorial Chorten",
+      },
+      {
+        title: "Tashichho Dzong — Seat of Bhutan's Government on the Wang Chhu",
+      },
+      {
+        title:
+          "Ta Dzong National Museum — Bhutan's Finest Traditional Watchtower Architecture",
+      },
+      { title: "Traditional Dinner — A Taste of Authentic Bhutanese Cuisine" },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Bhutan Short Trip — Paro and Thimphu 4-Day Cultural Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Bhutan Short Trip", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "4 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 4,
+    countryCount: 1,
+    cityCount: 2,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Gateway to the Thunder Dragon Kingdom",
+        details: [
+          "The flight into Bhutan offers breathtaking views of the majestic Himalayas, revealing the shimmering glaciers of some of the world's highest peaks; as the plane descends into Paro Valley, the silvery Pa Chhu winds through the landscape alongside the iconic Paro Dzong and Ta Dzong watchtower.",
+          "After a warm welcome on arrival and transfer toward Thimphu, a stop at Tachog Lhakhang — also known as Tachogang — involves crossing the river via a traditional iron chain bridge; this sacred site, meaning 'Temple of the Hill of the Excellent Horse,' was built in the 14th century by Thangtong Gyalpo.",
+          "Though the original bridge was washed away by floods in 1969, it was faithfully restored in 2005, preserving the legacy of a master architect credited with building 108 iron bridges across Bhutan and Tibet.",
+          "In the evening, a visit to the impressive Tashichho Dzong reveals grand whitewashed walls, golden roofs, intricate woodwork, and courtyards; originally built in 1216 and expanded in the 1960s, it now serves as the seat of Bhutan's government and the summer residence of the Je Khenpo.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu → Paro — Culture, Icons & the Paro Valley",
+        details: [
+          "After breakfast, the day begins with a visit to the Memorial Chorten, built in memory of Bhutan's Third King, His Majesty Jigme Dorji Wangchuck, before continuing to Buddha Dordenma — a magnificent statue atop Kuensel Phodrang housing over one hundred thousand smaller Buddha statues and offering sweeping views of the Thimphu Valley.",
+          "For those interested, an optional two-hour scenic hike from Buddha Point to Changangkha Lhakhang can be arranged, providing stunning vistas along the way.",
+          "Before lunch, the Motithang Takin Preserve offers a chance to see Bhutan's unique national animal, the takin, followed by a stroll through the local vegetable market to experience everyday Bhutanese life.",
+          "After lunch, the drive continues to Paro, with a visit to the Ta Dzong National Museum — originally built as a watchtower to protect Rinpung Dzong in 1646 by Shabdrung Ngawang Namgyal and considered one of Bhutan's finest examples of traditional architecture.",
+          "The evening is left free for a relaxed walk through Paro town for shopping and exploration, before settling in for an overnight stay in Paro.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery begins — an iconic Buddhist temple dramatically perched on a cliff at 3,120 metres overlooking the upper Paro Valley, and one of Bhutan's most revered landmarks.",
+          "The ascent takes 2 to 3 hours depending on pace and fitness level, with the option to ride a horse to the halfway point; the trail winds through peaceful blue pine forests and prayer-flag-lined paths, creating a serene and uplifting journey.",
+          "For those who prefer a lighter experience, the Taktsang Cafeteria at the halfway point offers spectacular views of the monastery without the full climb.",
+          "The descent takes around 1.5 to 2 hours, completing the total round trip in approximately 4 to 5 hours.",
+          "The evening is spent back at the hotel in Paro.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, the drive to Paro International Airport brings the journey to a graceful close.",
+          "As the flight lifts off from the valley, the mountain peaks, ancient dzongs, and warm spirit of Bhutan linger as memories that will last long after the kingdom fades from view.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "4 Days / 3 Nights" },
+      { label: "Destinations", value: "Paro · Thimphu" },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-SHT-PBH-04" },
+      { label: "Meals", value: "Breakfast daily; Traditional Dinner included" },
+      { label: "Best Time", value: "March–May & September–November" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Sightseeing" },
+    ],
+  },
+  {
+    id: 517,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Paro Festival Tour",
+    type: "Cultural",
+    duration: "8 Days / 7 Nights",
+    durationTag: "8 Days",
+    startEnd: "Paro → Thimphu → Punakha → Paro",
+    destinations: ["Paro", "Thimphu", "Dochula Pass", "Punakha", "Paro"],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Landmark, label: "Culture", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Paro Tsechu Festival — Sacred Mask Dances & Traditional Costumes at Rinpung Dzong",
+      },
+      {
+        title:
+          "Hike to Paro Taktsang — Sacred Tiger's Nest Monastery at 3,120m",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Two Rivers",
+      },
+      {
+        title:
+          "Dochula Pass — Panoramic Himalayan Views at 3,050m & 108 Chortens",
+      },
+      {
+        title:
+          "Khamsum Yulley Namgyal Chorten — Hilltop Temple with Valley Views",
+      },
+      {
+        title:
+          "Simtokha Dzong — One of Bhutan's Oldest Fortress Monasteries, Built 1629",
+      },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Paro Festival Tour — Paro Tsechu, Thimphu & Punakha 8-Day Cultural Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Paro Festival Tour", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "8 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 8,
+    countryCount: 1,
+    cityCount: 4,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Punakha", nights: 2 },
+      { city: "Paro", nights: 3 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Transfer to Thimphu",
+        details: [
+          "Upon arrival at Paro International Airport, a warm welcome from the guide marks the beginning of the journey, followed by a scenic one-hour drive to Thimphu, the capital city of Bhutan.",
+          "Along the way, a visit to Tachog Lhakhang includes crossing the river on the famous iron chain bridge built by Thangtong Gyalpo, a revered saint and engineer credited with constructing 108 iron bridges across Bhutan and Tibet.",
+          "In the afternoon, sightseeing in Thimphu begins with visits to the Memorial Chorten, a beautiful stupa built in memory of Bhutan's Third King, and the lively Centenary Farmers Market.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu — A Day in the Capital",
+        details: [
+          "A full day of exploration begins with a visit to the magnificent Buddha Dordenma Statue, one of the largest Buddha statues in the world, offering panoramic views over the Thimphu Valley.",
+          "The morning continues at the Motithang Takin Preserve, home to Bhutan's unique national animal, the takin, followed by a visit to the National Textile Museum and the Folk Heritage Museum to discover traditional Bhutanese life, craftsmanship, and customs.",
+          "Later in the day, the impressive Tashichho Dzong — seat of Bhutan's government and central monastic body — is explored in all its grandeur of whitewashed walls, golden roofs, and intricate woodwork.",
+          "The evening is spent on a relaxing stroll through Thimphu town, soaking in the local atmosphere before an overnight stay in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "A scenic drive from Thimphu leads to the breathtaking Dochula Pass at 3,050 metres, known for its panoramic views of the Himalayan mountain range and the iconic 108 Druk Wangyal Chortens.",
+          "For those seeking a bit more adventure, an optional Lungchutse Hike begins just above the chortens and leads to Lungchutse Temple on a ridge at around 3,600 metres, covering approximately 5–6 km round trip over 3–4 hours.",
+          "After the pass, the journey continues toward Punakha — the former capital of Bhutan — with a stop at Chimi Lhakhang, the revered Temple of Fertility in the Lobesa Valley, reached via a pleasant walk through scenic fields.",
+          "Along the way, Wangdue Phodrang Dzong is also visited, a historically significant fortress monastery known for its striking architecture.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Punakha — Dzongs, Temples & Suspension Bridge",
+        details: [
+          "The morning begins with a scenic hike to Khamsum Yulley Namgyal Chorten, a remarkable temple set on a hilltop above the Punakha Valley, rewarding visitors with breathtaking panoramic views of the valley, terraced fields, and surrounding mountains.",
+          "In the afternoon, the magnificent Punakha Dzong is explored — one of Bhutan's most impressive fortresses, beautifully situated at the confluence of the Pho Chhu and Mo Chhu rivers, and the historic site of Bhutan's first royal coronation in 1907.",
+          "The day concludes with a visit to the Punakha Suspension Bridge, one of the longest in Bhutan, offering scenic valley views and a memorable walking experience.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Punakha → Simtokha Dzong → Paro",
+        details: [
+          "After a memorable stay in Punakha, the journey heads back toward the enchanting Paro Valley, with a stop at Simtokha Dzong along the way.",
+          "Built in 1629 and standing about 5 km south of Thimphu, Simtokha Dzong is one of the oldest and most historically significant dzongs in Bhutan, admired for its deep religious importance and traditional Bhutanese architecture.",
+          "After exploring this cultural treasure, the scenic drive continues to Paro, where peaceful landscapes, charming villages, and fresh mountain air create the perfect setting for relaxation.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Paro Tsechu Festival — Sacred Dances at Rinpung Dzong",
+        details: [
+          "The cultural heart of the journey unfolds at the spectacular Paro Tsechu Festival, held at the historic Rinpung Dzong — one of the most vibrant and spiritually significant festivals in Bhutan.",
+          "Sacred mask dances performed by monks fill the courtyard, while locals dressed in their finest traditional attire gather to receive blessings and celebrate their rich cultural heritage.",
+          "In the afternoon, sightseeing in Paro continues with visits to Ta Dzong housing the National Museum of Bhutan, the magnificent Rinpung Dzong, and Kyichu Lhakhang — one of the oldest and most sacred temples in Bhutan.",
+          "The evening is spent exploring Paro town, browsing traditional shops and soaking in the unique ambiance of this beautiful Himalayan valley.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery begins — an iconic Buddhist temple complex dramatically perched on a cliff at 3,120 metres overlooking the upper Paro Valley, and one of Bhutan's most revered landmarks.",
+          "The ascent takes 2 to 3 hours depending on pace, with the option to ride a horse to the halfway point; the trail winds through serene blue pine forests adorned with colourful prayer flags, creating a peaceful and uplifting journey.",
+          "The Taktsang Cafeteria at the halfway point offers spectacular views of the monastery for those preferring a lighter experience, while the full climb rewards with a profound sense of spiritual stillness.",
+          "The descent takes around 1.5 to 2 hours, completing the round trip in approximately 4 to 5 hours.",
+          "The afternoon is spent on a leisurely stroll through Paro town for shopping and exploration, before a final overnight stay in Paro.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, a transfer to Paro International Airport brings the journey to a close.",
+          "As the flight lifts off from the Paro Valley, the colourful festival memories, sacred monasteries, and the warm spirit of Bhutan linger long after the kingdom fades from view.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "8 Days / 7 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-PFT-PBH-08" },
+      { label: "Meals", value: "Breakfast daily" },
+      {
+        label: "Best Time",
+        value: "March–April (Paro Tsechu Festival Season)",
+      },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Festival & Cultural Sightseeing" },
+    ],
+  },
+  {
+    id: 518,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Best of Bhutan Tour",
+    type: "Cultural",
+    duration: "9 Days / 8 Nights",
+    durationTag: "9 Days",
+    startEnd: "Paro → Thimphu → Phobjikha → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Dochula Pass",
+      "Phobjikha Valley",
+      "Punakha",
+      "Paro",
+    ],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Two Rivers",
+      },
+      {
+        title:
+          "Dochula Pass — Panoramic Himalayan Views at 3,088m with 108 Chortens",
+      },
+      {
+        title:
+          "Phobjikha Valley — Glacial Valley & Winter Home of the Black-Necked Crane",
+      },
+      {
+        title:
+          "Gangtey Monastery — 17th-Century Nyingma Monastery Overlooking Phobjikha",
+      },
+      {
+        title:
+          "Khamsum Yulley Namgyal Chorten — Unique 4-Storey Hilltop Temple Above Punakha Valley",
+      },
+    ],
+    tourManagerCompany: "",
+    heroImage: {
+      src: "",
+      alt: "Best of Bhutan Tour — Paro, Thimphu, Phobjikha & Punakha 9-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Best of Bhutan Tour", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "9 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 9,
+    countryCount: 1,
+    cityCount: 5,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Phobjikha Valley", nights: 2 },
+      { city: "Punakha", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Tachog Lhakhang & Transfer to Thimphu",
+        details: [
+          "The flight into Bhutan offers stunning scenic views of some of the world's highest glacial peaks, sweeping past forested hills and the silvery Paro river as the plane descends into the Paro valley.",
+          "Upon arrival at Paro International Airport, a representative meets guests and completes arrival formalities before transferring to Thimphu.",
+          "En route, a visit to Tachog Lhakhang — also known as Tachogang, meaning 'temple of the hill of excellent horse' — is made by crossing the Paro river on a traditional iron chain bridge.",
+          "The temple was built in the 14th century by the renowned architect-saint Thangtong Gyalpo, who constructed 108 iron bridges throughout Tibet and Bhutan; the current bridge is a 2005 restoration of the original washed away in 1969.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title:
+          "Thimphu — Memorial Chorten, Buddha Dordenma & Changjangkha Temple",
+        details: [
+          "After breakfast, the day begins with a visit to the National Memorial Chorten, a landmark stupa built in memory of Bhutan's Third King, Jigme Dorji Wangchuck, as a monument to world peace and prosperity; completed in 1974, its paintings and statues offer a deep insight into Buddhist philosophy.",
+          "The morning continues with a visit to the colossal Buddha Dordenma statue — one of the largest Shakyamuni Buddha statues in the world — sited amidst the ruins of Kuensel Phodrang and overlooking the southern approach to Thimphu.",
+          "From Buddha Dordenma, an approximately two-hour hike leads up to Changjangkha Temple, rewarding hikers with sweeping panoramic views over Thimphu city.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Phobjikha Valley",
+        details: [
+          "After an early breakfast, the drive heads up to Dochula Pass at 3,088 metres, where the chortens, mani wall, and prayer flags mark the highest point on the road; on clear days, a sweeping panorama of Himalayan peaks is visible, including Gangkar Puensum at 7,497m — the highest peak in Bhutan.",
+          "The journey then descends into the Wangduephodrang valley, approximately 1,700 metres below the pass, with a stop in Wangduephodrang town for lunch.",
+          "In the mountains east of Wangduephodrang lies the beautiful Phobjikha valley, home to the great Gangtey Monastery established in the 17th century, and the charming village of Phobjikha on the valley floor.",
+          "The valley is famed as the winter refuge of black-necked cranes, which migrate from the arid plains of Tibet to pass the colder months in this remote and tranquil setting.",
+          "The night is spent at a hotel in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title:
+          "Phobjikha Valley — Gangtey Monastery & Black-Necked Crane Centre",
+        details: [
+          "A full day is spent exploring Phobjikha, a vast U-shaped glacial valley also known as Gangteng Valley, named after the impressive Gangtey Monastery of the Nyingma tradition.",
+          "The valley is one of Bhutan's most significant wildlife habitats: an area of approximately 163 square kilometres has been declared a protected zone managed by the Royal Society for the Protection of Nature (RSPN), sheltering 14 globally threatened species including the iconic black-necked crane.",
+          "A visit to the Black-Necked Crane Information Centre offers a deeper understanding of the cranes' remarkable annual migration from the Tibetan Plateau — upon arriving each October, the cranes are said to circle Gangtey Monastery three times before landing, and repeat the ritual upon departure.",
+          "The night is spent at a hotel in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Phobjikha Valley → Chimi Lhakhang → Punakha",
+        details: [
+          "After breakfast, the drive heads toward Punakha with an en-route stop at Chimi Lhakhang, situated on a hillock in the centre of the Lobesa valley and dedicated to Lama Drukpa Kuenley — the 'Divine Madman' — who used humour and unconventional teachings to spread Buddhism in the 15th century.",
+          "Chimi Lhakhang is widely revered as the Temple of Fertility, believed to bless childless couples who pray here; the temple is reached by a pleasant 30-minute walk across scenic paddy fields or by a short drive.",
+          "The journey then continues to Punakha, the former capital of Bhutan, set amid warm lowland valleys at the confluence of two rivers.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Punakha — Khamsum Chorten, Punakha Dzong & Suspension Bridge",
+        details: [
+          "The morning begins with a visit to Khamsum Yulley Namgyal Chorten, a magnificent 4-storey temple built over 9 years by Bhutanese craftsmen who consulted holy scriptures rather than engineering manuals; constructed by Her Majesty the Queen Mother, it stands as a unique architectural masterpiece on a strategic ridge above the Punakha valley.",
+          "In the afternoon, the grand Punakha Dzong is explored — a massive fortress built at the junction of the Pho Chhu and Mo Chhu rivers, which served as Bhutan's capital until 1955 and was the site of the first royal coronation in 1907; despite centuries of damage from fire, earthquake, and flood, the dzong remains one of Bhutan's most awe-inspiring structures.",
+          "The day concludes with a walk across Punakha's famous suspension bridge, offering beautiful views of the river valley below.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Punakha → Ta Dzong & Rinpung Dzong → Paro",
+        details: [
+          "After breakfast, the drive heads directly to Paro, where the first stop is Ta Dzong — the former watchtower of Paro Dzong, now housing the National Museum of Bhutan.",
+          "From Ta Dzong, a trail leads down to the magnificent Rinpung Dzong, built in 1646 by Zhabdrung Ngawang Namgyal, which houses the monastic body of Paro and the district's administrative offices; the approach is made through the traditional covered Nemi Zam bridge, with beautiful views of the dzong's architecture along the stone-inlaid path.",
+          "Guests have the opportunity to wear traditional Bhutanese dress for photographs against the stunning backdrop of the dzong and its wooden bridge.",
+          "The evening is spent on a leisurely walk through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery — popularly known as the Tiger's Nest — begins; dramatically perched on a cliff at 3,120 metres above the Paro Valley, it is one of Bhutan's most revered and iconic landmarks.",
+          "The ascent takes 2 to 3 hours depending on pace, with the option to ride a horse to the halfway point; the trail winds through serene blue pine forests adorned with colourful prayer flags in a deeply peaceful atmosphere.",
+          "The Taktsang Cafeteria at the halfway point offers spectacular views of the monastery for those preferring a lighter experience, while completing the full climb rewards with a profound sense of spiritual stillness and breathtaking mountain scenery.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "The evening is spent strolling through Paro town for shopping and exploration, followed by a final overnight stay in Paro.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, a transfer to Paro International Airport brings the journey to a close.",
+          "As the flight departs over the Paro Valley, the memories of ancient monasteries, misty mountain passes, and the warm hospitality of the Bhutanese people remain long after the kingdom fades from view.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "9 Days / 8 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Phobjikha Valley · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-BOB-PBH-09" },
+      { label: "Meals", value: "Breakfast daily" },
+      { label: "Best Time", value: "October–April" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Nature Sightseeing" },
+    ],
+  },
+  {
+    id: 519,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Punakha Festival Tour",
+    type: "Cultural",
+    duration: "8 Days / 7 Nights",
+    durationTag: "8 Days",
+    startEnd: "Paro → Thimphu → Punakha → Paro",
+    destinations: ["Paro", "Thimphu", "Dochula Pass", "Punakha", "Paro"],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Punakha Drubchen — Warrior Dances & Historical Reenactments at Punakha Dzong",
+      },
+      {
+        title:
+          "Punakha Tshechu Festival — Sacred Mask Dances & Buddhist Ceremonies",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Pho Chhu & Mo Chhu Rivers",
+      },
+      {
+        title:
+          "Dochula Pass — Panoramic Himalayan Views at 3,050m with 108 Druk Wangyal Chortens",
+      },
+      {
+        title:
+          "Khamsum Yulley Namgyal Chorten — Hilltop Temple Overlooking Punakha Valley",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Punakha Festival Tour — Paro, Thimphu & Punakha 8-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Punakha Festival Tour", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "8 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 8,
+    countryCount: 1,
+    cityCount: 4,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Punakha", nights: 3 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Tachog Lhakhang & Transfer to Thimphu",
+        details: [
+          "Your Bhutan journey begins with one of the world's most scenic mountain flights, with spectacular views of the Eastern Himalayas before descending into the breathtaking Paro Valley, where the Paro River, Paro Dzong, and Ta Dzong come into view.",
+          "On arrival at Paro International Airport, you will be warmly welcomed by your guide and driven to Thimphu, Bhutan's charming capital, with an enriching stop at Tachog Lhakhang — the sacred temple built by Thangtong Gyalpo and famed for its historic iron chain bridge.",
+          "In the afternoon, explore Thimphu's cultural highlights, including the National Memorial Chorten and the lively Centenary Farmers Market.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title:
+          "Thimphu Sightseeing — Buddha Dordenma, Takin Preserve & Tashichho Dzong",
+        details: [
+          "Explore the highlights of Thimphu, Bhutan's vibrant capital, where tradition and modern life come together in a uniquely Bhutanese setting.",
+          "The day includes visits to the magnificent Buddha Dordenma overlooking the Thimphu Valley and the Motithang Takin Preserve, home to Bhutan's national animal, the takin.",
+          "Further visits are made to the Folk Heritage Museum and the National Institute for Zorig Chusum, where traditional Bhutanese arts and crafts are preserved and taught.",
+          "The day concludes with a visit to the impressive Tashichho Dzong — the seat of Bhutan's government and central monastic body — followed by a relaxed evening stroll through Thimphu town.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Punakha",
+        details: [
+          "Journey to the beautiful Punakha Valley via the breathtaking Dochula Pass at 3,050 metres, where sweeping views of the Himalayan mountain range create one of Bhutan's most memorable travel experiences on clear days.",
+          "A stop is made to admire the 108 Druk Wangyal Chortens, and for those seeking a more active experience, an optional hike to Lungchutse Temple offers a rewarding trail with spectacular mountain views.",
+          "Continue into the lush Punakha Valley for a visit to Chimi Lhakhang — the revered Temple of Fertility reached by a pleasant walk through rice fields.",
+          "The day also includes a visit to Wangdue Phodrang Dzong, one of Bhutan's historically significant fortress monasteries.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Punakha Tshechu Festival & Punakha Dzong",
+        details: [
+          "Experience the vibrant Punakha Tshechu Festival at the magnificent Punakha Dzong, one of Bhutan's most celebrated cultural and religious events.",
+          "Set against the stunning backdrop of the Pho Chhu and Mo Chhu rivers, the festival comes alive with sacred mask dances performed by monks and lay dancers, reflecting Buddhist teachings and Bhutanese legends.",
+          "Local people gather in their finest traditional attire to receive blessings and celebrate together, offering a rare and meaningful glimpse into Bhutan's living culture and spiritual heritage.",
+          "Time is also spent admiring Punakha Dzong, widely regarded as one of Bhutan's most beautiful fortresses.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title:
+          "Punakha Valley Exploration — Khamsum Chorten & Suspension Bridge",
+        details: [
+          "Begin the day with a scenic hike to Khamsum Yulley Namgyal Chorten, a beautiful hilltop temple overlooking the Punakha Valley and offering spectacular views of the river, rice fields, and surrounding landscapes.",
+          "This rewarding experience combines Bhutan's spiritual charm with natural beauty.",
+          "You may also choose to visit the Punakha Suspension Bridge — one of the longest suspension bridges in Bhutan — for an added touch of adventure.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Punakha → Simtokha Dzong → Paro — Ta Dzong & Rinpung Dzong",
+        details: [
+          "Return to the beautiful Paro Valley with a scenic drive that includes a visit to Simtokha Dzong — one of Bhutan's oldest and most historically important dzongs, built in 1629 and located just south of Thimphu.",
+          "Continue to Paro for afternoon sightseeing at Ta Dzong, the National Museum of Bhutan, and the impressive Rinpung Dzong, one of the valley's most iconic landmarks.",
+          "In the evening, enjoy exploring Paro town, where charming streets, local shops, and cosy cafés add to the experience.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery — popularly known as Paro Taktsang or the Tiger's Nest — begins; dramatically perched on a cliff at 3,120 metres above the Paro Valley, it is one of Bhutan's most revered landmarks and a powerful cultural symbol.",
+          "The ascent takes 2 to 3 hours depending on pace and fitness level, with the option to ride a horse to the halfway point (approximately 1 to 1.5 hours); the trail winds through serene blue pine forests adorned with colourful prayer flags.",
+          "The Taktsang Cafeteria at the halfway point provides spectacular views of the monastery for those preferring a lighter experience without completing the full climb.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "In the afternoon, enjoy a leisurely evening stroll through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, transfer to Paro International Airport for your onward flight.",
+        ],
+      },
+    ],
+    tourDetails: [
+      { label: "Duration", value: "8 Days / 7 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-PFT-PBH-08" },
+      { label: "Meals", value: "Breakfast daily" },
+      { label: "Best Time", value: "February–March (Festival Season)" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Festival" },
+    ],
+  },
+  {
+    id: 5920,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Thimphu Festival Tour",
+    type: "Cultural",
+    duration: "8 Days / 7 Nights",
+    durationTag: "8 Days",
+    startEnd: "Paro → Thimphu → Phobjikha → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Dochula Pass",
+      "Phobjikha Valley",
+      "Punakha",
+      "Paro",
+    ],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 2300,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Thimphu Tshechu — Sacred Mask Dances & Religious Ceremonies at Tashichho Dzong",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Phobjikha Valley — Glacial Valley & Winter Home of the Black-Necked Crane",
+      },
+      {
+        title:
+          "Gangtey Monastery — 17th-Century Nyingma Monastery Overlooking Phobjikha",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Pho Chhu & Mo Chhu Rivers",
+      },
+      {
+        title:
+          "Dochula Pass — Panoramic Himalayan Views at 3,050m with 108 Chortens",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Thimphu Festival Tour — Paro, Thimphu, Phobjikha & Punakha 8-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Thimphu Festival Tour", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "8 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 8,
+    countryCount: 1,
+    cityCount: 5,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 1 },
+      { city: "Phobjikha Valley", nights: 1 },
+      { city: "Punakha", nights: 2 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Tachog Lhakhang & Transfer to Thimphu",
+        details: [
+          "The flight into Bhutan offers spectacular views of the Eastern Himalayas, including some of the world's highest peaks.",
+          "As the aircraft descends into the Paro Valley, the beautiful Paro River (Pa Chhu), Paro Dzong, and Ta Dzong come into view.",
+          "Upon arrival at Paro International Airport, guests are warmly received by a representative before driving to Thimphu (approximately 1 hour).",
+          "En route, a visit is made to Tachog Lhakhang — located along the Paro–Thimphu highway — reached by crossing the Paro River via an iron chain bridge originally built by the famous Tibetan saint and engineer Thangtong Gyalpo, who constructed many iron bridges across the Himalayas.",
+          "The afternoon includes Thimphu sightseeing, with visits to the Memorial Chorten — built in memory of the Third King of Bhutan — the gigantic Buddha Dordenma statue overlooking Thimphu Valley, and the lively Centenary Farmers Market.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu Tshechu Festival at Tashichho Dzong",
+        details: [
+          "The morning is spent attending the Thimphu Tshechu Festival at Tashichho Dzong — one of the most important religious festivals in Bhutan.",
+          "Monks and lay performers present sacred mask dances (Cham) representing Buddhist teachings and spiritual stories.",
+          "Local people dressed in their finest traditional attire gather to receive blessings and celebrate this vibrant cultural event.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Phobjikha Valley",
+        details: [
+          "The drive heads towards Phobjikha Valley with an en-route stop at Dochula Pass at 3,050 metres, where on a clear day spectacular panoramic views of the eastern Himalayan mountain range can be enjoyed.",
+          "The journey continues, descending through subtropical valleys before reaching the beautiful Phobjikha (Gangtey) Valley — a glacial valley famous as the winter home of rare black-necked cranes migrating from Tibet.",
+          "Visits include Gangtey Monastery (17th century) and the Black-Necked Crane Information Centre.",
+          "The valley is part of a protected conservation area managed by the Royal Society for Protection of Nature.",
+          "The night is spent at a hotel in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Phobjikha Valley → Wangdue Phodrang → Chimi Lhakhang → Punakha",
+        details: [
+          "After breakfast, the Gangtey Nature Trail is enjoyed — one of the most scenic short hikes in central Bhutan — offering panoramic views of the glacial Phobjikha Valley, peaceful pine forests, open meadows, traditional Bhutanese villages, and clear flowing streams.",
+          "The drive then heads toward Wangdue Phodrang for a visit to Wangdue Phodrang Dzong — a historic fortress on a ridge overlooking the confluence of the Puna Tsang Chhu and Dang Chhu rivers, making it a strategically important defensive site.",
+          "After lunch, a visit is made to Chimi Lhakhang, situated on a hill in the Lobesa Valley and dedicated to Lama Drukpa Kuenley — also known as the Divine Madman — who used humour, songs, and unconventional behaviour to teach Buddhist philosophy.",
+          "Widely known as the Temple of Fertility, where many couples pray for children, the temple is reached by a pleasant 30-minute walk across rice fields from the road.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Punakha Sightseeing — Khamsum Chorten & Punakha Dzong",
+        details: [
+          "The morning begins with a hike to Khamsum Yulley Namgyal Chorten, located on a ridge above the Punakha Valley and built by the Queen Mother for the peace and prosperity of Bhutan.",
+          "The afternoon includes a visit to Punakha Dzong — often considered the most beautiful fortress in Bhutan — located at the confluence of the Pho Chhu and Mo Chhu rivers.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Punakha → Ta Dzong & Rinpung Dzong → Paro",
+        details: [
+          "After breakfast, the drive heads back to Paro.",
+          "Afternoon visits include Ta Dzong (National Museum) — originally built as a watchtower for Paro Dzong — and Rinpung Dzong (Paro Dzong), built in 1646 by Zhabdrung Ngawang Namgyal.",
+          "The evening is spent on a leisurely stroll through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery — popularly known as Paro Taktsang or the Tiger's Nest — begins; dramatically perched on a cliff at 3,120 metres above the Paro Valley, it is one of Bhutan's most revered landmarks and a powerful cultural symbol.",
+          "The ascent takes 2 to 3 hours depending on pace and fitness level, with the option to ride a horse to the halfway point (approximately 1 to 1.5 hours); the trail winds through serene blue pine forests adorned with colourful prayer flags.",
+          "The Taktsang Cafeteria at the halfway point provides spectacular views of the monastery for those preferring a lighter experience without completing the full climb.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "The afternoon is spent strolling through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, transfer to Paro International Airport for your onward flight.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "English Language Speaking Guide",
+      "Accommodation on a twin-sharing basis",
+      "Comfortable Vehicles with Skilled Drivers",
+      "A minimum of 3 star accommodation (4 & 5 star may require an additional premium)",
+      "Monument entrance fees as per itinerary",
+    ],
+    exclusions: [
+      "Airfare international & domestic",
+      "Personal shopping",
+      "Tips for guide & driver",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "8 Days / 7 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Phobjikha Valley · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-TFT-PBH-08" },
+      { label: "Meals", value: "All meals included" },
+      { label: "Best Time", value: "September–October (Festival Season)" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Festival" },
+    ],
+  },
+  {
+    id: 521,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Druk Path Trek",
+    type: "Trekking",
+    duration: "10 Days / 9 Nights",
+    durationTag: "10 Days",
+    startEnd: "Paro → Druk Path → Thimphu → Paro",
+    destinations: [
+      "Paro",
+      "Jele Dzong",
+      "Tshokham",
+      "Jimi Langtso",
+      "Simkota",
+      "Phajoding",
+      "Thimphu",
+    ],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing", "Trekking"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Trekking",
+    badgeColor: "bg-green-600",
+    mode: "Trek",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Tent, label: "Camping", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Trekking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Camera, label: "Sightseeing", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "High-Altitude Lakes — Pristine Alpine Lakes Including Jimi Langtso & Simkota Tsho",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Himalayan Panoramas — Views of Kangchenjunga, Chomolhari, Jichu Drakey & Tsrim Gang",
+      },
+      {
+        title:
+          "Yak Herder Camps — Encounters with Traditional High-Altitude Nomadic Communities",
+      },
+      {
+        title:
+          "Rhododendron Forests — Vibrant Alpine Flora Lining the Druk Path Trail",
+      },
+      {
+        title:
+          "Phajoding Monastery — Ancient Monastic Complex at 3,870m Above Thimphu Valley",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Druk Path Trek — Paro to Thimphu 10-Day High-Altitude Trek",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Druk Path Trek", href: "" },
+    ],
+    badges: [
+      { label: "TREKKING", variant: "solid", color: "green" },
+      { label: "10 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 10,
+    countryCount: 1,
+    cityCount: 7,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Paro", nights: 2 },
+      { city: "Jele Dzong Camp", nights: 1 },
+      { city: "Tshokham Camp", nights: 1 },
+      { city: "Jimi Langtso Camp", nights: 1 },
+      { city: "Simkota Camp", nights: 1 },
+      { city: "Phajoding / Thimphu", nights: 1 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Paro", nights: 1 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Paro Arrival — National Museum & Paro Dzong",
+        details: [
+          "A flight to Paro is one of the most spectacular of all mountain flights, offering views of Mt. Everest, Kangchenjunga, Makalu, and Bhutanese peaks such as Jumolhari, Jichu Drakey, and Tsrim Gang.",
+          "Upon landing, guests are received by a representative and escorted to the hotel.",
+          "In the afternoon, visit the National Museum of Bhutan — known as Ta Dzong (Watch Tower) — originally built in the 17th century alongside Paro Dzong to defend against Tibetan invasion. It houses a diverse collection of artefacts from across Bhutan dating back to the 6th century.",
+          "Visit Paro Dzong, the administrative headquarters of the Paro District, which operates a dual system combining both administrative and religious functions.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Paro Sightseeing — Tiger's Nest Monastery Hike",
+        details: [
+          "After breakfast, proceed to Taktsang Palphug Monastery — popularly known as Paro Taktsang or the Tiger's Nest — an iconic Buddhist temple complex dramatically perched on a cliff at 3,120 metres overlooking the upper Paro Valley.",
+          "The hike to Taktsang typically takes 2 to 3 hours to ascend depending on pace and fitness level, with the option to walk or ride a horse to the halfway point (approximately 1 to 1.5 hours).",
+          "The Taktsang Cafeteria, located approximately halfway up, provides spectacular views of the monastery for those preferring a lighter experience without completing the full climb; the trail winds through serene blue pine forests adorned with colourful prayer flags.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "In the evening, enjoy a leisurely stroll through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Trek: Ta Dzong → Jele Dzong Camp — 10 km / 3–4 Hours / 3,450m",
+        details: [
+          "The Druk Path Trek begins early to avoid the heat on the uphill sections where tree cover is sparse.",
+          "The trail starts above Ta Dzong (National Museum), ascending gradually through mixed temperate forests and past occasional farmhouses.",
+          "By lunchtime, the route passes through a thick coniferous belt — an excellent area for spotting wild animals and birds.",
+          "By evening, the trail reaches Jelela Pass at approximately 2,600 metres, with the campsite situated just a hundred metres downhill in a wide meadow — a site traditionally used by yak herders during seasonal migration.",
+          "The night is spent at Jele Dzong Camp (3,450m).",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Trek: Jele Dzong → Tshokham — 10 km / 4–5 Hours / 3,780m",
+        details: [
+          "Today's trek heads to Tshokham Camp, a 4 to 5 hour walk reaching a campsite at 3,780 metres — a gain of approximately 300 metres in altitude.",
+          "The trail begins with a 200-metre climb to Jeli Dzong — a structure that served as a royal rest house during the Second King's era and now operates as a monastic institute.",
+          "The route is mostly undulating, offering good views of the Paro Valley to the left as trekkers walk along the ridges, passing through high-temperate forests and open alpine meadows.",
+          "The night is spent at Tshokham Camp (3,780m).",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title:
+          "Trek: Tshokham → Jimi Langtso Lake — 11 km / 5–6 Hours / 3,880m",
+        details: [
+          "Today's destination is Jimi Langtso Lake — the highest campsite of the trek at 3,880 metres — reached after a 6 to 7 hour walk.",
+          "The trek begins with a 500-metre ascent through coniferous forests and barren hillsides dotted with rhododendron flowers in spring, alongside abundant flora and fauna including wild onions.",
+          "After the first pass, the trail becomes mostly undulating; those riding ponies should exercise extra caution on the descent.",
+          "Before crossing the last pass, the route follows a ridge offering magnificent views of Mt. Kangchenjunga, Chomolhari, Jichu Drakey, and Tsrim Gang on clear days.",
+          "After the last pass, Jimi Langtso Lake comes into view on the left, with the final stretch descending to the lakeside campsite.",
+          "The night is spent at Jimi Langtso Camp (3,880m).",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Trek: Jimi Langtso → Simkota — 11 km / 4–5 Hours / 4,110m",
+        details: [
+          "The trail passes through dwarf rhododendron trees and bypasses the lake of Janetso.",
+          "There is a chance to encounter yak herders' camps and gain insight into the lifestyle of these high-altitude communities.",
+          "The route winds and undulates with magnificent Himalayan views across deep valleys.",
+          "Simkota Tsho Lake at 4,110 metres comes into view after crossing one final spur, and trekkers continue to the yak pasture camp for the night.",
+          "The night is spent at Simkota Camp (4,110m).",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title:
+          "Trek: Simkota → Phajoding → Thimphu — 14 km / 7–8 Hours / 3,870m",
+        details: [
+          "The day begins with a gradual climb to a small saddle at 4,150 metres, offering majestic views of Mt. Gangkar Puensum and other Himalayan peaks on clear days.",
+          "The route then descends to another small lake before climbing to Phume La pass at 4,220 metres — adorned with colourful prayer flags — from where panoramic views of Thimphu city far below can be enjoyed.",
+          "The trail slowly descends through juniper trees to a community hall near Phajoding Monastery at 3,870 metres; trekkers are advised to carry a walking stick as monastery dogs can occasionally be a nuisance.",
+          "The walk down through mixed temperate forests to the trek endpoint takes a maximum of 2 hours, where vehicles await.",
+          "Tashi Delek and farewell to the trekking crew.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Thimphu Sightseeing",
+        details: [
+          "After breakfast, visit the National Memorial Chorten — built in memory of the late Third King Jigme Dorji Wangchuk in 1974.",
+          "Proceed to Buddha Dordenma, a gigantic Shakyamuni Buddha statue overlooking Thimphu Valley.",
+          "Visit the 15th-century Changangkha Temple, the Takin (National Animal) Sanctuary, and the Thimphu city viewpoint.",
+          "On the way back, visit Zilukha Nunnery and Dechenphodrang Monastic School.",
+          "Visit the National Library, School of Arts and Crafts, Government Handicrafts Emporium, Traditional Handmade Paper Factory, and the Goldsmith & Silversmith unit.",
+          "In the evening, visit Tashi Chhodzong — the capital's parliament house — and explore the various handicraft stores in town.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Thimphu → Paro",
+        details: [
+          "The morning is free for leisure activities.",
+          "After lunch, drive to Paro via a scenic winding road following the Wangchuk River down to Chu Zom — the confluence of the Wangchuk and Pa Chhu rivers — which also serves as a vehicle checkpoint and immigration point.",
+          "At the junction of the two rivers, three different styles of chorten can be seen: Tibetan, Bhutanese, and Nepalese.",
+          "Cross the bridge and turn right towards Paro.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Departure from Paro",
+        details: [
+          "In the morning, the guide bids farewell at Paro International Airport for the onward journey.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "English Language Speaking Guide",
+      "Trekking Crew & Equipment",
+      "Camping Gear & Tents",
+      "Pack Animals / Ponies for Luggage",
+      "Accommodation on a twin-sharing basis (hotel nights)",
+      "Comfortable Vehicles with Skilled Drivers",
+      "A minimum of 3 star accommodation for hotel nights (4 & 5 star may require an additional premium)",
+      "Monument entrance fees as per itinerary",
+    ],
+    exclusions: [
+      "Airfare international & domestic",
+      "Personal trekking gear & clothing",
+      "Personal shopping",
+      "Tips for guide, driver & trekking crew",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol",
+      "Horse riding fees (optional)",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "10 Days / 9 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Jele Dzong · Tshokham · Jimi Langtso · Simkota · Phajoding · Thimphu",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-DPT-PBH-10" },
+      { label: "Meals", value: "All meals included" },
+      {
+        label: "Best Time",
+        value: "March–May (Spring) & September–November (Autumn)",
+      },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Trekking & Cultural" },
+      {
+        label: "Trek Distance",
+        value: "Approximately 56 km over 5 trekking days",
+      },
+      { label: "Max Altitude", value: "4,220m (Phume La Pass)" },
+    ],
+  },
+  {
+    id: 520,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Thimphu Festival Tour",
+    type: "Cultural",
+    duration: "8 Days / 7 Nights",
+    durationTag: "8 Days",
+    startEnd: "Paro → Thimphu → Phobjikha → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Dochula Pass",
+      "Phobjikha Valley",
+      "Punakha",
+      "Paro",
+    ],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon:Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Thimphu Tshechu — Sacred Mask Dances & Religious Ceremonies at Tashichho Dzong",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Phobjikha Valley — Glacial Valley & Winter Home of the Black-Necked Crane",
+      },
+      {
+        title:
+          "Gangtey Monastery — 17th-Century Monastery Overlooking Phobjikha Valley",
+      },
+      {
+        title:
+          "Punakha Dzong — Majestic Fortress at the Confluence of Pho Chhu & Mo Chhu Rivers",
+      },
+      { title: "Dochula Pass — Panoramic Himalayan Views at 3,050m" },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Thimphu Festival Tour — Paro, Thimphu, Phobjikha & Punakha 8-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Thimphu Festival Tour", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "8 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 8,
+    countryCount: 1,
+    cityCount: 5,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Phobjikha Valley", nights: 1 },
+      { city: "Punakha", nights: 2 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Tachog Lhakhang & Transfer to Thimphu",
+        details: [
+          "The flight into Bhutan offers spectacular views of the Eastern Himalayas, including some of the world's highest peaks.",
+          "As the aircraft descends into the Paro Valley, the beautiful Paro River (Pa Chhu), Paro Dzong, and Ta Dzong come into view.",
+          "Upon arrival at Paro International Airport, guests are warmly received by a representative before driving to Thimphu (approximately 1 hour).",
+          "En route, a visit is made to Tachog Lhakhang — located along the Paro–Thimphu highway — reached by crossing the Paro River via an iron chain bridge originally built by the famous Tibetan saint and engineer Thangtong Gyalpo, who constructed many iron bridges across the Himalayas.",
+          "The afternoon includes Thimphu sightseeing, with visits to the Memorial Chorten — built in memory of the Third King of Bhutan — the gigantic Buddha Dordenma statue overlooking Thimphu Valley, and the lively Centenary Farmers Market.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu Tshechu Festival at Tashichho Dzong",
+        details: [
+          "The morning is spent attending the Thimphu Tshechu Festival at Tashichho Dzong — one of the most important religious festivals in Bhutan.",
+          "Monks and lay performers present sacred mask dances (Cham) representing Buddhist teachings and spiritual stories.",
+          "Local people dressed in their finest traditional attire gather to receive blessings and celebrate this vibrant cultural event.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Phobjikha Valley",
+        details: [
+          "The drive heads towards Phobjikha Valley with an en-route stop at Dochula Pass at 3,050 metres, where on a clear day spectacular panoramic views of the eastern Himalayan mountain range can be enjoyed.",
+          "The journey continues, descending through subtropical valleys before reaching the beautiful Phobjikha (Gangtey) Valley — a glacial valley famous as the winter home of rare black-necked cranes migrating from Tibet.",
+          "Visits include Gangtey Monastery (17th century) and the Black-Necked Crane Information Centre.",
+          "The valley is part of a protected conservation area managed by the Royal Society for Protection of Nature.",
+          "The night is spent at a hotel in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Phobjikha Valley → Wangdue Phodrang → Chimi Lhakhang → Punakha",
+        details: [
+          "After breakfast, the Gangtey Nature Trail is enjoyed — one of the most scenic short hikes in central Bhutan — offering panoramic views of the glacial Phobjikha Valley, peaceful pine forests, open meadows, traditional Bhutanese villages, and clear flowing streams.",
+          "The drive then heads toward Wangdue Phodrang for a visit to Wangdue Phodrang Dzong — a historic fortress on a ridge overlooking the confluence of the Puna Tsang Chhu and Dang Chhu rivers, making it a strategically important defensive site.",
+          "After lunch, a visit is made to Chimi Lhakhang, situated on a hill in the Lobesa Valley and dedicated to Lama Drukpa Kuenley — also known as the Divine Madman — who used humour, songs, and unconventional behaviour to teach Buddhist philosophy.",
+          "Widely known as the Temple of Fertility, where many couples pray for children, the temple is reached by a pleasant 30-minute walk across rice fields from the road.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Punakha Sightseeing — Khamsum Chorten & Punakha Dzong",
+        details: [
+          "The morning begins with a hike to Khamsum Yulley Namgyal Chorten, located on a ridge above the Punakha Valley and built by the Queen Mother for the peace and prosperity of Bhutan.",
+          "The afternoon includes a visit to Punakha Dzong — often considered the most beautiful fortress in Bhutan — located at the confluence of the Pho Chhu and Mo Chhu rivers.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Punakha → Ta Dzong & Rinpung Dzong → Paro",
+        details: [
+          "After breakfast, the drive heads back to Paro.",
+          "Afternoon visits include Ta Dzong (National Museum) — originally built as a watchtower for Paro Dzong — and Rinpung Dzong (Paro Dzong), built in 1646 by Zhabdrung Ngawang Namgyal.",
+          "The evening is spent on a leisurely stroll through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery — popularly known as Paro Taktsang or the Tiger's Nest — begins; dramatically perched on a cliff at 3,120 metres above the Paro Valley, it is one of Bhutan's most revered landmarks and a powerful cultural symbol.",
+          "The ascent takes 2 to 3 hours depending on pace and fitness level, with the option to ride a horse to the halfway point (approximately 1 to 1.5 hours); the trail winds through serene blue pine forests adorned with colourful prayer flags.",
+          "The Taktsang Cafeteria at the halfway point provides spectacular views of the monastery for those preferring a lighter experience without completing the full climb.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "The afternoon is spent strolling through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, transfer to Paro International Airport for the onward flight.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "English Language Speaking Guide",
+      "Accommodation on a twin-sharing basis",
+      "Comfortable Vehicles with Skilled Drivers",
+      "A minimum of 3 star accommodation (4 & 5 star may require an additional premium)",
+      "Monument entrance fees as per itinerary",
+    ],
+    exclusions: [
+      "Airfare international & domestic",
+      "Personal shopping",
+      "Tips for guide & driver",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "8 Days / 7 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Phobjikha Valley · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-TFT-PBH-08" },
+      { label: "Meals", value: "All meals included" },
+      { label: "Best Time", value: "September–October (Festival Season)" },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Festival" },
+    ],
+  },
+  {
+    id: 522,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Bhutan Cultural Journey",
+    type: "Cultural",
+    duration: "10 Days / 9 Nights",
+    durationTag: "10 Days",
+    startEnd: "Paro → Thimphu → Phobjikha → Bumthang → Punakha → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Dochula Pass",
+      "Phobjikha Valley",
+      "Trongsa",
+      "Bumthang (Tang Valley)",
+      "Jakar",
+      "Punakha",
+      "Paro",
+    ],
+    amenities: ["Hotels", "Meals", "Transfers", "Sightseeing"],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Himalayan Scenic Flight — Panoramic Views of the World's Highest Glacial Peaks on Arrival",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Thimphu Cultural Sights — Memorial Chorten, Buddha Dordenma & Traditional Archery",
+      },
+      {
+        title:
+          "Dochula Pass Panorama — 360° Views of the Eastern Himalayan Range at 3,050m",
+      },
+      {
+        title:
+          "Phobjikha Valley — Glacial Valley & Winter Home of the Rare Black-Necked Crane",
+      },
+      {
+        title:
+          "Central Bhutan — Trongsa Dzong, Bumthang Tang Valley & Ogyen Choling Palace",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Bhutan Cultural Journey — Paro, Thimphu, Phobjikha, Bumthang & Punakha 10-Day Tour",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Bhutan Cultural Journey", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "10 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 10,
+    countryCount: 1,
+    cityCount: 8,
+    region: "Kingdom of Bhutan",
+    maxGuests: 16,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Phobjikha Valley", nights: 1 },
+      { city: "Tang Valley (Bumthang)", nights: 1 },
+      { city: "Jakar (Bumthang)", nights: 1 },
+      { city: "Punakha", nights: 2 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Tachog Lhakhang & Transfer to Thimphu",
+        details: [
+          "Experience one of the world's most remarkable flight journeys as the aircraft descends into Bhutan, offering panoramic views of the majestic Himalayas and some of the highest glacial peaks on earth.",
+          "Upon arrival, guests are warmly received by a Indruka Tours and Travels representative and transferred toward Thimphu.",
+          "En route, shortly after Isuna village and before reaching Chhuzom, a visit is made to the historic Tachog Lhakhang — gracefully set at the base of a mountain along the Paro–Thimphu highway.",
+          "A short walk across the Paro River via a traditional iron chain bridge leads to this sacred site, built in the 14th century by the revered saint and engineer Thangtong Gyalpo following his vision of Balaha — the spiritual horse and an emanation of Avalokiteshvara.",
+          "Renowned for constructing 108 iron bridges across the region, his legacy lives on here, with the present bridge reconstructed in traditional style in 2005 after the original was lost to floods. The temple remains privately maintained by his descendants.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title:
+          "Thimphu Sightseeing — Memorial Chorten, Buddha Dordenma & Archery Ground",
+        details: [
+          "After breakfast, the day begins with a visit to the Memorial Chorten — an iconic stupa built in honour of Bhutan's Third King and a vibrant centre of daily devotion for locals.",
+          "Continue to the magnificent Buddha Dordenma — a towering statue of Shakyamuni Buddha housing over one hundred thousand smaller Buddha statues — seated atop Kuensel Phodrang with sweeping views over the Thimphu Valley.",
+          "For those seeking a more active experience, an optional scenic hike from Buddha Point to Changangkha is available, offering breathtaking vistas and taking approximately two hours.",
+          "In the afternoon, visit the bustling vegetable market, followed by the traditional archery ground where Bhutan's national sport is played, showcasing both skill and lively community spirit.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Phobjikha Valley",
+        details: [
+          "After breakfast, a scenic drive to Dochula Pass at 3,050 metres offers breathtaking panoramic views of the eastern Himalayan range on clear days, including peaks such as Masagang, Tsendagang, Terigang, Jejegangphugang, Kangphugang, Zongphugang, and the majestic Gangkar Puensum — the highest mountain in Bhutan — alongside the distinctive Table Mountain overlooking the remote Lunana region.",
+          "The journey continues descending through winding mountain roads into the lush Wangduephodrang Valley, arriving in time for lunch, before proceeding onward to the tranquil Phobjikha Valley.",
+          "Also known as Gangtey Valley, this expansive U-shaped glacial valley is home to the historic 17th-century Gangtey Monastery of the Nyingma school, perched gracefully on the valley slope.",
+          "Phobjikha serves as the winter habitat for the rare black-necked cranes migrating from the Tibetan Plateau, often observed performing their traditional circling ritual over the monastery upon arrival and departure.",
+          "A visit to the Black-Necked Crane Information Centre provides insights into conservation efforts for this endangered species.",
+          "Spanning approximately 163 square kilometres and managed by the Royal Society for the Protection of Nature (RSPN), the valley is a designated protected area rich in biodiversity.",
+          "The night is spent at a hotel in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Phobjikha Valley → Trongsa Dzong → Tang Valley (Bumthang)",
+        details: [
+          "After breakfast, the drive heads toward Trongsa with an en-route stop at Chendebji Chorten — patterned after Kathmandu's Swayambhunath Stupa with painted eyes facing the four cardinal directions — built in the 18th century by Lama Shida from Tibet to subdue an evil spirit believed to have been defeated at this site.",
+          "After lunch, Trongsa Dzong is visited — built in 1648 and the historic seat of power over central and eastern Bhutan, from which the first and second Kings governed the country. All four Kings were traditionally appointed as Trongsa Penlop (Governor) prior to ascending the throne, and the present Crown Prince continues to hold this esteemed position.",
+          "The dzong is an impressive architectural masterpiece featuring multiple levels cascading along the contours of the ridge on which it stands.",
+          "After visiting Trongsa, the drive continues to Bumthang and onward to Tang Valley.",
+          "Ogyen Choling Palace is visited — originally built in the 16th century by Deb Tsokye Dorje — with the present structure comprising a temple, servants' quarters, and main residential building reconstructed following damage from the 1897 earthquake. A guesthouse established under a trust fund generates revenue that contributes directly to the property's preservation.",
+          "If available, there may be an opportunity to dine with Dr. Walter Roder, former Country Director of Helvetas Swiss Cooperation, offering valuable insights into Bhutan's rural development and cultural heritage.",
+          "The night is spent at Tang Valley.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Tang Valley → Ogyen Choling Museum → Kurje Lhakhang → Jakar",
+        details: [
+          "After breakfast, the Ogyen Choling Museum is visited, offering fascinating insights into Bhutan's aristocratic heritage and traditional rural life, before driving back to Bumthang Valley.",
+          "En route, the sacred Kurje Lhakhang is visited — one of Bhutan's most revered temples, believed to mark the site where Guru Rinpoche subdued a local demon and left the imprint of his body on a rock. The temple complex consists of three main shrines, with the oldest dating back to the 8th century, making it an important pilgrimage destination.",
+          "Jakar Dzong — famously known as the 'Castle of the White Bird' — is then explored: a striking 17th-century fortress serving as both the religious and administrative centre of Bumthang, perched on a ridge overlooking the valley with classic Bhutanese whitewashed walls, intricate woodwork, and tiered roofs.",
+          "The night is spent at a hotel in Jakar, Bumthang.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title: "Bumthang → Wangdue Phodrang → Chimi Lhakhang → Punakha",
+        details: [
+          "After breakfast, a scenic drive to Punakha includes a stop at Wangdue Phodrang Dzong — a historic fortress strategically perched on a ridge overlooking the confluence of the Punatsang Chhu and Dang Chhu rivers, reflecting its importance as a former defensive stronghold.",
+          "A visit is made to Chimi Lhakhang in the Lobesa Valley — a revered temple dedicated to Lama Drukpa Kuenley, the 15th-century 'Divine Madman' known for his unconventional teachings — widely regarded as the Temple of Fertility, attracting couples seeking blessings for children. The temple is reached via a pleasant 30-minute walk through picturesque farmlands, with an option to drive closer and enjoy a traditional Bhutanese farmhouse lunch.",
+          "In the afternoon, the magnificent Punakha Dzong is visited — an architectural masterpiece at the confluence of two rivers, which served as Bhutan's capital until 1955 and remains the winter residence of the central monastic body. It is also the historic site where Bhutan's first King, Ugyen Wangchuck, was crowned in 1907, and stands as a symbol of resilience having withstood fires, earthquakes, and floods.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Punakha Sightseeing — Khamsum Chorten & Punakha Dzong",
+        details: [
+          "After breakfast, a scenic excursion is made to the Khamsum Yulley Namgyal Chorten — gracefully perched on a ridge above the Punakha Valley and reached via a pleasant one-hour hike through picturesque countryside.",
+          "This four-storey temple, commissioned by Her Majesty the Queen Mother, is a remarkable showcase of Bhutanese craftsmanship, constructed over nine years by skilled artisans following traditional Buddhist scriptures, and dedicated to the wellbeing of the kingdom and all sentient beings.",
+          "In the afternoon, Punakha Dzong is revisited at leisure — an architectural masterpiece at the confluence of the Pho Chhu and Mo Chhu rivers, once the capital of Bhutan until 1955, and the winter residence of the central monastic body. Despite facing fires, earthquakes, and floods — including a major flood in 1994 — the dzong stands resilient, preserving its sacred relics and cultural legacy.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title: "Punakha → Ta Dzong & Rinpung Dzong → Paro",
+        details: [
+          "After breakfast, a scenic drive heads to Paro — a valley renowned for its natural beauty and cultural heritage.",
+          "In the afternoon, Ta Dzong (National Museum of Bhutan) is visited — originally built as a watchtower for Paro Dzong and now housing an extensive collection of Bhutanese art, artefacts, and historical treasures.",
+          "A visit is then made to Rinpung Dzong (Paro Dzong) — an impressive fortress constructed in 1646 by Zhabdrung Ngawang Namgyal, showcasing exquisite Bhutanese architecture and serving as an important religious and administrative centre.",
+          "In the evening, a leisurely stroll through Paro town allows for exploring local handicraft shops and experiencing the charm of Bhutanese culture.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title: "Tiger's Nest Hike — Paro Taktsang",
+        details: [
+          "After breakfast, the hike to Taktsang Palphug Monastery — popularly known as Paro Taktsang or the Tiger's Nest — begins; dramatically perched on a cliff at 3,120 metres above the Paro Valley, it is one of Bhutan's most revered landmarks and a powerful cultural symbol.",
+          "The ascent takes 2 to 3 hours depending on pace and fitness level, with the option to ride a horse to the halfway point (approximately 1 to 1.5 hours); the trail winds through serene blue pine forests adorned with colourful prayer flags.",
+          "The Taktsang Cafeteria at the halfway point provides spectacular views of the monastery for those preferring a lighter experience without completing the full climb.",
+          "The descent takes around 1.5 to 2 hours, making the total round trip approximately 4 to 5 hours.",
+          "If time permits in the afternoon, a return visit to Ta Dzong National Museum is possible before a leisurely evening stroll through Paro town for shopping and exploration.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Departure from Paro",
+        details: [
+          "After breakfast, transfer to Paro International Airport for the onward flight.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "English Language Speaking Guide",
+      "Accommodation on a twin-sharing basis",
+      "Comfortable Vehicles with Skilled Drivers",
+      "A minimum of 3 star accommodation (4 & 5 star may require an additional premium)",
+      "Monument entrance fees as per itinerary",
+    ],
+    exclusions: [
+      "Airfare international & domestic",
+      "Personal shopping",
+      "Tips for guide & driver",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol",
+      "Horse riding fees at Tiger's Nest (optional)",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "10 Days / 9 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Thimphu · Dochula Pass · Phobjikha Valley · Trongsa · Bumthang · Punakha",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-BCJ-PBH-10" },
+      { label: "Meals", value: "All meals included" },
+      {
+        label: "Best Time",
+        value: "March–May (Spring) & September–November (Autumn)",
+      },
+      { label: "Group Size", value: "Max 16 Guests" },
+      { label: "Tour Type", value: "Cultural & Sightseeing" },
+    ],
+  }, //
+  // luxury of bhutan
+
+  {
+    id: 523,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Bhutan Luxury Tour",
+    type: "Luxury",
+    duration: "11 Days / 10 Nights",
+    durationTag: "11 Days",
+    startEnd: "Paro → Thimphu → Punakha → Gangtey → Bumthang → Paro",
+    destinations: [
+      "Paro",
+      "Thimphu",
+      "Dochula Pass",
+      "Punakha",
+      "Gangtey (Phobjikha Valley)",
+      "Bumthang",
+      "Paro",
+    ],
+    amenities: [
+      "Luxury Hotels",
+      "Meals",
+      "Transfers",
+      "Sightseeing",
+      "Private Guide",
+    ],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Luxury",
+    badgeColor: "bg-yellow-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      {
+        icon: Building2,
+        label: "Luxury Hotels",
+        color: "#6C72E8",
+        bg: "#EEF0FD",
+      },
+      {
+        icon: UtensilsCrossed,
+        label: "Fine Dining",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Mountain, label: "Hiking", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Zhiwaling Heritage Stay — Bhutan's Only All-Bhutanese Luxury Heritage Property in Paro",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Buddhism & Meditation — Rare Private Session with a Reincarnate Lama",
+      },
+      {
+        title:
+          "Gross National Happiness Talk — Expert-Led Evening Session on Bhutan's Guiding Philosophy",
+      },
+      {
+        title:
+          "Gangtey Lodge Stay — Award-Winning Lodge in the Mystical Phobjikha Valley",
+      },
+      {
+        title:
+          "Bumthang Spiritual Journeys — Sacred Sites Linked to Guru Rinpoche & Nuns' Drum Ceremony",
+      },
+      {
+        title:
+          "Community Immersion — Village Cooking Class, Social Projects & Cultural Encounters",
+      },
+      {
+        title:
+          "Private Farewell Dinner — Exclusive Evening with a Bhutanese Dignitary & Cultural Performances",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Bhutan Luxury Tour — Thimphu, Punakha, Gangtey & Bumthang 11-Day Luxury Journey",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Bhutan Luxury Tour", href: "" },
+    ],
+    badges: [
+      { label: "LUXURY", variant: "solid", color: "yellow" },
+      { label: "11 DAYS", variant: "outlined", color: "cyan" },
+    ],
+    durationDays: 11,
+    countryCount: 1,
+    cityCount: 6,
+    region: "Kingdom of Bhutan",
+    maxGuests: 0,
+    itineraryStops: [
+      { city: "Thimphu", nights: 2 },
+      { city: "Punakha", nights: 2 },
+      { city: "Gangtey (Phobjikha Valley)", nights: 2 },
+      { city: "Bumthang", nights: 2 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title:
+          "Arrival in Paro — Scenic Himalayan Flight & Transfer to Thimphu",
+        details: [
+          "Arrival into Bhutan offers sweeping views of the Himalayas, including Mount Everest, Kanchenjunga, and Bhutan's sacred peaks — Jomolhari (7,326m) and Gangkar Puensum (7,570m, the world's highest unclimbed peak).",
+          "A warm welcome is extended by a compassionate Yangphel guide and driver upon landing.",
+          "A leisurely drive of approximately 55 km (~1.5 hours) leads to Thimphu, Bhutan's charming capital, with sightseeing en route depending on arrival time.",
+          "The night is spent at a luxury lodge in Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Thimphu — Cultural Immersion, GNH Talk & Fine Dining",
+        details: [
+          "The day begins with visits to Thimphu's key cultural landmarks: the National Memorial Chorten, Folk Heritage Museum, Takin Preserve, and the magnificent Buddha Dordenma — the world's largest seated Buddha statue.",
+          "A visit to Chari Monastery includes a picnic lunch and an immersive experience at the Choki Traditional Arts School, where students practice classical Bhutanese art forms.",
+          "The afternoon offers an urban experience alongside locals — exploring Changyul Park, the vibrant Farmers Market, and the Takin Reserve.",
+          "The evening features a thought-provoking talk on Bhutan's guiding philosophy of Gross National Happiness, followed by fine dining.",
+          "The night is spent at a luxury lodge in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title: "Thimphu → Dochula Pass → Punakha — The Ancient Capital",
+        details: [
+          "A scenic drive of approximately 85 km (~3 hours) crosses Dochula Pass at 3,140 metres — adorned with 108 chortens and offering panoramic Himalayan views.",
+          "The route descends into the subtropical Punakha Valley at 1,300 metres.",
+          "Punakha Dzong — Bhutan's most beautiful fortress — is visited at the confluence of the Pho Chhu and Mo Chhu rivers, followed by a crossing of the longest suspension bridge in Bhutan with spectacular views of the river flowing south of the dzong.",
+          "The night is spent at a luxury lodge in Punakha.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title:
+          "Punakha — Valley Exploration, Temple Hikes & Private Monastery Blessings",
+        details: [
+          "The morning includes a hike through rice fields to Chimi Lhakhang — the revered Temple of Fertility dedicated to the Divine Madman, Lama Drukpa Kuenley.",
+          "A further hike leads to Khamsum Yulley Chorten — the King's temple — perched on a ridge above the Punakha Valley.",
+          "Optional white-water rafting along the Mo Chhu (female river) is available for those seeking light adventure.",
+          "A rare and intimate private blessing ceremony is held with monks at the centuries-old Chorten Nyebu Monastic School.",
+          "The night is spent at a luxury lodge in Punakha.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Punakha → Gangtey — The Mystical Phobjikha Valley",
+        details: [
+          "A scenic drive of approximately 75 km (~3.5 hours) leads into the mystical Phobjikha Valley at 2,990 metres — the winter home of the rare black-necked cranes migrating from the Tibetan Plateau.",
+          "The afternoon is spent strolling through traditional villages and immersing in the serene valley life, followed by the 360-degree hike trail offering sweeping panoramic views.",
+          "The evening features a Buddhism talk with a Bhutanese expert, followed by a guided meditation session.",
+          "The night is spent at Gangtey Lodge — celebrated for its design, views, and soulful service.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title:
+          "Gangtey — Nature Trail, Community Immersion & Village Cooking Class",
+        details: [
+          "The morning begins with a visit to Gangtey Monastery — one of Bhutan's most important Nyingma Buddhist centres — followed by a forest-bathing hike along the nature trail through pine forests.",
+          "The afternoon is dedicated to a community immersion project, engaging in meaningful social work alongside local residents.",
+          "A visit to the black-necked crane research centre is followed by a hands-on cooking class in a village home, learning to prepare authentic Bhutanese dishes such as red rice, ema datshi (chilli cheese), and homemade butter tea.",
+          "The night is spent at Gangtey Lodge.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Gangtey → Bumthang — Bhutan's Spiritual Heartland",
+        details: [
+          "One of the most scenic drives of the journey — approximately 188 km (~7 hours) — crosses high passes and pristine landscapes to arrive in Bumthang, the spiritual heartland of Bhutan, at 2,600 metres.",
+          "The evening includes a leisurely walk through Jakar town and its traditional markets.",
+          "Depending on the time of travel, there may be an opportunity to witness a local festival in the valley.",
+          "The night is spent at Amankora Bumthang.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title:
+          "Bumthang — Sacred Temples, Nuns' Drum Ceremony & Bushman's Trail Hike",
+        details: [
+          "The day is spent exploring Bumthang's most sacred sites: Jambay Lhakhang, Kurjey Lhakhang, and Tamshing Monastery — all linked to Guru Rinpoche and central to Bhutanese spiritual heritage.",
+          "A deeply moving prayer ceremony is joined alongside nuns in a nunnery, accompanied by the melodious chanting of drums.",
+          "The afternoon brings an adventurous 3-hour hike along the Bushman's Trail through Bumthang's scenic highlands.",
+          "The night is spent at Amankora Bumthang.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title:
+          "Domestic Flight to Paro — National Museum, Paro Dzong & Zhiwaling Heritage",
+        details: [
+          "A morning domestic flight of approximately 30 minutes from Bumthang to Paro offers spectacular aerial views of the Eastern Himalayan snow peaks, including Gangkar Puensum — the world's highest unclimbed peak.",
+          "The afternoon includes visits to the National Museum (Ta Dzong) — originally built as a watchtower for Paro Dzong — and the impressive Rinpung Dzong (Paro Dzong) along with its historic cantilevered covered bridge.",
+          "The evening is spent at leisure at Zhiwaling Heritage — Bhutan's first and only hotel wholly inspired, designed, and built by Bhutanese artisans — where traditional hand-carved architecture meets refined modern comfort.",
+          "The night is spent at Zhiwaling Heritage, Paro.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title:
+          "Tiger's Nest Hike — Taktsang Monastery & Private Farewell Dinner",
+        details: [
+          "The signature hike to Taktsang Monastery — the Tiger's Nest — perched on a cliffside at 3,120 metres above the Paro Valley is undertaken: a round trip of approximately 4 to 5 hours covering ~5 km.",
+          "A reflective meditation session is held at this sacred site, one of the most revered pilgrimage destinations in the Buddhist world.",
+          "The evening is marked by a private farewell dinner with a Bhutanese dignitary, celebrating the journey with traditional cultural performances.",
+          "The night is spent at Zhiwaling Heritage, Paro.",
+        ],
+      },
+      {
+        day: 11,
+        date: "Day 11",
+        title: "Departure from Bhutan",
+        details: [
+          "An early morning transfer is made to Paro International Airport.",
+          "Guides and drivers bid heartfelt farewells, offering blessings for safe travels.",
+          "One final glimpse of the Himalayas from the flight window — a reminder that Bhutan awaits a return.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals including Fine Dining",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "Compassionate Expert Guide (Indruka Tours and Travels)",
+      "Luxury Vehicles with Professional Drivers",
+      "Accommodation at Luxury Properties (Zhiwaling Heritage, Amankora Bumthang, Gangtey Lodge & equivalent)",
+      "Domestic Flight — Bumthang to Paro",
+      "Gross National Happiness Evening Talk",
+      "Private Blessing Ceremony at Chorten Nyebu Monastic School",
+      "Buddhism & Meditation Session with a Reincarnate Lama",
+      "Village Cooking Class",
+      "Community Immersion & Social Project",
+      "Traditional Hot Stone Bath",
+      "Archery Experience",
+      "Private Farewell Dinner with a Bhutanese Dignitary",
+      "Monument entrance fees as per itinerary",
+    ],
+    exclusions: [
+      "International airfare",
+      "Personal shopping",
+      "Tips for guide & driver",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol (unless specified)",
+      "Optional rafting along Mo Chhu river",
+      "Horse riding fees (optional)",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "11 Days / 10 Nights" },
+      {
+        label: "Destinations",
+        value: "Paro · Thimphu · Dochula Pass · Punakha · Gangtey · Bumthang",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-BLT-PBH-11" },
+      { label: "Meals", value: "All meals included (fine dining)" },
+      {
+        label: "Best Time",
+        value: "March–May (Spring) & September–November (Autumn)",
+      },
+      { label: "Tour Type", value: "Luxury & Cultural" },
+      { label: "Tour Operator", value: "Indruka Tours and Travels" },
+      {
+        label: "Signature Stay",
+        value: "Zhiwaling Heritage, Paro · Gangtey Lodge · Amankora Bumthang",
+      },
+      { label: "Domestic Flight", value: "Bumthang → Paro (included)" },
+    ],
+  },
+  //Laya Festivals
+  {
+    id: 524,
+    country: "Bhutan",
+    place: "Paro",
+    title: "Happiness Trek",
+    type: "Trekking",
+    duration: "14 Days / 13 Nights",
+    durationTag: "14 Days",
+    startEnd:
+      "Paro → Bumthang → Trongsa → Trek → Phobjikha → Punakha → Thimphu → Paro",
+    destinations: [
+      "Paro",
+      "Bumthang (Jakar Valley)",
+      "Trongsa",
+      "Kasiphey Monastery Camp",
+      "Drongthang Village Camp",
+      "Mangdiphu",
+      "Bemji Nagtshang Camp",
+      "Phobjikha Valley",
+      "Punakha",
+      "Thimphu",
+      "Paro",
+    ],
+    amenities: [
+      "Hotels",
+      "Guesthouses",
+      "Homestays",
+      "Camping",
+      "Meals",
+      "Transfers",
+      "Sightseeing",
+    ],
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    badge: "Trekking",
+    badgeColor: "bg-green-600",
+    mode: "Trek",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Tent, label: "Camping", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Mountain, label: "Trekking", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Camera, label: "Sightseeing", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Central Bhutan Trek — Follow the Mangdi Chu River Through Remote Villages & Hidden Valleys",
+      },
+      {
+        title:
+          "Tiger's Nest Hike — Iconic Taktsang Monastery Perched at 3,120m Above Paro Valley",
+      },
+      {
+        title:
+          "Drongthang Village — Cultural Immersion, Folk Dances & Traditional Ara Moonshine",
+      },
+      {
+        title:
+          "Bumthang Sacred Sites — Jambay Lhakhang, Kurjey Lhakhang & Mebartsho Burning Lake",
+      },
+      {
+        title:
+          "Phobjikha Valley — Glacial Wetlands & Winter Home of the Rare Black-Necked Crane",
+      },
+      {
+        title:
+          "Bemji Nagtshang — Historic Noble Manor of Bhutan's Revered Reincarnate Lama Lineage",
+      },
+    ],
+    tourManagerCompany: "Indruka Tours and Travels",
+    heroImage: {
+      src: "",
+      alt: "Happiness Trek — 14-Day Culture, Trekking & Timeless Adventure Through Bhutan",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Paro", href: "/bhutan/paro" },
+      { label: "Happiness Trek", href: "" },
+    ],
+    badges: [
+      { label: "TREKKING", variant: "solid", color: "green" },
+      { label: "14 DAYS", variant: "outlined", color: "cyan" },
+      { label: "MODERATE", variant: "outlined", color: "amber" },
+    ],
+    durationDays: 14,
+    countryCount: 1,
+    cityCount: 7,
+    region: "Kingdom of Bhutan",
+    maxGuests: 0,
+    itineraryStops: [
+      { city: "Paro / Thimphu", nights: 1 },
+      { city: "Bumthang (Jakar)", nights: 2 },
+      { city: "Trek Camps (Kasiphey · Drongthang · Bemji)", nights: 4 },
+      { city: "Phobjikha Valley", nights: 2 },
+      { city: "Punakha", nights: 1 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Arrival in Paro — Scenic Himalayan Flight & Welcome to Bhutan",
+        details: [
+          "Arrival into Bhutan offers breathtaking views of the Eastern Himalayas, including some of the world's highest peaks.",
+          "Guests are warmly received by a Indruka Tours and Travels representative and guide upon landing at Paro International Airport.",
+          "Transfer to the hotel for check-in, orientation briefing, and a welcome dinner introducing the journey ahead.",
+          "The night is spent at a hotel in Paro or Thimphu.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title:
+          "Domestic Flight to Bumthang — Sacred Temples of the Chamkhar Valley",
+        details: [
+          "Weather permitting, a breathtaking domestic flight is taken to Bumthang at 2,600 metres, soaring over Himalayan peaks, rivers, and the Black Mountain Range (4,922m).",
+          "Arrival in Jakar Valley at 2,800 metres is followed by a spiritual hike of 6 to 8 km through the Chamkhar Valley, visiting sacred temples and monasteries tied to Guru Rinpoche — who brought Buddhism to Bhutan.",
+          "Jambay Lhakhang (2,700m) is visited — a 7th-century temple built to subdue an ogress obstructing the spread of Buddhism.",
+          "Kurjey Lhakhang (2,750m) is explored — Guru Rinpoche's meditation site, with the imprint of his body still visible in the rock within the temple complex.",
+          "An optional 2 km hike continues to Tamshing Monastery (2,700m) — a 16th-century Nyingma monastery founded by Pema Lingpa, featuring ancient murals and a sacred chainmail vest used in a purification ritual.",
+          "The afternoon includes a visit to a Swiss project site to sample Bhutanese cheese, Red Panda beer, apple juice, and honey, followed by a stroll through Chamkhar town for local handicrafts.",
+          "The night is spent at a lodge in Bumthang.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title:
+          "Ogyen Choling Palace · Pemacholing Nunnery · Mebartsho (Burning Lake)",
+        details: [
+          "Ogyen Choling — the Palace of Bliss — is visited: once home to 14th-century Buddhist scholar Longchen Rabjam and now a private museum preserving Bhutan's noble history, religious relics, and traditions. If fortunate, guests may meet Azhi Kunzang Choden, a historian and direct descendant, whose insights bring Bhutan's past to life.",
+          "On the return from Tang Valley (25 km / ~1 hour), a stop is made at Pemacholing Nunnery (2,700m), where over 300 Buddhist nuns devote their lives to prayer and meditation. Guests witness the sacred Choed Drum Ceremony — a ritual of chants, drums, and bells believed to purify karma and bring blessings.",
+          "A short 1 km pilgrimage hike (~30 minutes round trip) leads to Mebartsho — the Burning Lake — where the 15th-century treasure revealer Pema Lingpa performed his first miracle, retrieving hidden relics from the lake while keeping a butter lamp burning. Today it remains a revered site adorned with prayer flags and offerings.",
+          "The night is spent at a lodge in Bumthang.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title:
+          "Trek Day 1: Drive to Trongsa → Trek to Kasiphey Monastery Camp — 14.4 km / 5–6 Hours / ~3,050m",
+        details: [
+          "A scenic 2-hour drive to Trongsa begins the trekking phase of the journey, where camp staff and pack animals are met and luggage is handed over to the crew.",
+          "The first stage of the trek begins with a gradual ascent through dense oak forests, steadily revealing expansive valley views as elevation is gained.",
+          "The route climbs to Dhemlay La Pass (~3,050m / ~10,000 ft), where a breathtaking panoramic view of the Nubchutey region unfolds.",
+          "After crossing the pass, the trail descends to the first night's campsite, situated just below Kasiphey Monastery — a serene monastery founded in 1999 by Gangtey Tulku Rinpoche, home to over 50 young monks dedicated to Buddhist studies and practice.",
+          "Trek details: 14.4 km / 9 miles · 5–6 hours · Elevation gain 485m / 1,600 ft.",
+          "The night is spent at Kasiphey Monastery Camp.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title:
+          "Trek Day 2: Kasiphey → Drongthang Village — 14.4 km / 4–5 Hours / 2,590m",
+        details: [
+          "The trail descends toward the Mangdi Chu River, offering stunning views of terraced fields and ancient Bhutanese farmhouses, with the tranquil sounds of flowing water and birdsong as constant companions.",
+          "After a gentle stretch along the valley floor, the trail ascends past an ancient chorten, leading to the remote village of Drongthang at 2,590 metres — the domain of the Takin, Bhutan's national animal, which roams the surrounding forests.",
+          "Drongthang holds deep spiritual significance as the believed site where the Bodhisattva Gyalpo Drimed Kuenden journeyed from India and established a temple as early as the 3rd century.",
+          "After settling into camp, the village is explored; the evening is spent with the village headman and elders, gaining insight into local traditions and ways of life.",
+          "Trek details: 14.4 km / 9 miles · 4–5 hours · Elevation gain 300m / 1,000 ft · Elevation loss 360m / 1,200 ft.",
+          "The night is spent at Drongthang Village Camp.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title:
+          "Day Hike to Mangdiphu — Hidden Shangri-La, Farm Activities & Village Celebration",
+        details: [
+          "Today's hike leads to Mangdiphu — a secret Baeyul (hidden Shangri-La) in the upper reaches of the Mangdi Chu River — consisting of just four traditional Bhutanese houses and believed to be the last settlement upstream, untouched by modernity.",
+          "The trail meanders through whispering pine forests, emerald meadows, and gently cascading streams, revealing breathtaking glimpses of dark rocky peaks embracing this secluded haven.",
+          "Lunch is enjoyed at Mangdiphu, accompanied by immersive farm activities — milking cows, churning butter, and making farm cheese — before hiking back to Drongthang.",
+          "The afternoon in Drongthang offers leisure and cultural immersion: a visit to a traditional farmhouse where guests learn about the centuries-old process of brewing Ara (local moonshine), with the option to sample a glass by the village hearth.",
+          "As twilight settles, the village gathers in honour of the guests — flickering butter lamps illuminate traditional folk dances under the starlit Himalayan sky, culminating in a shared feast of stories, laughter, and Ara.",
+          "The night is spent at Drongthang Village Camp.",
+        ],
+      },
+      {
+        day: 7,
+        date: "Day 7",
+        title: "Trek Day 3: Drongthang → Bemji Nagtshang — 16 km / 4–5 Hours",
+        details: [
+          "The trail gently descends toward the Mangdi Chu River, passing through quaint hamlets and terraced fields with breathtaking valley views, surrounded by the timeless rhythms of rural Bhutan — farmers tending crops, prayer flags fluttering, and the river carving through the valley.",
+          "After a scenic lunch with panoramic vistas, the route gradually ascends to Bemji — a village steeped in history — where Bemji Nagtshang stands: a historic manor house that serves as the ancestral home of past temporal rulers and descendants of revered reincarnate lamas, including Gyalsey Tenzin Rabgyal and Gangtey Tulku.",
+          "Camp is set up in the village community schoolyard — a perfect vantage point to absorb the beauty and tranquility of this historic enclave.",
+          "If fortunate, the schoolchildren of Bemji's small community school gather to perform traditional Bhutanese songs, filling the evening air with pure and joyful harmonies.",
+          "Trek details: 16 km / 10 miles · 4–5 hours · Elevation loss 90m / 300 ft.",
+          "The night is spent at Bemji Nagtshang Village Camp.",
+        ],
+      },
+      {
+        day: 8,
+        date: "Day 8",
+        title:
+          "Trek Day 4 (Final): Bemji → Bjizam → Drive to Phobjikha via Pele La Pass",
+        details: [
+          "An optional visit to the school's morning assembly offers a memorable start — students sing the Bhutanese national anthem followed by a meditation session, with the chance to visit classrooms and meet the children.",
+          "The final hike descends to the Mangdi Chu River, crossing to the opposite bank and winding along the mountainside to the village of Bjizam, where the awaiting vehicle marks the triumphant end of the trekking adventure.",
+          "A celebratory scenic picnic lunch is enjoyed before the drive toward Phobjikha Valley, crossing Pele La Pass at 3,353 metres (11,000 ft).",
+          "The night is spent at a hotel or guesthouse in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 9,
+        date: "Day 9",
+        title:
+          "Phobjikha Valley — Black-Necked Cranes, Crane Centre & Nature Trail",
+        details: [
+          "Phobjikha — a glacial valley of ethereal beauty — is home to the endangered black-necked cranes migrating from the Tibetan Plateau each winter to roost in its marshy wetlands. Bhutan's conservation efforts in collaboration with WWF have helped safeguard this precious haven.",
+          "A visit to the Crane Information Centre provides invaluable insight into the cranes' migratory patterns, folklore, and Bhutan's commitment to wildlife preservation.",
+          "An optional nature trail hike along the ridge of Phobjikha Valley (2.99 km / ~1.5 hours easy) winds through fragrant pine forests and open countryside, offering panoramic views of the valley, wetlands, and cranes gliding gracefully over the marshes.",
+          "The evening is spent in quiet reflection on the journey — one that has traversed breathtaking landscapes and gone deep into the heart and soul of Bhutan.",
+          "The night is spent at a hotel or guesthouse in Phobjikha Valley.",
+        ],
+      },
+      {
+        day: 10,
+        date: "Day 10",
+        title: "Phobjikha → Punakha — Punakha Dzong & Khamsum Chorten Hike",
+        details: [
+          "An 85 km (~3 hour) drive descends 1,830 metres from Lawala Pass through lush subtropical valleys to Punakha — once Bhutan's ancient capital and still the winter residence of the Central Monk Body.",
+          "After lunch, Punakha Dzong is visited — an architectural marvel built in 1637 by Zhabdrung Ngawang Namgyal at the confluence of the Pho Chhu and Mo Chhu rivers, housing sacred relics and hosting Bhutan's grandest festivals: Punakha Drubchen and Punakha Tshechu.",
+          "In the afternoon, a 3.5 km hike (~1.5 to 2 hours round trip) through rice fields and pine forests leads to Khamsum Yulley Namgyal Chorten — a hilltop temple built by Queen Mother Ashi Tshering Yangdon Wangchuck for the peace and prosperity of Bhutan — featuring intricate Buddhist murals and stunning panoramic views from the rooftop.",
+          "The night is spent at a hotel in Punakha.",
+        ],
+      },
+      {
+        day: 11,
+        date: "Day 11",
+        title: "Punakha → Dochula Pass → Chimi Lhakhang → Thimphu",
+        details: [
+          "The drive to Thimphu at 2,320 metres crosses Dochula Pass at 3,100 metres — marked by 108 Druk Wangyal Chortens built in honour of Bhutan's Fourth King — offering panoramic Himalayan views including Gangkar Puensum (7,570m) on clear days.",
+          "Before reaching Thimphu, a short 1.5 km hike (~45 minutes round trip) through rice paddies leads to Chimi Lhakhang — the Fertility Temple — built in the 15th century by disciples of the Divine Madman, Lama Drukpa Kuenley, drawing couples from across Bhutan seeking blessings for children.",
+          "By early afternoon, arrival in Bhutan's vibrant capital is followed by free time to explore: a stroll along Norzin Lam lined with handicraft stores and cafes, a visit to the Centenary Farmers Market, and a stop at Clock Tower Square for butter tea and momos.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 12,
+        date: "Day 12",
+        title: "Thimphu Sightseeing — Markets, Crafts & Drive to Paro",
+        details: [
+          "If visiting on a weekend, the day begins at Thimphu's bustling weekend market, where farmers and artisans sell fresh produce, handmade textiles, wooden masks, and traditional crafts — a wonderful opportunity to mingle with locals.",
+          "The afternoon includes visits to the Green Weaving Centre and National Textile Museum to discover Bhutan's rich weaving traditions; the Handmade Paper Factory where traditional Deh-sho paper is crafted from tree bark and herbs; the Archery Grounds to watch Bhutan's national sport celebrated with dances and witty banter; and the Takin Preserve (2,600m) to see Bhutan's national animal tied to the Divine Madman legend.",
+          "In the late afternoon, a 2-hour scenic drive to Paro passes through pine forests, farmlands, and villages, arriving to majestic views of Paro Dzong and the National Museum.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 13,
+        date: "Day 13",
+        title: "Tiger's Nest Hike — Taktsang Monastery & Farewell Dinner",
+        details: [
+          "The iconic hike to Taktsang Monastery — Bhutan's most sacred pilgrimage site — begins after breakfast: perched 900 metres above the Paro Valley, the monastery dates to 747 CE when Guru Rinpoche is said to have arrived on a flying tigress to subdue evil spirits. The round trip covers 13.2 km over 5 to 6 hours.",
+          "The trail winds through pine and rhododendron forests to the Taktsang Cafeteria (2,800m) with breathtaking views, then ascends to a stupa viewpoint before the final approach into the monastery's sacred shrines, murals, and prayer halls.",
+          "The afternoon in Paro offers leisure options: strolling through local markets and handicraft shops, visiting Kyichu Lhakhang (2,250m) — one of Bhutan's oldest temples — or relaxing with a traditional hot stone bath to soothe tired muscles.",
+          "The evening is marked by a special farewell dinner celebrating the incredible journey through Bhutan with traditional cuisine and cherished memories.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 14,
+        date: "Day 14",
+        title: "Departure from Bhutan — Tashi Delek!",
+        details: [
+          "The guide and driver accompany guests to Paro International Airport, offering heartfelt farewells and blessings for safe travels.",
+          "One final glimpse of Bhutan's rolling hills and towering Himalayan peaks from the flight window serves as a reminder that the Land of the Thunder Dragon always welcomes a return.",
+          "Tashi Delek — may the path ahead be filled with happiness, peace, and endless adventure.",
+        ],
+      },
+    ],
+    inclusions: [
+      "All Meals (Hotels, Guesthouses, Homestays & Camp Kitchen)",
+      "Daily Mineral Water",
+      "Sustainable Development Fee",
+      "Expert Trek Guide (Indruka Tours and Travels)",
+      "Trekking Crew, Camp Staff & Pack Animals",
+      "Yangphel Signature Camping Gear & Comfortable Tents",
+      "Domestic Flight — Paro / Thimphu to Bumthang (weather permitting)",
+      "Hotel, Guesthouse & Homestay Accommodation as per itinerary",
+      "Comfortable Vehicles with Skilled Drivers",
+      "Monument & Monastery Entrance Fees as per itinerary",
+      "Traditional Ara (Moonshine) Tasting in Drongthang Village",
+      "Farm Activities at Mangdiphu (butter churning, cheese making)",
+      "Folk Dance Evening with Drongthang Villagers",
+    ],
+    exclusions: [
+      "International airfare",
+      "Personal trekking gear & clothing",
+      "Personal shopping",
+      "Tips for guide, driver & trekking crew",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol (beyond cultural tastings)",
+      "Traditional hot stone bath (optional extra)",
+      "Any activities marked as optional",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "14 Days / 13 Nights" },
+      {
+        label: "Destinations",
+        value:
+          "Paro · Bumthang · Trongsa · Kasiphey · Drongthang · Mangdiphu · Bemji · Phobjikha · Punakha · Thimphu · Paro",
+      },
+      {
+        label: "Departure & Return",
+        value:
+          "Paro International Airport (PBH) → Paro International Airport (PBH)",
+      },
+      { label: "Tour Code", value: "BHU-HT-PBH-14" },
+      { label: "Meals", value: "All meals included" },
+      { label: "Best Time", value: "All year round" },
+      { label: "Tour Type", value: "Trekking, Cultural & Village Immersion" },
+      { label: "Difficulty", value: "Easy to Moderate" },
+      {
+        label: "Daily Trek Distance",
+        value: "8–16 km / 5–10 miles per trekking day",
+      },
+      { label: "Max Altitude", value: "~3,353m (Pele La Pass)" },
+      { label: "Tour Operator", value: "Indruka Tours and Travels" },
+      {
+        label: "Accommodation",
+        value: "Hotels · Guesthouses · Homestays · Yangphel Signature Camping",
+      },
+      {
+        label: "Domestic Flight",
+        value: "Paro/Thimphu → Bumthang (included, weather permitting)",
+      },
+    ],
+  },
+  //Phuentsholing
+  {
+    id: 525,
+    country: "Bhutan",
+    place: "Phuentsholing",
+    title: "From Historical to Modern Day Bhutan",
+    type: "Cultural",
+    duration: "6 Days / 5 Nights",
+    durationTag: "6 Days",
+    startEnd:
+      "NJP / IXB → Phuentsholing → Thimphu → Paro → Phuentsholing → NJP / IXB",
+    destinations: [
+      "NJP Railway Station / IXB Airport",
+      "Phuentsholing",
+      "Thimphu",
+      "Paro",
+      "Phuentsholing",
+    ],
+    amenities: ["Hotels", "Meals", "Cab Transfer", "Sightseeing"],
+    price: 21000,
+    oldPrice: 23334,
+    discount: "10% OFF",
+    currency: "INR",
+    rating: 0,
+    reviews: 0,
+    badge: "Cultural",
+    badgeColor: "bg-orange-600",
+    mode: "Tour",
+    img: "",
+    popular: true,
+    tourFeatures: [
+      { icon: Building2, label: "Hotels", color: "#6C72E8", bg: "#EEF0FD" },
+      {
+        icon: UtensilsCrossed,
+        label: "Meals (MAP)",
+        color: "#F4884A",
+        bg: "#FEF0E8",
+      },
+      { icon: Camera, label: "Sightseeing", color: "#1AADA0", bg: "#E8F7F3" },
+      { icon: Car, label: "Cab Transfer", color: "#E8508A", bg: "#FFF0F4" },
+    ],
+    tourHighlights: [
+      {
+        title:
+          "Tashichho Dzong — Fortress of Buddhist Religion & Seat of the Bhutanese Government Since 1952",
+      },
+      {
+        title:
+          "Buddha Dordenma (Kuensel Phodrang) — Gigantic Statue of Lord Buddha Overlooking Thimphu Valley",
+      },
+      {
+        title:
+          "Ta Dzong & Rinpung Dzong — Four-and-a-Half-Century-Old Fortresses Housing Bhutanese Antiquities",
+      },
+      {
+        title:
+          "Drukgyel Dzong — UNESCO-Recognised Historic Fortress & Defence Site in the Paro Valley",
+      },
+      {
+        title:
+          "Kyichu Lhakhang — One of Bhutan's Oldest Temples, Built in 659 CE",
+      },
+      {
+        title:
+          "Phuentsholing — Gateway to Bhutan & the Commercial Heart of the Northern Indian Plains",
+      },
+    ],
+    tourManagerCompany: "Indruka Tourism",
+    heroImage: {
+      src: "",
+      alt: "From Historical to Modern Day Bhutan — Phuentsholing, Thimphu & Paro 6-Day Tour by Indruka Tourism",
+    },
+    testimonials: [],
+    thumbnails: [],
+    breadcrumbs: [
+      { label: "Home", href: "/" },
+      { label: "Bhutan", href: "/bhutan" },
+      { label: "Phuentsholing", href: "/bhutan/phuentsholing" },
+      { label: "From Historical to Modern Day Bhutan", href: "" },
+    ],
+    badges: [
+      { label: "CULTURAL", variant: "solid", color: "orange" },
+      { label: "6 DAYS", variant: "outlined", color: "cyan" },
+      { label: "10% OFF", variant: "solid", color: "green" },
+    ],
+    durationDays: 6,
+    countryCount: 1,
+    cityCount: 3,
+    region: "Kingdom of Bhutan",
+    maxGuests: 0,
+    itineraryStops: [
+      { city: "Phuentsholing", nights: 2 },
+      { city: "Thimphu", nights: 1 },
+      { city: "Paro", nights: 2 },
+    ],
+    days: [
+      {
+        day: 1,
+        date: "Day 1",
+        title: "Phuentsholing ",
+        details: [
+          "Guests are received at Phuentsholing by Indruk Tours and Travel's agents.",
+          "After arrival, check-in to the hotel and the evening is spent unwinding from the journey.",
+          "The night is spent at a hotel in Phuentsholing.",
+        ],
+      },
+      {
+        day: 2,
+        date: "Day 2",
+        title: "Phuentsholing → Thimphu — 176 km / ~6 Hours / 2,350m",
+        details: [
+          "After a Bhutanese breakfast, immigration formalities are completed at the Phuentsholing border before proceeding to Thimphu — the capital and largest city of Bhutan.",
+          "The drive of approximately 176 km (~6 hours) ascends to Thimphu at 2,350 metres above sea level — a city celebrated for its unique juxtaposition of ancient tradition and modern lifestyle.",
+          "Upon arrival and hotel check-in, guests may choose to rest or begin exploring the capital.",
+          "An optional early visit to Tashichho Dzong — the renowned fortress of the Buddhist religion, home and office of the present King, and seat of the Bhutanese government since 1952 — is recommended for those with energy.",
+          "The night is spent at a hotel in Thimphu.",
+        ],
+      },
+      {
+        day: 3,
+        date: "Day 3",
+        title:
+          "Thimphu Sightseeing → Drive to Paro — 65 km / ~2 Hours / 2,280m",
+        details: [
+          "The morning begins with breakfast at the hotel followed by a sightseeing tour of Thimphu's most iconic landmarks.",
+          "Kuensel Phodrang (Buddha Dordenma) is visited first — one of Bhutan's most photogenic destinations, dominated by the gigantic statue of Lord Buddha overlooking the Thimphu Valley.",
+          "The National Memorial Chorten is the next stop — a revered monument where visitors can observe and participate in daily devotional rituals, drawing spiritual energy through prayer.",
+          "The Folk Heritage Museum offers a rich immersion into Bhutanese culture, rural history, and heritage through demonstrations, exhibits, and documentaries about the country's traditional way of life.",
+          "After the morning tour, a scenic 2-hour drive along winding mountain roads through tall lush greenery leads to Paro at 2,280 metres — a valley celebrated for its elegant natural beauty and traditional-style architecture.",
+          "The night is spent at a hotel in Paro.",
+        ],
+      },
+      {
+        day: 4,
+        date: "Day 4",
+        title: "Paro Sightseeing — Dzongs, Ruins & Ancient Temples",
+        details: [
+          "The day begins with breakfast before a full day of sightseeing across Paro's most significant historical and religious landmarks.",
+          "Ta Dzong (National Museum) is visited first — approximately four and a half centuries old, this proud religious fortress houses a priceless collection of Bhutanese antiquities and withstood a major earthquake in 2011.",
+          "Rinpung Dzong (Paro Dzong) is next — a fortress of matchless spiritual splendour serving as both a place of worship and the administrative seat of the Paro district, offering a rejuvenating sense of peace.",
+          "Drukgyel Dzong is explored — a UNESCO World Heritage-recognised site that served as the region's primary defence until 1951, when it was destroyed by fire. Its evocative ruins continue to speak powerfully of Bhutan's history and heritage.",
+          "The day concludes at Kyichu Lhakhang — one of Bhutan's oldest temples, built in 659 CE with the purpose of subduing a demon believed to be obstructing the establishment of Buddhist religion in Tibet.",
+          "After a full and rewarding day, guests return to the hotel for dinner and a restful night in Paro.",
+        ],
+      },
+      {
+        day: 5,
+        date: "Day 5",
+        title: "Paro → Phuentsholing — 200 km / ~7 Hours / 293m",
+        details: [
+          "After breakfast and hotel check-out, the day is spent on a scenic 7-hour drive of approximately 200 km back to Phuentsholing.",
+          "Upon arrival, guests may visit the local market to browse for souvenirs and gifts for loved ones.",
+          "The evening is spent at leisure — relaxing and reflecting on the journey through Bhutan before the return the following day.",
+          "The night is spent at a hotel in Phuentsholing.",
+        ],
+      },
+      {
+        day: 6,
+        date: "Day 6",
+        title:
+          "Phuentsholing → NJP Railway Station / IXB Airport — 170 km / ~5 Hours / 89m",
+        details: [
+          "On the final day, after breakfast and check-out, the drive of approximately 170 km (~5 hours) heads back to NJP Railway Station or IXB Airport in Siliguri.",
+          "The journey is a chance to rewind and relive every cherished memory from one of the world's most beautiful and peaceful countries.",
+          "The Indruka Tourism representative bids farewell at the station or airport, concluding the Bhutan experience.",
+        ],
+      },
+    ],
+    inclusions: [
+      "Accommodation in Base Category Hotel Rooms",
+      "Meals on MAP Basis (Breakfast & Dinner daily)",
+      "1 Non-AC Cab for Arrival, Departure & All Sightseeing",
+      "Representative Assistance at NJP Railway Station / IXB Airport",
+      "Porterage at Hotels & Airport",
+      "All Applicable Luxury & Road Taxes",
+      "Bhutan Innerline Permit",
+    ],
+    exclusions: [
+      "Airfare or train fare to NJP / IXB and back",
+      "Lunch throughout the tour",
+      "Personal shopping & souvenirs",
+      "Tips for guide & driver",
+      "Travel insurance",
+      "Laundry",
+      "Alcohol & personal beverages",
+      "Any entry tickets not mentioned in the itinerary",
+      "Any expense arising due to natural calamity, roadblock, or political unrest",
+    ],
+    tourDetails: [
+      { label: "Duration", value: "6 Days / 5 Nights" },
+      { label: "Destinations", value: "Phuentsholing · Thimphu · Paro" },
+      {
+        label: "Departure & Return",
+        value:
+          "NJP Railway Station / IXB Airport → NJP Railway Station / IXB Airport",
+      },
+      { label: "Tour Code", value: "BHU-HMB-PHU-06" },
+      { label: "Meals", value: "MAP Basis — Breakfast & Dinner included" },
+      { label: "Best Time", value: "March–May & September–November" },
+      { label: "Group Size", value: "Private Cab (Non-AC)" },
+      { label: "Tour Type", value: "Cultural & Heritage" },
+      { label: "Tour Operator", value: "Indruka Tourism" },
+      {
+        label: "Starting Point",
+        value: "NJP Railway Station or IXB Airport, Siliguri, West Bengal",
+      },
+      { label: "Price", value: "₹21,000 per person (10% off from ₹23,334)" },
+    ],
+  },
 ];
-export const SPECIALITIES = [
-  "Honeymoon packages",
-  "Corporate tours",
-  "School/college trips",
-  "Religious yatras",
-  "Luxury stays",
-  "Budget backpacking trips",
-  "Weekend Delhi-to-hills tours",
-  "Hill Stations & Nature Destinations",
-  "Beach Holidays",
-];
+
+export const SPECIALITIES_BY_COUNTRY: Record<string, string[]> = {
+  India: [
+    "Honeymoon packages",
+    "Corporate tours",
+    "School/college trips",
+    "Religious yatras",
+    "Luxury stays",
+    "Budget backpacking trips",
+    "Weekend Delhi-to-hills tours",
+    "Hill Stations & Nature Destinations",
+    "Beach Holidays",
+  ],
+  Bhutan: [
+    "Cultural",
+    "Festival",
+    "Trekking",
+    "Luxury",
+    "Birdwatching",
+    "Private Tour",
+  ],
+  // add more countries as needed
+};
 export const DURATIONS = [
   "1 Day",
   "2–3 Days",

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-async-client-component */
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useSearchParams } from "next/navigation";
@@ -12,88 +13,9 @@ import ItineraryPage, {
   type UpgradeItem,
 } from "./tour-iternary";
 import { tours } from "../tours/data";
+import { type ViewDetailsPageProps, mainTabs, tourInformationTabs, needToKnow, cancellationRows, upgrades } from "./other-important-data";
 
-const tourInformationTabs: TabSection[] = [
-  {
-    value: "inclusions",
-    label: "Inclusions",
-    dotColor: "bg-green-500",
-    items: [
-      "Return airfare (Economy class)",
-      "4-star hotel accommodation (twin sharing)",
-      "Daily breakfast & select dinners",
-      "All transfers by air-conditioned coach",
-      "English-speaking Tour Manager throughout",
-    ],
-  },
-  {
-    value: "exclusions",
-    label: "Exclusions",
-    dotColor: "bg-red-500",
-    items: [
-      "Visa fees",
-      "Travel insurance",
-      "Personal expenses & tips",
-      "Meals not mentioned in inclusions",
-    ],
-  },
-  {
-    value: "visa",
-    label: "Visa Info",
-    dotColor: "bg-blue-500",
-    items: [
-      "Schengen visa required for Indian passport holders",
-      "Processing time: 10–15 working days",
-      "Documents: passport copy, bank statement, photos",
-    ],
-  },
-];
 
-const needToKnow: string[] = [
-  "Carry comfortable walking shoes — cobblestone streets ahead!",
-  "Currency: Euro (€). ATMs are widely available.",
-  "Weather in June: 18 °C – 25 °C. Light jacket recommended.",
-  "Tipping: €1–2 per day for your Tour Manager is appreciated.",
-];
-
-const cancellationRows: CancellationRow[] = [
-  { daysRange: "60+ days", charge: "10% of tour cost" },
-  { daysRange: "30–59 days", charge: "25% of tour cost" },
-  { daysRange: "15–29 days", charge: "50% of tour cost" },
-  { daysRange: "0–14 days", charge: "100% of tour cost" },
-];
-
-const upgrades: UpgradeItem[] = [
-  {
-    name: "Business Class Upgrade",
-    price: "₹85,000",
-    description: "Upgrade both outbound and return flights to Business Class.",
-  },
-  {
-    name: "Single Room Supplement",
-    price: "₹32,000",
-    description: "Enjoy a private room throughout the entire tour.",
-  },
-  {
-    name: "Travel Insurance",
-    price: "₹4,500",
-    description: "Comprehensive cover including medical emergencies abroad.",
-  },
-];
-
-const mainTabs: MainTab[] = [
-  { value: "itinerary", label: "Itinerary" },
-  { value: "tour-details", label: "Tour Details" },
-  { value: "tour-information", label: "Tour Information" },
-  { value: "need-to-know", label: "Need to Know" },
-  { value: "cancellation", label: "Cancellation Policy" },
-  { value: "upgrades", label: "Upgrades" },
-];
-interface ViewDetailsPageProps {
-  searchParams: Promise<{
-    id?: string;
-  }>;
-}
 
 export default async function TouristPageDetails({
   searchParams,
@@ -118,11 +40,17 @@ export default async function TouristPageDetails({
 
       <TourGalleryPage
         heroImage={tour.heroImage ?? { src: "", alt: tour.title }}
-        testimonials={tour.testimonials ?? []}
+        testimonials={tour?.testimonials ?? []}
         thumbnails={tour.thumbnails ?? []}
         breadcrumbs={tour.breadcrumbs ?? []}
-        badges={tour.badges ?? []}
-        title={tour.title}
+badges={
+  (tour.badges ?? [])
+    .filter((b) => b.variant === "solid" || b.variant === "outlined")
+    .map((badge) => ({
+      ...badge,
+      variant: badge.variant as "solid" | "outlined",
+    }))
+}        title={tour.title}
         durationDays={
           (tour.durationDays ?? tour.durationTag)
             ? parseInt(tour.durationTag)

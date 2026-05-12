@@ -2,25 +2,19 @@
 import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { tours } from "../data";
-interface TourParams {
-  country?: string;
-  id?: string;
-  dest?: string;
-}
 
-export function useTours(searchParams: TourParams) {
+export function useTours() {
+  const searchParams = useSearchParams();
+
   function getDurationBucket(tour: {
     durationDays?: number;
     durationTag?: string;
   }): string {
-    // Prefer durationDays, fallback to parsing durationTag
     let days = tour.durationDays;
-
     if (!days && tour.durationTag) {
       const match = tour.durationTag.match(/\d+/);
       days = match ? parseInt(match[0]) : 0;
     }
-
     if (!days) return "9+ Days";
     if (days === 1) return "1 Day";
     if (days <= 3) return "2–3 Days";
@@ -29,32 +23,40 @@ export function useTours(searchParams: TourParams) {
     return "9+ Days";
   }
 
+  // ✅ All initial values read from URL params
   const initialCountry = useMemo(() => {
-    const raw = searchParams.country;
+    const raw = searchParams.get("country");
     if (!raw) return new Set<string>();
     return new Set<string>(raw.split(",").map((c) => c.trim()));
-  }, []);
+  }, [searchParams]);
+
   const initialPlace = useMemo(() => {
-    const raw = searchParams.id;
+    const raw = searchParams.get("id");
     if (!raw) return new Set<string>();
     return new Set<string>(raw.split(",").map((d) => d.trim()));
-  }, []);
+  }, [searchParams]); // ← was []
 
   const initialDest = useMemo(() => {
-    const raw = searchParams.dest;
+    const raw = searchParams.get("dest");
     if (!raw) return new Set<string>();
     return new Set<string>(raw.split(",").map((d) => d.trim()));
-  }, []);
+  }, [searchParams]); // ← was []
+
+  // ✅ NEW — reads ?spec=Festival+Tour+%28Tshechu%29 for Bhutan category pre-selection
+  const initialSpec = useMemo(() => {
+    const raw = searchParams.get("spec");
+    if (!raw) return new Set<string>();
+    return new Set<string>(raw.split(",").map((s) => s.trim()));
+  }, [searchParams]);
 
   const [budget, setBudget] = useState([150000]);
   const [sortBy, setSortBy] = useState("recommended");
   const [search, setSearch] = useState("");
-  const [checkedSpec, setCheckedSpec] = useState(new Set<string>());
+  const [checkedSpec, setCheckedSpec] = useState<Set<string>>(initialSpec);  // ← was new Set()
   const [checkedDur, setCheckedDur] = useState(new Set<string>());
   const [checkedDest, setCheckedDest] = useState<Set<string>>(initialDest);
   const [checkedMode, setCheckedMode] = useState(new Set<string>());
-  const [checkedCountry, setCheckedCountry] =
-    useState<Set<string>>(initialCountry);
+  const [checkedCountry, setCheckedCountry] = useState<Set<string>>(initialCountry);
   const [checkedPlace, setCheckedPlace] = useState<Set<string>>(initialPlace);
 
   const toggleSet = (
@@ -79,18 +81,13 @@ export function useTours(searchParams: TourParams) {
     setSearch("");
   };
 
-  // ✅ useMemo gives a stable reference — only recomputes when filters actually change
   const filtered = useMemo(() => {
     return tours
       .filter((t) => t.price <= budget[0])
-      .filter(
-        (t) => !search || t.title.toLowerCase().includes(search.toLowerCase()),
-      )
+      .filter((t) => !search || t.title.toLowerCase().includes(search.toLowerCase()))
       .filter((t) => checkedMode.size === 0 || checkedMode.has(t.mode))
       .filter((t) => checkedSpec.size === 0 || checkedSpec.has(t.type))
-      .filter(
-        (t) => checkedDur.size === 0 || checkedDur.has(getDurationBucket(t)),
-      )
+      .filter((t) => checkedDur.size === 0 || checkedDur.has(getDurationBucket(t)))
       .filter(
         (t) =>
           checkedCountry.size === 0 ||
@@ -131,18 +128,7 @@ export function useTours(searchParams: TourParams) {
         }
         return 0;
       });
-  }, [
-    budget,
-    search,
-    checkedMode,
-    checkedCountry,
-    checkedPlace,
-    checkedDest,
-    checkedSpec,
-    checkedDur,
-    sortBy,
-  ]);
-  // ☝️ stable reference — new array only when these values change
+  }, [budget, search, checkedMode, checkedCountry, checkedPlace, checkedDest, checkedSpec, checkedDur, sortBy]);
 
   const activeFilterCount =
     checkedMode.size +

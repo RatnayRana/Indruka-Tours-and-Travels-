@@ -22,7 +22,7 @@ export interface DayItem {
   day: number;
   date: string;
   title: string;
-  details: string;
+  details: string[];  // ← string → string[]
 }
 
 export interface TabSection {
