@@ -21931,18 +21931,38 @@ export const tours = [
     ],
   },
 ];
+export const SPECIALITY_TO_TYPES: Record<string, string[]> = {
+  // India
+  "Honeymoon packages":                  ["Honeymoon"],
+  "Religious yatras":                    ["Pilgrimage", "Pilgrimage Tour", "Yoga & Spiritual", "Do Dham Yatra", "Char Dham"],
+  "Luxury stays":                        ["Luxury", "Heritage", "Royal Heritage", "Luxury Camp", "Luxury Train"],
+  "Budget backpacking trips":            ["Adventure", "Adventure Tour"],
+  "Hill Stations & Nature Destinations": ["Hill Station", "Scenic Holiday"],
+  "Beach Holidays":                      ["Beach", "Backwaters", "Houseboat", "Island Tour"],
+  "Corporate tours":                     ["Corporate"],
+  "School/college trips":                ["School", "College"],
+  "Weekend Delhi-to-hills tours":        ["Weekend"],
+
+  // Bhutan
+  "Cultural":     ["Cultural"],
+  "Festival":     ["Festival", "Festival Tour"],
+  "Trekking":     ["Trekking"],
+  "Luxury":       ["Luxury", "Luxury stays"],  // ← matches both Bhutan + India luxury
+  "Birdwatching": ["Birdwatching"],
+  "Private Tour": ["Private Tour"],
+};
 
 export const SPECIALITIES_BY_COUNTRY: Record<string, string[]> = {
   India: [
     "Honeymoon packages",
-    "Corporate tours",
-    "School/college trips",
     "Religious yatras",
     "Luxury stays",
     "Budget backpacking trips",
-    "Weekend Delhi-to-hills tours",
     "Hill Stations & Nature Destinations",
     "Beach Holidays",
+    "Corporate tours",
+    "School/college trips",
+    "Weekend Delhi-to-hills tours",
   ],
   Bhutan: [
     "Cultural",
@@ -21952,7 +21972,6 @@ export const SPECIALITIES_BY_COUNTRY: Record<string, string[]> = {
     "Birdwatching",
     "Private Tour",
   ],
-  // add more countries as needed
 };
 export const DURATIONS = [
   "1 Day",

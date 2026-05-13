@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
-import {  DURATIONS, DESTINATIONS, MODES, fmt, SPECIALITIES_BY_COUNTRY } from "../data";
+import {  DURATIONS, DESTINATIONS, MODES, fmt,  } from "../data";
 import { useMemo, useEffect } from "react";
 
 interface FilterContentProps {

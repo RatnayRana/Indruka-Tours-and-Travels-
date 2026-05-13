@@ -16,7 +16,7 @@ import { useTours } from "./hooks/use-tours";
 import { useWishlist } from "./hooks/use-wishlist";
 import { useDrawer } from "./hooks/use-drawer";
 import { Pagination } from "./components/pagenationProps";
-import { SPECIALITIES_BY_COUNTRY } from "./data"; // ← import the map
+import { tours as allTours, SPECIALITIES_BY_COUNTRY } from "./data";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -26,19 +26,60 @@ export default function SacredYatra() {
   const drawer = useDrawer();
   const [activePage, setActivePage] = useState(1);
 
-  // ✅ Single source of truth for specialities — derived from checked countries
+  const collageTours = useMemo(() => {
+    return allTours
+      .filter((t) =>
+        tours.checkedCountry.size === 0
+          ? true
+          : [...tours.checkedCountry].some(
+              (c) => t.country.toLowerCase() === c.toLowerCase(),
+            ),
+      )
+      .sort((a, b) => a.id - b.id)
+      .slice(0, 7);
+  }, [tours.checkedCountry]);
+
   const activeSpecialities = useMemo(() => {
-    if (tours.checkedCountry.size === 0) return [];
+    // 1. Country is checked → show that country's specialities
+    if (tours.checkedCountry.size > 0) {
+      const merged = new Set<string>();
+      tours.checkedCountry.forEach((country) => {
+        const key = Object.keys(SPECIALITIES_BY_COUNTRY).find(
+          (k) => k.toLowerCase() === country.toLowerCase(),
+        );
+        if (key) SPECIALITIES_BY_COUNTRY[key].forEach((s) => merged.add(s));
+      });
+      return [...merged];
+    }
+
+    // 2. Place is checked (e.g. ?id=Jaipur) → find country from that place's tours
+    if (tours.checkedPlace.size > 0) {
+      const merged = new Set<string>();
+      allTours
+        .filter((tour) =>
+          [...tours.checkedPlace].some((p) =>
+            (tour.place ?? "").toLowerCase().includes(p.toLowerCase()),
+          ),
+        )
+        .forEach((tour) => {
+          const key = Object.keys(SPECIALITIES_BY_COUNTRY).find(
+            (k) => k.toLowerCase() === tour.country.toLowerCase(),
+          );
+          if (key) SPECIALITIES_BY_COUNTRY[key].forEach((s) => merged.add(s));
+        });
+      return [...merged];
+    }
+
+    // 3. Fallback → show all specialities from all tours
     const merged = new Set<string>();
-    tours.checkedCountry.forEach((country) => {
+    allTours.forEach((tour) => {
       const key = Object.keys(SPECIALITIES_BY_COUNTRY).find(
-        (k) => k.toLowerCase() === country.toLowerCase(),
+        (k) => k.toLowerCase() === tour.country.toLowerCase(),
       );
       if (key) SPECIALITIES_BY_COUNTRY[key].forEach((s) => merged.add(s));
     });
     return [...merged];
-  }, [tours.checkedCountry]);
-
+  }, [tours.checkedCountry, tours.checkedPlace]); // ✅ no tours.filtered dependency
   useEffect(() => {
     setActivePage(1);
   }, [
@@ -68,7 +109,7 @@ export default function SacredYatra() {
     checkedDest: tours.checkedDest,
     checkedMode: tours.checkedMode,
     checkedCountry: tours.checkedCountry,
-    activeSpecialities,                       // ← passed down, not re-derived
+    activeSpecialities, // ← passed down, not re-derived
     toggle: tours.toggleSet,
     setCheckedSpec: tours.setCheckedSpec,
     setCheckedDur: tours.setCheckedDur,
@@ -105,7 +146,7 @@ export default function SacredYatra() {
         drawerRef={drawer.drawerRef as RefObject<HTMLDivElement>}
         onDragStart={drawer.handleDragStart}
         onClearAll={tours.clearAll}
-        filterContentProps={filterProps}      // ← activeSpecialities flows in here too
+        filterContentProps={filterProps} // ← activeSpecialities flows in here too
       />
 
       <div className="max-w-315 mx-auto px-4 py-7 grid grid-cols-1 md:grid-cols-[230px_1fr] lg:grid-cols-[270px_1fr] gap-6 items-start">
@@ -165,8 +206,8 @@ export default function SacredYatra() {
         @keyframes slideInRight { from { transform: translateX(100%); } to { transform: translateX(0); } }
       `}</style>
 
-      <TourCollage />
-      <TourCards />
+      <TourCollage tours={collageTours} />
+<TourCards tours={tours.filtered} />      
       <Footer />
     </div>
   );
