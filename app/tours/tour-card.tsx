@@ -259,7 +259,7 @@ export default function TourCards({ tours }: TourCardsProps) {
                     <div className="flex p-2 gap-2">
                       <div className="relative w-28 h-28 flex-shrink-0">
                         <img
-  src={tour.img }   // ← add fallback
+  src={tour.src }   // ← add fallback
                           alt={tour.title}
                           className="w-full h-full object-cover rounded"
                         />

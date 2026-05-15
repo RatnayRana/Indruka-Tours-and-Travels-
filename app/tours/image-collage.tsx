@@ -5,7 +5,7 @@ type Tour = {
   id: number;
   title: string;
   country: string;
-  img?: string;        // ← real field from your tours data
+  src?: string;        // ← real field from your tours data
   place?: string;
 };
 
@@ -49,7 +49,7 @@ function TourCard({ data, className }: { data: Tour; className?: string }) {
   return (
     <div className={`relative h-full w-full overflow-hidden rounded-xl group ${className}`}>
       <img
-        src={data.img}
+        src={data.src}
         alt={data.title}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
       />
