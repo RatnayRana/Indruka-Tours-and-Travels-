@@ -8,7 +8,7 @@ export interface Tour {
   title: string;
   type: string;
   badge: "Bestseller" | "Trek" | "Helicopter" | "Popular" | string;
-  img?: string;
+  src?: string;
   duration: string;
   rating: number;
   reviews: number;
@@ -62,7 +62,7 @@ export default function CardDetailsPage({
           {/* IMAGE */}
           <div className="relative overflow-hidden h-[200px] md:h-full md:min-h-[200px] group">
             <img
-              src={tour.img}
+              src={tour.src}
               alt={tour.title}
               className="w-full h-full object-cover block transition-transform duration-[400ms] group-hover:scale-[1.06]"
             />
